@@ -1,15 +1,8 @@
 import React, {Component} from 'react'
 import logo from './images/osteofitLogo.png'
-import Home from './components/Home'
-import Contact from './components/Contact'
-import About from './components/About'
-import Product from './components/Product'
-import SingleUse from './components/SingleUse'
 import {
     BrowserRouter as Router,
-    Route,
     Link,
-    Switch
   } from 'react-router-dom'
 import './App.css';
 
