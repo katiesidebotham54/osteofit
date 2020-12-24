@@ -4,89 +4,32 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+.subtitles {
+  font-weight: 900;
 }
 
 h1 {
   color: #ffffff;
   text-align: center;
-  background: linear-gradient(
-    90deg,
-    rgb(6, 4, 52) 0%,
-    rgb(7, 47, 72) 40%,
-    rgb(23, 80, 111) 100%
-  );
-  margin-left: 30px;
-  margin-right: 30px;
-  font-size: 3em;
-  font-weight: normal;
-  text-transform: uppercase;
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  font-weight: bold;
+}
+
+svg {
+  vertical-align: top;
 }
 
 .title span {
-  padding: 40px;
+  padding-left: 700px;
+  padding-right: 40px;
+  padding-top: 40px;
   position: relative;
   overflow: hidden;
   display: block;
-  line-height: 2;
-}
-
-.title span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  opacity: 0.7;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(23, 80, 111) 0%,
-    rgb(7, 47, 72) 40%,
-    rgb(6, 4, 52) 100%
-  );
-  animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards;
-  transform: translateX(-101%);
-}
-
-.title span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 30;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-  animation: a-ltr-before 1s cubic-bezier(0.77, 0, 0.18, 1) forwards;
-  transform: translateX(0);
-  opacity: 0.7;
-}
-
-.title span:nth-of-type(1)::before,
-.title span:nth-of-type(1)::after {
-  animation-delay: 0s;
-}
-
-.title span:nth-of-type(2)::before,
-.title span:nth-of-type(2)::after {
-  animation-delay: 0s;
-}
-
-@keyframes a-ltr-after {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(101%);
-  }
-}
-
-@keyframes a-ltr-before {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  font-size: 2em;
 }
 
 /*About Us Biographyr*/
@@ -282,12 +225,20 @@ nav {
   height: 75px;
 }
 
+#footer-container {
+  min-height: 100%;
+  overflow: auto;
+  text-align: justify;
+}
+
 .footer {
   overflow: hidden;
   width: 100%;
   bottom: 0;
-  position: fixed;
-  background-color: #393c41;
+  background-color: #555555;
+  height: 100%;
+  left: 0;
+  position: relative;
 }
 nav ul {
   display: flex;
@@ -360,26 +311,46 @@ nav ul img {
 
 /*Home page*/
 .Mission {
-  margin-top: 15px;
   position: relative;
   height: 500px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(6, 4, 52) 0%,
-    rgb(7, 47, 72) 40%,
-    rgb(23, 80, 111) 100%
-  );
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
 .Mission .MuiPaper-root {
-  position: absolute;
   top: 20%;
+  position: absolute;
   left: 5%;
   width: 40%;
   height: 40%;
   text-align: center;
-  font-size: 18px;
+  padding: 30px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.Mission h2 {
+  margin: 10px;
+}
+
+.problem {
+  margin-top: 15px;
+  position: relative;
+  height: 500px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+}
+
+.problem .MuiPaper-root {
+  position: absolute;
+  top: 16%;
+  left: 5%;
+  width: 20%;
+  height: 55%;
+  text-align: center;
+  font-size: 30px;
   padding: 30px;
   opacity: 0.4;
 }
@@ -410,7 +381,7 @@ nav ul img {
   flex-direction: column;
   padding: 20px;
   margin: 5px;
-  box-shadow: -15px -15px 0px 0px #21406d;
+  box-shadow: -15px -15px 0px 0px #1a658f;
   border-radius: 10px;
   -webkit-animation-name: shadow-show;
   /* Safari 4.0 - 8.0 */
@@ -433,7 +404,7 @@ nav ul img {
   display: block;
   border: none;
   height: 3px;
-  background-color: rgb(30, 49, 89);
+  background-color: #1a658f;
   margin: 0px;
   -webkit-animation-name: line-show;
   /* Safari 4.0 - 8.0 */
@@ -517,6 +488,7 @@ nav ul img {
   }
 }
 #card1 {
+  margin-top: 80px;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -586,57 +558,25 @@ nav ul img {
   left: 60%;
   top: 20%;
   width: 30%;
-  height: 50%;
+  height: 60%;
 }
 
 .slideshow-inner {
   position: relative;
-  height: 250px;
+  height: 300px;
   width: 450px;
 }
 
 .mySlides {
   position: relative;
   display: none;
-  height: 250px;
+  height: 300px;
   width: 450px;
-  border: solid 1px black;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #222428;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: -50px;
-  border-radius: 3px 3px 3px 3px;
-}
-
-.prev {
-  left: -50px;
-  border-radius: 3px 3px 3px 3px;
-}
-
-.prev:hover,
-.next:hover {
-  color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .allDots {
   position: absolute;
-  left: 73%;
+  left: 71%;
   bottom: 10%;
 }
 
@@ -658,4 +598,8 @@ nav ul img {
 
 .slideshowImage {
   width: 100%;
+}
+
+.contact {
+  text-align: center;
 }

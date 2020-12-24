@@ -10,9 +10,10 @@ import './App.css';
 class Footer extends Component {
     render(){
     return(
+        <div id="footer-container">
         <div className = "footer"> 
                 <ul>
-                    <img src = {logo}/>
+                    <img src = {logo} alt="logo"/>
                 <Router forceRefresh>
                     <li>
                     <Link exact to = "/">
@@ -54,6 +55,7 @@ class Footer extends Component {
                     <br/>
                     Terms and Conditions / Private Policy / Website by: Katie and Ben Sidebotham
                 </p>
+        </div>
         </div>
     )
 

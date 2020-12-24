@@ -8,33 +8,23 @@ class Home extends Component {
     return (
       <div>
         <div className="Mission">
-          <Paper elevation={3} className="MissionText">
-            <h2>Motto</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea{" "}
-            </p>
+          <Paper className="MissionText">
+            <h2 className="Mission1">Accuracy</h2>
+            <h2 className="Mission2">Function</h2>
+            <h2 className="Mission3">Sterility</h2>
           </Paper>
           <div class="slideshow-container">
             <div class="slideshow-inner">
               <div class="mySlides fade">
-                <img src="../images/tree.jpeg" />
+                <img src={Tree} alt="tree" />
               </div>
               <div class="mySlides fade">
-                <img src={Autumn} />
+                <img src={Autumn} alt="autumn" />
               </div>
               <div class="mySlides fade">
-                <img src={Path} />
+                <img src={Path} alt="path" />
               </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">
-              &#10094;
-            </a>
-            <a class="next" onclick="plusSlides(1)">
-              &#10095;
-            </a>
           </div>
           <br />
           <div className="allDots">

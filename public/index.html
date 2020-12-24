@@ -5,8 +5,139 @@
     <title>Osteofit</title>
   </head>
   <body>
-    <script>
-    </script>
     <div id="root"></div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    
+<script>
+// SLIDESHOW
+      var slideIndex = 1;
+      var myTimer;
+      var slideshowContainer;
+
+      window.addEventListener("load",function() {
+          showSlides(slideIndex);
+          myTimer = setInterval(function(){plusSlides(1)}, 4000);
+              
+          slideshowContainer.addEventListener('mouseenter', pause)
+          slideshowContainer.addEventListener('mouseleave', resume)
+      })
+
+        // NEXT AND PREVIOUS CONTROL
+        function plusSlides(n){
+          clearInterval(myTimer);
+          if (n < 0){
+            showSlides(slideIndex -= 1);
+          } else {
+          showSlides(slideIndex += 1); 
+          }
+
+      //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+
+        if (n === -1){
+          myTimer = setInterval(function(){plusSlides(n + 2)}, 2000);
+        } else {
+          myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+        }
+      }
+
+      //Controls the current slide and resets interval if needed
+      function currentSlide(n){
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+      pause = () => {
+        clearInterval(myTimer);
+      }
+
+      resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+      }    
+
+      </script>
+
+
+<script>
+//CONTACT FORM
+    var firebaseConfig = {
+        apiKey: "AIzaSyBYsB170P_eDFSnuQLnRVzpKnuz0fp5uY4",
+        authDomain: "osteofit-33b1a.firebaseapp.com",
+        projectId: "osteofit-33b1a",
+        storageBucket: "osteofit-33b1a.appspot.com",
+        messagingSenderId: "335534685794",
+        appId: "1:335534685794:web:ecb71fd80f2b27c74c1b3b",
+        measurementId: "G-DHFW1E5SMK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      //Reference message collection
+      var messagesRef = firebase.database().ref('messages');
+
+      //Listen for form submit
+      document.getElementById("contactForm").addEventListener("submit", submitForm);
+
+      //Submit Form
+      function submitForm(e) {
+          e.preventDefault();
+
+      //get values 
+      var name = getInputValue('name');
+      var email = getInputValue('email');
+      var subject = getInputValue('subject');
+      var message = getInputValue('message');
+      
+      //Save message
+      saveMessage(name, email, subject, message);
+
+      //Show alert
+      document.querySelector('.alert').style.display = 'block';
+      
+      //Hide alert after 3 seconds
+      setTimeout(function(){
+          document.querySelector('.alert').style.display = 'none';
+      }, 3000);
+
+      //Clear form
+      document.getElementById('contactForm').reset();
+      }
+
+
+      //function to get form values
+      function getInputValue(id) {
+          return document.getElementById(id).value;
+      }
+
+      //function to save message to firebase
+      function saveMessage(name, email, subject, message){
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+          name : name,
+          email: email,
+          subject: subject,
+          message: message
+        });
+      }
+</script>
+
   </body>
 </html>

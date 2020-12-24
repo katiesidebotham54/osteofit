@@ -1,13 +1,29 @@
 import React, { Component } from "react";
+import { Paper } from "@material-ui/core";
 
 class SingleUse extends Component {
   render() {
     return (
       <div className="SingleUse">
-        <h1 className="title">
-          <span>Why Use Single-Use Products?</span>
-        </h1>
-        <br />
+        <div>
+          <h1 className="title">
+            <span>Why Use Single-Use Products?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+              <path
+                fill="#FFFFFF"
+                fill-opacity="1"
+                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
+          </h1>
+        </div>
+        <div className="problem">
+          <Paper elevation={3} className="ProblemText">
+            <h2 className="subtitles">
+              Clincal Issues with Reusable Medical Reamers
+            </h2>
+          </Paper>
+        </div>
         <div className="allCards" id="card1">
           <div className="card">
             <h2>Accuracy</h2>
