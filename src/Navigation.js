@@ -22,7 +22,7 @@ class Navigation extends Component{
                         <ul>
                         <Router forceRefresh>
                                 <Link exact to ="/">
-                                    <img src={logo}/>
+                                    <img src={logo} alt="logo"/>
                                 </Link>
                          </Router>
                          <Router forceRefresh>
