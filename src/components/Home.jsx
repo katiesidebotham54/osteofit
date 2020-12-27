@@ -9,9 +9,9 @@ class Home extends Component {
       <div>
         <div className="Mission">
           <Paper className="MissionText">
-            <h2 className="Mission1">Accuracy</h2>
-            <h2 className="Mission2">Function</h2>
-            <h2 className="Mission3">Sterility</h2>
+            <h2>Accuracy</h2>
+            <h2>Function</h2>
+            <h2>Sterility</h2>
           </Paper>
           <div class="slideshow-container">
             <div class="slideshow-inner">
@@ -32,6 +32,12 @@ class Home extends Component {
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
+        </div>
+        <div class="home-arrow">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text">Scroll down</span>
         </div>
       </div>
     );

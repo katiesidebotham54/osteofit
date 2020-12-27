@@ -5,7 +5,7 @@ class Product extends Component {
     return (
       <div className="Product">
         <h1 className="title">
-          <span>Our Product</span>
+          <span className="fade-in">Our Product</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path
               fill="#FFFFFF"

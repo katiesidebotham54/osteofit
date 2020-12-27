@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,900;1,700&display=swap" rel="stylesheet">    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <title>Osteofit</title>
   </head>
   <body>
@@ -74,70 +77,6 @@
 
       </script>
 
-
-<script>
-//CONTACT FORM
-    var firebaseConfig = {
-        apiKey: "AIzaSyBYsB170P_eDFSnuQLnRVzpKnuz0fp5uY4",
-        authDomain: "osteofit-33b1a.firebaseapp.com",
-        projectId: "osteofit-33b1a",
-        storageBucket: "osteofit-33b1a.appspot.com",
-        messagingSenderId: "335534685794",
-        appId: "1:335534685794:web:ecb71fd80f2b27c74c1b3b",
-        measurementId: "G-DHFW1E5SMK"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-
-      //Reference message collection
-      var messagesRef = firebase.database().ref('messages');
-
-      //Listen for form submit
-      document.getElementById("contactForm").addEventListener("submit", submitForm);
-
-      //Submit Form
-      function submitForm(e) {
-          e.preventDefault();
-
-      //get values 
-      var name = getInputValue('name');
-      var email = getInputValue('email');
-      var subject = getInputValue('subject');
-      var message = getInputValue('message');
-      
-      //Save message
-      saveMessage(name, email, subject, message);
-
-      //Show alert
-      document.querySelector('.alert').style.display = 'block';
-      
-      //Hide alert after 3 seconds
-      setTimeout(function(){
-          document.querySelector('.alert').style.display = 'none';
-      }, 3000);
-
-      //Clear form
-      document.getElementById('contactForm').reset();
-      }
-
-
-      //function to get form values
-      function getInputValue(id) {
-          return document.getElementById(id).value;
-      }
-
-      //function to save message to firebase
-      function saveMessage(name, email, subject, message){
-        var newMessageRef = messagesRef.push();
-        newMessageRef.set({
-          name : name,
-          email: email,
-          subject: subject,
-          message: message
-        });
-      }
-</script>
 
   </body>
 </html>

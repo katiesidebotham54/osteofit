@@ -7,7 +7,7 @@ class SingleUse extends Component {
       <div className="SingleUse">
         <div>
           <h1 className="title">
-            <span>Why Use Single-Use Products?</span>
+            <span className="fade-in">Why Use Single-Use Products?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
               <path
                 fill="#FFFFFF"
