@@ -379,7 +379,7 @@ svg {
   font-size: 2.5rem;
 }
 
-.home-arrow {
+/*.home-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,6 +464,7 @@ svg {
     opacity: 1;
   }
 }
+*/
 
 /*Nav Bar and Footer*/
 nav {
@@ -561,24 +562,60 @@ nav ul img {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
-.Mission .MuiPaper-root {
+.MissionText {
   top: 20%;
   position: absolute;
   left: 5%;
   width: 40%;
   height: 40%;
-  text-align: center;
   padding: 30px;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 30px;
   letter-spacing: -2px;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .MissionText h2 {
   margin: 10px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 3px;
+  color: white;
+  animation: 2s MissionText;
+}
+
+@keyframes MissionText {
+  from {
+    margin-left: -500px;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.HomePara {
+  text-align: center;
+  padding: 100px;
+  width: 820px;
+  margin: auto;
+  font-size: 30px;
+}
+
+.HomePara b {
+  color: #297caf;
+}
+
+.a {
+  text-align: left;
+}
+
+.b {
+  text-align: center;
+}
+
+.c {
+  text-align: right;
 }
 
 .problem {
