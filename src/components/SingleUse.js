@@ -1,13 +1,36 @@
-import React, { Component } from "react";
+import React from "react";
 import { Paper } from "@material-ui/core";
 
-class SingleUse extends Component {
-  render() {
+const SingleUse = () => {
+  const fadeElms = document.querySelectorAll('.fade');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.7
+  };
+  
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  fadeElms.forEach(el => observer.observe(el));
+
+  function observerCallback(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // fade in observed elements that are in view
+        entry.target.classList.replace('fadeOut', 'fadeIn');
+      } else {
+        // fade out observed elements that are not in view
+        entry.target.classList.replace('fadeIn', 'fadeOut');
+      }
+    });
+  }
+  
+
     return (
       <div className="SingleUse">
         <div>
           <h1 className="title">
-            <span className="fade-in">Why Use Single-Use Products?</span>
+            <span className="fade-in-text">Why Use Single-Use Products?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
               <path
                 fill="#FFFFFF"
@@ -17,7 +40,7 @@ class SingleUse extends Component {
             </svg>
           </h1>
         </div>
-        <div className="problem">
+        <div className="problem fade fadeOut">
           <div className="ProblemText">
             <Paper elevation={3}>
               <h2 className="subtitles">
@@ -31,8 +54,8 @@ class SingleUse extends Component {
               <li>Heat generated can cause necrosis</li>
               <li>Quality Control is left to the surgeon</li>
               <li>
-                Expenses incurred for proper cleaning (~ $70 to clean a tray of
-                instruments
+                Expenses incurred for proper cleaning ($70 to clean a tray of
+                instruments)
               </li>
               <li>Infection associated with inadequate cleaning</li>
               <li>Uncertainy of number of uses per reamer </li>
@@ -40,14 +63,14 @@ class SingleUse extends Component {
           </div>
         </div>
         <div className="container_cards">
-          <div className="allCards" id="card1">
+          <div className="allCards fade fadeOut" id="card1">
             <div className="card">
               <h2>Accuracy</h2>
               <hr />
               <p>More accurate than conventional reamers (+0.1mm)</p>
             </div>
           </div>
-          <div className="allCards">
+          <div className="allCards fade fadeOut">
             <div id="card2">
               <div className="card">
                 <h2>Sharp</h2>
@@ -63,7 +86,7 @@ class SingleUse extends Component {
               </div>
             </div>
           </div>
-          <div className="allCards">
+          <div className="allCards fade fadeOut">
             <div id="card4">
               <div className="card">
                 <h2>Reduced risk of Infection</h2>
@@ -79,7 +102,7 @@ class SingleUse extends Component {
               </div>
             </div>
           </div>
-          <div className="allCards">
+          <div className="allCards fade fadeOut">
             <div id="card6">
               <div className="card">
                 <h2>Easier Usage</h2>
@@ -99,6 +122,5 @@ class SingleUse extends Component {
       </div>
     );
   }
-}
 
 export default SingleUse;
