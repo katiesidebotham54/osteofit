@@ -1,16 +1,37 @@
-import React, { Component } from "react";
+import React from "react";
 import { Paper } from "@material-ui/core";
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
-class About extends Component {
-  render() {
-    return (
+const About = () => {
+  const fadeElms = document.querySelectorAll('.fade');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.7
+  };
+  
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  fadeElms.forEach(el => observer.observe(el));
+
+  function observerCallback(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // fade in observed elements that are in view
+        entry.target.classList.replace('fadeOut', 'fadeIn');
+      } else {
+        // fade out observed elements that are not in view
+        entry.target.classList.replace('fadeIn', 'fadeOut');
+      }
+    });
+  }
+      return (
       <div className="About">
         <div>
           <h1 className="title">
-            <span className="fade-in">Who is Osteofit?</span>
+            <span className="fade-in-text">Who is Osteofit?</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
               <path
                 fill="#FFFFFF"
@@ -20,7 +41,7 @@ class About extends Component {
             </svg>
           </h1>
         </div>
-        <div class="aboutPara">
+        <div className="aboutPara fade fadeOut">
           <Paper elevation={3}>
             <p>
               OsteoFit is a newly formed company specializing in single-use
@@ -29,9 +50,9 @@ class About extends Component {
               manufacturing of implants and instruments.
             </p>
           </Paper>
-          <img src={osteofitWhiteLogo} />
+          <img src={osteofitWhiteLogo} alt="osteoFitLogo" />
         </div>
-        <div class="outer-container">
+        <div className="outer-container fade fadeOut">
           <div class="container container1">
             <div class="inner_container">
               <h1 class="title-bio">Orthopedic Surgeon</h1>
@@ -47,7 +68,7 @@ class About extends Component {
           </div>
           <div class="container container2">
             <div class="inner_container">
-              <h1 class="title-bio">Designer and inventor</h1>
+              <h1 class="title-bio">Designer</h1>
               <div class="container_text">
                 <div class="container_text1">
                   <p>
@@ -60,7 +81,7 @@ class About extends Component {
           </div>
           <div class="container container3">
             <div class="inner_container">
-              <h1 class="title-bio">Business Owner and Manufacturer</h1>
+              <h1 class="title-bio">Manufacturer</h1>
               <div class="container_text">
                 <div class="container_text1">
                   <p>
@@ -72,11 +93,10 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <div class="checkbox">
+        <div class="checkbox fade fadeOut">
           <div class="checkbox1">
             <h1>
-              {" "}
-              Regulatory compliant
+              GMP and Regulatory Compliant
               <svg
                 class="checkmark1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,10 +118,10 @@ class About extends Component {
             </h1>
           </div>
         </div>
-        <div class="checkbox">
+        <div className="checkbox fade fadeOut">
           <div class="checkbox2">
             <h1>
-              Covered by 14 patents
+              Technology Covered By 14 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +143,7 @@ class About extends Component {
             </h1>
           </div>
         </div>
-        <div class="bottompapers">
+        <div className="bottompapers fade fadeOut">
           <div class="paper1">
             <Paper elevation={13}>
               <h2>Want to Learn More?</h2>
@@ -157,6 +177,5 @@ class About extends Component {
       </div>
     );
   }
-}
 
 export default About;
