@@ -48,7 +48,7 @@ const Home = () => {
           <p className = "main-para-home">OsteoFit is a medical device company focused on the <b>development</b> of cost <b>effective</b> orthopedic instruments
              which address <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
         </div>
-        <div className = "item-3d">
+        <div className="item-3d">
           <span class="ground"></span>
           <figure class="item-content group">
             <div class="item-img">

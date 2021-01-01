@@ -6,7 +6,7 @@ const SingleUse = () => {
     <div className="SingleUse">
       <div>
         <h1 className="title">
-          <span className="fade-in">Why Use Single-Use Products?</span>
+          <span className="fade-in-text">Why Use Single-Use Products?</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path
               fill="#FFFFFF"
@@ -16,85 +16,137 @@ const SingleUse = () => {
           </svg>
         </h1>
       </div>
-      <div className="problem">
-        <div className="ProblemText">
+      <div className="comparison">
+        <div className="comparison-title-resuable">
           <Paper elevation={3}>
-            <h2 className="subtitles">
-              Clincal Issues with Reusable Medical Reamers
-            </h2>
+            <h2>Reusable</h2>
           </Paper>
         </div>
-        <div className="ProblemText2">
-          <ol className="gradient-list">
-            <li>Reamers dull after multiple uses</li>
-            <li>Heat generated can cause necrosis</li>
-            <li>Quality Control is left to the surgeon</li>
-            <li>
-              Expenses incurred for proper cleaning (~ $70 to clean a tray of
-              instruments
+        <div className="verticalLine"></div>
+        <div className="comparison-title-osteofit">
+          <Paper elevation={3}>
+            <h2>Osteofit </h2>
+          </Paper>
+          <div className="icon1">
+            <h2>
+              Simple and Efficient <br />
+              Cycle
+              <i class="fas fa-times circle-icon-reusable"></i>
+              <i class="fas fa-check circle-icon-osteofit"></i>
+            </h2>
+          </div>
+          <div className="icon2">
+            <h2>
+              Cost Effective
+              <i class="fas fa-times circle-icon-reusable"></i>
+              <i class="fas fa-check circle-icon-osteofit"></i>
+            </h2>
+          </div>
+          <div className="icon3">
+            <h2>
+              100% Sterile Each <br />
+              Time
+              <i class="fas fa-times circle-icon-reusable"></i>
+              <i class="fas fa-check circle-icon-osteofit"></i>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className="cycles">
+        <h1>
+          A process that takes
+          <span>
+            {" "}
+            <b>less time </b>
+          </span>
+          and is
+          <span>
+            <b> more effective. </b>
+          </span>
+        </h1>
+        <div>
+          <ul class="timeline">
+            <li class="li">
+              <span className="timeline-circle">1</span>
+              <h4> Cleaned </h4>
             </li>
-            <li>Infection associated with inadequate cleaning</li>
-            <li>Uncertainy of number of uses per reamer </li>
-          </ol>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">2</span>
+              <h4 className="largerText"> Packaged </h4>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">3</span>
+              <h4 className="largerText"> Sterilized </h4>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">4</span>
+              <div class="status">
+                <h4> Stored </h4>
+              </div>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">5</span>
+              <div class="status">
+                <h4> Surgery </h4>
+              </div>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">6</span>
+              <h4> Rinsed </h4>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">7</span>
+              <h4 className="largerText"> Scrubbed </h4>
+            </li>
+            <div className="horz-line1"></div>
+            <li class="li">
+              <span className="timeline-circle">8</span>
+              <h4> Inspected</h4>
+            </li>
+            <h4 id="repeat"> REPEAT</h4>
+          </ul>
+        </div>
+        <div>
+          <ul class="timeline-osteofit">
+            <li class="li">
+              <span className="timeline-circle">1</span>
+              <h4 className="largerText"> Purchase</h4>
+            </li>
+            <div className="horz-line1"></div>
+
+            <li class="li">
+              <span className="timeline-circle">2</span>
+              <h4> Surgery </h4>
+            </li>
+            <div className="horz-line2"></div>
+            <li class="li">
+              <span className="timeline-circle">3</span>
+              <h4> Recycled </h4>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="container_cards">
-        <div className="allCards" id="card1">
-          <div className="card">
-            <h2>Accuracy</h2>
-            <hr />
-            <p>More accurate than conventional reamers (+0.1mm)</p>
-          </div>
-        </div>
-        <div className="allCards">
-          <div id="card2">
-            <div className="card">
-              <h2>Sharp</h2>
-              <hr />
-              <p> Material and design create extra sharp product</p>
-            </div>
-          </div>
-          <div id="card3">
-            <div className="card">
-              <h2>Reduced Heat Generation</h2>
-              <hr />
-              <p>Reduced heat generated during reaming</p>
-            </div>
-          </div>
-        </div>
-        <div className="allCards">
-          <div id="card4">
-            <div className="card">
-              <h2>Reduced risk of Infection</h2>
-              <hr />
-              <p>Reduced risk of patient infection</p>
-            </div>
-          </div>
-          <div id="card5">
-            <div className="card">
-              <h2>Sterile</h2>
-              <hr />
-              <p>Turnkey sterile-packed instrument kits</p>
-            </div>
-          </div>
-        </div>
-        <div className="allCards">
-          <div id="card6">
-            <div className="card">
-              <h2>Easier Usage</h2>
-              <hr />
-              <p>Reduced hospital inventory and handling</p>
-            </div>
-          </div>
-          <div id="card7">
-            <div className="card">
-              <h2>New revenue stream</h2>
-              <hr />
-              <p>New revenue stream</p>
-            </div>
-          </div>
-        </div>
+      <div className="benefits-single-use">
+        <h1>With Osteofit's single-use features, there will be: </h1>
+        <div class="single-use-arrow"></div>
       </div>
+      <div className="recycle">
+        <div className="recycle-title">
+          <h2 style={{ color: "green" }}>Osteofit is Green!</h2>
+        </div>
+        <i class="fas fa-recycle circle-icon-recycle"></i>
+      </div>
+      <img src="https://img.icons8.com/color/96/000000/steel-bars.png" alt="" />
+      <img
+        src="https://img.icons8.com/material-outlined/24/000000/solo-cup.png"
+        alt=""
+      />
     </div>
   );
 };

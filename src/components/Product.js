@@ -88,8 +88,8 @@ const Product = () => {
             ></path>
           </svg>
         </h1>
-        <h2>
-          Our product is
+        <h2 className = "product-pen">
+          The Hollow Spherical Reamer is
           <span
             class="txt-rotate"
             data-period="2000"

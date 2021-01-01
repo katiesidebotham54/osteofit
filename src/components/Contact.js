@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {TextField} from "@material-ui/core";
 import {db} from "../firebase";
+import Button from "@material-ui/core/Button";
+
 
 
 const Contact = () => {
@@ -99,16 +101,12 @@ const Contact = () => {
         <br />
         <br />
         <div className="button--container">
-          <button
+          <Button
             variant="contained"
             type="submit"
             className="contact-button"
-          >
-            <span className = "default">Send</span>
-            <span className = "success">Sent</span>
-            <div className = "left"></div>
-            <div className = "right"></div>
-          </button>
+          > Send
+          </Button>
          </div>
       </form>
     </div>

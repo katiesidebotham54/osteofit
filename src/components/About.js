@@ -14,7 +14,7 @@ const About = () => {
   };
   
   const observer = new IntersectionObserver(observerCallback, observerOptions);
-  fadeElms.forEach(el => observer.observe(el));
+  fadeElms.forEach(element => observer.observe(element));
 
   function observerCallback(entries, observer) {
     entries.forEach(entry => {
@@ -50,7 +50,7 @@ const About = () => {
               manufacturing of implants and instruments.
             </p>
           </Paper>
-          <img src={osteofitWhiteLogo} alt="osteoFitLogo" />
+          <img src={osteofitWhiteLogo} alt="" />
         </div>
         <div className="outer-container">
           <div class="container container1">

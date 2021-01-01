@@ -110,6 +110,10 @@ svg {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
+.aboutPara p {
+  font-weight: 700;
+}
+
 .aboutPara .MuiPaper-root {
   position: absolute;
   top: 18%;
@@ -664,233 +668,87 @@ nav ul img {
   line-height: 1em;
 }
 
-.problem {
-  margin-top: 15px;
+.comparison {
   position: relative;
-  height: 700px;
-  background: rgb(2, 0, 36);
+  height: 850px;
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
-.ProblemText .MuiPaper-root {
+.comparison .comparison-title-resuable .MuiPaper-root {
   position: absolute;
-  top: 16%;
-  left: 5%;
-  width: 20%;
-  height: 40%;
-  text-align: center;
-  font-size: 30px;
-  padding: 30px;
-  opacity: 0.4;
-}
-
-.ProblemText2 {
-  top: 16%;
+  top: 9%;
   left: 35%;
-  width: 60%;
-  margin-left: auto;
-  height: 55%;
+  width: 12%;
+  height: 10%;
+  opacity: 0.5;
   text-align: center;
-  padding-top: 5%;
-  font: 500 1.5em/1 "Raleway";
+  font-size: 20px;
+}
+.verticalLine {
+  border-left: 6px solid white;
+  height: 700px;
+  position: absolute;
+  top: 10%;
+  left: 56.5%;
+}
+.comparison .comparison-title-osteofit .MuiPaper-root {
+  position: absolute;
+  top: 9%;
+  left: 63%;
+  width: 12%;
+  height: 10%;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 3rem;
 
-.allCards {
-  min-height: 20vh;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-}
-
-.card {
-  background-color: #bbbbbb;
-  width: 200px;
-  min-height: 60px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  padding: 20px;
-  margin: 5px;
-  box-shadow: -15px -15px 0px 0px #1a658f;
-  border-radius: 10px;
-  -webkit-animation-name: shadow-show;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1.5s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: shadow-show;
-  animation-duration: 1.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
-  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
-  /* custom */
-}
-
-.card h2 {
-  margin: 0px;
-  padding: 0px 0px 15px 0px;
-  font-size: 30px;
-  color: #282828;
-}
-.card hr {
-  display: block;
-  border: none;
-  height: 3px;
-  background-color: #1a658f;
-  margin: 0px;
-  -webkit-animation-name: line-show;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.3s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: line-show;
-  animation-duration: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
-  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
-  /* custom */
-}
-.card p {
-  margin: 15px 0px 0px 0px;
-  font-weight: 100;
-  letter-spacing: -0.25px;
-  line-height: 1.25;
-  font-size: 13px;
-  word-break: break-all;
-  word-wrap: pre-wrap;
-  color: #282828;
-  -webkit-animation-name: p-show;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1.5s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: p-show;
-  animation-duration: 1.5s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes line-show {
-  from {
-    margin: 0px 100px;
+  > li {
+    background: #297caf;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    counter-increment: gradient-counter;
+    min-height: 1rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    &::before,
+    &::after {
+      border-radius: 1rem 1rem 0 1rem;
+      content: "";
+      height: 3rem;
+      left: -1rem;
+      overflow: hidden;
+      position: absolute;
+      top: -1rem;
+      width: 3rem;
+    }
+    &::before {
+      align-items: flex-end;
+      content: counter(gradient-counter);
+      display: flex;
+      font: 800 1.5em/1 "Raleway";
+      justify-content: flex-end;
+      padding: 0.125em 0.25em;
+      z-index: 1;
+    }
+    @for $i from 1 through 5 {
+      &:nth-child(10n + #{$i}):before {
+        background: rgb(255, 204, 0);
+      }
+    }
+    @for $i from 6 through 10 {
+      &:nth-child(10n + #{$i}):before {
+        background: rgb(255, 204, 0);
+      }
+    }
+    + li {
+      margin-top: 2rem;
+    }
   }
-  to {
-    margin: 0px;
-  }
-}
-/* Standard syntax */
-@keyframes line-show {
-  from {
-    margin: 0px 100px;
-  }
-  to {
-    margin: 0px;
-  }
-}
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes p-show {
-  from {
-    color: #e1dcdc;
-  }
-  to {
-    color: #282828;
-  }
-}
-/* Standard syntax */
-@keyframes p-show {
-  from {
-    color: #ebe8e8;
-  }
-  to {
-    color: #282828;
-  }
-}
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes shadow-show {
-  from {
-    box-shadow: 0px 0px 0px 0px #e0e0e0;
-  }
-  to {
-    box-shadow: -20px -20px 0px 0px #243768;
-  }
-}
-/* Standard syntax */
-@keyframes shadow-show {
-  from {
-    box-shadow: 0px 0px 0px 0px #e0e0e0;
-  }
-  to {
-    box-shadow: -20px -20px 0px 0px #243768;
-  }
-}
-#card1 {
-  margin-top: 80px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card2 {
-  margin-left: 280px;
-  margin-bottom: 100px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card3 {
-  margin-left: 630px;
-  margin-bottom: 60px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card3 .card {
-  width: 250px;
-}
-
-#card4 {
-  margin-left: 150px;
-  margin-bottom: 60px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card5 {
-  margin-left: 880px;
-  margin-bottom: 60px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card6 {
-  margin-left: 70px;
-  margin-bottom: 60px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-#card7 {
-  margin-left: 1000px;
-  margin-bottom: 60px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
 }
 
 ol.gradient-list {
@@ -991,6 +849,225 @@ ol.gradient-list {
 
 form {
   text-align: center;
+}
+.container_cards {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.Contact .MuiFormControl-root {
+  min-width: 40%;
+  margin-left: auto;
+}
+
+.product-pen {
+  padding-left: 10%;
+  color: #1a658f;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.icon1 h2 {
+  font-size: 35px;
+  margin-left: 5%;
+  color: white;
+  letter-spacing: 0.8px;
+}
+.icon2 h2 {
+  font-size: 35px;
+  color: white;
+  margin-left: 5%;
+  letter-spacing: 0.8px;
+}
+.icon3 h2 {
+  font-size: 35px;
+  margin-left: 5%;
+  color: white;
+  letter-spacing: 0.8px;
+}
+.icon1 {
+  padding-top: 14%;
+}
+.icon2 {
+  padding-top: 0.5%;
+  padding-right: 15%;
+}
+.icon3 {
+  padding-top: 0.5%;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  font-size: 50px;
+  margin-left: 29%;
+  color: white;
+}
+
+.circle-icon-reusable {
+  background: rgb(218, 42, 42);
+  opacity: 0.85;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+.circle-icon-osteofit {
+  background: rgb(73, 198, 54);
+  opacity: 0.85;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 30px;
+  margin-left: 23%;
+}
+
+.cycles {
+  position: relative;
+  height: 800px;
+}
+
+.benefits-single-use {
+  position: relative;
+  height: 800px;
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+}
+
+.recycle {
+  position: relative;
+  height: 800px;
+}
+
+.recycle-title h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.circle-icon-recycle {
+  background: green;
+  opacity: 0.85;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 30px;
+  margin-left: 45%;
+}
+
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li {
+  transition: all 200ms ease-in;
+}
+
+.timeline h4 {
+  font-weight: 600;
+  max-width: 55%;
+  color: #555555;
+  font-size: 25px;
+}
+
+.timeline-osteofit h4 {
+  font-weight: 600;
+  max-width: 55%;
+  color: #555555;
+  font-size: 25px;
+}
+
+.timeline .largerText {
+  font-size: 21px;
+  margin-bottom: 35%;
+  padding-top: 10%;
+}
+
+.timeline-osteofit .largerText {
+  font-size: 21px;
+}
+
+.timeline-circle {
+  background: #1a658f;
+  opacity: 0.8;
+  line-height: 60px;
+  vertical-align: middle;
+  font-size: 45px;
+  border-radius: 60%;
+  width: 55px;
+  height: 45px;
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 20px;
+  border: 2px solid #555555;
+}
+
+.horz-line1 {
+  margin-bottom: 5.7%;
+  border-top: 8px solid red;
+  width: 60px;
+}
+
+.horz-line2 {
+  margin-bottom: 5.7%;
+  border-top: 8px solid red;
+  width: 60px;
+}
+
+.timeline-osteofit {
+  padding-top: 4%;
+  margin-left: 6.5%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cycles h1 {
+  color: #1a658f;
+  font-size: 50px;
+  font-weight: 500;
+  background: white;
+  padding-top: 5%;
+  padding-bottom: 4%;
+
+  span {
+    background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken(rgb(255, 209, 24), 15%) 5px
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    span {
+      background-size: 100%;
+    }
+  }
+}
+
+#repeat {
+  padding-left: 2%;
+  padding-bottom: 3.5%;
+  font-size: 20px;
 }
 .button--container {
   margin-bottom: 5%;
