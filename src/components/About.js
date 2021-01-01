@@ -93,7 +93,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div class="checkbox">
+        <div class="checkbox fade fadeOut">
           <div class="checkbox1">
             <h1>
               GMP and Regulatory Compliant
