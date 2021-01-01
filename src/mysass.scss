@@ -33,25 +33,6 @@ $mx-width: 50rem;
   clear: both;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: "Myriad Pro", sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: $font-base;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @include wide-m {
-    font-size: 70%;
-  }
-}
-
 a {
   text-decoration: none;
   color: $font-spot;

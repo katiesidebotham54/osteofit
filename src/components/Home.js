@@ -1,20 +1,22 @@
-import React, { Component } from "react";
-import { Paper } from "@material-ui/core";
+import React from "react";
 import Autumn from "../images/automn.jpeg";
 import Path from "../images/path.jpeg";
 import Tree from "../images/tree.jpeg";
-import Product from "../images/productBlue1.png"
+import Product from "../images/Copy_of_osteofit_images__1_-removebg-preview.png"
+import { BrowserRouter as Router, Link } from "react-router-dom";
 /*import '../mysass.scss';*/
+import Button from "@material-ui/core/Button";
 
-class Home extends Component {
-  render() {
+
+const Home = () => {
     return (
       <div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <div className="Mission">
           <div class="MissionText">
-            <h2 className = "a">Accurate</h2>
-            <h2 className = "b">Sterile</h2>
-            <h2 className = "c">Effective</h2>
+            <h2 class="homeword1">Accurate</h2>
+            <h2 class="homeword2">Sterile</h2>
+            <h2 class="homeword3">Effective</h2>
           </div>
           <div class="slideshow-container">
             <div class="slideshow-inner">
@@ -43,7 +45,7 @@ class Home extends Component {
           <span class="text">Scroll down</span>
     </div>*/}
         <div className = "HomePara">
-          <p>OsteoFit is a medical device company focused on the <b>development</b> of cost <b>effective</b> orthopedic instruments
+          <p className = "main-para-home">OsteoFit is a medical device company focused on the <b>development</b> of cost <b>effective</b> orthopedic instruments
              which address <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
         </div>
         <div className = "item-3d">
@@ -53,18 +55,23 @@ class Home extends Component {
               <img src={Product} alt="" />
             </div>
             <figcaption class="item-caption">
-              <p>
+              <h2 style={{color:"white"}}>Our product:
+              </h2>
+              <p style={{color:"white"}}>
+              This is a 3D model of our product, click here to learn more.
               </p>
-              <p>
-              </p>
-              <p>
-              </p>
+              <Button variant="contained" className="button">
+                <Router forceRefresh>
+                  <Link exact to="/product">
+                    Our Product
+                  </Link>
+                </Router>
+              </Button>
             </figcaption>
           </figure>
         </div>
       </div>
     );
-  }
 }
 
 export default Home;

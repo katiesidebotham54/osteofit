@@ -41,7 +41,7 @@ const About = () => {
             </svg>
           </h1>
         </div>
-        <div className="aboutPara fade fadeOut">
+        <div className="aboutPara">
           <Paper elevation={3}>
             <p>
               OsteoFit is a newly formed company specializing in single-use
@@ -52,7 +52,7 @@ const About = () => {
           </Paper>
           <img src={osteofitWhiteLogo} alt="osteoFitLogo" />
         </div>
-        <div className="outer-container fade fadeOut">
+        <div className="outer-container">
           <div class="container container1">
             <div class="inner_container">
               <h1 class="title-bio">Orthopedic Surgeon</h1>
@@ -93,7 +93,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div class="checkbox fade fadeOut">
+        <div class="checkbox">
           <div class="checkbox1">
             <h1>
               GMP and Regulatory Compliant
@@ -118,7 +118,7 @@ const About = () => {
             </h1>
           </div>
         </div>
-        <div className="checkbox fade fadeOut">
+        <div className="checkbox">
           <div class="checkbox2">
             <h1>
               Technology Covered By 14 Patents
@@ -143,7 +143,7 @@ const About = () => {
             </h1>
           </div>
         </div>
-        <div className="bottompapers fade fadeOut">
+        <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
               <h2>Want to Learn More?</h2>
