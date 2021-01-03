@@ -8,12 +8,12 @@ const SingleUse = () => {
         <h1 className="title">
           <span className="fade-in-text">Why Use Single-Use Products?</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-            <path
-              fill="#FFFFFF"
-              fill-opacity="1"
-              d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-            ></path>
-          </svg>
+              <path
+                fill="#FFFFFF"
+                fill-opacity="1"
+                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
         </h1>
       </div>
       <div className="comparison">
@@ -134,13 +134,31 @@ const SingleUse = () => {
       </div>
       <div className="benefits-single-use">
         <h1>With Osteofit's single-use features, there will be: </h1>
-        <div class="single-use-arrow"></div>
+        <div>
+        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-down"></i>
+        <i class="fas fa-arrow-down"></i>
+        <i class="fas fa-arrow-down"></i>
+        </div>
       </div>
       <div className="recycle">
         <div className="recycle-title">
           <h2 style={{ color: "green" }}>Osteofit is Green!</h2>
         </div>
         <i class="fas fa-recycle circle-icon-recycle"></i>
+
+        <div className="recycle-para">
+          <Paper elevation={3}>
+            <p>
+              OsteoFit is a newly formed company specializing in single-use
+              sterile medical reamers. Our company's management has over 100
+              years of experience in human medical orthopedic design and
+              manufacturing of implants and instruments.
+            </p>
+          </Paper>
+    </div>
       </div>
       <img src="https://img.icons8.com/color/96/000000/steel-bars.png" alt="" />
       <img

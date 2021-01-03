@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+.fade-in-text {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  transition: opacity 500ms ease-in;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+.fadeIn {
+  opacity: 1;
+}
+.subtitles {
+  font-weight: 900;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  font-weight: bold;
+}
+
+svg {
+  vertical-align: top;
+}
+
+/*Nav Bar and Footer*/
+nav {
+  padding-left: 30px;
+  padding-top: 15px;
+  height: 100px;
+}
+
+#footer-container {
+  min-height: 100%;
+  overflow: auto;
+  text-align: justify;
+}
+
+.footer {
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  background-color: #555555;
+  height: 100%;
+  left: 0;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+
+.footer li {
+  display: flex;
+  height: 100%;
+  width: 15%;
+  justify-content: flex-end;
+}
+
+nav li a {
+  color: rgb(43, 69, 136);
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.footer li a {
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: #bfcee4;
+  font-size: 18px;
+}
+
+.footer li a:hover {
+  color: #648bc6;
+  font-size: 18px;
+}
+
+nav ul img {
+  display: inline-block;
+  justify-content: flex-start;
+  width: 32%;
+}
+
+.footer ul img {
+  display: inline-block;
+  justify-content: flex-start;
+  width: 20%;
+}
+
+.footer .footerNotes {
+  display: inline-block;
+  justify-content: flex-start;
+  margin-left: 40px;
+  font-size: 12px;
+  color: white;
+}
+
+form {
+  text-align: center;
+}
+
+.Contact .MuiFormControl-root {
+  min-width: 40%;
+  margin-left: auto;
+}
+
+#repeat {
+  padding-left: 2%;
+  padding-bottom: 3.5%;
+  font-size: 20px;
+}
+.button--container {
+  margin-bottom: 5%;
+}
+
+.Contact .MuiFormControl-root {
+  min-width: 40%;
+  margin-left: auto;
+}

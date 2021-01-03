@@ -147,6 +147,8 @@ const About = () => {
           <div class="paper1">
             <Paper elevation={13}>
               <h2>Want to Learn More?</h2>
+              <br />
+
               <p>Click below to view our product!</p>
               <br />
               <br />
@@ -162,7 +164,11 @@ const About = () => {
           <div class="paper2">
             <Paper elevation={13}>
               <h2>Have a Question?</h2>
+              <br />
+
               <p>Click below for questions, comments, or inquieries!</p>
+              <br />              
+              <br />
               <br />
               <Button variant="contained" className="button">
                 <Router forceRefresh>

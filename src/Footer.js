@@ -4,7 +4,7 @@ import {
     BrowserRouter as Router,
     Link,
   } from 'react-router-dom'
-import './App.scss';
+  import '../src/styling/App.scss';
 
 
 class Footer extends Component {
