@@ -2,6 +2,7 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 
 const SingleUse = () => {
+
   return (
     <div className="SingleUse">
       <div>
@@ -144,8 +145,8 @@ const SingleUse = () => {
         </div>
       </div>
       <div className="recycle">
-        <div className="recycle-title">
-          <h2 style={{ color: "green" }}>Osteofit is Green!</h2>
+        <div className="os-phrases" id="os-phrases">
+          <h2>Osteofit is Green!</h2>
         </div>
         <i class="fas fa-recycle circle-icon-recycle"></i>
 
