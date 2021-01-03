@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import Productmodel from "../images/Copy_of_osteofit_images__1_-removebg-preview.png";
+import Productmodel from "../images/productmodel.png";
 
 
 const Product = () => {
