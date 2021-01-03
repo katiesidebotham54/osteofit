@@ -1,0 +1,497 @@
+.home-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 50%;
+}
+
+.chevron {
+  margin-top: -20px;
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #0f4264;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.home-arrow .text {
+  display: block;
+  margin-top: 120px;
+  font-size: 15px;
+  color: #0f4264;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+.Mission {
+  position: relative;
+  height: 500px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+}
+
+.MissionText {
+  top: 20%;
+  position: absolute;
+  left: 5%;
+  width: 40%;
+  height: 40%;
+  padding: 30px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.MissionText h2 {
+  margin: 10px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  animation: 2s MissionText;
+}
+
+.HomePara {
+  text-align: center;
+  padding: 150px;
+  width: 100%;
+  margin: auto;
+  font-size: 30px;
+}
+
+.main-para-home {
+  margin: auto;
+  text-align: center;
+  width: 900px;
+}
+
+.HomePara b {
+  color: #297caf;
+}
+
+.homeword1 {
+  text-align: left;
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.homeword1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.homeword2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.homeword2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.homeword3 {
+  text-align: right;
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.homeword3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.slideshow-container {
+  position: relative;
+  left: 50%;
+  width: 30%;
+  top: 2%;
+  height: 60%;
+}
+
+.slideshow-inner {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mySlides {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 40%;
+}
+.mySlides img {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.allDots {
+  position: absolute;
+  left: 71%;
+  bottom: 10%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(94, 94, 94);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #e3d9d9;
+}
+
+.slideshowImage {
+  width: 100%;
+}
+
+$master-grey: #f0f0f0;
+
+$master-l-10: mix(white, $master-grey, 10%);
+$master-d-10: mix(black, $master-grey, 10%);
+$master-d-15: mix(black, $master-grey, 15%);
+
+// font colors
+$font-base: mix(black, $master-grey, 50%);
+$font-dark: mix(black, $master-grey, 80%);
+$font-spot: #08c;
+
+$wide-m: 600px;
+
+@mixin wide-m {
+  @media (max-width: #{$wide-m}) {
+    @content;
+  }
+}
+
+$mx-width: 50rem;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: $font-spot;
+}
+
+strong {
+  font-weight: normal;
+  color: $font-dark;
+}
+
+.wrap-3d {
+  width: 70%;
+  height: 70%;
+  max-height: 100%;
+  padding-top: 5%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: $master-grey;
+  transform-style: preserve-3d;
+  perspective: 150rem;
+  perspective-origin: 50% 110%;
+}
+
+.item-3d {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  background-color: #297caf;
+}
+
+.ground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  margin: auto;
+  background-size: 100%;
+  transform-origin: 50% 100%;
+  transform: rotateX(70deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+  }
+
+  &:before {
+    top: 0;
+    height: 80%;
+    max-width: $mx-width;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+
+  &:after {
+    bottom: -500px;
+    height: 500px;
+    transform-origin: 50% 0;
+    transform: rotateX(-70deg);
+  }
+}
+
+//switching the dropshadows from left to right
+.item-3d:nth-child(even) .ground:before {
+  background-position: 80% 50%;
+  animation: floating-shadow-r 5s -1s infinite;
+}
+
+.item-3d:nth-child(odd) .ground:before {
+  background-position: 0 50%;
+  animation: floating-shadow-l 5s -1s infinite;
+}
+
+@keyframes floating-shadow-l {
+  0%,
+  100% {
+    background-size: 35% 80%;
+    background-position: 10% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 0 80%;
+  }
+}
+
+@keyframes floating-shadow-r {
+  0%,
+  100% {
+    background-size: 35% 80%;
+    background-position: 90% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 100% 80%;
+  }
+}
+
+.item-content {
+  position: relative;
+  width: 100%;
+  max-width: $mx-width;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  transform: translateZ(0);
+}
+
+.item-img {
+  position: relative;
+  float: left;
+  display: block;
+  width: 40%;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  animation: floating 5s -1s infinite;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform-origin: 50% 100%;
+    transform: translateZ(-5rem);
+  }
+}
+
+.item-3d:nth-child(even) .item-img {
+  float: left;
+  order: 1;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(-8%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.item-caption {
+  display: block;
+  text-align: center;
+  position: relative;
+  float: right;
+  left: 15%;
+  width: 50%;
+  //box-shadow: inset 0 0 0 1px red;
+}
+
+.item-3d:nth-child(odd) .item-caption {
+  padding-left: 10%;
+}
+
+.item-3d:nth-child(even) .item-caption {
+  padding-right: 10%;
+
+  @include wide-m {
+    padding-right: 5%;
+  }
+}
+
+.item-caption p {
+  font-size: 87.5%;
+  line-height: 1.333;
+  margin-bottom: 1.25rem;
+  padding: 30px;
+
+  @include wide-m {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.item-caption p a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  margin-right: auto;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    bottom: 3px;
+    left: 0;
+    height: 1px;
+    background-color: $font-spot;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  &:after {
+    content: "\003E";
+    padding-left: 0.5rem;
+    text-decoration: none;
+  }
+
+  &:hover:before,
+  &:active:before,
+  &:focus:before {
+    opacity: 0.5;
+  }
+}
+
+.item-caption h2 {
+  font-size: 50px;
+}
+
+.item-caption .MuiButton-contained {
+  background-color: rgb(255, 204, 0);
+}
+
+.item-caption p {
+  font-size: 20px;
+}

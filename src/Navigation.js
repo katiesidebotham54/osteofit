@@ -5,8 +5,8 @@ import {
     Link,
     Switch
   } from 'react-router-dom'
-import './App.scss';
-import logo from './images/osteofitLogo.png'
+  import '../src/styling/App.scss';
+  import logo from './images/osteofitLogo.png'
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
@@ -22,7 +22,7 @@ class Navigation extends Component{
                         <ul>
                         <Router forceRefresh>
                                 <Link exact to ="/">
-                                    <img src={logo} alt="logo"/>
+                                    <img src={logo} alt=""/>
                                 </Link>
                          </Router>
                          <Router forceRefresh>
