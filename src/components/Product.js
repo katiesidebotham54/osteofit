@@ -1,4 +1,7 @@
 import React from "react";
+import { Paper } from "@material-ui/core";
+import Productmodel from "../images/Copy_of_osteofit_images__1_-removebg-preview.png";
+
 
 const Product = () => {
   const fadeElms = document.querySelectorAll('.fade');
@@ -96,6 +99,23 @@ const Product = () => {
             data-rotate='[" accurate.", " sterile.", " cost-effective."]'
           ></span>
         </h2>
+        <div className = "product-paper">
+          <Paper elevation={13}>
+            <h1>pp poo poo</h1>
+            <p>Lorem ipsum dolor sit amet, pri te doming tacimates explicari. Option singulis tacimates at qui. Nec et senserit dissentiunt. Vel in luptatum consetetur. Eam ea mazim habemus, usu ei iusto voluptaria quaerendum.
+               Qui ut doming doctus accommodare, et his epicuri interesset, in facete singulis inciderint eum. Mei et laoreet quaestio antiopam, ad est tibique voluptatum.</p>
+          </Paper>
+        </div>
+        <div className = "product-and-parts">
+          <div className="product-item-3d">
+            <span class="product-ground"></span>
+            <figure class="product-item-content group">
+              <div class="product-item-img">
+                <img src={Productmodel} alt="" />
+              </div>
+            </figure>
+          </div>
+        </div>
       </div>
     );
   }
