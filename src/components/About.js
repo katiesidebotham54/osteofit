@@ -41,7 +41,7 @@ const About = () => {
             </svg>
           </h1>
         </div>
-        <div className="aboutPara">
+        <div className="aboutPara fade">
           <Paper elevation={3}>
             <p>
               OsteoFit is a newly formed company specializing in single-use
