@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
     "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
     "firebase": "^8.2.1",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
