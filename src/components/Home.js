@@ -44,8 +44,8 @@ const Home = () => {
           <span class="text">Scroll down</span>
     </div>
         <div className = "HomePara">
-          <p className = "main-para-home">OsteoFit is a medical device company focused on the <b>development</b> of cost <b>effective</b> orthopedic instruments
-             which address <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
+          <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
+             maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
         </div>
         <div className="item-3d">
           <span class="ground"></span>
