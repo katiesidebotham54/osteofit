@@ -3,6 +3,8 @@ import { Paper } from "@material-ui/core";
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const About = () => {
   const fadeElms = document.querySelectorAll('.fade');
@@ -41,6 +43,7 @@ const About = () => {
             </svg>
           </h1>
         </div>
+        <ScrollAnimation animateIn="fadeIn">
         <div className="aboutPara fade">
           <Paper elevation={3}>
             <p>
@@ -52,6 +55,9 @@ const About = () => {
           </Paper>
           <img src={osteofitWhiteLogo} alt="" />
         </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="fadeIn">
         <div className="outer-container">
           <div class="container container1">
             <div class="inner_container">
@@ -93,6 +99,9 @@ const About = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+
         <div class="checkbox">
           <div class="checkbox1">
             <h1>
@@ -143,6 +152,9 @@ const About = () => {
             </h1>
           </div>
         </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
@@ -180,6 +192,7 @@ const About = () => {
             </Paper>
           </div>
         </div>
+        </ScrollAnimation>
       </div>
     );
   }

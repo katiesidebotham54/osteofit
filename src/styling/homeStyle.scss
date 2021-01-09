@@ -90,45 +90,6 @@
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
-.MissionText {
-  top: 20%;
-  position: absolute;
-  left: 5%;
-  width: 40%;
-  height: 40%;
-  padding: 30px;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 30px;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  opacity: 1;
-  overflow: hidden;
-}
-
-.MissionText h2 {
-  animation: 10s slide-right;
-}
-
-@keyframes MissionText {
-  from {
-    margin-left: -100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.MissionText h2 {
-  margin: 10px;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 3px;
-  color: white;
-  animation: 2s MissionText;
-}
-
 .HomePara {
   text-align: center;
   padding: 150px;
@@ -147,49 +108,10 @@
   color: #297caf;
 }
 
-.homeword1 {
-  text-align: left;
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
-
-.homeword1 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.homeword2 {
-  text-align: center;
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
-
-.homeword2 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.homeword3 {
-  text-align: right;
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
-
-.homeword3 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
 .slideshow-container {
   position: relative;
   left: 50%;
-  width: 30%;
+  width: 20%;
   top: 2%;
   height: 60%;
 }
@@ -202,8 +124,8 @@
 
 .mySlides {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
   overflow: hidden;
   margin-left: 40%;
 }
@@ -212,7 +134,7 @@
   max-width: 100%;
   width: 100%;
   height: auto;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -498,4 +420,122 @@ strong {
 
 .item-caption p {
   font-size: 20px;
+}
+
+.wordCarousel {
+  font-size: 80px;
+  color: #fff;
+  div {
+    overflow: hidden;
+    position: absolute;
+    height: 96px;
+    width: 600px;
+    top: 40%;
+    text-transform: capitalize;
+    left: 13%;
+
+    li {
+      font-family: "Raleway", sans-serif;
+      text-transform: capitalize;
+
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      padding: 0 70px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
+    }
+  }
+}
+
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
 }
