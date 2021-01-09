@@ -1,7 +1,10 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import Productmodel from "../images/productmodel.png";
-
+import modelPart1 from "../images/Osteofitmodelpart1.PNG"
+import modelPart2 from "../images/Osteofitmodelpart2.PNG"
+import modelPart3 from "../images/Osteofitmodelpart3.PNG"
+import modelPart4 from "../images/Osteofitmodelpart4.PNG"
 
 const Product = () => {
   const fadeElms = document.querySelectorAll('.fade');
@@ -106,6 +109,16 @@ const Product = () => {
                Qui ut doming doctus accommodare, et his epicuri interesset, in facete singulis inciderint eum. Mei et laoreet quaestio antiopam, ad est tibique voluptatum.</p>
           </Paper>
         </div>
+        <div className = "model-section-1">
+          <div className = "model-part-1">
+            <img src={modelPart1}></img>
+            <span className = "model-part-1-text">pp poo poo szn</span>
+          </div>
+          <div className = "model-part-2">
+            <img src={modelPart2}></img>
+            <span className = "model-part-2-text">pp poo poo szn</span>
+          </div>
+        </div>
         <div className = "product-and-parts">
           <div className="product-item-3d">
             <span class="product-ground"></span>
@@ -114,6 +127,39 @@ const Product = () => {
                 <img src={Productmodel} alt="" />
               </div>
             </figure>
+          </div>
+        </div>
+        <div className = "model-section-2">
+          <div className = "model-part-3">
+            <img src = {modelPart3}></img>
+            <span className = "model-part-3-text">pp poo poo szn</span>
+          </div>
+          <div className = "model-part-4">
+            <img src = {modelPart4}></img>
+            <span className = "model-part-4-text">pp poo poo szn</span>
+          </div>
+        </div>
+        <div className = "offer-section">
+          <div className = "offer-paper">
+            <Paper elevation={13}>
+              <h1>Heres what we have to offer...</h1>
+              <div className = "offer-1">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                  <p>Link 3</p>
+                </div>
+              </div>
+              <div className = "offer-2">
+              <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content-2">
+                  <p>Link 1</p>
+                  <p>Link 2</p>
+                  <p>Link 3</p>
+                </div>
+              </div>
+            </Paper>
           </div>
         </div>
       </div>
