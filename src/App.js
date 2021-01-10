@@ -8,6 +8,7 @@ import '../src/styling/homeStyle.scss';
 import '../src/styling/productStyle.scss';
 
 
+
 class App extends Component {
   render(){
     return(

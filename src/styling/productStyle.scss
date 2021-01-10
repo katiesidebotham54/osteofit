@@ -1,20 +1,18 @@
 .product-pen {
-  padding-left: 10%;
+  padding-left: 17%;
   color: #1a658f;
   font-size: 50px;
   font-weight: 500;
 }
 
+.product-pen span {
+  font-weight: 700;
+}
+
 $mx-width: 50rem;
 
 .product-paper {
-  padding: 5%;
-}
-
-.product-paper h1 {
-  background: none;
-  padding: 30px;
-  font-size: 50px;
+  padding: 2%;
 }
 
 .product-paper p {
@@ -26,11 +24,12 @@ $mx-width: 50rem;
 .product-paper .MuiPaper-root {
   position: relative;
   background: #297caf;
-  width: 60%;
-  left: 22%;
-  height: 40%;
+  width: 90%;
+  left: 5%;
+  height: 30%;
+  padding: 4%;
+  padding-top: 3%;
   text-align: center;
-  padding-bottom: 200px;
 }
 
 .product-item-3d {
@@ -186,7 +185,7 @@ $mx-width: 50rem;
 .model-part-4 {
   position: relative;
   margin-left: auto;
-  right: 10%;
+  right: 44%;
 }
 
 .model-part-1 .model-part-1-text {
@@ -202,10 +201,6 @@ $mx-width: 50rem;
   bottom: -10%;
   left: 50%;
   margin-left: -60px;
-
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .model-part-1:hover .model-part-1-text {
@@ -226,37 +221,9 @@ $mx-width: 50rem;
   bottom: -10%;
   right: 40%;
   margin-left: -60px;
-
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .model-part-2:hover .model-part-2-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-.model-part-3 .model-part-3-text {
-  visibility: hidden;
-  width: 500px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.model-part-3:hover .model-part-3-text {
   visibility: visible;
   opacity: 1;
 }
@@ -272,12 +239,7 @@ $mx-width: 50rem;
   position: absolute;
   z-index: 1;
   bottom: 100%;
-  right: 40%;
-  margin-left: -60px;
-
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s;
+  right: 60%;
 }
 
 .model-part-4:hover .model-part-4-text {
@@ -285,104 +247,337 @@ $mx-width: 50rem;
   opacity: 1;
 }
 
-.offer-paper .MuiPaper-root {
-  position: relative;
-  background: #297caf;
-  width: 50%;
-  left: 25%;
-  height: 40%;
-  text-align: center;
-  padding-bottom: 200px;
-  margin-bottom: 150px;
-}
-
-.offer-paper {
+.card-container {
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
 }
 
-.offer-paper h1 {
-  background: none;
-  padding-top: 20px;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
 }
 
-.dropbtn {
-  background-color: rgb(255, 204, 0);
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.offer-1 {
+.product-background {
   position: relative;
-  display: inline-block;
-  margin-top: 50px;
-  right: 18%;
+  width: 50%;
+  height: 475px;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  padding: 25%;
+  margin-right: 10%;
 }
 
-.offer-2 {
-  position: relative;
-  display: inline-block;
-  left: 18%;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
+.gradients {
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
-.dropdown-content-2 {
-  display: none;
+.gradient {
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+.first {
+  z-index: 0;
+  animation: 1s width ease;
+}
+
+@keyframes width {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.second {
+  z-index: -1;
+}
+
+.gradient[color="light gray"] {
+  background-image: linear-gradient(45deg, #67696f, #dfe1e3);
+}
+
+.gradient[color="blue"] {
+  background-image: linear-gradient(45deg, #0136af, #22abfa);
+}
+.gradient[color="black"] {
+  background-image: linear-gradient(45deg, #111, #666);
+}
+
+.gradient[color="red"] {
+  background-image: linear-gradient(45deg, #d62926, #ee625f);
+}
+
+.gradient[color="green"] {
+  background-image: linear-gradient(45deg, #11998e, #1ce669);
+}
+
+.gradient[color="orange"] {
+  background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+}
+
+.gradient[color="yellow"] {
+  background-image: linear-gradient(45deg, #ffc341, #ffee38);
+}
+
+.gradient[color="violet"] {
+  background-image: linear-gradient(45deg, #6a2176, #dd98ff);
+}
+
+.gradient[color="purple"] {
+  background-image: linear-gradient(45deg, #550461, #8337fe);
+}
+
+.gradient[color="turqoise"] {
+  background-image: linear-gradient(45deg, #11708e, #6ae4ff);
+}
+
+.gradient[color="brown"] {
+  background-image: linear-gradient(45deg, #433007, #5e5135);
+}
+
+.productName {
+  padding: 0 0 10px 0;
+}
+
+.productName div {
+  display: flex;
+  align-items: center;
+}
+
+.productName div .big {
+  margin-right: 10px;
+  font-size: 2rem;
+  color: #333;
+  line-height: 1;
+}
+
+.productName,
+.color-container,
+.size-container {
+  border-bottom: 1px solid #dadada;
+}
+
+.subtitle {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.color-container {
+  padding: 10px 0;
+}
+
+.colors {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 5px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.color[color="blue"] {
+  background-color: #2175f5;
+  border-color: #2175f5;
+}
+
+.color[color="red"] {
+  background-color: #f84848;
+  border-color: #f84848;
+}
+
+.color[color="green"] {
+  background-color: #29b864;
+  border-color: #29b864;
+}
+
+.color[color="orange"] {
+  background-color: #ff5521;
+  border-color: #ff5521;
+}
+
+.color[color="black"] {
+  background-color: #444;
+  border-color: #444;
+}
+
+.color[color="brown"] {
+  background-color: rgb(84, 56, 34);
+  border-color: rgb(84, 56, 34);
+}
+
+.color[color="violet"] {
+  background-color: rgb(96, 34, 96);
+  border-color: rgb(96, 34, 96);
+}
+
+.color[color="purple"] {
+  background-color: rgb(78, 19, 121);
+  border-color: rgb(78, 19, 121);
+}
+
+.color[color="light gray"] {
+  background-color: rgb(123, 123, 123);
+  border-color: rgb(123, 123, 123);
+}
+
+.color[color="yellow"] {
+  background-color: rgb(247, 211, 65);
+  border-color: rgb(247, 211, 65);
+}
+
+.color[color="turqoise"] {
+  background-color: rgb(63, 228, 217);
+  border-color: rgb(63, 228, 217);
+}
+
+.color .active {
+  border-color: rgb(36, 84, 143);
+  box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.size-container {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.sizes {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.size {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #eee;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.size.active {
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .card > div {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .product {
+    width: 100%;
+    transform: rotate(-5deg) translateY(-50%);
+    top: 55%;
+    right: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 490px) {
+  .productName div .big {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .size {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+
+  .color {
+    margin: 0 6px;
+    width: 0 20px;
+    width: 20px;
+    height: 20px;
+    border-width: 4px;
+  }
+
+  .logo {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.product {
+  position: absolute;
+  width: 140%;
+  opacity: 0;
+  bottom: 0;
   right: 0;
+  transform: rotate(-20deg);
+  transition: 0.5s;
 }
 
-/* Links inside the dropdown */
-.dropdown-content p {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  align-items: center;
+.product.show {
+  opacity: 1;
 }
 
-.dropdown-content-2 p {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  align-items: center;
+.logo {
+  position: absolute;
+  width: 100px;
+  left: 20px;
+  top: 20px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content p:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.offer-1:hover .dropdown-content {
-  display: block;
-}
-
-.offer-2:hover .dropdown-content-2 {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.offer-1:hover .dropbtn {
-  background-color: rgb(255, 204, 0);
-}
-
-.offer-2:hover .dropbtm {
-  background-color: rgb(255, 204, 0);
+.product-info .productName h1 {
+  background: none;
+  color: #1a658f;
 }
