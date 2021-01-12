@@ -83,21 +83,22 @@
 }
 
 .aboutPara p {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .aboutPara .MuiPaper-root {
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 45%;
+  width: 50%;
   height: 55%;
   text-align: center;
   font-size: 18px;
   padding: 40px;
-  padding-top: 3.5%;
-  opacity: 0.4;
+  padding-top: 4%;
+  opacity: 0.8;
   font-size: 25px;
+  background-color: #ffffff9e;
 }
 
 .aboutPara img {
@@ -244,6 +245,9 @@
 
 .paper1 .MuiButton-contained {
   background-color: rgb(255, 204, 0);
+  :hover {
+    background-color: rgb(249, 226, 133);
+  }
 }
 
 .paper2 .MuiButton-contained {

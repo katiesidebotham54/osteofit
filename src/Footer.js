@@ -5,6 +5,7 @@ import {
     Link,
   } from 'react-router-dom'
   import '../src/styling/App.scss';
+  import osteofitWhiteLogo from "./images/osteofitWhiteLogo.png";
 
 
 class Footer extends Component {
@@ -13,7 +14,8 @@ class Footer extends Component {
         <div id="footer-container">
         <div className = "footer"> 
                 <ul>
-                    <img src = {logo} alt="logo"/>
+                    <img src = {osteofitWhiteLogo} alt="logo"/>
+                    <h1>OsteoFit</h1>
                 <Router forceRefresh>
                     <li>
                     <Link exact to = "/">

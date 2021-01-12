@@ -160,7 +160,6 @@ const About = () => {
             <Paper elevation={13}>
               <h2>Want to Learn More?</h2>
               <br />
-
               <p>Click below to view our product!</p>
               <br />
               <br />
@@ -177,7 +176,7 @@ const About = () => {
             <Paper elevation={13}>
               <h2>Have a Question?</h2>
               <br />
-
+              <br />
               <p>Click below for questions, comments, or inquieries!</p>
               <br />              
               <br />
