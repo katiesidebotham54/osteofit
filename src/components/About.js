@@ -1,9 +1,9 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
+import OsteofitLogoOnly from '../images/OsteofitLogoOnly.png'
 
 
 const About = () => {
@@ -53,11 +53,15 @@ const About = () => {
               manufacturing of implants and instruments.
             </p>
           </Paper>
-          <img src={osteofitWhiteLogo} alt="" />
+          <img src={OsteofitLogoOnly} alt="" />
         </div>
         </ScrollAnimation>
-
         <ScrollAnimation animateIn="fadeIn">
+          <div className = "team-wrapper">
+          <h1>Meet Our Team!</h1>
+          </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
         <div className="outer-container">
           <div class="container container1">
             <div class="inner_container">

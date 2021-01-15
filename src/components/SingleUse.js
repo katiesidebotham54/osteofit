@@ -242,7 +242,7 @@ const SingleUse = () => {
           <Paper elevation={3}>
             <p>
              Osteofit takes pride in creating products that are sustainable and environmentally conscious.
-             Our reamers are made from stainless steel <br/>and poly carbonate -- both materials that are 100% recyclable! To learn more about these 
+             Our reamers are made from stainless steel and poly carbonate -- both materials that are 100% recyclable! To learn more about these 
              processes, feel free to reference the resources below.
             </p>
           </Paper>

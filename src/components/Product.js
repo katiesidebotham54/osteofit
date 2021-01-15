@@ -256,10 +256,10 @@ const Product = () => {
         </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-        <div class="card-container">
-          <div class="card">
-            <div class="productBackground">
-              <div class="gradients">
+        <div className="card-container">
+          <div className="card">
+            <div className="productBackground">
+              <div className="gradients">
                 <div class="gradient second" color="gray"/>
                 <div class="gradient" color="black"/>
                 <div class="gradient" color="brown"/>

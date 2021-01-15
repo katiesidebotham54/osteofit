@@ -1,8 +1,9 @@
 .product-pen {
   padding-left: 10%;
   color: #1a658f;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 500;
+  max-width: 80%;
 }
 
 .product-pen span {
@@ -502,7 +503,7 @@ $mx-width: 50rem;
 .product {
   position: absolute;
   width: 140%;
-  opacity: 0;
+  opacity: 1;
   bottom: 0;
   right: 0%;
   transform: rotate(-20deg);

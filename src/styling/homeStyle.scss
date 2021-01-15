@@ -260,8 +260,7 @@ strong {
   }
 
   &:after {
-    bottom: -500px;
-    height: 500px;
+    height: 100px;
     transform-origin: 50% 0;
     transform: rotateX(-70deg);
   }

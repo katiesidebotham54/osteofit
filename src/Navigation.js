@@ -18,13 +18,15 @@ class Navigation extends Component{
     render(){
         return(
             <div>
+                <header>
                     <nav>
-                        <ul>
-                        <Router forceRefresh>
+                    <Router forceRefresh>
                                 <Link exact to ="/">
-                                    <img src={logo} alt=""/>
+                                    <img src={logo} alt="" className = "nav-logo"/>
                                 </Link>
                          </Router>
+
+                        <ul>
                          <Router forceRefresh>
                             <li>
                                 <Link exact to="/about">
@@ -47,15 +49,18 @@ class Navigation extends Component{
                             </li>
                             </Router>
                             <Router forceRefresh>
-                            <li>
+                            <li className = "contact-button">
+                            <button>
                                 <Link exact to="/contact">
                                 Contact Us
                                 </Link>
+                            </button>
                             </li>
                             </Router>
                             
                         </ul>
                     </nav>
+                    </header>
                     <Router forceRefresh>
                         <Switch>
                             <Route exact path="/">
