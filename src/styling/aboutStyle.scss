@@ -75,36 +75,36 @@
 }
 
 .aboutPara {
-  margin-top: 15px;
   position: relative;
   height: 500px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  background: white;
 }
 
 .aboutPara p {
-  font-weight: 700;
+  font-weight: 500;
+  color: white;
 }
 
 .aboutPara .MuiPaper-root {
   position: absolute;
   top: 23%;
   left: 5%;
-  width: 45%;
+  width: 60%;
   height: 55%;
   text-align: center;
   font-size: 18px;
   padding: 40px;
-  padding-top: 3.5%;
-  opacity: 0.4;
+  padding-top: 4%;
+  opacity: 1;
   font-size: 25px;
+  background-color: #1a658f;
 }
 
 .aboutPara img {
   float: right;
   position: relative;
-  top: 15px;
-  right: 10%;
+  top: 12%;
+  right: 7%;
 }
 .container {
   position: relative;
@@ -244,6 +244,9 @@
 
 .paper1 .MuiButton-contained {
   background-color: rgb(255, 204, 0);
+  :hover {
+    background-color: rgb(249, 226, 133);
+  }
 }
 
 .paper2 .MuiButton-contained {
@@ -304,4 +307,37 @@
   width: 35%;
   text-align: center;
   padding: 20px;
+}
+
+.team-wrapper {
+  background: none;
+  text-align: center;
+  padding-top: 5%;
+  h1 {
+    color: #fff;
+    font-size: 92px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(
+      to right,
+      #0f4264 10%,
+      #1a658f 50%,
+      #3c94cf 60%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

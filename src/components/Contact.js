@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {TextField} from "@material-ui/core";
 import {db} from "../firebase";
 import Button from "@material-ui/core/Button";
+import OsteofitLogoOnly from '../images/OsteofitLogoOnly.png'
 
 
 
@@ -45,6 +46,14 @@ const Contact = () => {
             ></path>
           </svg>
           </h1>
+        <div className = "contact-container">
+          <div className = "contact-image">
+            <img src={OsteofitLogoOnly} alt=""/>
+          </div>
+        <div className = "contact-text">
+          <h1>Get in touch with us!</h1>
+          <p>For all questions or inquieries, please fill out the form below.</p>
+        </div>
       <form id="contactForm" onSubmit = {handleSubmit}>
         <TextField
           id="name"
@@ -109,6 +118,7 @@ const Contact = () => {
           </Button>
          </div>
       </form>
+    </div>
     </div>
   );
 };

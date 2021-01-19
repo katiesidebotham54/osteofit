@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
-import logo from './images/osteofitLogo.png'
 import {
     BrowserRouter as Router,
     Link,
   } from 'react-router-dom'
   import '../src/styling/App.scss';
+  import osteofitWhiteLogo from "./images/osteofitWhiteLogo.png";
+  import EmailIcon from '@material-ui/icons/Email';
 
 
 class Footer extends Component {
@@ -13,21 +14,22 @@ class Footer extends Component {
         <div id="footer-container">
         <div className = "footer"> 
                 <ul>
-                    <img src = {logo} alt="logo"/>
+                    <img src = {osteofitWhiteLogo} alt="logo"/>
+                    <h1>OsteoFit</h1>
                 <Router forceRefresh>
-                    <li>
+                    <li className = "footer-home">
                     <Link exact to = "/">
                         Home
                     </Link>
                     </li>
                 </Router>
                 <Router forceRefresh>
-                    <li>
-                    <Link exact to = "about">
-                        About Us
-                    </Link>
-                    </li>
-                </Router>
+                            <li>
+                                <Link exact to="/about">
+                                About Us
+                                </Link>
+                            </li>
+                        </Router>
                 <Router forceRefresh>
                     <li>
                     <Link exact to = "/product">
@@ -50,11 +52,17 @@ class Footer extends Component {
                     </li>
                 </Router>
                 </ul>
+                <div className = "bottom-footer">
                 <p className = "footerNotes">
                     @ 2020 Copyright Osteofit
                     <br/>
                     Terms and Conditions / Private Policy / Website by: Katie and Ben Sidebotham
                 </p>
+                <span>
+                <EmailIcon />
+                info@osteofitLLC.com 
+                </span>
+                </div>
         </div>
         </div>
     )

@@ -17,7 +17,11 @@ const Home = () => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <div className="Mission ">
         <div className= "MissionText wordCarousel">
+          <span className="mission-title-text">
+        <h1>Osteofit is: </h1>
+        </span>
         <div> 
+          
             <ul class="flip4"> 
                 <li>Accurate</li>
                 <li>Sterile</li>
@@ -62,7 +66,7 @@ const Home = () => {
 
         <div className = "HomePara">
           <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
-             maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
+             that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
         </div>
         </ScrollAnimation>
 
@@ -76,16 +80,16 @@ const Home = () => {
             <figcaption class="item-caption">
             <ScrollAnimation animateIn="fadeIn">
 
-              <h2 style={{color:"white"}}>Our product:
+              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer:
               </h2>
               </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn">
 
               <p style={{color:"white"}}>
-              This is a 3D model of our product, click here to learn more.
+              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
+              Click here to learn more! 
               </p>
               </ScrollAnimation>
-
               <Button variant="contained" className="button">
                 <Router forceRefresh>
                   <Link exact to="/product">
