@@ -36,9 +36,9 @@ const Product = () => {
   function changeColor(){
       if(!animationEnd) return;
       let color = this.getAttribute('color');
-      let product = document.querySelector(`.product[color="${color}"]`);
-      let gradient = document.querySelector(`.gradient[color="${color}"]`);
-      let prevGradient = document.querySelector(`.gradient[color="${prevColor}"]`);
+      let product = document.querySelector('.product[color="${color}"');
+      let gradient = document.querySelector('.gradient[color="${color}"');
+      let prevGradient = document.querySelector('.gradient[color="${prevColor}"]');
   
       if(color === prevColor) return;
   
@@ -138,8 +138,7 @@ const Product = () => {
         <ScrollAnimation animateIn="fadeIn">
         <div className = "product-paper">
           <Paper elevation={13}>
-            <p>Lorem ipsum dolor sit amet, pri te doming tacimates explicari. Option singulis tacimates at qui. Nec et senserit dissentiunt. Vel in luptatum consetetur. Eam ea mazim habemus, usu ei iusto voluptaria quaerendum.
-               Qui ut doming doctus accommodare, et his epicuri interesset, in facete singulis inciderint eum. Mei et laoreet quaestio antiopam, ad est tibique voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet, pri te doming tacimates explicari. Option singulis tacimates at qui. Nec et senserit dissentiunt. Vel in luptatum consetetur. (Description of product) </p>
                <br/>
                <p>Hover over the parts below to learn more about each component</p>
           </Paper>
@@ -220,7 +219,7 @@ const Product = () => {
         <ScrollAnimation animateIn="fadeIn">
         <div className = "model-section-2">
           <div className = "model-part-4">
-            <img src = {modelPart4} alt=""></img>
+            <img src = {modelPart4} alt=""/>
             <span className = "model-part-4-text">
             <ul>
                 <li>
