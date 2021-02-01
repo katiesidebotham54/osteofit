@@ -211,7 +211,7 @@ button:hover {
 #footer-container {
   min-height: 100%;
   overflow: auto;
-  height: 200px;
+  height: 213px;
   text-align: justify;
 }
 
@@ -261,7 +261,6 @@ button:hover {
 .footer .footer-email {
   color: white;
   margin-left: 80%;
-  padding-bottom: 2%;
 }
 
 .footer li a:hover {
@@ -334,11 +333,11 @@ form {
 
 .contact-container {
   padding: 2%;
-  border-radius: 25px;
+  border-radius: 55px;
+  border-color: rgba(255, 204, 0, 0.8);
   margin-left: 30%;
   width: 40%;
   height: 650px;
-  background-color: rgba(255, 204, 0, 0.468);
   margin-bottom: 7%;
   box-shadow: 5px 10px rgb(255, 204, 0);
 }

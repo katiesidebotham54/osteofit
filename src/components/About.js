@@ -7,28 +7,6 @@ import OsteofitLogoOnly from '../images/OsteofitLogoOnly.png'
 
 
 const About = () => {
-  const fadeElms = document.querySelectorAll('.fade');
-
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.7
-  };
-  
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  fadeElms.forEach(element => observer.observe(element));
-
-  function observerCallback(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // fade in observed elements that are in view
-        entry.target.classList.replace('fadeOut', 'fadeIn');
-      } else {
-        // fade out observed elements that are not in view
-        entry.target.classList.replace('fadeIn', 'fadeOut');
-      }
-    });
-  }
       return (
       <div className="About">
         <div>
@@ -43,7 +21,7 @@ const About = () => {
             </svg>
           </h1>
         </div>
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation>
         <div className="aboutPara fade">
           <Paper elevation={3}>
             <p>
