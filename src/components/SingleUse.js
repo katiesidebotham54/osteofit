@@ -92,74 +92,81 @@ const SingleUse = () => {
         <ScrollAnimation animateIn="fadeIn">
 
         <h2>Reusable</h2>
-          <ul class="timeline">
-            <li class="li">
-              <span className="timeline-circle">1</span>
-              <h4> Cleaned </h4>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">2</span>
-              <h4 > Packaged </h4>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">3</span>
-              <h4 > Sterilized </h4>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">4</span>
-              <div class="status">
-                <h4> Stored </h4>
-              </div>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">5</span>
-              <div class="status">
-                <h4> Surgery </h4>
-              </div>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">6</span>
-              <h4> Rinsed </h4>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">7</span>
-              <h4 > Scrubbed </h4>
-            </li>
-            <hr className = "horz-line1" />
-            <li class="li">
-              <span className="timeline-circle">8</span>
-              <h4> Inspected</h4>
-            </li>
-          </ul>
+        <section class="timeline">
+            <ol>
+              <li>
+                <div>
+                  <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+                </div>
+              </li>
+              <li></li>
+            </ol>
+          </section>
           </ScrollAnimation>
         </div>
         <div>
         <ScrollAnimation animateIn="fadeIn">
-
-          <h2>Osteofit</h2>
-          <ul class="timeline-osteofit">
-            <li class="li">
-              <span className="timeline-circle">1</span>
-              <h4 > Purchase</h4>
-            </li>
-            <hr className = "horz-line2" />
-
-            <li class="li">
-              <span className="timeline-circle">2</span>
-              <h4> Surgery </h4>
-            </li>
-            <hr className = "horz-line2" />
-            <li class="li">
-              <span className="timeline-circle">3</span>
-              <h4> Recycled </h4>
-            </li>
-          </ul>
+        <h2>Osteofit</h2>
+        <section class="timeline">
+            <ol>
+              <li>
+                <div>
+                  <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                </div>
+              </li>
+              <li></li>
+            </ol>
+          </section>
           </ScrollAnimation>
 
         </div>
