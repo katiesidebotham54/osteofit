@@ -147,14 +147,15 @@ nav {
 }
 
 nav ul {
-  margin-left: 4%;
-  padding-top: 6%;
+  margin-left: 5%;
+  padding-top: 5%;
   width: 70%;
+  padding-bottom: 1%;
 }
 
 nav li {
   display: inline-block;
-  padding: 0px 25px;
+  padding: 0px 30px;
 }
 
 nav li a {
@@ -162,7 +163,7 @@ nav li a {
   color: rgba(43, 69, 136, 1);
   font-size: 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 nav a {
@@ -175,13 +176,13 @@ nav li a:hover {
 
 nav .nav-logo {
   justify-content: flex-start;
-  width: 70%;
+  width: 60%;
   cursor: pointer;
   margin-left: 5%;
 }
 
 nav .contact-button {
-  margin-left: 15%;
+  margin-left: 22%;
 }
 
 nav .contact-button a {
@@ -192,7 +193,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10px;
+  padding: 15px;
 }
 
 button {
@@ -211,7 +212,7 @@ button:hover {
 #footer-container {
   min-height: 100%;
   overflow: auto;
-  height: 213px;
+  height: 185px;
   text-align: justify;
 }
 
@@ -225,7 +226,7 @@ button:hover {
 }
 
 .footer .footer-home {
-  margin-left: 20%;
+  margin-left: 30%;
 }
 .footer ul {
   display: flex;
@@ -242,12 +243,12 @@ button:hover {
 
 .bottom-footer span {
   color: white;
-  margin-left: 47%;
-  font-size: 20px;
+  margin-left: 54%;
+  font-size: 17px;
 }
 
 .bottom-footer .MuiSvgIcon-root {
-  margin-top: 3.8%;
+  margin-top: 1.5%;
   font-size: 30px;
   margin-right: 0.5%;
 }
@@ -255,7 +256,6 @@ button:hover {
   color: rgb(255, 255, 255);
   font-size: 16px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .footer .footer-email {
@@ -284,7 +284,7 @@ button:hover {
 .footer .footerNotes {
   display: inline-block;
   justify-content: flex-start;
-  margin-top: 3.6%;
+  margin-top: 1.4%;
   margin-left: 40px;
   font-size: 12px;
   color: white;
@@ -339,7 +339,6 @@ form {
   width: 40%;
   height: 650px;
   margin-bottom: 7%;
-  box-shadow: 5px 10px rgb(255, 204, 0);
 }
 
 .contact-image img {

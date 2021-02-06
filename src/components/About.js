@@ -3,7 +3,8 @@ import { Paper } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
-import OsteofitLogoOnly from '../images/OsteofitLogoOnly.png'
+import osteofitlogo from '../images/osteofitLogo.png'
+import aboutUs from '../images/aboutUs.png'
 
 
 const About = () => {
@@ -21,24 +22,39 @@ const About = () => {
             </svg>
           </h1>
         </div>
-        <ScrollAnimation>
-        <div className="aboutPara fade">
-          <Paper elevation={3}>
-            <p>
-              OsteoFit is a newly formed company specializing in single-use
-              sterile medical reamers. Our company's management has over 100
-              years of experience in human medical orthopedic design and
+        <div className="about-container">
+          <figure class="item-content-about">
+            <div class="item-img-about">
+              <img src={aboutUs} alt="" />
+            </div>
+
+            <figcaption class="item-caption-about">
+            <ScrollAnimation animateIn="fadeIn">
+
+              <h2>About Us</h2>
+              <br/>
+              <br/>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="fadeIn">
+
+              <p className="about-text">
+              OsteoFit is a newly formed company specializing in <b>single-use 
+              sterile medical reamers</b>. Our company's management has over <b>100
+              years</b> of experience in human medical orthopedic design and
               manufacturing of implants and instruments.
-            </p>
-          </Paper>
-          <img src={OsteofitLogoOnly} alt="" />
+              </p>
+              <img className = "about-logo" src={osteofitlogo} alt=""/>
+              </ScrollAnimation>
+              </figcaption>    
+        </figure>
         </div>
-        </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-          <div className = "team-wrapper">
-          <h1>Meet Our Team!</h1>
+          <div className = "team-title">
+          <h1>Our Team</h1>
+          <hr className = "horz-line4" />
           </div>
           </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
           <ScrollAnimation animateIn="fadeIn">
         <div className="outer-container">
           <div class="container container1">
@@ -47,7 +63,8 @@ const About = () => {
               <div class="container_text">
                 <div class="container_text1">
                   <p>
-                    Over 50 years of experience specializing in hip and knee
+                    <h3>50</h3>
+                    years of experience specializing in hip and knee
                     replacement.
                   </p>
                 </div>
@@ -60,7 +77,8 @@ const About = () => {
               <div class="container_text">
                 <div class="container_text1">
                   <p>
-                    Over 40 years of experience in design and development of
+                  <h3>50</h3>
+                   years of experience in design and development of
                     orthopedic implants working with major OEM’s.
                   </p>
                 </div>
@@ -73,7 +91,8 @@ const About = () => {
               <div class="container_text">
                 <div class="container_text1">
                   <p>
-                    Over 40 years in the development and manufacturing of
+                  <h3>50</h3>
+                     years in the development and manufacturing of
                     orthopedic implants and instruments.
                   </p>
                 </div>
@@ -81,6 +100,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        </ScrollAnimation>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
 

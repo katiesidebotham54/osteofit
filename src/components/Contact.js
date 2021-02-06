@@ -47,6 +47,7 @@ const Contact = () => {
           </svg>
           </h1>
         <div className = "contact-container">
+          <div>
           <div className = "contact-image">
             <img src={OsteofitLogoOnly} alt=""/>
           </div>
@@ -118,6 +119,7 @@ const Contact = () => {
           </Button>
          </div>
       </form>
+      </div>
     </div>
     </div>
   );
