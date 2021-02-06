@@ -166,7 +166,8 @@ $mx-width: 50rem;
 .model-part-2 {
   position: relative;
   margin-left: auto;
-  right: 10%;
+  right: 3.5%;
+  margin-top: 5%;
 }
 
 .model-section-2 {
@@ -176,19 +177,23 @@ $mx-width: 50rem;
   margin: auto;
 }
 
-.model-section-2 img {
-  height: 250px;
+.model-part-2 vl {
+  border-left: 4px solid black;
+  height: 280px;
+  position: absolute;
+  left: 55%;
+  margin-left: -3px;
+  margin-top: -260px;
 }
 
-.model-part-3 {
-  position: relative;
-  left: 10%;
+.model-section-2 img {
+  height: 250px;
 }
 
 .model-part-4 {
   position: relative;
   margin-left: auto;
-  right: 44%;
+  right: 15%;
 }
 
 .model-part-1 .model-part-1-text {

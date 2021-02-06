@@ -37,8 +37,8 @@ const SingleUse = () => {
               Simple and Efficient 
               Cycle
               <span>
-              <i class="fas fa-times circle-icon-reusable x1"></i>
-              <i class="fas fa-check circle-icon-osteofit check1"></i>
+              <i class="fas fa-times circle-icon-reusable"></i>
+              <i class="fas fa-check circle-icon-osteofit"></i>
 
               </span>
             </h2>
@@ -51,8 +51,8 @@ const SingleUse = () => {
             <h2>
               Cost Effective
               <span>
-              <i class="fas fa-times circle-icon-reusable"></i>
-              <i class="fas fa-check circle-icon-osteofit"></i>
+              <i class="fas fa-times circle-icon-reusable2"></i>
+              <i class="fas fa-check circle-icon-osteofit2"></i>
               </span>
             </h2>
 
@@ -63,8 +63,8 @@ const SingleUse = () => {
               100% Sterile Each
               Time
               <span>
-              <i class="fas fa-times circle-icon-reusable"></i>
-              <i class="fas fa-check circle-icon-osteofit"></i>
+              <i class="fas fa-times circle-icon-reusable3"></i>
+              <i class="fas fa-check circle-icon-osteofit3"></i>
               </span>
             </h2>
           </div>

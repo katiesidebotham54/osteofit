@@ -145,7 +145,7 @@ const Product = () => {
         </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeIn">
+       {/* <ScrollAnimation animateIn="fadeIn">
         <div className = "model-section-1">
           <div className = "model-part-1">
             <img src={modelPart1} alt=""></img>
@@ -203,7 +203,7 @@ const Product = () => {
             </div>
           </div>
         </div>
-        </ScrollAnimation>
+    </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeIn">
         <div className = "product-and-parts">
           <div className="product-item-3d">
@@ -218,6 +218,62 @@ const Product = () => {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
         <div className = "model-section-2">
+        <div className = "model-part-1">
+            <img src={modelPart1} alt=""></img>
+            <span className = "model-part-1-text">
+              <ul>
+              <li>
+                  Panels made from ASTM A276 420 Stainless Steel
+                </li>
+                <br/>
+                <li>
+                  Stamped Dome Cutting Panel
+                </li>
+                <br/>
+                <li>
+                  Stamped Side Cutting Panel
+                </li>
+                <br/>
+                <li>
+                  Panel-Frame Subassembly includes 4 side panels and 1 dome panel 
+                </li>
+              </ul>
+
+            </span>
+            <div className = "component-title">
+
+            <Paper elevation={13}>
+              <h3>Stainless Steel Panels</h3>
+            </Paper>
+</div>
+          </div>
+          <div className = "model-part-2">
+            <vl></vl>
+            <img src={modelPart2} alt=""></img>
+            <span className = "model-part-2-text">
+            <ul>
+                <li>
+                  Molded back plate
+                </li>
+                <br/>
+                <li>
+                Made of Polycarbonate 2061-15
+                </li>
+                <br/>
+
+                <li>
+                  Features tabs for ultrasonic welding
+                </li>
+                <br/>
+              </ul>
+
+            </span>
+            <div className = "component-title">
+            <Paper elevation={13}>
+              <h3>Back Plate</h3>
+            </Paper>
+            </div>
+          </div>
           <div className = "model-part-4">
             <img src = {modelPart4} alt=""/>
             <span className = "model-part-4-text">
