@@ -56,50 +56,44 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
           <ScrollAnimation animateIn="fadeIn">
-        <div className="outer-container">
-          <div class="container container1">
-            <div class="inner_container">
-              <h1 class="title-bio">Orthopedic Surgeon</h1>
-              <div class="container_text">
-                <div class="container_text1">
-                  <p>
-                    <h3>50</h3>
-                    years of experience specializing in hip and knee
-                    replacement.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container container2">
-            <div class="inner_container">
-              <h1 class="title-bio">Designer</h1>
-              <div class="container_text">
-                <div class="container_text1">
-                  <p>
-                  <h3>50</h3>
-                   years of experience in design and development of
-                    orthopedic implants working with major OEM’s.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container container3">
-            <div class="inner_container">
-              <h1 class="title-bio">Manufacturer</h1>
-              <div class="container_text">
-                <div class="container_text1">
-                  <p>
-                  <h3>50</h3>
-                     years in the development and manufacturing of
-                    orthopedic implants and instruments.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div className = "outer-container">
+          <div class="container-about">
+  <div class="box">
+    <div class="boxContent">
+      <i class="fas fa-head-side-mask icon"></i>
+
+      <h1 class="title-about">Orthopedic Surgeon</h1>
+      <p class="desc">
+      <h3>50+</h3> 
+      <br/>
+years of experience specializing in hip and knee replacement.</p>
+      
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxContent">
+    <i class="fas fa-pen-nib icon"></i>
+          <h1 class="title-about">Designer</h1>
+      <h3>40+</h3>
+      <br/>
+      <p class="desc">Over 
+      years of experience in design and development of orthopedic implants working with major OEMs.</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxContent">
+<i class="fas fa-tools icon"></i>
+
+          <h1 class="title-about">Manufactuer</h1>
+      <h3>40+
+        </h3> 
+      <br/>
+      <p class="desc">Over 
+      years in the development and manufacturing of orthopedic implants and instruments</p>
+    </div>
+  </div>
+</div>
+</div>
         </ScrollAnimation>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">

@@ -96,47 +96,47 @@ const SingleUse = () => {
             <ol>
               <li>
                 <div>
-                  <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  <time>Hospital Recieves</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                  <time>Cleaned</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                  <time>Sorted</time>
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                  <time>Sterilized</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                  <time>Stored</time> 
+                  </div>
+              </li>
+              <li>
+                <div>
+                  <time>Used in OR</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                  <time>Rinsed</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                  <time>Scrubbed</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+                  <time>Inspected</time> 
                 </div>
               </li>
               <li></li>
@@ -151,19 +151,22 @@ const SingleUse = () => {
             <ol>
               <li>
                 <div>
-                  <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                  <time>Hospital Recieves</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                  <time>Used in OR</time> 
                 </div>
               </li>
               <li>
                 <div>
-                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                  <time>Recycled</time> 
                 </div>
               </li>
+              <section>
+                <blockquote class="speech bubble">Did someone say <em>chimichangas?</em></blockquote>
+              </section>
               <li></li>
             </ol>
           </section>
