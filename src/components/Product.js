@@ -219,6 +219,7 @@ const Product = () => {
         <ScrollAnimation animateIn="fadeIn">
         <div className = "model-section-2">
         <div className = "model-part-1">
+          <vl></vl>
             <img src={modelPart1} alt=""></img>
             <span className = "model-part-1-text">
               <ul>
@@ -245,8 +246,8 @@ const Product = () => {
             <Paper elevation={13}>
               <h3>Stainless Steel Panels</h3>
             </Paper>
-</div>
           </div>
+        </div>
           <div className = "model-part-2">
             <vl></vl>
             <img src={modelPart2} alt=""></img>
@@ -275,6 +276,7 @@ const Product = () => {
             </div>
           </div>
           <div className = "model-part-4">
+            <vl></vl>
             <img src = {modelPart4} alt=""/>
             <span className = "model-part-4-text">
             <ul>

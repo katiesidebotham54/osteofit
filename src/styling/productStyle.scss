@@ -1,7 +1,7 @@
 .product-pen {
   padding-left: 10%;
   color: #1a658f;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 500;
   max-width: 80%;
 }
@@ -163,6 +163,16 @@ $mx-width: 50rem;
   left: 10%;
 }
 
+.model-part-1 vl {
+  border-left: 4px solid rgb(94, 94, 94);
+  height: 370px;
+  position: absolute;
+  left: 140%;
+  margin-left: -3px;
+  margin-top: -250px;
+  transform: rotate(50deg);
+}
+
 .model-part-2 {
   position: relative;
   margin-left: auto;
@@ -178,12 +188,12 @@ $mx-width: 50rem;
 }
 
 .model-part-2 vl {
-  border-left: 4px solid black;
-  height: 280px;
+  border-left: 4px solid rgb(94, 94, 94);
+  height: 190px;
   position: absolute;
   left: 55%;
   margin-left: -3px;
-  margin-top: -260px;
+  margin-top: -180px;
 }
 
 .model-section-2 img {
@@ -196,6 +206,16 @@ $mx-width: 50rem;
   right: 15%;
 }
 
+.model-part-4 vl {
+  border-left: 4px solid rgb(94, 94, 94);
+  height: 370px;
+  position: absolute;
+  left: -40%;
+  margin-left: -3px;
+  margin-top: -250px;
+  transform: rotate(-50deg);
+}
+
 .model-part-1 .model-part-1-text {
   visibility: hidden;
   width: 420px;
@@ -204,9 +224,9 @@ $mx-width: 50rem;
   color: #fff;
   border-radius: 6px;
   position: absolute;
+  right: -20%;
   z-index: 1;
-  top: 1%;
-  left: 100%;
+  top: -60%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
@@ -227,12 +247,12 @@ $mx-width: 50rem;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: 1%;
+  top: -60%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
   padding-right: 5%;
-  right: 90%;
+  right: -20%;
 }
 
 .model-part-2:hover .model-part-2-text {
@@ -249,8 +269,8 @@ $mx-width: 50rem;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: 1%;
-  left: 100%;
+  top: -60%;
+  left: -30%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
