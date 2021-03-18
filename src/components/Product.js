@@ -137,73 +137,8 @@ const Product = () => {
         </h2>
         <ScrollAnimation animateIn="fadeIn">
         <div className = "product-paper">
-          <Paper elevation={13}>
-            <p>Lorem ipsum dolor sit amet, pri te doming tacimates explicari. Option singulis tacimates at qui. Nec et senserit dissentiunt. Vel in luptatum consetetur. (Description of product) </p>
-               <br/>
-               <p>Hover over the parts below to learn more about each component</p>
-          </Paper>
         </div>
         </ScrollAnimation>
-
-       {/* <ScrollAnimation animateIn="fadeIn">
-        <div className = "model-section-1">
-          <div className = "model-part-1">
-            <img src={modelPart1} alt=""></img>
-            <span className = "model-part-1-text">
-              <ul>
-              <li>
-                  Panels made from ASTM A276 420 Stainless Steel
-                </li>
-                <br/>
-                <li>
-                  Stamped Dome Cutting Panel
-                </li>
-                <br/>
-                <li>
-                  Stamped Side Cutting Panel
-                </li>
-                <br/>
-                <li>
-                  Panel-Frame Subassembly includes 4 side panels and 1 dome panel 
-                </li>
-              </ul>
-
-            </span>
-            <div className = "component-title">
-
-            <Paper elevation={13}>
-              <h3>Stainless Steel Panels</h3>
-            </Paper>
-</div>
-          </div>
-          <div className = "model-part-2">
-            <img src={modelPart2} alt=""></img>
-            <span className = "model-part-2-text">
-            <ul>
-                <li>
-                  Molded back plate
-                </li>
-                <br/>
-                <li>
-                Made of Polycarbonate 2061-15
-                </li>
-                <br/>
-
-                <li>
-                  Features tabs for ultrasonic welding
-                </li>
-                <br/>
-              </ul>
-
-            </span>
-            <div className = "component-title">
-            <Paper elevation={13}>
-              <h3>Back Plate</h3>
-            </Paper>
-            </div>
-          </div>
-        </div>
-    </ScrollAnimation> */}
         <ScrollAnimation animateIn="fadeIn">
         <div className = "product-and-parts">
           <div className="product-item-3d">
@@ -216,10 +151,47 @@ const Product = () => {
           </div>
         </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+        <div className = "outer-container">
+          <div class="container-about">
+  <div class="box">
+    <div class="boxContent">
+      <i class="fas fa-head-side-mask icon"></i>
+
+      <h1 class="title-about">Orthopedic Surgeon</h1>
+      <p class="desc">
+      <h3>50+</h3> 
+      <br/>
+years of experience specializing in hip and knee replacement.</p>
+      
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxContent">
+    <i class="fas fa-pen-nib icon"></i>
+          <h1 class="title-about">Designer</h1>
+      <h3>40+</h3>
+      <br/>
+      <p class="desc">Over 
+      years of experience in design and development of orthopedic implants working with major OEMs.</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxContent">
+<i class="fas fa-tools icon"></i>
+
+          <h1 class="title-about">Manufactuer</h1>
+      <h3>40+
+        </h3> 
+      <br/>
+      <p class="desc">Over 
+      years in the development and manufacturing of orthopedic implants and instruments</p>
+    </div>
+  </div>
+</div>
+</div>
+        {/*<ScrollAnimation animateIn="fadeIn">
         <div className = "model-section-2">
         <div className = "model-part-1">
-          <vl></vl>
             <img src={modelPart1} alt=""></img>
             <span className = "model-part-1-text">
               <ul>
@@ -247,9 +219,8 @@ const Product = () => {
               <h3>Stainless Steel Panels</h3>
             </Paper>
           </div>
-        </div>
+        </div> }
           <div className = "model-part-2">
-            <vl></vl>
             <img src={modelPart2} alt=""></img>
             <span className = "model-part-2-text">
             <ul>
@@ -276,7 +247,6 @@ const Product = () => {
             </div>
           </div>
           <div className = "model-part-4">
-            <vl></vl>
             <img src = {modelPart4} alt=""/>
             <span className = "model-part-4-text">
             <ul>
@@ -311,7 +281,7 @@ const Product = () => {
 </div>
           </div>
         </div>
-        </ScrollAnimation>
+        </ScrollAnimation>*/}
         <ScrollAnimation animateIn="fadeIn">
         <div className="card-container">
           <div className="card">

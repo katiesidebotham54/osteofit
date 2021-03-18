@@ -161,39 +161,21 @@ $mx-width: 50rem;
 .model-part-1 {
   position: relative;
   left: 10%;
-}
-
-.model-part-1 vl {
-  border-left: 4px solid rgb(94, 94, 94);
-  height: 370px;
-  position: absolute;
-  left: 140%;
-  margin-left: -3px;
-  margin-top: -250px;
-  transform: rotate(50deg);
+  margin-top: -5%;
 }
 
 .model-part-2 {
   position: relative;
   margin-left: auto;
   right: 3.5%;
-  margin-top: 5%;
+  margin-top: -5%;
 }
 
 .model-section-2 {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 150px;
+  padding-top: 150px;
   display: flex;
   margin: auto;
-}
-
-.model-part-2 vl {
-  border-left: 4px solid rgb(94, 94, 94);
-  height: 190px;
-  position: absolute;
-  left: 55%;
-  margin-left: -3px;
-  margin-top: -180px;
 }
 
 .model-section-2 img {
@@ -203,21 +185,12 @@ $mx-width: 50rem;
 .model-part-4 {
   position: relative;
   margin-left: auto;
-  right: 15%;
-}
-
-.model-part-4 vl {
-  border-left: 4px solid rgb(94, 94, 94);
-  height: 370px;
-  position: absolute;
-  left: -40%;
-  margin-left: -3px;
-  margin-top: -250px;
-  transform: rotate(-50deg);
+  right: 16%;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
 
 .model-part-1 .model-part-1-text {
-  visibility: hidden;
   width: 420px;
   height: 220px;
   background-color: #1a658f;
@@ -226,20 +199,14 @@ $mx-width: 50rem;
   position: absolute;
   right: -20%;
   z-index: 1;
-  top: -60%;
+  top: 80%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
   padding-right: 5%;
-}
-
-.model-part-1:hover .model-part-1-text {
-  visibility: visible;
-  opacity: 1;
 }
 
 .model-part-2 .model-part-2-text {
-  visibility: hidden;
   width: 420px;
   height: 220px;
   background-color: #1a658f;
@@ -247,7 +214,7 @@ $mx-width: 50rem;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: -60%;
+  top: 80%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
@@ -255,13 +222,7 @@ $mx-width: 50rem;
   right: -20%;
 }
 
-.model-part-2:hover .model-part-2-text {
-  visibility: visible;
-  opacity: 1;
-}
-
 .model-part-4 .model-part-4-text {
-  visibility: hidden;
   width: 420px;
   height: 220px;
   background-color: #1a658f;
@@ -269,17 +230,12 @@ $mx-width: 50rem;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  top: -60%;
+  top: 103.5%;
   left: -30%;
   padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 8%;
   padding-right: 5%;
-}
-
-.model-part-4:hover .model-part-4-text {
-  visibility: visible;
-  opacity: 1;
 }
 
 .card-container {
@@ -592,4 +548,86 @@ img.product.show {
 .component-title h3 {
   text-align: center;
   color: #1a658f;
+}
+
+@mixin createBox($width, $height, $bRadius, $bgColor, $margin) {
+  width: $width;
+  height: $height;
+  border-radius: $bRadius;
+  background-color: $bgColor;
+  margin: $margin;
+  transition: 0.3s all ease-in-out;
+}
+
+$hoverBgColor: #1a658f;
+$hoverBgColor2: #0f4264;
+
+.container-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  .box {
+    @include createBox(350px, 350px, 10px, white, 20px);
+    position: relative;
+    box-shadow: 0px 0px 15px #1a658f;
+    .boxContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 17px;
+      .icon {
+        color: #1a658f;
+        font-size: 50px;
+        padding: 15px;
+      }
+      .title-about {
+        font-size: 24px;
+        color: #1a658f;
+        font-weight: bold;
+        padding: 10px;
+        background: none;
+      }
+      .desc {
+        color: #1a658f;
+        font-size: 20px;
+        height: 20%;
+      }
+      h3 {
+        font-size: 55px;
+        color: #1a658f;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+    }
+    /* Link */
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:hover {
+      background: linear-gradient(
+        130deg,
+        $hoverBgColor 0%,
+        $hoverBgColor2 100%
+      );
+      box-shadow: none;
+      .icon {
+        color: rgb(255, 204, 0);
+        transition: 0.8s all ease-in-out;
+      }
+
+      .desc,
+      .title-about,
+      h3 {
+        color: white;
+        transition: 0.8s all ease-in-out;
+      }
+    }
+  }
 }
