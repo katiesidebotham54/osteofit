@@ -11,7 +11,9 @@
   z-index: 9999;
 }
 
-.icon1 h2, .icon2 h2, .icon3 h2 {
+.icon1 h2,
+.icon2 h2,
+.icon3 h2 {
   font-size: 35px;
   font-weight: 400;
   padding-bottom: 1%;
@@ -19,7 +21,7 @@
   color: white;
   letter-spacing: 0.8px;
 }
-.icon2  {
+.icon2 {
   padding-bottom: 2%;
 }
 .icon1 {
@@ -40,7 +42,6 @@
   vertical-align: middle;
   font-size: 45px;
   margin-left: 10.79%;
-  
 }
 
 .circle-icon-reusable2 {
@@ -405,10 +406,9 @@ $separator-space-top: 18px;
   .background-container {
     width: 90%;
     height: 600px;
-    left:5%;
+    left: 5%;
     position: absolute;
     background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
-
   }
 }
 
@@ -637,14 +637,14 @@ ol.gradient-list {
     transform: rotate(90deg);
     top: 50%;
     left: 75%;
-    img{
-      width:118%;
+    img {
+      width: 118%;
     }
   }
   h2 {
     color: #57d75b;
     text-align: center;
-    padding-top:0%;
+    padding-top: 0%;
   }
   h3 {
     margin-left: 10%;
@@ -666,12 +666,11 @@ ol.gradient-list {
   }
 }
 
-
 .paper4 {
   position: relative;
   text-align: center;
   left: 17.2%;
-  bottom: 47.8%;
+  bottom: 43.5%;
 }
 
 .paper3 {
@@ -729,9 +728,9 @@ ol.gradient-list {
   left: 42%;
   letter-spacing: 1px;
   line-height: 2;
-  b{
+  b {
     margin-left: 15%;
-    color:rgb(255, 204, 0);
+    color: rgb(255, 204, 0);
     font-size: 35px;
   }
 }
