@@ -21,7 +21,8 @@ const SingleUse = () => {
         </h1>
       </div>
       <div className="comparison">
-        <div className="comparison-title-resuable">
+        <div className = "background-container">
+        <div className="comparison-title-reusable">
           <Paper elevation={3}>
             <h2>Reusable</h2>
           </Paper>
@@ -69,6 +70,7 @@ const SingleUse = () => {
             </h2>
           </div>
           </ScrollAnimation>
+        </div>
         </div>
       </div>
       <div className="cycles">
@@ -147,6 +149,7 @@ const SingleUse = () => {
         <div>
         <ScrollAnimation animateIn="fadeIn">
         <h2>Osteofit</h2>
+        <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
         <section class="timeline">
             <ol>
               <li>
@@ -164,9 +167,6 @@ const SingleUse = () => {
                   <time>Recycled</time> 
                 </div>
               </li>
-              <section>
-                <blockquote class="speech bubble">Did someone say <em>chimichangas?</em></blockquote>
-              </section>
               <li></li>
             </ol>
           </section>
@@ -240,39 +240,42 @@ const SingleUse = () => {
           </div>
         </div>
       </div>
-      <div className="recycle">
       <ScrollAnimation animateIn="fadeIn">
+
+      <div className="recycle">
 
           <div className = "wrapper">
           <h2>Osteofit is Green!</h2>
           </div>
-          </ScrollAnimation>
-
           <div className = "recycle-desc">
-          <Paper elevation={3}>
+          <h3>
+            Osteofit takes pride in creating products that are <h2>
+              sustainable and
+              environmentally conscious
+            </h2>
+            </h3>
+
+            <span>
+            <img src = {mold} alt="" />
+            </span>
             <p>
-             Osteofit takes pride in creating products that are sustainable and environmentally conscious.
-             Our reamers are made from stainless steel and poly carbonate -- both materials that are 100% recyclable! To learn more about these 
+             Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
              processes, feel free to reference the resources below.
             </p>
-          </Paper>
-          <ScrollAnimation animateIn="fadeIn">
-          <span class="iconify" data-icon="ion-earth" data-inline="false"></span> 
-          </ScrollAnimation>
+            <hr className = "horz-line5a" />
+            <hr className = "horz-line5b" />
+
+          <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
+ 
+          <div class="circle"></div>
 
           </div>
       </div>
-      <div className = "materials">
-      <ScrollAnimation animateIn="fadeIn">
-          <img src = {mold} alt="" />
-          </ScrollAnimation>
 
-      </div>
       <div className="bottompapers2">
           <div class="paper3">
               <h2>Recycling Stainless Steel</h2>
               <br />
-
               <p>Click below to learn more about this process!</p>
               <br />
               <br />
@@ -284,15 +287,17 @@ const SingleUse = () => {
             <h2>Recycling Polycarbonate </h2>
               <br />     
               <p>Click below to learn more about this process!</p>
-         
               <br />
               <br />
-              <Button href="http://www.metalrecyclersusa.com/stainless-steel-recycling.html#:~:text=Once%20the%20stainless%20steel%20has,is%20separated%20from%20other%20material." variant="contained" className="button">
+              <Button href="http://www.metalrecyclersusa.com/stainless-steel-recycling.html#:~:text=Once%20the%20stainless%20steel%20has,is%20separated%20from%20other%20material." variant="contained">
                    Learn More
               </Button>
+              
           </div>
 
-      </div>     
+      </div>  
+      </ScrollAnimation>
+
     </div>
   );
 };
