@@ -11,6 +11,15 @@
   z-index: 9999;
 }
 
+.title-single-use span {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  font-size: 1.8em;
+  padding-left: 56%;
+  top: 5.5%;
+}
+
 .icon1 h2,
 .icon2 h2,
 .icon3 h2 {
@@ -106,7 +115,7 @@
 
 .cycles {
   position: relative;
-  height: 1120px;
+  height: 850px;
 }
 
 section {
@@ -132,7 +141,7 @@ blockquote.speech {
 
 .benefits-single-use {
   position: relative;
-  height: 800px;
+  height: 620px;
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
 }
 
@@ -155,7 +164,7 @@ blockquote.speech {
 
 .timeline ol {
   font-size: 0;
-  width: 100vw;
+  width: 90vw;
   padding: 150px 100px;
   transition: all 1s;
 }
@@ -259,9 +268,9 @@ $separator-space-top: 18px;
 .horz-line4 {
   border: 0;
   border-bottom: $separator-size $separator-border-style $separator-border-color;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
   margin-left: 5%;
-  margin-bottom: 4.3%;
+  margin-bottom: 2.9%;
   opacity: 0.8;
 
   max-width: 90%;
@@ -278,8 +287,7 @@ $separator-space-top: 18px;
 .horz-line5a {
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
-  margin-top: 7%;
-  margin-left: 12%;
+  margin-top: 5%;
   opacity: 0.8;
 
   max-width: 35%;
@@ -298,8 +306,8 @@ $separator-space-top: 18px;
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
   opacity: 0.8;
-  left: 44.7%;
-  top: 62.5%;
+  left: 56.6%;
+  top: 53.2%;
 
   max-width: 24.5%;
   animation: separator-width 1s ease-out forwards;
@@ -385,7 +393,7 @@ $separator-space-top: 18px;
   span {
     background-image: linear-gradient(
       transparent calc(65% - 5px),
-      darken(rgb(255, 209, 24), 15%) 5px
+      rgb(255, 204, 0) 5px
     );
     background-size: 0;
     background-repeat: no-repeat;
@@ -493,34 +501,34 @@ ol.gradient-list {
 
 .cycles h2 {
   text-transform: uppercase;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  margin-left: 10%;
+  position: absolute;
+  margin-top: 8%;
+  transform: rotate(270deg);
   font-size: 40px;
-  color: #555555;
-  font-family: "Trebuchet MS", sans-serif;
+  color: rgb(255, 204, 0);
+  font-family: "Raleway", sans-serif;
 }
 
 .circle-icon-benefits1 {
   background: rgb(255, 204, 0);
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 65px;
   vertical-align: middle;
   font-size: 40px;
-  margin-left: 13%;
+  margin-left: 15%;
   margin-right: 4%;
 }
 
 .circle-icon-benefits2 {
   background: rgb(255, 204, 0);
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   vertical-align: middle;
   font-size: 40px;
   margin-left: 15%;
@@ -537,14 +545,14 @@ ol.gradient-list {
 }
 
 .benefits-single-use h1 {
-  padding-top: 4.5%;
+  padding-top: 2.5%;
   font-size: 40px;
   letter-spacing: 0.6px;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .benefits-single-use h3 {
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 .benefits-single-use h3 span {
@@ -584,11 +592,9 @@ ol.gradient-list {
 }
 
 .wrapper {
-  padding-left: 9%;
-  width: 160%;
+  padding-left: 22%;
   h2 {
     color: #fff;
-    width: 40%;
     font-size: 92px;
     font-family: "Raleway";
     text-transform: uppercase;
@@ -617,37 +623,26 @@ ol.gradient-list {
   }
 }
 
-.recycle .iconify {
-  font-size: 130px;
-  color: #57d75b;
-  top: 54.7%;
-  left: 35%;
-  position: absolute;
+.recycle {
+  .iconify {
+    font-size: 130px;
+    color: #57d75b;
+    top: 45%;
+    left: 45.6%;
+    position: absolute;
+  }
 }
 
 .recycle-desc {
   height: 150px;
   width: 70%;
-  span {
-    position: absolute;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    top: 50%;
-    left: 75%;
-    img {
-      width: 118%;
-    }
-  }
+  margin-left: 18%;
   h2 {
     color: #57d75b;
     text-align: center;
     padding-top: 0%;
   }
   h3 {
-    margin-left: 10%;
     width: 90%;
     padding-top: 4%;
     color: #555555;
@@ -661,8 +656,8 @@ ol.gradient-list {
     text-align: center;
     width: 53%;
     font-size: 25px;
-    left: 12%;
-    top: 75%;
+    left: 23%;
+    top: 65%;
   }
 }
 
@@ -708,28 +703,16 @@ ol.gradient-list {
   background-color: #57d75b;
 }
 
-.circle {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  top: 28%;
-  left: 72%;
-
-  border: 15px solid #555555;
-  border-radius: 50%;
-  border-right-color: transparent;
-}
-
 .osteofit-timeline-quote {
   position: absolute;
   color: #555555;
-  top: 77%;
+  top: 67.2%;
   width: 80%;
-  left: 42%;
+  left: 47%;
   letter-spacing: 1px;
   line-height: 2;
   b {
-    margin-left: 15%;
+    margin-left: 12%;
     color: rgb(255, 204, 0);
     font-size: 35px;
   }

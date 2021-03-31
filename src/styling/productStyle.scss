@@ -1,9 +1,9 @@
 .product-pen {
-  padding-left: 10%;
+  padding-left: 14.2%;
   color: #1a658f;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 .product-pen span {
@@ -116,7 +116,7 @@ $mx-width: 50rem;
 .product-item-img {
   position: relative;
   display: block;
-  left: 37.5%;
+  left: 38.5%;
   width: 35%;
   height: 400px;
   top: 30%;
@@ -146,96 +146,6 @@ $mx-width: 50rem;
   50% {
     transform: translateY(0);
   }
-}
-
-.model-section-1 {
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.model-section-1 img {
-  height: 250px;
-}
-
-.model-part-1 {
-  position: relative;
-  left: 10%;
-  margin-top: -5%;
-}
-
-.model-part-2 {
-  position: relative;
-  margin-left: auto;
-  right: 3.5%;
-  margin-top: -5%;
-}
-
-.model-section-2 {
-  padding-bottom: 150px;
-  padding-top: 150px;
-  display: flex;
-  margin: auto;
-}
-
-.model-section-2 img {
-  height: 250px;
-}
-
-.model-part-4 {
-  position: relative;
-  margin-left: auto;
-  right: 16%;
-  margin-top: -5%;
-  margin-bottom: 5%;
-}
-
-.model-part-1 .model-part-1-text {
-  width: 420px;
-  height: 220px;
-  background-color: #1a658f;
-  color: #fff;
-  border-radius: 6px;
-  position: absolute;
-  right: -20%;
-  z-index: 1;
-  top: 80%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  padding-right: 5%;
-}
-
-.model-part-2 .model-part-2-text {
-  width: 420px;
-  height: 220px;
-  background-color: #1a658f;
-  color: #fff;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  top: 80%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  padding-right: 5%;
-  right: -20%;
-}
-
-.model-part-4 .model-part-4-text {
-  width: 420px;
-  height: 220px;
-  background-color: #1a658f;
-  color: #fff;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  top: 103.5%;
-  left: -30%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 8%;
-  padding-right: 5%;
 }
 
 .card-container {
@@ -285,6 +195,9 @@ $mx-width: 50rem;
   animation: 1s width ease;
 }
 
+.second {
+  z-index: -1 !important;
+}
 @keyframes width {
   from {
     width: 0%;
@@ -292,10 +205,6 @@ $mx-width: 50rem;
   to {
     width: 100%;
   }
-}
-
-.second {
-  z-index: -1;
 }
 
 .gradient[color="gray"] {
@@ -311,7 +220,7 @@ $mx-width: 50rem;
 }
 
 .gradient[color="blue"] {
-  background-image: linear-gradient(45deg, #0136af, #22abfa);
+  background-image: linear-gradient(45deg, #1a658f, #297caf);
 }
 
 .gradient[color="green"] {
@@ -363,7 +272,29 @@ $mx-width: 50rem;
 .size-container {
   border-bottom: 1px solid #dadada;
 }
-
+.outer-container-product {
+  width: 100%;
+  height: 850px;
+  overflow: auto;
+  h1 {
+    color: white;
+    left: 2%;
+    background: none;
+    font-size: 38px;
+    top: 64.2%;
+    font-family: "Trebuchet MS", sans-serif;
+    position: absolute;
+  }
+  .color-square {
+    width: 40%;
+    height: 3.5%;
+    background: #1a658f;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 1%;
+    position: absolute;
+    left: 28%;
+  }
+}
 .subtitle {
   color: #3a3a3a;
   font-weight: 600;
@@ -387,7 +318,6 @@ $mx-width: 50rem;
   border-radius: 50%;
   margin: 0 10px;
   border: 5px solid;
-  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -473,11 +403,10 @@ $mx-width: 50rem;
   line-height: 40px;
   font-size: 1.1rem;
   font-weight: 500;
-  cursor: default;
   transition: 0.3s;
 }
 
-.size.active {
+.size .active {
   color: #fff;
   transition: 0.5s;
 }
@@ -523,7 +452,7 @@ img.product.show {
   width: 50%;
   background-color: #fff;
   z-index: 1;
-  padding: 35px 40px;
+  padding: 75px 40px;
   box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);
 }
@@ -562,16 +491,48 @@ img.product.show {
 $hoverBgColor: #1a658f;
 $hoverBgColor2: #0f4264;
 
-.container-about {
+.container-product {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 80vh;
   .box {
-    @include createBox(350px, 350px, 10px, white, 20px);
+    @include createBox(350px, 400px, 10px, white, 20px);
     position: relative;
     box-shadow: 0px 0px 15px #1a658f;
+    margin-top: 18%;
+    .box-header {
+      position: relative;
+      height: 45%;
+      background: #cbcbcb;
+      border-radius: 10px 10px 0px 0px;
+      h1 {
+        font-size: 24px;
+        color: #1a658f;
+        font-weight: bold;
+        padding: 10px;
+        background: none;
+      }
+      .title1 {
+        margin-left: 20%;
+        margin-top: 2%;
+      }
+      .title2 {
+        margin-left: 14%;
+        margin-top: 2%;
+      }
+      .title3 {
+        margin-top: 2%;
+        margin-left: 24%;
+      }
+      img {
+        position: relative;
+        top: 6%;
+        left: 28%;
+      }
+    }
+
     .boxContent {
       display: flex;
       flex-direction: column;
@@ -584,22 +545,18 @@ $hoverBgColor2: #0f4264;
         font-size: 50px;
         padding: 15px;
       }
-      .title-about {
-        font-size: 24px;
-        color: #1a658f;
-        font-weight: bold;
-        padding: 10px;
-        background: none;
-      }
+
       .desc {
-        color: #1a658f;
-        font-size: 20px;
+        color: #555555;
+        line-height: 1.4;
+        text-align: left;
+        font-size: 18px;
         height: 20%;
-      }
-      h3 {
-        font-size: 55px;
-        color: #1a658f;
         font-family: "Trebuchet MS", sans-serif;
+      }
+      ul {
+        padding: 10px;
+        padding-left: 25px;
       }
     }
     /* Link */
@@ -617,10 +574,6 @@ $hoverBgColor2: #0f4264;
         $hoverBgColor2 100%
       );
       box-shadow: none;
-      .icon {
-        color: rgb(255, 204, 0);
-        transition: 0.8s all ease-in-out;
-      }
 
       .desc,
       .title-about,
@@ -630,4 +583,99 @@ $hoverBgColor2: #0f4264;
       }
     }
   }
+}
+
+.parts-img1 {
+  width: 40%;
+}
+.parts-img2 {
+  width: 27%;
+  margin-left: 9%;
+  margin-top: 2%;
+}
+.parts-img3 {
+  width: 25%;
+  margin-left: 9%;
+  margin-top: 2%;
+}
+
+.arrow1 {
+  color: #1a658f;
+  position: absolute;
+  left: 17%;
+  top: 68.5%;
+  transform: rotate(90deg);
+  font-size: 80px;
+  animation: slide1 1s ease-in-out;
+}
+
+.arrow2 {
+  color: #1a658f;
+  position: absolute;
+  left: 48%;
+  top: 68.5%;
+  font-size: 80px;
+  transform: rotate(90deg);
+  animation: slide2 1s ease-in-out;
+}
+
+.arrow3 {
+  color: #1a658f;
+  position: absolute;
+  left: 79%;
+  top: 68.5%;
+  transform: rotate(90deg);
+  font-size: 80px;
+  animation: slide3 1s ease-in-out;
+}
+
+.product-text {
+  font-family: "Trebuchet MS", sans-serif;
+  color: black;
+  font-size: 22px;
+  line-height: 1.6;
+  padding-bottom: 5%;
+
+  b {
+    color: #297caf;
+  }
+}
+.problem-text {
+  color: #1a658f;
+  font-size: 35px;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+.product-container {
+  width: 90%;
+  padding-left: 15%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  transform-origin: 50% 100%;
+
+  img {
+    position: absolute;
+    left: 58%;
+    width: 40%;
+    top: 19.5%;
+  }
+}
+
+.item-content-product {
+  position: relative;
+  width: 60%;
+
+  h1 {
+    color: #1a658f;
+    font-size: 35px;
+  }
+}
+
+.title-product span {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  font-size: 2em;
+  padding-left: 72%;
+  top: 8%;
 }

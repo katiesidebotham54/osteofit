@@ -1,38 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {TextField} from "@material-ui/core";
-import {db} from "../firebase";
 import Button from "@material-ui/core/Button";
 import OsteofitLogoOnly from '../images/OsteofitLogoOnly.png'
 
 
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
- const handleSubmit = (e) => {
-  e.preventDefault();
-  db.collection('contacts').add({
-    name: name,
-    email: email,
-    subject: subject,
-    message: message
-  })
-  .then(() => {
-    alert('Message has been submitted!');
-  })
-  .catch(error => {
-    alert(error.message);
-  });
-
-  setName('')
-  setEmail('')
-  setSubject('')
-  setMessage('')
-
- }
 
   return (
     <div className="Contact">
@@ -55,7 +28,8 @@ const Contact = () => {
           <h1>Get in touch with us!</h1>
           <p>For all questions or inquieries, please fill out the form below.</p>
         </div>
-      <form id="contactForm" onSubmit = {handleSubmit}>
+        
+      <form id="contactForm" action="mail_handler.php" method="POST" >
         <TextField
           id="name"
           placeholder="Enter your name"
@@ -64,7 +38,6 @@ const Contact = () => {
           variant="outlined"
           required
           type="text"
-          onChange = {(e) => setName(e.target.value)}
         />
         <br />
         <br />
@@ -78,7 +51,6 @@ const Contact = () => {
           variant="outlined"
           required
           type="email"
-          onChange = {(e) => setEmail(e.target.value)}
 
         />
         <br />
@@ -90,7 +62,6 @@ const Contact = () => {
           variant="outlined"
           name="subject"
           required
-          onChange = {(e) => setSubject(e.target.value)}
 
         />
         <br />
@@ -105,7 +76,6 @@ const Contact = () => {
           multiline={true}
           required
           type="text"
-          onChange = {(e) => setMessage(e.target.value)}
 
         />
         <br />
@@ -113,6 +83,7 @@ const Contact = () => {
         <div className="button--container">
           <Button
             variant="contained"
+            name="submit"
             type="submit"
             className="contact-button"
           > Send

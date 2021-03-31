@@ -9,7 +9,7 @@ const SingleUse = () => {
   return (
     <div className="SingleUse">
       <div>
-        <h1 className="title">
+        <h1 className="title-single-use">
           <span className="fade-in-text">Why Use Single-Use Products?</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
               <path
@@ -254,10 +254,6 @@ const SingleUse = () => {
               environmentally conscious
             </h2>
             </h3>
-
-            <span>
-            <img src = {mold} alt="" />
-            </span>
             <p>
              Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
              processes, feel free to reference the resources below.
@@ -266,8 +262,9 @@ const SingleUse = () => {
             <hr className = "horz-line5b" />
 
           <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
- 
-          <div class="circle"></div>
+          <span>
+            <img src = {mold} alt="" />
+            </span>
 
           </div>
       </div>

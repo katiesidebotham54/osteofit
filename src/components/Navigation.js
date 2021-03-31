@@ -5,13 +5,13 @@ import {
     Link,
     Switch
   } from 'react-router-dom'
-  import '../src/styling/App.scss';
-  import logo from './images/osteofitLogo.png'
-import Home from './components/Home'
-import Contact from './components/Contact'
-import About from './components/About'
-import Product from './components/Product'
-import SingleUse from './components/SingleUse'
+  import '../styling/App.scss';
+  import logo from '../images/osteofitLogo.png'
+import Home from './Home'
+import Contact from './Contact'
+import About from './About'
+import Product from './Product'
+import SingleUse from './SingleUse'
 
 
 class Navigation extends Component{
