@@ -3,13 +3,14 @@ import {
     BrowserRouter as Router,
     Link,
   } from 'react-router-dom'
-  import '../src/styling/App.scss';
-  import osteofitWhiteLogo from "./images/osteofitWhiteLogo.png";
+  import '../styling/App.scss';
+  import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
   import EmailIcon from '@material-ui/icons/Email';
 
 
 class Footer extends Component {
     render(){
+        
     return(
         <div id="footer-container">
         <div className = "footer"> 

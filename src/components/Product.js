@@ -1,9 +1,8 @@
-import React from "react";
-import { Paper } from "@material-ui/core";
-import Productmodel from "../images/productmodel.png";
-import modelPart1 from "../images/Osteofitmodelpart1.PNG"
-import modelPart2 from "../images/Osteofitmodelpart2.PNG"
-import modelPart4 from "../images/Osteofitmodelpart4.PNG"
+import React, {useEffect} from "react";
+import modelPart1 from "../images/Osteofitmodelpart1.png"
+import problem from "../images/problem.jpg"
+import modelPart2 from "../images/Osteofitmodelpart2.png"
+import modelPart4 from "../images/Osteofitmodelpart4.png"
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
@@ -20,49 +19,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Product = () => {
-  const sizes = document.querySelectorAll('.size');
-  const colors = document.querySelectorAll('.color');
-  const products = document.querySelectorAll('.product');
-  const gradients = document.querySelectorAll('.gradient');
-  
-  let prevColor = "gray";
-  let animationEnd = true;
-  
-  function changeSize(){
-      sizes.forEach(size => size.classList.remove('active'));
-      this.classList.add('active');
-  }
-  
-  function changeColor(){
-      if(!animationEnd) return;
-      let color = this.getAttribute('color');
-      let product = document.querySelector('.product[color="${color}"');
-      let gradient = document.querySelector('.gradient[color="${color}"');
-      let prevGradient = document.querySelector('.gradient[color="${prevColor}"]');
-  
-      if(color === prevColor) return;
-  
-      colors.forEach(c => c.classList.remove('active'));
-      this.classList.add('show');
-        
-      products.forEach(p => p.classList.remove('show'));
-      product.classList.add('show');
-  
-      gradients.forEach(g => g.classList.remove('first', 'second'));
-      gradient.classList.add('first');
-      prevGradient.classList.add('second');
-  
-      prevColor = color;
-      animationEnd = false;
-  
-      gradient.addEventListener('animationend', () => {
-          animationEnd = true;
-      })
-  }
-  
-  sizes.forEach(size => size.addEventListener('click', changeSize));
-  colors.forEach(c => c.addEventListener('click', changeColor));
-  
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -117,7 +73,7 @@ const Product = () => {
 
     return (
       <div className="Product">
-        <h1 className="title">
+        <h1 className="title-product">
           <span className="fade-in-text">Our Product</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
             <path
@@ -127,6 +83,29 @@ const Product = () => {
             ></path>
           </svg>
         </h1>
+        <ScrollAnimation animateIn="fadeIn">
+
+        <h2 className = "problem-text">The Problem</h2>
+        </ScrollAnimation>
+        <div className="product-container">
+        <img src={problem} alt="" />
+
+          <figure class="item-content-product">
+        <ScrollAnimation animateIn="fadeIn">
+
+        <p className="product-text">
+        The current procedure for reamers allows surgeons to use a singular 
+        reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
+        and requires more axial force by the surgeon. This leads to a <b>higher 
+        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation</b> 
+        (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
+        most effective and clean product for surgery.
+
+        </p>
+        </ScrollAnimation>
+        </figure>
+        </div>
+
         <h2 className = "product-pen">
           Our Hollow Spherical Reamer is
           <span
@@ -136,161 +115,15 @@ const Product = () => {
           ></span>
         </h2>
         <ScrollAnimation animateIn="fadeIn">
-        <div className = "product-paper">
-        </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
-        <div className = "product-and-parts">
-          <div className="product-item-3d">
-            <span class="product-ground"></span>
-            <figure class="product-item-content group">
-              <div class="product-item-img">
-                <img src={Productmodel} alt="" />
-              </div>
-            </figure>
-          </div>
-        </div>
-        </ScrollAnimation>
-        <div className = "outer-container">
-          <div class="container-about">
-  <div class="box">
-    <div class="boxContent">
-      <i class="fas fa-head-side-mask icon"></i>
 
-      <h1 class="title-about">Orthopedic Surgeon</h1>
-      <p class="desc">
-      <h3>50+</h3> 
-      <br/>
-years of experience specializing in hip and knee replacement.</p>
-      
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxContent">
-    <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Designer</h1>
-      <h3>40+</h3>
-      <br/>
-      <p class="desc">Over 
-      years of experience in design and development of orthopedic implants working with major OEMs.</p>
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxContent">
-<i class="fas fa-tools icon"></i>
-
-          <h1 class="title-about">Manufactuer</h1>
-      <h3>40+
-        </h3> 
-      <br/>
-      <p class="desc">Over 
-      years in the development and manufacturing of orthopedic implants and instruments</p>
-    </div>
-  </div>
-</div>
-</div>
-        {/*<ScrollAnimation animateIn="fadeIn">
-        <div className = "model-section-2">
-        <div className = "model-part-1">
-            <img src={modelPart1} alt=""></img>
-            <span className = "model-part-1-text">
-              <ul>
-              <li>
-                  Panels made from ASTM A276 420 Stainless Steel
-                </li>
-                <br/>
-                <li>
-                  Stamped Dome Cutting Panel
-                </li>
-                <br/>
-                <li>
-                  Stamped Side Cutting Panel
-                </li>
-                <br/>
-                <li>
-                  Panel-Frame Subassembly includes 4 side panels and 1 dome panel 
-                </li>
-              </ul>
-
-            </span>
-            <div className = "component-title">
-
-            <Paper elevation={13}>
-              <h3>Stainless Steel Panels</h3>
-            </Paper>
-          </div>
-        </div> }
-          <div className = "model-part-2">
-            <img src={modelPart2} alt=""></img>
-            <span className = "model-part-2-text">
-            <ul>
-                <li>
-                  Molded back plate
-                </li>
-                <br/>
-                <li>
-                Made of Polycarbonate 2061-15
-                </li>
-                <br/>
-
-                <li>
-                  Features tabs for ultrasonic welding
-                </li>
-                <br/>
-              </ul>
-
-            </span>
-            <div className = "component-title">
-            <Paper elevation={13}>
-              <h3>Back Plate</h3>
-            </Paper>
-            </div>
-          </div>
-          <div className = "model-part-4">
-            <img src = {modelPart4} alt=""/>
-            <span className = "model-part-4-text">
-            <ul>
-                <li>
-                  Molded core for structural integrity 
-                </li>
-                <br/>
-                <li>
-                Made of Polycarbonate 2061-15
-                </li>
-                <br/>
-                <li>
-                  Multiple options for quick-connect coupling to Reamer Shaft
-                </li>
-                <br/>
-
-                <li>
-                  Color coded by size
-                </li>
-                <br/>
-
-                <li>
-                  Space calculated for reamed volume of bone 
-                </li>
-              </ul>
-
-            </span>
-            <div className = "component-title">
-            <Paper elevation={13}>
-              <h3>Injection Mold</h3>
-            </Paper>
-</div>
-          </div>
-        </div>
-        </ScrollAnimation>*/}
-        <ScrollAnimation animateIn="fadeIn">
         <div className="card-container">
           <div className="card">
             <div className="productBackground">
               <div className="gradients">
-                <div class="gradient second" color="gray"/>
+                <div class="gradient" color="gray"/>
                 <div class="gradient" color="black"/>
-                <div class="gradient" color="brown"/>
-                <div class="gradient" color="blue"/>
+                <div class="gradient " color="brown"/>
+                <div class="gradient second" color="blue"/>
                 <div class="gradient" color="green"/>
                 <div class="gradient" color="red"/>
                 <div class="gradient" color="orange"/>
@@ -321,9 +154,9 @@ years of experience specializing in hip and knee replacement.</p>
                 </div>
               </div>
               <div class="color-container">
-                <h3 class="subtitle">Color</h3>
+                <h3 class="subtitle">Available Colors</h3>
                   <div class="colors">
-                    <span class="color" color = "gray" ></span>
+                    <span class="color" color = "gray"></span>
                     <span class="color" color = "brown" ></span>
                     <span class="color" color = "black" ></span>
                     <span class="color" color = "blue" ></span>
@@ -337,7 +170,7 @@ years of experience specializing in hip and knee replacement.</p>
                   </div>
               </div>
             <div class="size-container">
-                <h3 class="subtitle">size</h3>
+                <h3 class="subtitle">Available Sizes</h3>
                 <div class="sizes">
                     <span class = "size">40</span>
                     <span class = "size">42</span>
@@ -367,7 +200,83 @@ years of experience specializing in hip and knee replacement.</p>
         </div>
     </div>
   </div>
-      </ScrollAnimation>
+  </ScrollAnimation>
+  <ScrollAnimation animateIn="fadeIn">
+
+        <div className = "outer-container-product">
+          <div className = 'color-square'></div>
+          <h1>Reamer Components Breakdown</h1>
+          <div class="container-product">
+          <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i>
+          <i class="fa fa-long-arrow-right arrow2" aria-hidden="true"></i>
+          <i class="fa fa-long-arrow-right arrow3" aria-hidden="true"></i>
+
+  <div class="box">
+    <div className="box-header">
+    <img src={modelPart1} className='parts-img1'/>
+      <h1 class="title1">Cutting Panels</h1>
+    </div>
+    <div class="boxContent">
+      <ul className="desc">
+      <li>
+                  Panels made from <b>ASTM A276 420 Stainless Steel</b>
+                </li>
+                <li>
+                  Stamped Dome Cutting Panel
+                </li>
+                <li>
+                  Stamped Side Cutting Panel
+                </li>
+                <li>
+                  Panel-Frame Subassembly includes 4 side panels and 1 dome panel 
+                </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="box">
+    <div className="box-header">
+    <img src={modelPart2} className='parts-img2'/>
+          <h1 class="title2">Molded Back Plate</h1>
+    </div>
+    <div class="boxContent">
+        <ul className="desc"> <li>
+                <b>Polycarbonate 2061-15</b>
+                </li>
+                <li>
+                  Features tabs for ultrasonic welding
+                </li>
+              </ul>
+    </div>
+  </div>
+  <div class="box">
+  <div className="box-header">
+  <img src={modelPart4} className='parts-img3'/>
+  <h1 class="title3">Molded Core</h1>
+</div>
+    <div class="boxContent">
+          <ul className="desc">
+                <li>
+                 <b>Polycarbonate 2061-15</b>
+                </li>
+                <li>
+                  Helps with structural integrity 
+                </li>
+                <li>
+                  Multiple options for quick-connect coupling to Reamer Shaft
+                </li>
+                <li>
+                  Color coded by size
+                </li>
+                <li>
+                  Space calculated for reamed volume of bone 
+                </li>
+          </ul>
+    </div>
+  </div>
+</div>
+</div>
+</ScrollAnimation>
     </div>
     );
   }

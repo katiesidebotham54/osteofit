@@ -28,7 +28,6 @@ const About = () => {
               <img src={aboutUs} alt="" />
             </div>
 
-            <figcaption class="item-caption-about">
             <ScrollAnimation animateIn="fadeIn">
 
               <h2>About Us</h2>
@@ -45,7 +44,6 @@ const About = () => {
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>
-              </figcaption>    
         </figure>
         </div>
         <ScrollAnimation animateIn="fadeIn">
@@ -56,7 +54,7 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
           <ScrollAnimation animateIn="fadeIn">
-            <div className = "outer-container">
+            <div className = "outer-container-about">
           <div class="container-about">
   <div class="box">
     <div class="boxContent">
@@ -76,7 +74,7 @@ years of experience specializing in hip and knee replacement.</p>
           <h1 class="title-about">Designer</h1>
       <h3>40+</h3>
       <br/>
-      <p class="desc">Over 
+      <p class="desc"> 
       years of experience in design and development of orthopedic implants working with major OEMs.</p>
     </div>
   </div>
@@ -88,7 +86,7 @@ years of experience specializing in hip and knee replacement.</p>
       <h3>40+
         </h3> 
       <br/>
-      <p class="desc">Over 
+      <p class="desc"> 
       years in the development and manufacturing of orthopedic implants and instruments</p>
     </div>
   </div>
