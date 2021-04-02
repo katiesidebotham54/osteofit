@@ -21,7 +21,6 @@ const Home = () => {
         <h1>Osteofit is: </h1>
         </span>
         <div> 
-          
             <ul class="flip4"> 
                 <li>Accurate</li>
                 <li>Sterile</li>
@@ -29,25 +28,25 @@ const Home = () => {
                 <li>Sustainable</li>  
             </ul>
         </div>  
+      </div>
+      
+      <div class="slideshow-container">
+        <div class="slideshow-inner">
+          <div class="mySlides fade img1">
+            <img src={model1} alt="tree" />
           </div>
-          <div class="slideshow-container">
-            <div class="slideshow-inner">
-              <div class="mySlides fade img1">
-                <img src={model1} alt="tree" />
-              </div>
-              <div class="mySlides fade img2">
-                <img src={model2} alt="autumn" />
-              </div>
-              <div class="mySlides fade img3">
-                <img src={model3} alt="path" />
-              </div>
-              <div class="mySlides fade img3">
-                <img src={model4} alt="path" />
-              </div>
-
-            </div>
+          <div class="mySlides fade img2">
+            <img src={model2} alt="autumn" />
           </div>
-          <br />
+          <div class="mySlides fade img3">
+            <img src={model3} alt="path" />
+          </div>
+          <div class="mySlides fade img3">
+            <img src={model4} alt="path" />
+          </div>
+        </div>
+      </div>
+      <br />
           <div className="allDots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -55,53 +54,44 @@ const Home = () => {
             <span class="dot" onclick="currentSlide(4)"></span>
 
           </div>
-        </div>
+      </div>
       <div class="home-arrow">
           <div class="chevron"></div>
           <div class="chevron"></div>
           <div class="chevron"></div>
           <span class="text">Scroll down</span>
-    </div>
+      </div>
     <ScrollAnimation animateIn="fadeIn">
-
         <div className = "HomePara">
           <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
              that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
         </div>
-        </ScrollAnimation>
-
-        <div className="item-3d">
-          <span class="ground"></span>
-          <figure class="item-content group">
-            <div class="item-img">
+    </ScrollAnimation>
+      <div className="item-3d">
+        <span class="ground"/>
+        <figure class="item-content group">
+          <div class="item-img">
               <img src={Product} alt="" />
-            </div>
-
-            <figcaption class="item-caption">
-            <ScrollAnimation animateIn="fadeIn">
-
-              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer:
-              </h2>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn">
-
+          </div>
+          <figcaption class="item-caption">
+          <ScrollAnimation animateIn="fadeIn">
+              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
               <p style={{color:"white"}}>
               Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
               Click here to learn more! 
               </p>
-              </ScrollAnimation>
-              <Button variant="contained" className="button">
-                <Router forceRefresh>
-                  <Link exact to="/product">
-                    Our Product
-                  </Link>
-                </Router>
-              </Button>
-            </figcaption>    
-
-          </figure>
-        </div>
+          </ScrollAnimation>
+            <button class = 'btn-1'>
+              <Router forceRefresh>
+                <Link exact to="/product">Our Product </Link>
+              </Router>
+            </button>
+          </figcaption>    
+        </figure>
       </div>
+    </div>
     );
 }
 

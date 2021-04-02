@@ -1,3 +1,7 @@
+$darkblue: #1a658f;
+$lightblue: #297caf;
+$yellow: rgb(255, 204, 0);
+
 .recycle-para .MuiPaper-root {
   position: absolute;
   top: 40%;
@@ -147,14 +151,29 @@ blockquote.speech {
 
 .recycle {
   position: relative;
-  height: 800px;
-}
+  height: 890px;
+  h2 {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 50px;
+  }
+  .iconify {
+    font-size: 130px;
+    color: #57d75b;
+    top: 38.2%;
+    left: 45.6%;
+    position: absolute;
+  }
+  span {
+    position: absolute;
+    left: 35%;
+    top: 78%;
 
-.recycle h2 {
-  padding-top: 3%;
-  padding-bottom: 1%;
-  text-align: center;
-  font-size: 50px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .timeline {
@@ -211,7 +230,8 @@ blockquote.speech {
   position: absolute;
   left: calc(100% + 7px);
   width: 120px;
-  padding: 15px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   height: 70px;
   text-align: center;
@@ -232,7 +252,7 @@ blockquote.speech {
 }
 
 .timeline ol li:nth-child(odd) div {
-  top: -16px;
+  top: -20px;
   transform: translateY(-100%);
 }
 
@@ -291,24 +311,14 @@ $separator-space-top: 18px;
   opacity: 0.8;
 
   max-width: 35%;
-  animation: separator-width 1s ease-out forwards;
-}
-@keyframes separator-width {
-  0% {
-    width: 20%;
-  }
-  100% {
-    width: 100%;
-  }
 }
 .horz-line5b {
   position: absolute;
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
   opacity: 0.8;
-  left: 56.6%;
-  top: 53.2%;
-
+  left: 56.5%;
+  top: 45%;
   max-width: 24.5%;
   animation: separator-width 1s ease-out forwards;
 }
@@ -549,6 +559,7 @@ ol.gradient-list {
   font-size: 40px;
   letter-spacing: 0.6px;
   font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 
 .benefits-single-use h3 {
@@ -556,7 +567,7 @@ ol.gradient-list {
 }
 
 .benefits-single-use h3 span {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: 22%;
   font-size: 40px;
   color: white;
@@ -592,13 +603,12 @@ ol.gradient-list {
 }
 
 .wrapper {
-  padding-left: 22%;
+  padding-left: 26%;
   h2 {
     color: #fff;
-    font-size: 92px;
-    font-family: "Raleway";
+    font-size: 80px;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    font-weight: 500;
     background: linear-gradient(
       to right,
       #297caf 10%,
@@ -623,20 +633,11 @@ ol.gradient-list {
   }
 }
 
-.recycle {
-  .iconify {
-    font-size: 130px;
-    color: #57d75b;
-    top: 45%;
-    left: 45.6%;
-    position: absolute;
-  }
-}
-
 .recycle-desc {
-  height: 150px;
+  height: 100px;
   width: 70%;
   margin-left: 18%;
+  font-family: "Open Sans", sans-serif;
   h2 {
     color: #57d75b;
     text-align: center;
@@ -644,10 +645,11 @@ ol.gradient-list {
   }
   h3 {
     width: 90%;
-    padding-top: 4%;
+    padding-top: 1%;
     color: #555555;
     text-align: center;
     font-size: 30px;
+    font-weight: 700;
   }
   p {
     position: absolute;
@@ -657,22 +659,25 @@ ol.gradient-list {
     width: 53%;
     font-size: 25px;
     left: 23%;
-    top: 65%;
+    top: 55%;
   }
 }
 
 .paper4 {
-  position: relative;
-  text-align: center;
-  left: 17.2%;
-  bottom: 43.5%;
+  span {
+    position: absolute;
+    text-align: center;
+  }
+  margin-left: 55%;
 }
 
 .paper3 {
-  top: 52.1%;
-  position: relative;
-  right: 18%;
-  text-align: center;
+  span {
+    position: absolute;
+    text-align: center;
+  }
+  margin-left: 21%;
+  bottom: 0%;
 }
 
 .bottompapers2 h2 {
@@ -686,13 +691,14 @@ ol.gradient-list {
   height: 320px;
   overflow: hidden;
   margin: 0;
-  padding-bottom: 10%;
+  padding-top: 4%;
 }
 
 .bottompapers2 p {
   color: #555555;
   font-weight: 400;
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .paper3 .MuiButton-contained {
@@ -711,9 +717,105 @@ ol.gradient-list {
   left: 47%;
   letter-spacing: 1px;
   line-height: 2;
+  font-family: "Open Sans", sans-serif;
   b {
     margin-left: 12%;
     color: rgb(255, 204, 0);
     font-size: 35px;
+    font-weight: 600;
   }
+}
+
+.contact-btn-2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background: $yellow;
+  color: $darkblue;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 12px;
+  width: auto;
+  position: relative;
+
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 85%;
+    top: 34%;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: rgb(244, 216, 107);
+    transition: all 0.5s;
+    border-radius: 10px;
+    padding: 1rem 3rem 1rem 1rem;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}
+.contact-btn-1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background: $yellow;
+  color: $darkblue;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 12px;
+  width: auto;
+  position: relative;
+
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 85%;
+    top: 34%;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: rgb(244, 216, 107);
+    transition: all 0.5s;
+    border-radius: 10px;
+    padding: 1rem 3rem 1rem 1rem;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.rectangle1 {
+  position: absolute;
+  left: 4.1%;
+  top: 23.5%;
+  height: 230px;
+  z-index: -1;
+  width: 60px;
+  background-color: $darkblue;
+}
+.rectangle2 {
+  position: absolute;
+  left: 4.1%;
+  top: 59.3%;
+  height: 230px;
+  z-index: -1;
+  width: 60px;
+  background-color: $darkblue;
 }

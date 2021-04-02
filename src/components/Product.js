@@ -97,7 +97,7 @@ const Product = () => {
         The current procedure for reamers allows surgeons to use a singular 
         reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
         and requires more axial force by the surgeon. This leads to a <b>higher 
-        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation</b> 
+        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
         (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
         most effective and clean product for surgery.
 
