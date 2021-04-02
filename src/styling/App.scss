@@ -194,6 +194,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  position: fixed;
+  background: white;
+  z-index: 1;
+  top: 0;
 }
 
 button {
