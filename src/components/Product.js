@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
-import modelPart1 from "../images/Osteofitmodelpart1.png"
+import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import problem from "../images/problem.jpg"
-import modelPart2 from "../images/Osteofitmodelpart2.png"
-import modelPart4 from "../images/Osteofitmodelpart4.png"
+import modelPart2 from "../images/Osteofitmodelpart2.PNG"
+import modelPart4 from "../images/Osteofitmodelpart4.PNG"
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
