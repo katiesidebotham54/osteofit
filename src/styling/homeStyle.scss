@@ -1,3 +1,7 @@
+$darkblue: #1a658f;
+$lightblue: #297caf;
+$yellow: rgb(255, 204, 0);
+
 .home-arrow {
   display: flex;
   justify-content: center;
@@ -97,6 +101,7 @@
   width: 100%;
   margin: auto;
   font-size: 30px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-para-home {
@@ -383,6 +388,7 @@ strong {
   display: inline-block;
   margin-bottom: 0.3rem;
   margin-right: auto;
+  font-family: "Open Sans", sans-serif;
 
   &:before {
     content: "";
@@ -414,7 +420,7 @@ strong {
 }
 
 .item-caption .MuiButton-contained {
-  background-color: rgb(255, 204, 0);
+  background-color: $yellow;
 }
 
 .item-caption p {
@@ -542,10 +548,49 @@ strong {
 .mission-title-text h1 {
   font-weight: 700;
   background: none;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 50px;
   padding-top: 10%;
   float: left;
   display: inline-block;
   margin-left: 18%;
+}
+
+.btn-1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background: $yellow;
+  color: $darkblue;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 12px;
+  width: auto;
+  position: relative;
+
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 85%;
+    top: 34%;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: rgb(244, 216, 107);
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px $darkblue;
+    padding: 1rem 3rem 1rem 1rem;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
 }

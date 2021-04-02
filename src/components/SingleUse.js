@@ -1,7 +1,6 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
 import mold from '../images/steel-mold.png';
-import Button from "@material-ui/core/Button";
 import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -22,6 +21,7 @@ const SingleUse = () => {
       </div>
       <div className="comparison">
         <div className = "background-container">
+        <ScrollAnimation animateIn="fadeIn">
         <div className="comparison-title-reusable">
           <Paper elevation={3}>
             <h2>Reusable</h2>
@@ -32,7 +32,6 @@ const SingleUse = () => {
           <Paper elevation={3}>
             <h2>Osteofit </h2>
           </Paper>
-          <ScrollAnimation animateIn="fadeIn">
           <div className="icon1">
             <h2>
               Simple and Efficient 
@@ -44,8 +43,6 @@ const SingleUse = () => {
               </span>
             </h2>
           </div>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
 
           <div className="icon2">
 
@@ -69,8 +66,8 @@ const SingleUse = () => {
               </span>
             </h2>
           </div>
-          </ScrollAnimation>
         </div>
+        </ScrollAnimation>
         </div>
       </div>
       <div className="cycles">
@@ -94,6 +91,7 @@ const SingleUse = () => {
         <ScrollAnimation animateIn="fadeIn">
 
         <h2>Reusable</h2>
+        <div className = "rectangle1"></div>
         <section class="timeline">
             <ol>
               <li>
@@ -149,6 +147,7 @@ const SingleUse = () => {
         <div>
         <ScrollAnimation animateIn="fadeIn">
         <h2>Osteofit</h2>
+        <div className = "rectangle2"></div>
         <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
         <section class="timeline">
             <ol>
@@ -271,25 +270,28 @@ const SingleUse = () => {
 
       <div className="bottompapers2">
           <div class="paper3">
+            <span>
               <h2>Recycling Stainless Steel</h2>
               <br />
               <p>Click below to learn more about this process!</p>
               <br />
               <br />
-              <Button href= "http://polycarbonaterecycling.com/polycarbonate-recycling.html" variant="contained">
+              <button href= "http://polycarbonaterecycling.com/polycarbonate-recycling.html" class = 'contact-btn-1'>
                    Learn More
-              </Button>
+              </button>
+              </span>
           </div>
       <div class="paper4">
+        <span>
             <h2>Recycling Polycarbonate </h2>
               <br />     
               <p>Click below to learn more about this process!</p>
               <br />
               <br />
-              <Button href="http://www.metalrecyclersusa.com/stainless-steel-recycling.html#:~:text=Once%20the%20stainless%20steel%20has,is%20separated%20from%20other%20material." variant="contained">
-                   Learn More
-              </Button>
-              
+              <button href="http://www.metalrecyclersusa.com/stainless-steel-recycling.html#:~:text=Once%20the%20stainless%20steel%20has,is%20separated%20from%20other%20material." class = 'contact-btn-2'>
+              Learn More
+              </button>   
+              </span>           
           </div>
 
       </div>  
