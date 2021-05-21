@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import modelPart1 from "../images/Osteofitmodelpart1.png"
 import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.png"
@@ -213,7 +213,7 @@ const Product = () => {
 
   <div class="box">
     <div className="box-header">
-    <img src={modelPart1} className='parts-img1'/>
+    <img src={modelPart1} className='parts-img1' alt=""/>
       <h1 class="title1">Cutting Panels</h1>
     </div>
     <div class="boxContent">
@@ -236,7 +236,7 @@ const Product = () => {
   </div>
   <div class="box">
     <div className="box-header">
-    <img src={modelPart2} className='parts-img2'/>
+    <img src={modelPart2} className='parts-img2' alt=""/>
           <h1 class="title2">Molded Back Plate</h1>
     </div>
     <div class="boxContent">
@@ -251,7 +251,7 @@ const Product = () => {
   </div>
   <div class="box">
   <div className="box-header">
-  <img src={modelPart4} className='parts-img3'/>
+  <img src={modelPart4} className='parts-img3' alt=""/>
   <h1 class="title3">Molded Core</h1>
 </div>
     <div class="boxContent">
