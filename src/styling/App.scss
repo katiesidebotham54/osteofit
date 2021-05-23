@@ -184,7 +184,7 @@ nav .nav-logo {
 }
 
 nav .contact-button {
-  margin-left: 22%;
+  margin-left: 20%;
 }
 
 nav .contact-button a {
@@ -209,10 +209,6 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3 ease 0s;
-}
-
-button:hover {
-  background-color: rgba(255, 204, 0, 0.8);
 }
 
 #footer-container {
@@ -303,11 +299,6 @@ form {
   text-align: center;
 }
 
-.Contact .MuiFormControl-root {
-  min-width: 40%;
-  margin-left: auto;
-}
-
 #repeat {
   padding-left: 2%;
   padding-bottom: 3.5%;
@@ -317,50 +308,45 @@ form {
   margin-bottom: 5%;
 }
 
-.Contact .MuiFormControl-root {
-  min-width: 60%;
-  margin-left: auto;
-}
-
-.contact-text h1 {
-  background: none;
-  text-transform: uppercase;
-  color: #1a658f;
+.btn-2 {
+  a {
+    color: #0f4264;
+  }
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  text-align: center;
-  margin-right: 20%;
-  padding-bottom: 0.8%;
-}
-
-.contact-text p {
-  text-align: center;
-  margin-right: 8%;
-  color: #1a658f;
-  font-weight: 400;
-  padding-bottom: 8%;
-}
-
-.contact-container {
-  padding: 2%;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 1rem;
+  border: 0;
+  transition: all 0.5s;
   border-radius: 55px;
-  border-color: rgba(255, 204, 0, 0.8);
-  margin-left: 30%;
-  width: 40%;
-  height: 650px;
-  margin-bottom: 7%;
-}
-
-.contact-image img {
+  width: auto;
   position: relative;
-  width: 10%;
-  left: 90%;
-  top: 0;
-}
 
-.MuiButton-label {
-  color: white;
-}
+  &::after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 85%;
+    top: 34%;
+    bottom: 0;
+    opacity: 0;
+  }
 
-form .MuiButton-contained {
-  background-color: #1a658f;
+  &:hover {
+    transition: all 0.5s;
+    border-radius: 50px;
+    box-shadow: 0px 6px 10px rgb(145, 145, 157);
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: rgba(255, 204, 0, 0.9);
+    a {
+      color: #052032;
+    }
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
 }

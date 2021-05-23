@@ -1,6 +1,5 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
@@ -13,7 +12,7 @@ const About = () => {
         <div>
           <h1 className="title">
             <span className="fade-in-text">Who is Osteofit?</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
               <path
                 fill="#FFFFFF"
                 fill-opacity="1"
@@ -156,14 +155,11 @@ years of experience specializing in hip and knee replacement.</p>
               <br />
               <p>Click below to view our product!</p>
               <br />
-              <br />
-              <Button variant="contained">
-                <Router forceRefresh>
-                  <Link exact to="/product">
-                    Our Product
-                  </Link>
-                </Router>
-              </Button>
+                <button class = 'btn-1'>
+                  <Router forceRefresh>
+                    <Link exact to="/product">Our Product</Link>
+                  </Router>
+                </button>
             </Paper>
           </div>
           <div class="paper2">
@@ -174,14 +170,11 @@ years of experience specializing in hip and knee replacement.</p>
               <p>Click below for questions, comments, or inquieries!</p>
               <br />              
               <br />
-              <br />
-              <Button variant="contained" className="button">
-                <Router forceRefresh>
-                  <Link exact to="/contact">
-                    Contact Us
-                  </Link>
-                </Router>
-              </Button>
+              <button class = 'btn-1'>
+              <Router forceRefresh>
+                <Link exact to="/contact">Contact Us</Link>
+              </Router>
+            </button>
             </Paper>
           </div>
         </div>

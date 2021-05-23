@@ -10,7 +10,7 @@ const SingleUse = () => {
       <div>
         <h1 className="title-single-use">
           <span className="fade-in-text">Why Use Single-Use Products?</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
               <path
                 fill="#FFFFFF"
                 fill-opacity="1"

@@ -1,7 +1,6 @@
 import React from "react";
 import Product from "../images/product.png"
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import Button from "@material-ui/core/Button";
 import ScrollAnimation from 'react-animate-on-scroll';
 import model1 from '../images/model1.png'
 import model2 from '../images/model2.png'

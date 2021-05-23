@@ -75,7 +75,7 @@ const Product = () => {
       <div className="Product">
         <h1 className="title-product">
           <span className="fade-in-text">Our Product</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
             <path
               fill="#FFFFFF"
               fill-opacity="1"
@@ -213,7 +213,7 @@ const Product = () => {
 
   <div class="box">
     <div className="box-header">
-    <img src={modelPart1} className='parts-img1'/>
+    <img src={modelPart1} className='parts-img1' alt=""/>
       <h1 class="title1">Cutting Panels</h1>
     </div>
     <div class="boxContent">
@@ -236,7 +236,7 @@ const Product = () => {
   </div>
   <div class="box">
     <div className="box-header">
-    <img src={modelPart2} className='parts-img2'/>
+    <img src={modelPart2} className='parts-img2' alt=""/>
           <h1 class="title2">Molded Back Plate</h1>
     </div>
     <div class="boxContent">
@@ -251,7 +251,7 @@ const Product = () => {
   </div>
   <div class="box">
   <div className="box-header">
-  <img src={modelPart4} className='parts-img3'/>
+  <img src={modelPart4} className='parts-img3' alt=""/>
   <h1 class="title3">Molded Core</h1>
 </div>
     <div class="boxContent">
