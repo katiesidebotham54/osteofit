@@ -557,10 +557,11 @@ strong {
 }
 
 .btn-1 {
+  a {
+    color: #0f4264;
+  }
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  background: $yellow;
-  color: $darkblue;
   cursor: pointer;
   font-size: 1em;
   padding: 1rem;
@@ -582,10 +583,9 @@ strong {
   }
 
   &:hover {
-    background: rgb(244, 216, 107);
     transition: all 0.5s;
     border-radius: 10px;
-    box-shadow: 0px 6px 10px $darkblue;
+    box-shadow: 0px 6px 10px rgb(145, 145, 157);
     padding: 1rem 3rem 1rem 1rem;
 
     &::after {

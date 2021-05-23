@@ -1,3 +1,7 @@
+$darkblue: #1a658f;
+$lightblue: #297caf;
+$yellow: rgb(255, 204, 0);
+
 .outer-container-about {
   width: 100%;
   height: 500px;
@@ -129,6 +133,8 @@
 .team-title {
   h1 {
     color: #1a658f;
+    font-family: "Raleway" sans-serif;
+    text-transform: uppercase;
     font-size: 60px;
     background: none;
     width: 100%;
@@ -267,7 +273,7 @@
 }
 
 .bottompapers h2 {
-  color: #0f4264;
+  color: $darkblue;
   text-transform: uppercase;
   font-size: 30px;
 }

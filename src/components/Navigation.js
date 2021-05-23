@@ -50,11 +50,11 @@ class Navigation extends Component{
                             </Router>
                             <Router forceRefresh>
                             <li className = "contact-button">
-                            <button>
-                                <Link exact to="/contact">
-                                Contact Us
-                                </Link>
-                            </button>
+                            <button class = 'btn-2'>
+              <Router forceRefresh>
+                <Link exact to="/contact">Contact Us</Link>
+              </Router>
+            </button>
                             </li>
                             </Router>
                             
