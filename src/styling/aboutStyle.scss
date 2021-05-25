@@ -17,12 +17,6 @@ $yellow: rgb(255, 204, 0);
   top: 8%;
 }
 
-.active {
-  z-index: 3;
-  top: -25px;
-  height: 300px;
-}
-
 .title-bio {
   color: #1a658f;
   font-size: 30px;
@@ -135,6 +129,7 @@ $yellow: rgb(255, 204, 0);
     color: #1a658f;
     font-family: "Raleway" sans-serif;
     text-transform: uppercase;
+    font-weight: 500;
     font-size: 60px;
     background: none;
     width: 100%;
@@ -258,8 +253,11 @@ $yellow: rgb(255, 204, 0);
   width: 60%;
   height: 50%;
   text-align: center;
-  padding: 25px;
-  font-family: "Raleway", sans-serif;
+  padding: 35px;
+  font-family: "Open Sans", sans-serif;
+  h2 {
+    font-family: "Raleway", sans-serif;
+  }
 }
 
 .paper2 .MuiPaper-root {
@@ -268,8 +266,11 @@ $yellow: rgb(255, 204, 0);
   width: 60%;
   height: 50%;
   text-align: center;
-  padding: 25px;
-  font-family: "Raleway", sans-serif;
+  padding: 35px;
+  font-family: "Open Sans", sans-serif;
+  h2 {
+    font-family: "Raleway", sans-serif;
+  }
 }
 
 .bottompapers h2 {
@@ -378,10 +379,11 @@ $hoverBgColor2: #0f4264;
       .desc {
         color: #1a658f;
         font-size: 20px;
+        width: 90%;
         height: 20%;
       }
       h3 {
-        font-size: 55px;
+        font-size: 50px;
         color: #1a658f;
         font-family: "Open Sans", sans-serif;
       }

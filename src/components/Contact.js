@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import '../styling/contactStyle.scss'
 
-export default () => {
+const Contact = () => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
     info: { error: false, msg: null },
   })
   const [inputs, setInputs] = useState({
-    firstName:'',
-    lastName:'',
+    f_name:'',
+    l_name:'',
     subject:'',
     email: '',
     message: '',
@@ -22,8 +23,8 @@ export default () => {
         info: { error: false, msg: msg },
       })
       setInputs({
-        firstName:'',
-        lastName:'',
+        f_name:'',
+        l_name:'',
         subject:'',
         email: '',
         message: '',
@@ -65,56 +66,65 @@ export default () => {
       })
   }
   return (
-    <main>
-      <h1>Get in Touch!</h1>
-      <hr />
-      <form onSubmit={handleOnSubmit}>
-      <label htmlFor="first_name">First Name</label>
+    <div className = 'Contact'>
+    <div className="contact-container">
+      <h1 className = "form-title">Get in Touch!</h1>
+      <p className = "contact-para">For all questions and inquiries, please use the form below.</p>
+      <form id="form" onSubmit={handleOnSubmit}>
+      <div className = "f_name">
         <input
-          id="first_name"
-          type="text"
-          name="firstName"
+        id="first_name"
+        placeholder="First Name"
+          name="_fname"
           onChange={handleOnChange}
           required
-          value={inputs.firstName}
         />
-      <label htmlFor="last_name">Last Name</label>
+        </div>
+        <div className = 'l_name'>
         <input
-          id="last"
-          type="text"
-          name="lastName"
+          id="last_name"
+          placeholder="Last Name"
+          name="_lname"
           onChange={handleOnChange}
           required
-          value={inputs.lastName}
         />
-      <label htmlFor="subject">Subject</label>
+        </div>
+        <div className = "subject">
         <input
           id="subject"
+          placeholder="Subject"
           type="text"
           name="_subject"
           onChange={handleOnChange}
           required
           value={inputs.subject}
         />
+          </div>
+<div className = "client_email">
 
-        <label htmlFor="email">Email</label>
         <input
           id="email"
+          placeholder="Email"
           type="email"
           name="_replyto"
           onChange={handleOnChange}
           required
           value={inputs.email}
         />
-        <label htmlFor="message">Message</label>
+        </div>
+        <div className = "msg">
+
         <textarea
           id="message"
+          placeholder="I'm writing to..."
           name="message"
           onChange={handleOnChange}
           required
           value={inputs.message}
         />
-        <button type="submit" disabled={status.submitting}>
+        </div>
+        <br/>
+        <button className = "btn-2" type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
@@ -126,6 +136,8 @@ export default () => {
         <div className="error">Error: {status.info.msg}</div>
       )}
       {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
-    </main>
+    </div>
+    </div>
   )
 }
+export default Contact;

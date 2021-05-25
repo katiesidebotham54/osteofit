@@ -16,6 +16,7 @@ import violet from '../images/violet.png'
 import purple from '../images/purple.png'
 import yellow from '../images/yellow.png'
 import ScrollAnimation from 'react-animate-on-scroll';
+import '../styling/productStyle.scss'
 
 
 const Product = () => {
@@ -122,7 +123,7 @@ const Product = () => {
               <div className="gradients">
                 <div class="gradient" color="gray"/>
                 <div class="gradient" color="black"/>
-                <div class="gradient " color="brown"/>
+                <div class="gradient" color="brown"/>
                 <div class="gradient second" color="blue"/>
                 <div class="gradient" color="green"/>
                 <div class="gradient" color="red"/>

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
 import aboutUs from '../images/aboutUs.png'
+import '../styling/aboutStyle.scss'
 
 
 const About = () => {
@@ -62,7 +63,6 @@ const About = () => {
       <h1 class="title-about">Orthopedic Surgeon</h1>
       <p class="desc">
       <h3>50+</h3> 
-      <br/>
 years of experience specializing in hip and knee replacement.</p>
       
     </div>
@@ -72,7 +72,6 @@ years of experience specializing in hip and knee replacement.</p>
     <i class="fas fa-pen-nib icon"></i>
           <h1 class="title-about">Designer</h1>
       <h3>40+</h3>
-      <br/>
       <p class="desc"> 
       years of experience in design and development of orthopedic implants working with major OEMs.</p>
     </div>
@@ -84,7 +83,6 @@ years of experience specializing in hip and knee replacement.</p>
           <h1 class="title-about">Manufactuer</h1>
       <h3>40+
         </h3> 
-      <br/>
       <p class="desc"> 
       years in the development and manufacturing of orthopedic implants and instruments</p>
     </div>
@@ -151,7 +149,7 @@ years of experience specializing in hip and knee replacement.</p>
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
-              <h2>Want to Learn More?</h2>
+              <h2>Osteofit's Reamer</h2>
               <br />
               <p>Click below to view our product!</p>
               <br />
@@ -166,10 +164,8 @@ years of experience specializing in hip and knee replacement.</p>
             <Paper elevation={13}>
               <h2>Have a Question?</h2>
               <br />
-              <br />
               <p>Click below for questions, comments, or inquieries!</p>
               <br />              
-              <br />
               <button class = 'btn-1'>
               <Router forceRefresh>
                 <Link exact to="/contact">Contact Us</Link>

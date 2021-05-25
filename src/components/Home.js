@@ -1,16 +1,39 @@
 import React from "react";
 import Product from "../images/product.png"
+import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import history from '../history'
 import ScrollAnimation from 'react-animate-on-scroll';
 import model1 from '../images/model1.png'
 import model2 from '../images/model2.png'
 import model3 from '../images/model3.png'
 import model4 from '../images/model4.png'
+import '../styling/homeStyle.scss'
 
 
 
 
 const Home = () => {
+  document.getElementById("scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleBackToTopBtn(e) {
+e.preventDefault()
+rootElement.scrollTo({
+  top: 0,
+  behavior: "smooth"
+})
+
+function handleAboutArrowBtn(e) {
+  e.preventDefault()
+  history.push('/about')
+}
+function handleSustainArrowBtn(e) {
+  e.preventDefault()
+  history.push('/single-use')
+}
+
+}
     return (
       <div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -90,7 +113,81 @@ const Home = () => {
           </figcaption>    
         </figure>
       </div>
+      <ScrollAnimation animateIn="fadeIn">
+      <div className = "stats">
+        <div className = "stats-container">
+          <div className="stat">
+            <div className="stat-value">14</div>
+            <hr />
+
+            <div className="meta">Patents in Place</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">100+</div>
+            <hr />
+            <div className="meta">Total Years of Experience</div>
+      </div>
+
+          <div className="stat">
+            <div className="stat-value">11</div>
+            <hr />
+            <div className="meta">Colors Offerred</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">100%</div>
+            <hr />
+            <div className="meta">Recyclable</div>
+          </div>
+          </div>
+        </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
+
+      <div className = "more-info">
+      <div className = "info-title">
+          <h1>Learn More About...</h1>
+          <hr className = "horz-line4" />
+          </div>
+      <div className="bottompapers">
+          <div class="paper1-home">
+            <Paper elevation={13}>
+            <i class="fas fa-award award-icon"></i>  
+                        <br />
+              <h2>the Origins of Osteofit</h2>
+              <br/>
+              <p>Founded on the premise of creating efficient and precise products for surgeons, Osteofit is challenging the status quo.</p>
+              <a href='/about'>
+              <div class="info-arrow">
+              <Router forceRefresh>
+                <Link exact to="/about"/>  
+                </Router> 
+                </div>  
+                </a>           
+            </Paper>
+          </div>
+          <div class="paper2-home">
+            <Paper elevation={13}>
+            <i class="fab fa-envira envira-icon"></i>
+                          <br />
+              <h2>the Sustainability of Osteofit</h2>
+              <p>We make our reamers with 100% recyclable stainless steel and polycarbonate, making an efficienct and environmentally-friendly process for hospitals!</p>
+              <br />              
+              <Router forceRefresh>
+                <a href='/single-use'>
+              <div class="info-arrow">
+                <Link exact to="/single-use"/>
+                </div>
+                </a>
+              </Router>
+            </Paper>
+          </div>
+          <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
+        </div>
+
+      </div>
+      </ScrollAnimation>
     </div>
+
     );
 }
 
