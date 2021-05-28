@@ -16,6 +16,7 @@ import violet from '../images/violet.png'
 import purple from '../images/purple.png'
 import yellow from '../images/yellow.png'
 import ScrollAnimation from 'react-animate-on-scroll';
+import '../styling/productStyle.scss'
 
 
 const Product = () => {

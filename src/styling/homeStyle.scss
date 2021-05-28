@@ -159,6 +159,41 @@ $yellow: rgb(255, 204, 0);
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.stats {
+  .stats-container {
+    width: 94%;
+    height: 275px;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  }
+  min-height: 350px;
+}
+.stat {
+  padding-top: 60px;
+}
+
+.stat-value {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.meta {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--stat-heading);
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
 
 .active,
 .dot:hover {
@@ -592,5 +627,166 @@ strong {
       opacity: 1;
       transition: all 0.5s;
     }
+  }
+}
+
+.more-info {
+  height: 650px;
+  .info-title {
+    h1 {
+      color: #1a658f;
+      font-family: "Raleway" sans-serif;
+      font-weight: 500;
+      font-size: 50px;
+      background: none;
+      width: 100%;
+      padding-right: 62%;
+    }
+  }
+  .paper1-home {
+    position: absolute;
+    left: 22%;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    top: 73%;
+  }
+  .paper2-home {
+    height: 20%;
+    position: absolute;
+    right: 10%;
+    width: 35%;
+    top: 73%;
+    text-align: center;
+    padding: 20px;
+  }
+  .paper1-home .MuiButton-contained {
+    background-color: rgb(255, 204, 0);
+    :hover {
+      background-color: rgb(249, 226, 133);
+    }
+  }
+
+  .paper2-home .MuiButton-contained {
+    background-color: rgb(255, 204, 0);
+  }
+  .paper1-home .MuiPaper-root {
+    top: 20%;
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    text-align: center;
+    padding: 25px;
+    font-family: "Open Sans", sans-serif;
+    h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+    }
+    p {
+      margin-top: 5%;
+      color: #555555;
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+
+  .paper2-home .MuiPaper-root {
+    top: 20%;
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    text-align: center;
+    padding: 25px;
+    font-family: "Open Sans", sans-serif;
+    h2 {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+    }
+    p {
+      margin-top: 5%;
+      color: #555555;
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+  div.info-arrow {
+    width: 3vmin;
+    height: 3vmin;
+    box-sizing: border-box;
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    transform: rotate(45deg);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-width: 0.8vmin 0.8vmin 0 0;
+      border-style: solid;
+      border-color: $darkblue;
+      transition: 0.2s ease;
+      display: block;
+      transform-origin: 100% 0;
+    }
+
+    &:after {
+      content: "";
+      float: left;
+      position: relative;
+      bottom: 85%;
+      width: 100%;
+      height: 90%;
+      border-width: 0 0.8vmin 0 0;
+      border-style: solid;
+      border-color: $darkblue;
+      transform-origin: 100% 0;
+      transition: 0.2s ease;
+    }
+
+    &:hover::after {
+      transform: rotate(45deg);
+      border-color: $yellow;
+      height: 110%;
+    }
+    &:hover::before {
+      border-color: $yellow;
+      transform: scale(0.8);
+    }
+  }
+  .envira-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+    font-size: 45px;
+    color: green;
+  }
+  .award-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+    font-size: 45px;
+    color: $yellow;
+  }
+  #scrollToTopBtn {
+    background-color: $yellow;
+    border: 0;
+    font-size: 1em;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 55px;
+    font-family: "Open Sans", sans-serif;
+    color: #0f4264;
+    cursor: pointer;
+    width: auto;
+    position: relative;
+    left: 85%;
+    top: 72%;
   }
 }

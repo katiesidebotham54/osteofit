@@ -16,7 +16,7 @@ class Footer extends Component {
         <div className = "footer"> 
                 <ul>
                     <img src = {osteofitWhiteLogo} alt="logo"/>
-                    <h1>OsteoFit</h1>
+                    <h1 id="footer-title">OsteoFit</h1>
                 <Router forceRefresh>
                     <li className = "footer-home">
                     <Link exact to = "/">
