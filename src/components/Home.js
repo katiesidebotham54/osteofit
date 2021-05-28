@@ -2,7 +2,6 @@ import React from "react";
 import Product from "../images/product.png"
 import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import history from '../history'
 import ScrollAnimation from 'react-animate-on-scroll';
 import model1 from '../images/model1.png'
 import model2 from '../images/model2.png'
@@ -23,15 +22,6 @@ rootElement.scrollTo({
   top: 0,
   behavior: "smooth"
 })
-
-function handleAboutArrowBtn(e) {
-  e.preventDefault()
-  history.push('/about')
-}
-function handleSustainArrowBtn(e) {
-  e.preventDefault()
-  history.push('/single-use')
-}
 
 }
     return (
@@ -170,7 +160,7 @@ function handleSustainArrowBtn(e) {
             <i class="fab fa-envira envira-icon"></i>
                           <br />
               <h2>the Sustainability of Osteofit</h2>
-              <p>We make our reamers with 100% recyclable stainless steel and polycarbonate, making an efficienct and environmentally-friendly process for hospitals!</p>
+              <p>We make our reamers with 100% recyclable stainless steel and polycarbonate, making an efficient and environmentally-friendly process for hospitals!</p>
               <br />              
               <Router forceRefresh>
                 <a href='/single-use'>

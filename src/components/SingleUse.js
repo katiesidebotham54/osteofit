@@ -5,6 +5,16 @@ import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const SingleUse = () => {
+  document.getElementById("scrollToTopBtn")
+  var rootElement = document.documentElement
+  
+  function handleBackToTopBtn(e) {
+  e.preventDefault()
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
   return (
     <div className="SingleUse">
       <div>
@@ -24,21 +34,21 @@ const SingleUse = () => {
         <ScrollAnimation animateIn="fadeIn">
         <div className="comparison-title-reusable">
           <Paper elevation={3}>
-            <h2>Reusable</h2>
+            <h2>Osteofit</h2>
           </Paper>
         </div>
         <div className="verticalLine"></div>
         <div className="comparison-title-osteofit">
           <Paper elevation={3}>
-            <h2>Osteofit </h2>
+            <h2>Reusable </h2>
           </Paper>
           <div className="icon1">
             <h2>
               Simple and Efficient 
               Cycle
               <span>
-              <i class="fas fa-times circle-icon-reusable"></i>
               <i class="fas fa-check circle-icon-osteofit"></i>
+              <i class="fas fa-times circle-icon-reusable"></i>
 
               </span>
             </h2>
@@ -49,8 +59,8 @@ const SingleUse = () => {
             <h2>
               Cost Effective
               <span>
-              <i class="fas fa-times circle-icon-reusable2"></i>
               <i class="fas fa-check circle-icon-osteofit2"></i>
+              <i class="fas fa-times circle-icon-reusable2"></i>
               </span>
             </h2>
 
@@ -61,8 +71,8 @@ const SingleUse = () => {
               100% Sterile Each
               Time
               <span>
-              <i class="fas fa-times circle-icon-reusable3"></i>
               <i class="fas fa-check circle-icon-osteofit3"></i>
+              <i class="fas fa-times circle-icon-reusable3"></i>
               </span>
             </h2>
           </div>
@@ -70,6 +80,7 @@ const SingleUse = () => {
         </ScrollAnimation>
         </div>
       </div>
+      
       <div className="cycles">
       <ScrollAnimation animateIn="fadeIn">
 
@@ -89,53 +100,72 @@ const SingleUse = () => {
 
         <div>
         <ScrollAnimation animateIn="fadeIn">
-
-        <h2>Reusable</h2>
-        <div className = "rectangle1"></div>
         <section class="timeline">
             <ol>
               <li>
-                <div>
-                  <time>Hospital Recieves</time> 
+              <i id="timeline-icons" class="fas fa-truck"></i>
+                <div >
+                <h4 class="timeline-title"><span class="badge">1</span></h4>
+                  <time>Hospital Receives</time> 
                 </div>
               </li>
               <li>
+              <i  id="timeline-icons" class="fas fa-soap"></i>
+
                 <div>
                   <time>Cleaned</time> 
+                  <h4 class="timeline-title"><span class="badge">2</span></h4>
+
                 </div>
               </li>
               <li>
+              <i  id="timeline-icons" class="fas fa-sort"></i>
                 <div>
+                <h4 class="timeline-title"><span class="badge">3</span></h4>
+
                   <time>Sorted</time>
                 </div>
               </li>
               <li>
-                <div>
+              <i id="timeline-icons" class="fas fa-pump-medical"></i>               
+               <div>
                   <time>Sterilized</time> 
+                  <h4 class="timeline-title"><span class="badge">4</span></h4>
                 </div>
               </li>
               <li>
-                <div>
+              <i id="timeline-icons" class="fas fa-box-open"></i>        
+                      <div>
+                      <h4 class="timeline-title"><span class="badge">5</span></h4>
                   <time>Stored</time> 
                   </div>
               </li>
-              <li>
+              <li>              
+              <i id="timeline-numbers" class="fas fa-procedures"></i>
                 <div>
                   <time>Used in OR</time> 
+                  <h4 class="timeline-title"><span class="badge">6</span></h4>
                 </div>
               </li>
               <li>
-                <div>
+              <i id="timeline-numbers" class="fas fa-faucet"></i>            
+                  <div>
+                  <h4 class="timeline-title"><span class="badge">7</span></h4>
                   <time>Rinsed</time> 
                 </div>
               </li>
               <li>
-                <div>
-                  <time>Scrubbed</time> 
+              <i id="timeline-numbers" class="fas fa-pump-soap"></i>                
+              <div>
+                  <time>Scrubbed</time>
+                  <h4 class="timeline-title"><span class="badge">8</span></h4> 
                 </div>
               </li>
               <li>
-                <div>
+              <i id="timeline-numbers" class="fas fa-eye"></i>          
+              <div>
+              <h4 class="timeline-title"><span class="badge">9</span></h4>
+
                   <time>Inspected</time> 
                 </div>
               </li>
@@ -146,27 +176,34 @@ const SingleUse = () => {
         </div>
         <div>
         <ScrollAnimation animateIn="fadeIn">
-        <h2>Osteofit</h2>
-        <div className = "rectangle2"></div>
         <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
         <section class="timeline">
+          
             <ol>
               <li>
-                <div>
-                  <time>Hospital Recieves</time> 
+              <i id="timeline-icons" class="fas fa-truck"></i>
+                <div className = "primary">
+                <h4 class="timeline-title"><span class="badge">1</span></h4>
+                  <time>Hospital Receives</time> 
                 </div>
               </li>
               <li>
+              <i id="timeline-numbers" class="fas fa-procedures"></i>
                 <div>
+                <h4 class="timeline-title"><span class="badge">2</span></h4>
+
                   <time>Used in OR</time> 
                 </div>
               </li>
               <li>
-                <div>
+              <i  id="timeline-numbers" class="fas fa-recycle"></i>                <div>
+                <h4 class="timeline-title"><span class="badge">3</span></h4>
+
                   <time>Recycled</time> 
                 </div>
               </li>
-              <li></li>
+              <hr id = "osteofit-li" />
+            
             </ol>
           </section>
           </ScrollAnimation>
@@ -296,6 +333,7 @@ const SingleUse = () => {
 
       </div>  
       </ScrollAnimation>
+      <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
 
     </div>
   );

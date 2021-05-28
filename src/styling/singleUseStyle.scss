@@ -27,7 +27,7 @@ $yellow: rgb(255, 204, 0);
 .icon1 h2,
 .icon2 h2,
 .icon3 h2 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   padding-bottom: 1%;
   margin-left: 9.5%;
@@ -38,7 +38,7 @@ $yellow: rgb(255, 204, 0);
   padding-bottom: 2%;
 }
 .icon1 {
-  padding-top: 12%;
+  padding-top: 10%;
 }
 
 .icon2 {
@@ -47,79 +47,79 @@ $yellow: rgb(255, 204, 0);
 
 .circle-icon-reusable {
   background: #da4040;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 10.79%;
+  font-size: 40px;
+  margin-left: 22.5%;
 }
 
 .circle-icon-reusable2 {
   background: #da4040;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 26.5%;
+  line-height: 70px;
+  font-size: 40px;
+  margin-left: 22.5%;
 }
 
 .circle-icon-reusable3 {
   background: #da4040;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
+  font-size: 40px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 14.8%;
+  margin-left: 23%;
 }
 
 .circle-icon-osteofit {
   background: #57d75b;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 22%;
+  font-size: 40px;
+  margin-left: 15%;
 }
 
 .circle-icon-osteofit2 {
   background: #57d75b;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 21.86%;
+  font-size: 40px;
+  margin-left: 28.5%;
 }
 
 .circle-icon-osteofit3 {
   background: #57d75b;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   vertical-align: middle;
-  font-size: 45px;
-  margin-left: 22%;
+  font-size: 40px;
+  margin-left: 18.5%;
 }
 
 .cycles {
   position: relative;
-  height: 850px;
+  height: 975px;
 }
 
 section {
@@ -151,24 +151,26 @@ blockquote.speech {
 
 .recycle {
   position: relative;
-  height: 890px;
+  height: 780px;
+  text-align: center;
+
   h2 {
     padding-top: 3%;
     padding-bottom: 1%;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
   }
   .iconify {
-    font-size: 130px;
+    font-size: 100px;
     color: #57d75b;
-    top: 38.2%;
-    left: 45.6%;
+    top: 32.5%;
+    left: 46.6%;
     position: absolute;
   }
   span {
     position: absolute;
     left: 35%;
-    top: 78%;
+    top: 67%;
 
     img {
       width: 100%;
@@ -179,12 +181,12 @@ blockquote.speech {
 .timeline {
   white-space: nowrap;
   overflow-x: hidden;
+  margin-top: 5%;
 }
 
 .timeline ol {
-  font-size: 0;
   width: 90vw;
-  padding: 150px 100px;
+  padding: 150px 40px;
   transition: all 1s;
 }
 
@@ -192,51 +194,57 @@ blockquote.speech {
   position: relative;
   display: inline-block;
   list-style-type: none;
-  width: 120px;
+  width: 140px;
   height: 3px;
   background: #297caf;
 }
-
-.timeline ol li:last-child {
-  width: 1180px;
+#osteofit-li {
+  width: 1000px;
+  height: 3px;
+  color: #297caf;
+  background: #297caf;
+  display: inline-block;
+  border: none;
 }
 
-.timeline ol li:not(:first-child) {
-  margin-left: 14px;
+.timeline ol li:last-child {
+  width: 100px;
 }
 
 .timeline ol li:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: calc(100% + 1px);
+  left: 100px;
   bottom: 0;
-  width: 12px;
-  height: 12px;
+  width: 50px;
+  height: 50px;
   transform: translateY(-50%);
   border-radius: 50%;
   background: rgba(255, 204, 0, 1);
 }
 .timeline div:hover {
-  width: 150px;
-  height: 100px;
-  padding: 25px;
+  width: 185px;
+  height: 105px;
+  padding: 10px;
   transition: 0.3s all ease-in;
   transition: 0.3s all ease-out;
   background: #3c94cf;
 }
+.span {
+  position: absolute;
+  left: 42%;
+}
 
 .timeline ol li div {
   position: absolute;
-  left: calc(100% + 7px);
-  width: 120px;
-  padding: 10px;
+  left: 60px;
+  width: 170px;
+  padding: 8px;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  height: 70px;
+  height: 100px;
   text-align: center;
   white-space: normal;
-  color: black;
   background: #297caf;
   transition: 0.3s all ease-out;
 }
@@ -244,7 +252,7 @@ blockquote.speech {
 .timeline ol li div::before {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   width: 0;
   height: 0;
@@ -252,31 +260,99 @@ blockquote.speech {
 }
 
 .timeline ol li:nth-child(odd) div {
-  top: -20px;
+  top: -42px;
+  border-radius: 18px;
+  transform: translateY(-100%);
+  &:before {
+    content: "";
+    background: inherit;
+    width: 40px;
+    top: 65%;
+    left: 26.5%;
+    z-index: -1;
+    height: 40px;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
+  }
+  .timeline-title {
+    margin-bottom: 8%;
+    margin-top: 2%;
+  }
+
+  .badge {
+    background: white;
+    padding: 2px 20px;
+    border-radius: 3px;
+    margin-right: 55%;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+}
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 154px);
+  border-radius: 18px;
+
+  &:before {
+    content: "";
+    background: inherit;
+    width: 40px;
+    left: 26%;
+    top: -12%;
+    height: 40px;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
+  }
+
+  .timeline-title {
+    margin-left: 5%;
+    margin-top: 23%;
+  }
+
+  .badge {
+    background: white;
+    padding: 2px 20px;
+    border-radius: 3px;
+    margin-right: 80%;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-top: 50%;
+  }
+}
+
+#timeline-icons {
+  position: absolute;
+  display: flex;
+  left: calc(74%);
+  margin-top: -13px;
+  color: rgb(55, 55, 55);
+  font-size: 25px;
+  z-index: 999;
+}
+
+.timeline ol li div {
+  top: -45px;
   transform: translateY(-100%);
 }
 
-.timeline ol li:nth-child(odd) div::before {
-  top: 100%;
-  border-width: 8px 8px 0 0;
-  border-color: white transparent transparent transparent;
-}
-
-.timeline ol li:nth-child(even) div {
-  top: calc(100% + 16px);
-}
-
-.timeline ol li:nth-child(even) div::before {
-  top: -8px;
-  border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent white;
+.timeline ol li div::before {
+  top: 80%;
+  left: 40%;
+  border-width: 20px 20px 0 0;
+  border-color: transparent transparent transparent transparent;
 }
 
 .timeline time {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  text-align: center;
   color: white;
 }
 
@@ -290,7 +366,7 @@ $separator-space-top: 18px;
   border-bottom: $separator-size $separator-border-style $separator-border-color;
   margin-top: 1.5%;
   margin-left: 5%;
-  margin-bottom: 2.9%;
+  margin-bottom: 2.2%;
   opacity: 0.8;
 
   max-width: 90%;
@@ -307,7 +383,7 @@ $separator-space-top: 18px;
 .horz-line5a {
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
-  margin-top: 5%;
+  margin-top: 4%;
   opacity: 0.8;
 
   max-width: 35%;
@@ -318,7 +394,7 @@ $separator-space-top: 18px;
   border-bottom: $separator-size $separator-border-style #555555;
   opacity: 0.8;
   left: 56.5%;
-  top: 45%;
+  top: 38.4%;
   max-width: 24.5%;
   animation: separator-width 1s ease-out forwards;
 }
@@ -405,8 +481,6 @@ $separator-space-top: 18px;
       transparent calc(65% - 5px),
       rgb(255, 204, 0) 5px
     );
-    background-size: 0;
-    background-repeat: no-repeat;
     display: inline;
     transition: 0.5s ease;
   }
@@ -420,10 +494,10 @@ $separator-space-top: 18px;
 
 .comparison {
   position: relative;
-  height: 650px;
+  height: 600px;
   .background-container {
     width: 90%;
-    height: 600px;
+    height: 550px;
     left: 5%;
     position: absolute;
     background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
@@ -433,17 +507,17 @@ $separator-space-top: 18px;
 .comparison .comparison-title-reusable .MuiPaper-root {
   position: absolute;
   top: 7%;
-  padding-top: 0.9%;
+  padding-top: 0.5%;
   left: 45%;
-  width: 14%;
-  height: 10%;
+  width: 12%;
+  height: 8%;
   opacity: 0.5;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 .verticalLine {
   border-left: 6px solid white;
-  height: 490px;
+  height: 430px;
   position: absolute;
   top: 10%;
   left: 65%;
@@ -451,12 +525,12 @@ $separator-space-top: 18px;
 .comparison .comparison-title-osteofit .MuiPaper-root {
   position: absolute;
   top: 7%;
-  padding-top: 0.9%;
+  padding-top: 0.5%;
   left: 70.4%;
-  width: 13%;
-  height: 10%;
+  width: 12%;
+  height: 8%;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   opacity: 0.5;
 }
 
@@ -510,12 +584,11 @@ ol.gradient-list {
 }
 
 .cycles h2 {
-  text-transform: uppercase;
   position: absolute;
-  margin-top: 8%;
-  transform: rotate(270deg);
+  left: 2.5%;
+  top: 20%;
   font-size: 40px;
-  color: rgb(255, 204, 0);
+  color: $darkblue;
   font-family: "Raleway", sans-serif;
 }
 
@@ -603,10 +676,10 @@ ol.gradient-list {
 }
 
 .wrapper {
-  padding-left: 26%;
+  text-align: center;
   h2 {
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     background: linear-gradient(
@@ -648,7 +721,7 @@ ol.gradient-list {
     padding-top: 1%;
     color: #555555;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
   }
   p {
@@ -657,9 +730,9 @@ ol.gradient-list {
     color: #555555;
     text-align: center;
     width: 53%;
-    font-size: 25px;
+    font-size: 20px;
     left: 23%;
-    top: 55%;
+    top: 46%;
   }
 }
 
@@ -688,10 +761,9 @@ ol.gradient-list {
 
 .bottompapers2 {
   width: 100%;
-  height: 320px;
+  height: 200px;
   overflow: hidden;
   margin: 0;
-  padding-top: 4%;
 }
 
 .bottompapers2 p {
@@ -712,7 +784,7 @@ ol.gradient-list {
 .osteofit-timeline-quote {
   position: absolute;
   color: #555555;
-  top: 67.2%;
+  top: 70.6%;
   width: 80%;
   left: 47%;
   letter-spacing: 1px;
@@ -801,21 +873,18 @@ ol.gradient-list {
   }
 }
 
-.rectangle1 {
-  position: absolute;
-  left: 4.1%;
-  top: 23.5%;
-  height: 230px;
-  z-index: -1;
-  width: 60px;
-  background-color: $darkblue;
-}
-.rectangle2 {
-  position: absolute;
-  left: 4.1%;
-  top: 59.3%;
-  height: 230px;
-  z-index: -1;
-  width: 60px;
-  background-color: $darkblue;
+#scrollToTopBtn {
+  background-color: $yellow;
+  border: 0;
+  font-size: 1em;
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 55px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: #0f4264;
+  cursor: pointer;
+  width: auto;
+  position: relative;
+  left: 85%;
 }
