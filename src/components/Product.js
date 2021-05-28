@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
@@ -72,19 +72,8 @@ const Product = () => {
     }
   };
 
-  const sizes = document.querySelectorAll('.size');
-  const colors = document.querySelectorAll('.color');
-  const reamers = document.querySelectorAll('.reamer');
-  const gradients = document.querySelectorAll('.gradient');
-  const productBg = document.querySelector('.productBackground');
-
-  var i = 0;
   var prevIndex = 10;
 
-  function handleChangeSize(reamerSize, e){
-      sizes.forEach(size => size.classList.remove('active'));
-      this.classList.add('active');
-  }
 
   function handleOnClick(backgroundColor, e) {
     e.preventDefault();
@@ -94,65 +83,65 @@ const Product = () => {
     for (var i = 0; i < reamerList.length; i++) {
       reamerList[i].className = 'reamer';
     }
-    for (var i = 0; i < colorList.length; i++) {
-      colorList[i].className = 'color';
+    for (var j = 0; j < colorList.length; j++) {
+      colorList[j].className = 'color';
     }
-    for (var i = 0; i < gradientList.length; i++) {
-      gradientList[i].className = 'gradient';
+    for (var k = 0; k < gradientList.length; k++) {
+      gradientList[k].className = 'gradient';
     }
     gradientList[prevIndex].className += ' second';
     console.log(document.getElementsByClassName("color"));
-    if(backgroundColor == "blue"){
+    if(backgroundColor === "blue"){
       i = 10;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first"
-    } else if(backgroundColor == "gray") {
+    } else if(backgroundColor === "gray") {
       i = 9;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "aqua") {
+    } else if(backgroundColor === "aqua") {
       i = 8;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "violet") {
+    } else if(backgroundColor === "violet") {
       i = 7;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "purple") {
+    } else if(backgroundColor === "purple") {
       i = 6;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "yellow") {
+    } else if(backgroundColor === "yellow") {
       i = 5;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "brown") {
+    } else if(backgroundColor === "brown") {
       i = 4;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "black") {
+    } else if(backgroundColor === "black") {
       i = 3;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "orange") {
+    } else if(backgroundColor === "orange") {
       i = 2;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "green") {
+    } else if(backgroundColor === "green") {
       i = 1;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor == "red") {
+    } else if(backgroundColor === "red") {
       i = 0;
       colorList[i].className += " active";
       reamerList[i].className += " show";
@@ -167,47 +156,47 @@ const Product = () => {
     for (var i = 0; i < sizeList.length; i++) {
       sizeList[i].className = 'size';
     }
-    if (backgroundColor == "size40") {
+    if (backgroundColor === "size40") {
       sizeList[0].className += " active"
-    } else if (backgroundColor == "size42") {
+    } else if (backgroundColor === "size42") {
       sizeList[1].className += " active"
-    } else if (backgroundColor == "size44") {
+    } else if (backgroundColor === "size44") {
       sizeList[2].className += " active"
-    } else if (backgroundColor == "size46") {
+    } else if (backgroundColor === "size46") {
       sizeList[3].className += " active"
-    } else if (backgroundColor == "size48") {
+    } else if (backgroundColor === "size48") {
       sizeList[4].className += " active"
-    } else if (backgroundColor == "size50") {
+    } else if (backgroundColor === "size50") {
       sizeList[5].className += " active"
-    } else if (backgroundColor == "size52") {
+    } else if (backgroundColor === "size52") {
       sizeList[6].className += " active"
-    } else if (backgroundColor == "size54") {
+    } else if (backgroundColor === "size54") {
       sizeList[7].className += " active"
-    } else if (backgroundColor == "size56") {
+    } else if (backgroundColor === "size56") {
       sizeList[8].className += " active"
-    } else if (backgroundColor == "size58") {
+    } else if (backgroundColor === "size58") {
       sizeList[9].className += " active"
-    } else if (backgroundColor == "size60") {
+    } else if (backgroundColor === "size60") {
       sizeList[10].className += " active"
-    } else if (backgroundColor == "size62") {
+    } else if (backgroundColor === "size62") {
       sizeList[11].className += " active"
-    } else if (backgroundColor == "size64") {
+    } else if (backgroundColor === "size64") {
       sizeList[12].className += " active"
-    } else if (backgroundColor == "size66") {
+    } else if (backgroundColor === "size66") {
       sizeList[13].className += " active"
-    } else if (backgroundColor == "size68") {
+    } else if (backgroundColor === "size68") {
       sizeList[14].className += " active"
-    } else if (backgroundColor == "size70") {
+    } else if (backgroundColor === "size70") {
       sizeList[15].className += " active"
-    } else if (backgroundColor == "size72") {
+    } else if (backgroundColor === "size72") {
       sizeList[16].className += " active"
-    } else if (backgroundColor == "size74") {
+    } else if (backgroundColor === "size74") {
       sizeList[17].className += " active"
-    } else if (backgroundColor == "size76") {
+    } else if (backgroundColor === "size76") {
       sizeList[18].className += " active"
-    } else if (backgroundColor == "size78") {
+    } else if (backgroundColor === "size78") {
       sizeList[19].className += " active"
-    } else if (backgroundColor == "size80") {
+    } else if (backgroundColor === "size80") {
       sizeList[20].className += " active"
     }
   }

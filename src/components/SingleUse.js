@@ -106,7 +106,7 @@ const SingleUse = () => {
               <i id="timeline-icons" class="fas fa-truck"></i>
                 <div >
                 <h4 class="timeline-title"><span class="badge">1</span></h4>
-                  <time>Hospital Receives</time> 
+                  <time>Hospital Receives Reamer</time> 
                 </div>
               </li>
               <li>
@@ -184,7 +184,7 @@ const SingleUse = () => {
               <i id="timeline-icons" class="fas fa-truck"></i>
                 <div className = "primary">
                 <h4 class="timeline-title"><span class="badge">1</span></h4>
-                  <time>Hospital Receives</time> 
+                  <time>Hospital Receives Reamer</time> 
                 </div>
               </li>
               <li>
