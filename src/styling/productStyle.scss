@@ -366,14 +366,14 @@ $mx-width: 50rem;
   padding: 10px 0;
 }
 
-.title {
+.product-title {
   color: #3a3a3a;
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
-.text {
+.product-text {
   color: #555;
   font-size: 17px;
 }
@@ -836,7 +836,7 @@ $hoverBgColor2: #0f4264;
   animation: slide3 1s ease-in-out;
 }
 
-.product-text {
+.problem-desc {
   font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 22px;

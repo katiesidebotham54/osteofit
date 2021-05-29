@@ -224,7 +224,7 @@ const Product = () => {
           <figure class="item-content-product">
         <ScrollAnimation animateIn="fadeIn">
 
-        <p className="product-text">
+        <p className="problem-desc">
         The current procedure for reamers allows surgeons to use a singular 
         reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
         and requires more axial force by the surgeon. This leads to a <b>higher 
@@ -285,8 +285,8 @@ const Product = () => {
                     <h3 class="small">Men's reamers</h3>
                 </div>
                 <div class="description">
-                    <h3 class="title">Product Info</h3>
-                    <p class="text">random something deez nutz gottem</p>
+                    <h3 class="product-title">Product Info</h3>
+                    <p class="product-text">random something deez nutz gottem</p>
                 </div>
                 <div class="color-container">
                     <h3 class="title">Color</h3>
@@ -338,7 +338,24 @@ const Product = () => {
     <script src="Product.js"></script>
   </ScrollAnimation>
   <ScrollAnimation animateIn="fadeIn">
-
+    <div class = "product-part-section">
+      <div class = "product-part-section-title">
+        <h1>Product Parts</h1>
+      </div>
+      <div class = "part-section-top">
+        <img src = {modelPart1}></img>
+        <p>This is the first part</p>
+      </div>
+      <div class = "part-section-middle">
+        <img src = {modelPart2}></img>
+        <p>This is the second part</p>
+      </div>
+      <div class = "part-section-bottom">
+        <img src = {modelPart4}></img>
+        <p>This is the third part</p>
+      </div>
+    </div>
+    {/*
         <div className = "outer-container-product">
           <div className = 'color-square'></div>
           <h1>Reamer Components Breakdown</h1>
@@ -411,7 +428,7 @@ const Product = () => {
     </div>
   </div>
 </div>
-</div>
+    </div>*/}
 </ScrollAnimation>
     </div>
     );
