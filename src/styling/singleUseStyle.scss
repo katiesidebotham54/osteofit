@@ -1,6 +1,11 @@
 $darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
+$darkgray: #555555;
+$separator-size: 8px;
+$separator-border-style: solid;
+$separator-border-color: rgb(255, 204, 0);
+$separator-space-top: 18px;
 
 .recycle-para .MuiPaper-root {
   position: absolute;
@@ -117,11 +122,6 @@ $yellow: rgb(255, 204, 0);
   margin-left: 18.5%;
 }
 
-.cycles {
-  position: relative;
-  height: 975px;
-}
-
 section {
   display: flex;
   justify-content: center;
@@ -181,12 +181,12 @@ blockquote.speech {
 .timeline {
   white-space: nowrap;
   overflow-x: hidden;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .timeline ol {
   width: 90vw;
-  padding: 150px 40px;
+  padding: 160px 10px;
   transition: all 1s;
 }
 
@@ -194,12 +194,12 @@ blockquote.speech {
   position: relative;
   display: inline-block;
   list-style-type: none;
-  width: 140px;
+  width: 130px;
   height: 3px;
   background: #297caf;
 }
 #osteofit-li {
-  width: 1000px;
+  width: 885px;
   height: 3px;
   color: #297caf;
   background: #297caf;
@@ -217,6 +217,7 @@ blockquote.speech {
   top: 50%;
   left: 100px;
   bottom: 0;
+  z-index: 99;
   width: 50px;
   height: 50px;
   transform: translateY(-50%);
@@ -224,8 +225,8 @@ blockquote.speech {
   background: rgba(255, 204, 0, 1);
 }
 .timeline div:hover {
-  width: 185px;
-  height: 105px;
+  width: 140px;
+  height: 95px;
   padding: 10px;
   transition: 0.3s all ease-in;
   transition: 0.3s all ease-out;
@@ -239,10 +240,10 @@ blockquote.speech {
 .timeline ol li div {
   position: absolute;
   left: 60px;
-  width: 170px;
+  width: 130px;
   padding: 8px;
   font-family: "Open Sans", sans-serif;
-  height: 100px;
+  height: 90px;
   text-align: center;
   white-space: normal;
   background: #297caf;
@@ -260,7 +261,7 @@ blockquote.speech {
 }
 
 .timeline ol li:nth-child(odd) div {
-  top: -42px;
+  top: -48px;
   border-radius: 18px;
   transform: translateY(-100%);
   &:before {
@@ -268,7 +269,7 @@ blockquote.speech {
     background: inherit;
     width: 40px;
     top: 65%;
-    left: 26.5%;
+    left: 35%;
     z-index: -1;
     height: 40px;
     display: block;
@@ -282,11 +283,13 @@ blockquote.speech {
   }
 
   .badge {
+    opacity: 0.8;
     background: white;
-    padding: 2px 20px;
+    padding: 1.5px 10px;
     border-radius: 3px;
-    margin-right: 55%;
-    font-size: 20px;
+    margin-right: 60%;
+    font-size: 18px;
+    color: $darkgray;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
   }
@@ -299,7 +302,7 @@ blockquote.speech {
     content: "";
     background: inherit;
     width: 40px;
-    left: 26%;
+    left: 34%;
     top: -12%;
     height: 40px;
     z-index: -1;
@@ -312,27 +315,31 @@ blockquote.speech {
   .timeline-title {
     margin-left: 5%;
     margin-top: 23%;
+    #osteofit-step1 {
+      margin-top: 0%;
+    }
   }
 
   .badge {
     background: white;
-    padding: 2px 20px;
+    color: $darkgray;
+    opacity: 0.8;
+    padding: 1.5px 10px;
     border-radius: 3px;
-    margin-right: 80%;
+    margin-right: 75%;
     font-size: 20px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    margin-top: 50%;
   }
 }
 
 #timeline-icons {
   position: absolute;
   display: flex;
-  left: calc(74%);
+  left: calc(86%);
   margin-top: -13px;
   color: rgb(55, 55, 55);
-  font-size: 25px;
+  font-size: 24px;
   z-index: 999;
 }
 
@@ -350,16 +357,23 @@ blockquote.speech {
 
 .timeline time {
   display: block;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   color: white;
+  #step1 {
+    font-size: 12px;
+  }
 }
 
-$separator-size: 8px;
-$separator-border-style: solid;
-$separator-border-color: rgb(255, 204, 0);
-$separator-space-top: 18px;
+.square {
+  height: 80px;
+  width: 180px;
+  top: 34%;
+  left: 44%;
+  position: absolute;
+  background-color: white;
+}
 
 .horz-line4 {
   border: 0;
@@ -380,23 +394,12 @@ $separator-space-top: 18px;
     width: 100%;
   }
 }
-.horz-line5a {
+.horz-line5 {
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
-  margin-top: 4%;
+  margin-top: 3%;
   opacity: 0.8;
-
-  max-width: 35%;
-}
-.horz-line5b {
-  position: absolute;
-  border: 0;
-  border-bottom: $separator-size $separator-border-style #555555;
-  opacity: 0.8;
-  left: 56.5%;
-  top: 38.4%;
-  max-width: 24.5%;
-  animation: separator-width 1s ease-out forwards;
+  max-width: 90%;
 }
 @keyframes separator-width {
   0% {
@@ -406,12 +409,40 @@ $separator-space-top: 18px;
     width: 100%;
   }
 }
+.horz-line6a {
+  border: 0;
+  border-bottom: $separator-size $separator-border-style #297caf;
+  margin-left: 3%;
+  margin-bottom: 18%;
+  opacity: 0.8;
+
+  min-width: 4px;
+  animation: separator-width 1s ease-out forwards;
+}
+@keyframes separator-width {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.horz-line6b {
+  border: 0;
+  border-bottom: $separator-size $separator-border-style #297caf;
+  margin-left: 5%;
+  margin-bottom: 18%;
+  opacity: 0.8;
+
+  width: 39%;
+  animation: separator-width 1s ease-out forwards;
+}
 .horz-line3 {
   border: 0;
   border-bottom: $separator-size $separator-border-style #297caf;
   margin-top: 2%;
   margin-left: 5%;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   opacity: 0.8;
 
   max-width: 90%;
@@ -474,7 +505,6 @@ $separator-space-top: 18px;
   font-size: 45px;
   font-weight: 500;
   background: white;
-  padding-top: 3%;
 
   span {
     background-image: linear-gradient(
@@ -583,13 +613,20 @@ ol.gradient-list {
   }
 }
 
-.cycles h2 {
-  position: absolute;
-  left: 2.5%;
-  top: 20%;
-  font-size: 40px;
-  color: $darkblue;
-  font-family: "Raleway", sans-serif;
+.cycles {
+  position: relative;
+  height: 1000px;
+  h2 {
+    position: absolute;
+    left: 5%;
+    top: 13%;
+    font-size: 40px;
+    color: $darkblue;
+    font-family: "Raleway", sans-serif;
+  }
+  .timeline-title-osteofit {
+    top: 55%;
+  }
 }
 
 .circle-icon-benefits1 {
@@ -784,16 +821,16 @@ ol.gradient-list {
 .osteofit-timeline-quote {
   position: absolute;
   color: #555555;
-  top: 70.6%;
+  top: 73%;
   width: 80%;
-  left: 47%;
+  left: 41%;
   letter-spacing: 1px;
   line-height: 2;
   font-family: "Open Sans", sans-serif;
   b {
     margin-left: 12%;
     color: rgb(255, 204, 0);
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 600;
   }
 }

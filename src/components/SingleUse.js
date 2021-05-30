@@ -101,12 +101,14 @@ const SingleUse = () => {
         <div>
         <ScrollAnimation animateIn="fadeIn">
         <section class="timeline">
+          <h2>Reusable</h2>
+          <hr className = "horz-line6a" />
             <ol>
               <li>
               <i id="timeline-icons" class="fas fa-truck"></i>
                 <div >
                 <h4 class="timeline-title"><span class="badge">1</span></h4>
-                  <time>Hospital Receives Reamer</time> 
+                  <time>Receive Reamer</time> 
                 </div>
               </li>
               <li>
@@ -141,28 +143,28 @@ const SingleUse = () => {
                   </div>
               </li>
               <li>              
-              <i id="timeline-numbers" class="fas fa-procedures"></i>
+              <i id="timeline-icons" class="fas fa-procedures"></i>
                 <div>
                   <time>Used in OR</time> 
                   <h4 class="timeline-title"><span class="badge">6</span></h4>
                 </div>
               </li>
               <li>
-              <i id="timeline-numbers" class="fas fa-faucet"></i>            
+              <i id="timeline-icons" class="fas fa-faucet"></i>            
                   <div>
                   <h4 class="timeline-title"><span class="badge">7</span></h4>
                   <time>Rinsed</time> 
                 </div>
               </li>
               <li>
-              <i id="timeline-numbers" class="fas fa-pump-soap"></i>                
+              <i id="timeline-icons" class="fas fa-pump-soap"></i>                
               <div>
                   <time>Scrubbed</time>
                   <h4 class="timeline-title"><span class="badge">8</span></h4> 
                 </div>
               </li>
               <li>
-              <i id="timeline-numbers" class="fas fa-eye"></i>          
+              <i id="timeline-icons" class="fas fa-eye"></i>          
               <div>
               <h4 class="timeline-title"><span class="badge">9</span></h4>
 
@@ -178,28 +180,34 @@ const SingleUse = () => {
         <ScrollAnimation animateIn="fadeIn">
         <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
         <section class="timeline">
-          
+      
+
             <ol>
+            <h2 className="timeline-title-osteofit">Osteofit</h2>
+            <hr className = "horz-line6b" />
+
               <li>
               <i id="timeline-icons" class="fas fa-truck"></i>
-                <div className = "primary">
-                <h4 class="timeline-title"><span class="badge">1</span></h4>
-                  <time>Hospital Receives Reamer</time> 
+                <div>
+                  <time id = "step1">Receive Reamer</time> 
+                  <h4 class="timeline-title" id = "osteofit-step1" ><span class="badge">1</span></h4>
                 </div>
               </li>
               <li>
-              <i id="timeline-numbers" class="fas fa-procedures"></i>
+              <i id="timeline-icons" class="fas fa-procedures"></i>
                 <div>
                 <h4 class="timeline-title"><span class="badge">2</span></h4>
 
                   <time>Used in OR</time> 
+
                 </div>
               </li>
               <li>
-              <i  id="timeline-numbers" class="fas fa-recycle"></i>                <div>
-                <h4 class="timeline-title"><span class="badge">3</span></h4>
+              <i  id="timeline-icons" class="fas fa-recycle"></i>                <div>
 
                   <time>Recycled</time> 
+                  <h4 class="timeline-title"><span class="badge">3</span></h4>
+
                 </div>
               </li>
               <hr id = "osteofit-li" />
@@ -294,9 +302,8 @@ const SingleUse = () => {
              Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
              processes, feel free to reference the resources below.
             </p>
-            <hr className = "horz-line5a" />
-            <hr className = "horz-line5b" />
-
+            <hr className = "horz-line5" />
+            <div className = "square"/>
           <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
           <span>
             <img src = {mold} alt="" />
