@@ -189,24 +189,24 @@ const SingleUse = () => {
               <li>
               <i id="timeline-icons" class="fas fa-truck"></i>
                 <div>
+                <h4 class="timeline-title" id = "osteofit-step1" ><span class="badge">1</span></h4>
                   <time id = "step1">Receive Reamer</time> 
-                  <h4 class="timeline-title" id = "osteofit-step1" ><span class="badge">1</span></h4>
                 </div>
               </li>
               <li>
               <i id="timeline-icons" class="fas fa-procedures"></i>
                 <div>
-                <h4 class="timeline-title"><span class="badge">2</span></h4>
 
                   <time>Used in OR</time> 
+                  <h4 class="timeline-title"><span class="badge">2</span></h4>
 
                 </div>
               </li>
               <li>
               <i  id="timeline-icons" class="fas fa-recycle"></i>                <div>
+              <h4 class="timeline-title"><span class="badge">3</span></h4>
 
                   <time>Recycled</time> 
-                  <h4 class="timeline-title"><span class="badge">3</span></h4>
 
                 </div>
               </li>

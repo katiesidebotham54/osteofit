@@ -348,7 +348,7 @@ const Product = () => {
       <Paper elevation={13}>
       <div id= "part1" className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-1" src={modelPart1}/>
+        <img alt = "" class = "model-part-1" src={modelPart1}/>
         </div>
         <div className = "part-desc-1">
           <h1>First part</h1>
@@ -358,7 +358,7 @@ const Product = () => {
       </div>
       <div  id = 'part2' className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-2"src={modelPart2}/>
+        <img alt = "" class = "model-part-2"src={modelPart2}/>
         </div>
         <div className = "part-desc-2">
           <h1>Second Part</h1>
@@ -368,7 +368,7 @@ const Product = () => {
       </div>
       <div  id = 'part3' className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-4"src={modelPart4} />
+        <img  alt = "" class = "model-part-4"src={modelPart4} />
         </div>
         <div className = "part-desc-3">
           <h1>Third part</h1>
@@ -379,80 +379,6 @@ const Product = () => {
     </div>
   </div>
 
-    {/*
-        <div className = "outer-container-product">
-          <div className = 'color-square'></div>
-          <h1>Reamer Components Breakdown</h1>
-          <div class="container-product">
-          <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i>
-          <i class="fa fa-long-arrow-right arrow2" aria-hidden="true"></i>
-          <i class="fa fa-long-arrow-right arrow3" aria-hidden="true"></i>
-
-  <div class="box">
-    <div className="box-header">
-    <img src={modelPart1} className='parts-img1' alt=""/>
-      <h1 class="title1">Cutting Panels</h1>
-    </div>
-    <div class="boxContent">
-      <ul className="desc">
-      <li>
-                  Panels made from <b>ASTM A276 420 Stainless Steel</b>
-                </li>
-                <li>
-                  Stamped Dome Cutting Panel
-                </li>
-                <li>
-                  Stamped Side Cutting Panel
-                </li>
-                <li>
-                  Panel-Frame Subassembly includes 4 side panels and 1 dome panel 
-                </li>
-
-      </ul>
-    </div>
-  </div>
-  <div class="box">
-    <div className="box-header">
-    <img src={modelPart2} className='parts-img2' alt=""/>
-          <h1 class="title2">Molded Back Plate</h1>
-    </div>
-    <div class="boxContent">
-        <ul className="desc"> <li>
-                <b>Polycarbonate 2061-15</b>
-                </li>
-                <li>
-                  Features tabs for ultrasonic welding
-                </li>
-              </ul>
-    </div>
-  </div>
-  <div class="box">
-  <div className="box-header">
-  <img src={modelPart4} className='parts-img3' alt=""/>
-  <h1 class="title3">Molded Core</h1>
-</div>
-    <div class="boxContent">
-          <ul className="desc">
-                <li>
-                 <b>Polycarbonate 2061-15</b>
-                </li>
-                <li>
-                  Helps with structural integrity 
-                </li>
-                <li>
-                  Multiple options for quick-connect coupling to Reamer Shaft
-                </li>
-                <li>
-                  Color coded by size
-                </li>
-                <li>
-                  Space calculated for reamed volume of bone 
-                </li>
-          </ul>
-    </div>
-  </div>
-</div>
-    </div>*/}
 </ScrollAnimation>
     </div>
     );
