@@ -17,6 +17,8 @@ import purple from '../images/purple.png'
 import yellow from '../images/yellow.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
+import { Paper } from "@material-ui/core";
+
 
 
 const Product = () => {
@@ -280,13 +282,13 @@ const Product = () => {
             <div class="info">
                 <div class="reamerName">
                     <div>
-                        <h1 class="big">Reamer zoom something</h1>
+                        <h1 class="big">Models of our different reamers</h1>
                     </div>
-                    <h3 class="small">Men's reamers</h3>
+                    <h3 class="small">Reamers</h3>
                 </div>
                 <div class="description">
                     <h3 class="product-title">Product Info</h3>
-                    <p class="product-text">random something deez nutz gottem</p>
+                    <p class="product-text">These are the different reamers that we offer</p>
                 </div>
                 <div class="color-container">
                     <h3 class="title">Color</h3>
@@ -338,23 +340,45 @@ const Product = () => {
     <script src="Product.js"></script>
   </ScrollAnimation>
   <ScrollAnimation animateIn="fadeIn">
-    <div class = "product-part-section">
-      <div class = "product-part-section-title">
-        <h1>Product Parts</h1>
+  <div className = "product-breakdown">
+    <h1 class = "product-breakdown-h1">
+      The Parts
+    </h1>
+    <div class = "product-breakdown-container">
+      <Paper elevation={13}>
+      <div id= "part1" className = "part-container">
+        <div className = "image-part">
+        <img class = "model-part-1" src={modelPart1}/>
+        </div>
+        <div className = "part-desc-1">
+          <h1>First part</h1>
+        <p>This is the first part of the reamer. The panels are made from <b>ASTM A276 420 Stainless Steel</b>, and has stamped side and dome cutting panels. Additionally, the Panel-Frame Subassembly includes 4 side panels and 1 dome panel.</p>
+        <hr class = "part-desc-1-line"></hr>
+        </div>
       </div>
-      <div class = "part-section-top">
-        <img src = {modelPart1}></img>
-        <p>This is the first part</p>
+      <div  id = 'part2' className = "part-container">
+        <div className = "image-part">
+        <img class = "model-part-2"src={modelPart2}/>
+        </div>
+        <div className = "part-desc-2">
+          <h1>Second Part</h1>
+        <p>This is the second part of the reamer made of polycarbonate 2061-15, and features tabs for ultrasonic welding.</p>
+        <hr class = "part-desc-2-line"></hr>
+        </div>
       </div>
-      <div class = "part-section-middle">
-        <img src = {modelPart2}></img>
-        <p>This is the second part</p>
+      <div  id = 'part3' className = "part-container">
+        <div className = "image-part">
+        <img class = "model-part-4"src={modelPart4} />
+        </div>
+        <div className = "part-desc-3">
+          <h1>Third part</h1>
+        <p>This is the third part of the reamer, and like the second part, this part is also made up of polycarbonate 2061-15. This part helps with the structural integrity, with multiple options for quick-connect coupling to Reamer Shaft. This is color coded by size, and is space calculated for reamed volume of bone.</p>
+        </div>
       </div>
-      <div class = "part-section-bottom">
-        <img src = {modelPart4}></img>
-        <p>This is the third part</p>
-      </div>
+      </Paper>
     </div>
+  </div>
+
     {/*
         <div className = "outer-container-product">
           <div className = 'color-square'></div>
