@@ -121,7 +121,7 @@ rootElement.scrollTo({
           <div className="stat">
             <div className="stat-value">11</div>
             <hr />
-            <div className="meta">Colors Offerred</div>
+            <div className="meta">Colors Offered</div>
           </div>
           <div className="stat">
             <div className="stat-value">100%</div>

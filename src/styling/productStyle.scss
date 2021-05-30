@@ -771,7 +771,6 @@ $hoverBgColor2: #0f4264;
         padding-left: 25px;
       }
     }
-    /* Link */
     a {
       position: absolute;
       width: 100%;
@@ -861,14 +860,14 @@ $hoverBgColor2: #0f4264;
   width: 90%;
   padding-left: 15%;
   padding-top: 3%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   transform-origin: 50% 100%;
 
   img {
     position: absolute;
     left: 58%;
     width: 40%;
-    top: 19.5%;
+    top: 80.5%;
   }
 }
 
@@ -900,7 +899,7 @@ $hoverBgColor2: #0f4264;
   bottom: 10%;
   left: 20%;
   position: absolute;
-  width: 50%;
+  width: 60%;
   height: 30%;
   text-align: center;
   padding: 35px;
@@ -942,11 +941,9 @@ $hoverBgColor2: #0f4264;
 }
 
 .part-desc-1 {
-  position: absolute;
-  top: 100px;
-  margin-left: 80px;
+  margin-left: 159px;
+  margin-top: 34px;
   width: 750px;
-  left: 8%;
   color: white;
   text-align: left;
   h1 {
@@ -960,13 +957,11 @@ $hoverBgColor2: #0f4264;
 }
 
 .part-desc-2 {
-  position: absolute;
-  top: 400px;
+  margin-top: 81px;
+  margin-left: 21px;
   width: 750px;
-  margin-right: 150px;
-  right: 0.5%;
   color: white;
-  text-align: right;
+  text-align: left;
   h1 {
     background: none;
     padding-bottom: 20px;
@@ -974,15 +969,15 @@ $hoverBgColor2: #0f4264;
   }
   p {
     font-family: "Open Sans", sans-serif;
+    margin-left: 20px;
   }
 }
 
 .part-desc-3 {
-  position: absolute;
+  position: relative;
   width: 650px;
-  top: 720px;
-  margin-left: 80px;
-  left: 8%;
+  top: 93;
+  margin-left: 166px;
   color: white;
   text-align: left;
   h1 {
@@ -1007,11 +1002,10 @@ $hoverBgColor2: #0f4264;
 .part-desc-1-line {
   border: 0;
   border-bottom: 3px solid $yellow;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 13%;
   margin-bottom: 2.2%;
   opacity: 0.8;
-  max-width: 90%;
+  max-width: 97%;
 }
 
 .part-desc-2-line {
