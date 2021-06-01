@@ -5,6 +5,8 @@ $yellow: rgb(255, 204, 0);
 .product-pen {
   padding-left: 14.2%;
   color: #1a658f;
+  position: absolute;
+  top: 16%;
   font-size: 50px;
   font-weight: 500;
   max-width: 90%;
@@ -157,25 +159,24 @@ $mx-width: 50rem;
 }
 
 .productContainer {
-  min-height: 100vh;
+  height: 79vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
   overflow: hidden;
 }
 
 .productCard {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 1160px;
 }
 
 .productBackground {
   position: relative;
-  width: 65%;
-  height: 600px;
+  margin-left: 21.5%;
+  width: 55%;
+  height: 390px;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
@@ -216,11 +217,19 @@ $mx-width: 50rem;
   z-index: -1;
 }
 
-.gradient[color="gray"] {
+.gradient[color="gray1"] {
   background-image: linear-gradient(45deg, #67696f, #dfe1e3);
 }
 
-.gradient[color="black"] {
+.gradient[color="gray2"] {
+  background-image: linear-gradient(45deg, #67696f, #dfe1e3);
+}
+
+.gradient[color="black1"] {
+  background-image: linear-gradient(45deg, #111, #666);
+}
+
+.gradient[color="black2"] {
   background-image: linear-gradient(45deg, #111, #666);
 }
 
@@ -236,30 +245,6 @@ $mx-width: 50rem;
   background-image: linear-gradient(45deg, #11998e, #1ce669);
 }
 
-.gradient[color="red"] {
-  background-image: linear-gradient(45deg, #d62926, #ee625f);
-}
-
-.gradient[color="orange"] {
-  background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
-}
-
-.gradient[color="yellow"] {
-  background-image: linear-gradient(45deg, #ffc341, #ffee38);
-}
-
-.gradient[color="aqua"] {
-  background-image: linear-gradient(45deg, #11708e, #6ae4ff);
-}
-
-.gradient[color="purple"] {
-  background-image: linear-gradient(45deg, #550461, #8337fe);
-}
-
-.gradient[color="violet"] {
-  background-image: linear-gradient(45deg, #6a2176, #dd98ff);
-}
-
 .logo {
   position: absolute;
   width: 100px;
@@ -267,34 +252,11 @@ $mx-width: 50rem;
   top: 20px;
 }
 
-.share {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: var(--primary);
-  transition: 0.5s;
-}
-
-.share:hover {
-  transform: scale(1.1);
-}
-
-.share i {
-  line-height: 50px;
-}
-
 .osteofit {
   position: absolute;
   top: 85px;
-  left: 15px;
-  font-size: 11rem;
+  left: 8px;
+  font-size: 8rem;
   text-transform: uppercase;
   line-height: 0.9;
   color: #fff;
@@ -303,11 +265,10 @@ $mx-width: 50rem;
 
 .reamer {
   position: absolute;
-  width: 140%;
+  width: 125%;
   opacity: 0;
-  bottom: 75px;
-  right: 0;
-  left: 20;
+  bottom: -20px;
+  right: 37px;
   transform: rotate(-20deg);
   transition: 0.5s;
   padding-left: 220px;
@@ -320,6 +281,7 @@ $mx-width: 50rem;
 
 .info {
   width: 60%;
+  margin-left: 19%;
   background-color: #fff;
   z-index: 1;
   padding: 75px 40px;
@@ -362,11 +324,22 @@ $mx-width: 50rem;
 
 .reamerName,
 .description,
-.color-container,
-.size-container {
+.color-container {
   border-bottom: 1px solid #dadada;
 }
-
+.size {
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+  text-align: center;
+  color: white;
+  line-height: 31px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
 .description {
   padding: 10px 0;
 }
@@ -393,22 +366,22 @@ $mx-width: 50rem;
   align-items: center;
 }
 
-.color {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0 10px;
-  border: 5px solid;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.color[color="gray"] {
+.color[color="gray1"] {
   background-color: rgb(123, 123, 123);
   border-color: rgb(123, 123, 123);
 }
 
-.color[color="black"] {
+.color[color="gray2"] {
+  background-color: rgb(123, 123, 123);
+  border-color: rgb(123, 123, 123);
+}
+
+.color[color="black1"] {
+  background-color: #444;
+  border-color: #444;
+}
+
+.color[color="black2"] {
   background-color: #444;
   border-color: #444;
 }
@@ -428,249 +401,37 @@ $mx-width: 50rem;
   border-color: #29b864;
 }
 
-.color[color="red"] {
-  background-color: #f84848;
-  border-color: #f84848;
-}
-
-.color[color="orange"] {
-  background-color: #ff5521;
-  border-color: #ff5521;
-}
-
-.color[color="yellow"] {
-  background-color: rgb(247, 211, 65);
-  border-color: rgb(247, 211, 65);
-}
-
-.color[color="aqua"] {
-  background-color: rgb(63, 228, 217);
-  border-color: rgb(63, 228, 217);
-}
-
-.color[color="purple"] {
-  background-color: rgb(78, 19, 121);
-  border-color: rgb(78, 19, 121);
-}
-
-.color[color="violet"] {
-  background-color: rgb(96, 34, 96);
-  border-color: rgb(96, 34, 96);
-}
-
 .color.active {
   border-color: #fff;
   box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
 
-.size-container {
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-
-.sizes {
-  padding: 8px 0;
-  display: flex;
-  align-items: center;
-}
-
-.size {
+.color {
+  margin: 0 6px;
   width: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 40px;
-  border-radius: 6px;
-  background-color: #eee;
-  margin: 0 10px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 1.1rem;
-  font-weight: 500;
+  border-radius: 50%;
+  border: 5px solid;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.size.active {
-  background-color: var(--primary);
-  color: #fff;
   transition: 0.5s;
+  border-width: 5px;
+}
+.logo {
+  width: 60px;
+  top: 10px;
+  left: 10px;
 }
 
-.buy-price {
-  padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.price {
-  color: #333;
-  display: flex;
-  align-items: flex-start;
-}
-
-.price h1 {
-  font-size: 2.1rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.price i {
-  font-size: 1.4rem;
-  margin-right: 1px;
-}
-
-.buy {
-  padding: 0.7rem 1rem;
-  background-color: var(--primary);
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: 0.5s;
-}
-
-.buy:hover {
-  transform: scale(1.1);
-}
-
-.buy i {
-  margin-right: 2px;
-}
-
-@media (max-width: 1070px) {
-  .reamer {
-    width: 135%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .productCard {
-    flex-direction: column;
-    width: 100%;
-    box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .productCard > div {
-    width: 100%;
-    box-shadow: none;
-  }
-
-  .reamer {
-    width: 100%;
-    transform: rotate(-5deg) translateY(-50%);
-    top: 55%;
-    right: 2%;
-  }
-
-  .osteofit {
-    top: 20%;
-    left: 5%;
-  }
-}
-
-@media (max-width: 600px) {
-  .share {
-    width: 40px;
-    height: 40px;
-  }
-
-  .share i {
-    font-size: 1rem;
-    line-height: 40px;
-  }
-
-  .logo {
-    width: 70px;
-  }
-}
-
-@media (max-width: 490px) {
-  .osteofit {
-    font-size: 7rem;
-  }
-
-  .reamerName div .big {
-    font-size: 1.3rem;
-  }
-
-  .small {
-    font-size: 1rem;
-  }
-
-  .new {
-    padding: 2px 6px;
-    font-size: 0.9rem;
-  }
-
-  .title {
-    font-size: 0.9rem;
-  }
-
-  .text {
-    font-size: 0.8rem;
-  }
-
-  .buy {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .price h1 {
-    font-size: 1.5rem;
-  }
-
-  .price i {
-    font-size: 0.9rem;
-  }
-
-  .size {
-    width: 30px;
-    height: 30px;
-    margin: 0 8px;
-    font-size: 0.9rem;
-    line-height: 30px;
-  }
-
-  .color {
-    margin: 0 6px;
-    width: 0 20px;
-    width: 20px;
-    height: 20px;
-    border-width: 4px;
-  }
-
-  .share {
-    width: 35px;
-    height: 35px;
-    top: 10px;
-    right: 10px;
-  }
-
-  .share i {
-    font-size: 0.8rem;
-    line-height: 35px;
-  }
-
-  .logo {
-    width: 60px;
-    top: 10px;
-    left: 10px;
-  }
-
-  .info {
-    padding: 20px;
-  }
+.info {
+  padding: 20px;
 }
 
 @media (max-width: 400px) {
   .buy i {
     display: none;
-  }
-
-  .productContainer {
-    padding: 20px;
   }
 }
 
@@ -856,18 +617,18 @@ $hoverBgColor2: #0f4264;
   font-size: 35px;
   margin-left: 15%;
 }
-.product-container {
+.problem-container {
   width: 90%;
   padding-left: 15%;
-  padding-top: 3%;
+  padding-top: 6%;
   padding-bottom: 7%;
   transform-origin: 50% 100%;
 
   img {
     position: absolute;
-    left: 58%;
-    width: 40%;
-    top: 80.5%;
+    left: 60%;
+    width: 32%;
+    top: 42.5%;
   }
 }
 

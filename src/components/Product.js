@@ -7,14 +7,8 @@ import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
 import blue from '../images/blue.png'
-import aqua from '../images/turqoise.png'
 import brown from '../images/brown.png'
-import red from '../images/red.png'
-import orange from '../images/orange.png'
 import green from '../images/green.png'
-import violet from '../images/violet.png'
-import purple from '../images/purple.png'
-import yellow from '../images/yellow.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
 import { Paper } from "@material-ui/core";
@@ -74,7 +68,7 @@ const Product = () => {
     }
   };
 
-  var prevIndex = 10;
+  var prevIndex = 6;
 
 
   function handleOnClick(backgroundColor, e) {
@@ -93,117 +87,44 @@ const Product = () => {
     }
     gradientList[prevIndex].className += ' second';
     console.log(document.getElementsByClassName("color"));
-    if(backgroundColor === "blue"){
-      i = 10;
-      colorList[i].className += " active";
-      reamerList[i].className += " show";
-      gradientList[i].className += " first"
-    } else if(backgroundColor === "gray") {
-      i = 9;
-      colorList[i].className += " active";
-      reamerList[i].className += " show";
-      gradientList[i].className += " first";
-    } else if(backgroundColor === "aqua") {
-      i = 8;
-      colorList[i].className += " active";
-      reamerList[i].className += " show";
-      gradientList[i].className += " first";
-    } else if(backgroundColor === "violet") {
-      i = 7;
-      colorList[i].className += " active";
-      reamerList[i].className += " show";
-      gradientList[i].className += " first";
-    } else if(backgroundColor === "purple") {
+    if(backgroundColor === "black2") {
       i = 6;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "yellow") {
+    } else if(backgroundColor === "gray2") {
       i = 5;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "brown") {
+    } else if(backgroundColor === "green") {
       i = 4;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "black") {
+    } else if(backgroundColor === "blue") {
       i = 3;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "orange") {
+    } else if(backgroundColor === "brown") {
       i = 2;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "green") {
+    } else if(backgroundColor === "black1") {
       i = 1;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
-    } else if(backgroundColor === "red") {
+    } else if(backgroundColor === "gray1") {
       i = 0;
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
     }
     prevIndex = i;
-  }
-
-  function handleOnClickForSize(backgroundColor, e){
-    e.preventDefault();
-    var sizeList = document.getElementsByClassName("size");
-    for (var i = 0; i < sizeList.length; i++) {
-      sizeList[i].className = 'size';
     }
-    if (backgroundColor === "size40") {
-      sizeList[0].className += " active"
-    } else if (backgroundColor === "size42") {
-      sizeList[1].className += " active"
-    } else if (backgroundColor === "size44") {
-      sizeList[2].className += " active"
-    } else if (backgroundColor === "size46") {
-      sizeList[3].className += " active"
-    } else if (backgroundColor === "size48") {
-      sizeList[4].className += " active"
-    } else if (backgroundColor === "size50") {
-      sizeList[5].className += " active"
-    } else if (backgroundColor === "size52") {
-      sizeList[6].className += " active"
-    } else if (backgroundColor === "size54") {
-      sizeList[7].className += " active"
-    } else if (backgroundColor === "size56") {
-      sizeList[8].className += " active"
-    } else if (backgroundColor === "size58") {
-      sizeList[9].className += " active"
-    } else if (backgroundColor === "size60") {
-      sizeList[10].className += " active"
-    } else if (backgroundColor === "size62") {
-      sizeList[11].className += " active"
-    } else if (backgroundColor === "size64") {
-      sizeList[12].className += " active"
-    } else if (backgroundColor === "size66") {
-      sizeList[13].className += " active"
-    } else if (backgroundColor === "size68") {
-      sizeList[14].className += " active"
-    } else if (backgroundColor === "size70") {
-      sizeList[15].className += " active"
-    } else if (backgroundColor === "size72") {
-      sizeList[16].className += " active"
-    } else if (backgroundColor === "size74") {
-      sizeList[17].className += " active"
-    } else if (backgroundColor === "size76") {
-      sizeList[18].className += " active"
-    } else if (backgroundColor === "size78") {
-      sizeList[19].className += " active"
-    } else if (backgroundColor === "size80") {
-      sizeList[20].className += " active"
-    }
-  }
-
-
     return (
       <div className="Product">
         <h1 className="title-product">
@@ -219,98 +140,56 @@ const Product = () => {
         <ScrollAnimation animateIn="fadeIn">
 
         <div class="productContainer">
+          
         <div class="productCard">
-            <div class="productBackground">
-                <div class="gradients">
-                    <div class="gradient" color="red"></div>
-                    <div class="gradient" color="green"></div>
-                    <div class="gradient" color="orange"></div>
-                    <div class="gradient" color="black"></div>
-                    <div class="gradient" color="brown"></div>
-                    <div class="gradient" color="yellow"></div>
-                    <div class="gradient" color="purple"></div>
-                    <div class="gradient" color="violet"></div>
-                    <div class="gradient" color="aqua"></div>
-                    <div class="gradient" color="gray"></div>
-                    <div class="gradient" color="blue"></div>
-                </div>
-                <h1 class="osteofit">Osteofit</h1>
-                <img src={osteofitWhiteLogo} alt="" class="logo"></img>
-                <img src={red} alt="" class="reamer" color="red"></img>
-                <img src={green} alt="" class="reamer" color="green"></img>
-                <img src={orange} alt="" class="reamer" color="orange"></img>
-                <img src={black} alt="" class="reamer" color="black"></img>
-                <img src={brown} alt="" class="reamer" color="brown"></img>
-                <img src={yellow} alt="" class="reamer" color="yellow"></img>
-                <img src={purple} alt="" class="reamer" color="purple"></img>
-                <img src={violet} alt="" class="reamer" color="violet"></img>
-                <img src={aqua} alt="" class="reamer" color="aqua"></img>
-                <img src={gray} alt="" class="reamer" color="gray"></img>
-                <img src={blue} alt="" class="reamer show" color="blue"></img>
-            </div>
-            <div class="info">
+        <div class="info">
                 <div class="reamerName">
                     <div>
                         <h1 class="big">The Osteofit Reamer</h1>
                     </div>
                 </div>
-                <div class="description">
-                    <h3 class="product-title">Product Info</h3>
-                    <p class="product-text">Below is a list of the colors and sizes offered.</p>
-                </div>
                 <div class="color-container">
-                    <h3 class="title">Color</h3>
+                    <h3 class="title">Color Offered</h3>
                     <div class="colors">
-                        <span id="red" onClick={(e) => handleOnClick("red", e)} class="color" primary="#f84848" color="red"></span>
-                        <span id="green" onClick={(e) => handleOnClick("green",e)} class="color" primary="#29b864" color="green"></span>
-                        <span id="orange" onClick={(e) => handleOnClick("orange",e)} class="color" primary="#ff5521" color="orange"></span>
-                        <span id="black" onClick={(e) => handleOnClick("black",e)} class="color" primary="#444" color="black"></span>
-                        <span id="brown" onClick={(e) =>handleOnClick("brown",e)} class="color" primary="#964B00" color="brown"></span>
-                        <span id="yellow" onClick={(e) => handleOnClick("yellow",e)} class="color" primary="#FFFF00" color="yellow"></span>
-                        <span id="purple" onClick={(e) => handleOnClick("purple",e)} class="color" primary="#800080" color="purple"></span>
-                        <span id="violet" onClick={(e) => handleOnClick("violet",e)} class="color" primary="#8F00FF" color="violet"></span> 
-                        <span id="aqua" onClick={(e) => handleOnClick("aqua",e)} class="color" primary="#00FFFF" color="aqua"></span>
-                        <span id="gray" onClick={(e) => handleOnClick("gray",e)} class="color" primary="#d3d3d3" color="gray"></span>
-                        <span id="blue" onClick={(e) =>handleOnClick("blue",e)} class ="color active" primary="#2175f5" color="blue"></span>
+                      <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
+                      <span id="black1" onClick={(e) => handleOnClick("black1",e)} class="color" primary="#444" color="black1"> <span class="size">48</span> </span>
+                      <span id="brown" onClick={(e) =>handleOnClick("brown",e)} class="color" primary="#964B00" color="brown"><span class="size">50</span></span>
+                      <span id="blue" onClick={(e) =>handleOnClick("blue",e)} class ="color" primary="#2175f5" color="blue"><span class="size">52</span></span>
+                      <span id="green" onClick={(e) => handleOnClick("green",e)} class="color" primary="#29b864" color="green"><span class="size">54</span></span>
+                      <span id="gray2" onClick={(e) => handleOnClick("gray2",e)} class="color" primary="#d3d3d3" color="gray2">
+                      <span class="size">56</span> </span>
+                      <span id="black2" onClick={(e) => handleOnClick("black2",e)} class="color active" primary="#444" color="black2"><span class="size">58</span></span>
+
                     </div>
                 </div>
-                <div class="size-container">
-                    <h3 class="title">Size</h3>
-                    <div class="sizes">
-                        <span onClick={(e) => handleOnClickForSize("size40", e)}  class="size">40</span>
-                        <span onClick={(e) => handleOnClickForSize("size42", e)}  class="size">42</span>
-                        <span onClick={(e) => handleOnClickForSize("size44", e)}  class="size active">44</span>
-                        <span onClick={(e) => handleOnClickForSize("size46", e)}  class="size">46</span>
-                        <span onClick={(e) => handleOnClickForSize("size48", e)}  class="size">48</span>
-                        <span onClick={(e) => handleOnClickForSize("size50", e)}  class="size">50</span>
-                        <span onClick={(e) => handleOnClickForSize("size52", e)}  class="size">52</span>
-                        <span onClick={(e) => handleOnClickForSize("size54", e)}  class="size">54</span>
-                        <span onClick={(e) => handleOnClickForSize("size56", e)}  class="size">56</span>
-                        <span onClick={(e) => handleOnClickForSize("size58", e)}  class="size">58</span>
-                        <span onClick={(e) => handleOnClickForSize("size60", e)}  class="size">60</span>
-                    </div>
-                    <div class="sizes">
-                        <span onClick={(e) => handleOnClickForSize("size62", e)}  class="size">62</span>
-                        <span onClick={(e) => handleOnClickForSize("size64", e)}  class="size">64</span>
-                        <span onClick={(e) => handleOnClickForSize("size66", e)}  class="size">66</span>
-                        <span onClick={(e) => handleOnClickForSize("size68", e)}  class="size">68</span>
-                        <span onClick={(e) => handleOnClickForSize("size70", e)}  class="size">70</span>
-                        <span onClick={(e) => handleOnClickForSize("size72", e)}  class="size">72</span>
-                        <span onClick={(e) => handleOnClickForSize("size74", e)}  class="size">74</span>
-                        <span onClick={(e) => handleOnClickForSize("size76", e)}  class="size">76</span>
-                        <span onClick={(e) => handleOnClickForSize("size78", e)}  class="size">78</span>
-                        <span onClick={(e) => handleOnClickForSize("size80", e)}  class="size">80</span>
-                    </div>
+            </div>
+
+            <div class="productBackground">
+                <div class="gradients">
+                    <div class="gradient" color="gray1"/>
+                    <div class="gradient" color="black1"/>
+                    <div class="gradient" color="brown"/>
+                    <div class="gradient" color="blue"/>
+                    <div class="gradient" color="green"/>
+                    <div class="gradient" color="gray2"/>
+                    <div class="gradient" color="black2"/>
                 </div>
+                <h1 class="osteofit">Osteofit</h1>
+                <img src={osteofitWhiteLogo} alt="" class="logo"/>
+                <img src={gray} alt="" class="reamer" color="gray1"/>
+                <img src={black} alt="" class="reamer" color="black1"/>
+                <img src={brown} alt="" class="reamer" color="brown"/>
+                <img src={blue} alt="" class="reamer" color="blue"/>
+                <img src={green} alt="" class="reamer" color="green"/>
+                <img src={gray} alt="" class="reamer" color="gray2"/>
+                <img src={black} alt="" class="reamer show" color="black2"/>
             </div>
         </div>
     </div>
 </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
-
+        <div className="problem-container">
         <h2 className = "problem-text">The Problem</h2>
-        </ScrollAnimation>
-        <div className="product-container">
+
         <img src={problem} alt="" />
 
           <figure class="item-content-product">
@@ -346,7 +225,7 @@ const Product = () => {
       <Paper elevation={13}>
       <div id= "part1" className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-1" src={modelPart1}/>
+        <img class = "model-part-1" src={modelPart1} alt=""/>
         </div>
         <div className = "part-desc-1">
           <h1>Cutting Panels</h1>
@@ -356,7 +235,7 @@ const Product = () => {
       </div>
       <div  id = 'part2' className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-2"src={modelPart2}/>
+        <img class = "model-part-2"src={modelPart2} alt=""/>
         </div>
         <div className = "part-desc-2">
           <h1>Molded Back Plate</h1>
@@ -366,7 +245,7 @@ const Product = () => {
       </div>
       <div  id = 'part3' className = "part-container">
         <div className = "image-part">
-        <img class = "model-part-4"src={modelPart4} />
+        <img class = "model-part-4"src={modelPart4} alt=""/>
         </div>
         <div className = "part-desc-3">
           <h1>Molded Core</h1>
