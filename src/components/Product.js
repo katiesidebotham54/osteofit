@@ -2,16 +2,16 @@ import React from "react";
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
-import modelPart4 from "../images/Osteofitmodelpart4.PNG"
+import modelPart3 from "../images/Osteofitmodelpart4.PNG"
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
 import blue from '../images/blue.png'
+import productPenImage from '../images/product-pen-image.png';
 import brown from '../images/brown.png'
 import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
-import { Paper } from "@material-ui/core";
 
 
 
@@ -127,17 +127,20 @@ const Product = () => {
     }
     return (
       <div className="Product">
-        <h1 className="title-product">
-          <span className="fade-in-text">Our Product</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
-            <path
-              fill="#FFFFFF"
-              fill-opacity="1"
-              d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-            ></path>
-          </svg>
-        </h1>
-        <ScrollAnimation animateIn="fadeIn">
+                <div>
+          <h1 className="title">
+            <span className="fade-in-text">Our Product</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
+              <path
+                fill="#FFFFFF"
+                fill-opacity="1"
+                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
+          </h1>
+        </div>
+
+        <div className = "color-block-blue"/>
 
         <div class="productContainer">
           
@@ -149,7 +152,7 @@ const Product = () => {
                     </div>
                 </div>
                 <div class="color-container">
-                    <h3 class="title">Color Offered</h3>
+                    <h3 class="title">Colors Offerred</h3>
                     <div class="colors">
                       <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
                       <span id="black1" onClick={(e) => handleOnClick("black1",e)} class="color" primary="#444" color="black1"> <span class="size">48</span> </span>
@@ -186,7 +189,6 @@ const Product = () => {
             </div>
         </div>
     </div>
-</ScrollAnimation>
         <div className="problem-container">
         <h2 className = "problem-text">The Problem</h2>
 
@@ -207,7 +209,7 @@ const Product = () => {
         </ScrollAnimation>
         </figure>
         </div>
-
+      <img src={productPenImage} alt="" id="product-pen-image"/>
         <h2 className = "product-pen">
           Our Hollow Spherical Reamer is
           <span
@@ -219,41 +221,43 @@ const Product = () => {
   <ScrollAnimation animateIn="fadeIn">
   <div className = "product-breakdown">
     <h1 class = "product-breakdown-h1">
-      The Parts
+      What Goes Into Our Product?
     </h1>
+    <hr className = "horz-line7"/>
     <div class = "product-breakdown-container">
-      <Paper elevation={13}>
-      <div id= "part1" className = "part-container">
-        <div className = "image-part">
+      <div className = "part-container-one">
         <img class = "model-part-1" src={modelPart1} alt=""/>
-        </div>
         <div className = "part-desc-1">
-          <h1>Cutting Panels</h1>
+          <h2>Cutting Panels</h2>
         <p>This is the first part of the reamer. The panels are made from <b>ASTM A276 420 Stainless Steel</b>, and has stamped side and dome cutting panels. Additionally, the Panel-Frame Subassembly includes 4 side panels and 1 dome panel.</p>
         <hr class = "part-desc-1-line"></hr>
         </div>
       </div>
-      <div  id = 'part2' className = "part-container">
+
+      <div  className = "part-container-two">
         <div className = "image-part">
         <img class = "model-part-2"src={modelPart2} alt=""/>
         </div>
         <div className = "part-desc-2">
-          <h1>Molded Back Plate</h1>
+          <h2>Molded Back Plate</h2>
         <p>This is the second part of the reamer made of polycarbonate 2061-15, and features tabs for ultrasonic welding.</p>
         <hr class = "part-desc-2-line"></hr>
         </div>
       </div>
-      <div  id = 'part3' className = "part-container">
+
+      <div  className = "part-container-three">
         <div className = "image-part">
-        <img class = "model-part-4"src={modelPart4} alt=""/>
+        <img class = "model-part-3"src={modelPart3} alt=""/>
         </div>
         <div className = "part-desc-3">
-          <h1>Molded Core</h1>
+          <h2>Molded Core</h2>
         <p>This is the third part of the reamer, and like the second part, this part is also made up of polycarbonate 2061-15. This part helps with the structural integrity, with multiple options for quick-connect coupling to Reamer Shaft. This is color coded by size, and is space calculated for reamed volume of bone.</p>
+        <hr class = "part-desc-2-line"></hr>
         </div>
       </div>
-      </Paper>
+
     </div>
+    
   </div>
 
 </ScrollAnimation>
