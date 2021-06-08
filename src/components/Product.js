@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
@@ -12,6 +14,8 @@ import brown from '../images/brown.png'
 import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
+import mainProduct from "../images/product.png"
+
 
 
 
@@ -254,6 +258,30 @@ const Product = () => {
         <p>This is the third part of the reamer, and like the second part, this part is also made up of polycarbonate 2061-15. This part helps with the structural integrity, with multiple options for quick-connect coupling to Reamer Shaft. This is color coded by size, and is space calculated for reamed volume of bone.</p>
         <hr class = "part-desc-2-line"></hr>
         </div>
+      </div>
+      <div className="item-3d">
+        <span class="ground"/>
+        <figure class="item-content group">
+          <div class="item-img">
+              <img src={mainProduct} alt="" />
+          </div>
+          <figcaption class="item-caption">
+          <ScrollAnimation animateIn="fadeIn">
+              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn">
+              <p style={{color:"white"}}>
+              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
+              Click here to learn more! 
+              </p>
+          </ScrollAnimation>
+            <button class = 'btn-1'>
+              <Router forceRefresh>
+                <Link exact to="/product">Our Product </Link>
+              </Router>
+            </button>
+          </figcaption>    
+        </figure>
       </div>
 
     </div>

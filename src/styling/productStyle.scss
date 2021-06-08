@@ -1,10 +1,25 @@
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
+
+$blue1: #46779c;
+$blue2: #255680;
+
 $darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 
 $mx-width: 50rem;
-
+.Product {
+  min-height: 100%;
+  min-width: 100%;
+}
 .color-block-blue {
   position: absolute;
   height: 700px;
@@ -40,7 +55,7 @@ $mx-width: 50rem;
 }
 
 .product-paper p {
-  color: white;
+  color: $lightgray1;
   padding: 10px;
   font-size: 20px;
 }
@@ -348,7 +363,7 @@ $mx-width: 50rem;
   height: 40px;
   margin-left: 6px;
   text-align: center;
-  color: white;
+  color: $lightgray1;
   line-height: 31px;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -487,7 +502,7 @@ $hoverBgColor2: #0f4264;
   flex-wrap: wrap;
   height: 80vh;
   .box {
-    @include createBox(350px, 400px, 10px, white, 20px);
+    @include createBox(350px, 400px, 10px, $lightgray1, 20px);
     position: relative;
     box-shadow: 0px 0px 15px #1a658f;
     margin-top: 18%;
@@ -566,7 +581,7 @@ $hoverBgColor2: #0f4264;
       .desc,
       .title-about,
       h3 {
-        color: white;
+        color: $lightgray1;
         transition: 0.8s all ease-in-out;
       }
     }
@@ -619,7 +634,7 @@ $hoverBgColor2: #0f4264;
 
 .problem-desc {
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: $lightgray1;
   font-size: 22px;
   margin-top: 3%;
   line-height: 1.6;
@@ -630,7 +645,7 @@ $hoverBgColor2: #0f4264;
   }
 }
 .problem-text {
-  color: white;
+  color: $lightgray1;
   top: 45.5%;
   position: absolute;
   font-size: 35px;
@@ -671,7 +686,7 @@ $hoverBgColor2: #0f4264;
 }
 
 .product-breakdown {
-  height: 950px;
+  height: 1423px;
   h1 {
     color: #1a658f;
     font-family: "Raleway" sans-serif;
@@ -683,7 +698,7 @@ $hoverBgColor2: #0f4264;
     left: 8%;
     letter-spacing: 3px;
     background: none;
-    padding-top: 50px;
+    padding-top: 87px;
     max-width: 34%;
   }
 }
@@ -694,7 +709,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 47%;
   bottom: 33%;
-  background: white;
+  background: $lightgray1;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -710,7 +725,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 40%;
   bottom: 22%;
-  background: white;
+  background: $lightgray1;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -726,7 +741,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 48%;
   bottom: 12%;
-  background: white;
+  background: $lightgray1;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -741,18 +756,21 @@ $hoverBgColor2: #0f4264;
   margin-left: 53%;
   height: 230px;
   margin-top: 150px;
+  box-shadow: 5px 10px #004065;
 }
 .part-container-two {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: -4%;
   height: 230px;
+  box-shadow: 5px 10px #004065;
 }
 .part-container-three {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: 52%;
   height: 230px;
+  box-shadow: 5px 10px #004065;
 }
 
 .part-desc-1 {
@@ -760,15 +778,16 @@ $hoverBgColor2: #0f4264;
   margin-left: 121px;
   width: 594px;
   text-align: center;
+
   h2 {
     background: none;
-    color: $yellow;
+    color: $lightgray1;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: white;
+    color: $lightgray1;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -780,13 +799,13 @@ $hoverBgColor2: #0f4264;
   margin-top: 6%;
   h2 {
     background: none;
-    color: $yellow;
+    color: $lightgray1;
     padding-top: 38px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: white;
+    color: $lightgray1;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -799,13 +818,13 @@ $hoverBgColor2: #0f4264;
 
   h2 {
     background: none;
-    color: $yellow;
+    color: $lightgray1;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: white;
+    color: $lightgray1;
 
     font-family: "Open Sans", sans-serif;
   }
@@ -833,8 +852,13 @@ $hoverBgColor2: #0f4264;
 .horz-line7 {
   border: 0;
   border-bottom: 8px solid #ffcc00;
-  margin-top: 5%;
+  margin-top: 7%;
   opacity: 0.8;
   margin-left: 2%;
   max-width: 95%;
+}
+
+.join-us-container {
+  width: 100%;
+  overflow: auto;
 }
