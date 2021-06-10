@@ -45,6 +45,7 @@ rootElement.scrollTo({
         </div>
       </div>
       <div className="carousel">
+        <div id='triangle2'/>
       <div className= "wordCarousel">
           <span className="carousel-title">
             <h1>Osteofit is: </h1>
@@ -63,10 +64,23 @@ rootElement.scrollTo({
           <div className = "home-inner-container"/>
           <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
              that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
-             <div className="slideshow">
-    </div>
       </div>
+      <div id="arrowAnim">
+  <div class="arrowSliding">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay1">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay2">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay3">
+    <div class="arrow-side"></div>
+  </div>
+  <div id='rectangle1'/>
 
+</div>
 
 
       <div className="item-3d">
@@ -81,7 +95,7 @@ rootElement.scrollTo({
               <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
-              <p style={{color:"white"}}>
+              <p>
               Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
               Click here to learn more! 
               </p>
@@ -92,8 +106,12 @@ rootElement.scrollTo({
               </Router>
             </button>
           </figcaption>    
+
         </figure>
+
+        <hr id="side-slanted-line"/>
       </div>
+
       <ScrollAnimation animateIn="fadeIn">
       <div className = "stats">
         <div className = "stats-container">

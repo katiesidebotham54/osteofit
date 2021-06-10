@@ -9,6 +9,18 @@ $darkblue: #052032;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 
+#triangle2 {
+  width: 0;
+  height: 0;
+  z-index: 0;
+  top: 20%;
+  right: 0%;
+  position: absolute;
+  bottom: 0;
+  border-top: 416px solid $lightgray1;
+  border-left: 351px solid transparent;
+}
+
 .intro {
   display: grid;
   position: relative;
@@ -119,7 +131,7 @@ $yellow: rgb(255, 204, 0);
 }
 
 .main-para-home {
-  bottom: 61%;
+  bottom: 59%;
   left: 41%;
   position: absolute;
   color: $darkblue;
@@ -180,7 +192,12 @@ $yellow: rgb(255, 204, 0);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+    background: linear-gradient(
+      90deg,
+      $lightgrayblue4 0%,
+      $lightgrayblue5 40%,
+      $darkblue 100%
+    );
   }
   min-height: 350px;
 }
@@ -287,9 +304,9 @@ strong {
   #triangle {
     width: 0;
     height: 0;
+    z-index: 0;
     position: absolute;
     bottom: 0;
-    z-index: 99;
     border-bottom: 451px solid $lightgray1;
     border-right: 365px solid transparent;
   }
@@ -394,7 +411,7 @@ strong {
 }
 
 .item-3d:nth-child(even) .item-img {
-  float: left;
+  left: 20%;
   order: 1;
 }
 
@@ -473,20 +490,38 @@ strong {
   }
 }
 
-.item-caption h2 {
-  font-size: 40px;
-  margin-top: 9px;
+.item-caption {
+  p {
+    font-size: 20px;
+    color: $darkblue;
+    font-weight: 400;
+    b {
+      color: white;
+    }
+  }
+  h2 {
+    font-size: 40px;
+    margin-top: 9px;
+  }
 }
-
-.item-caption .MuiButton-contained {
-  background-color: $yellow;
+#side-slanted-line {
+  height: 13px;
+  background-color: #09466f;
+  transform: rotate(51deg);
+  width: 49%;
+  z-index: 10;
+  position: absolute;
+  border-width: 0px;
+  border-color: #09466f;
+  left: -20%;
+  top: 34%;
 }
-
-.item-caption p {
-  font-size: 20px;
+#rectangle1 {
+  height: 20px;
+  width: 40px;
 }
 .carousel {
-  height: 240px;
+  height: 250px;
   background: $lightgrayblue4;
 }
 .wordCarousel {
@@ -647,9 +682,11 @@ strong {
   &:hover {
     transition: all 0.5s;
     border-radius: 10px;
-    box-shadow: 0px 6px 10px rgb(145, 145, 157);
+    background-color: $lightgray2;
     padding: 1rem 3rem 1rem 1rem;
-
+    a {
+      color: $lightgray1;
+    }
     &::after {
       opacity: 1;
       transition: all 0.5s;
@@ -920,5 +957,80 @@ strong {
     display: block;
     height: auto;
     width: 30%;
+  }
+}
+#arrowAnim {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(233deg);
+  position: absolute;
+  right: 35%;
+  top: 25%;
+}
+
+.arrow-side {
+  width: 5vw;
+  height: 5vw;
+  border: 1.5vw solid;
+  border-color: $darkblue transparent transparent $darkblue;
+  transform: rotate(-45deg);
+}
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(15vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(9vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-9vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15vw);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(15vw);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(9vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-9vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15vw);
   }
 }
