@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState, useRef} from "react";
 import Product from "../images/product.png"
 import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
@@ -22,16 +22,34 @@ rootElement.scrollTo({
   top: 0,
   behavior: "smooth"
 })
-
 }
     return (
       <div class = "homeWholePage">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <div className="Mission ">
-        <div className= "MissionText wordCarousel">
-          <span className="mission-title-text">
-        <h1>Osteofit is: </h1>
-        </span>
+      <div className="intro" id ="intro">
+        <div class="intro-title">
+          <div class="title-inner">
+            <div class="intro-osteofit">
+              <div class="intro-inner">Osteofit</div>
+            </div>
+          </div>
+        </div>
+        <div class="intro-image">
+          <img src={Product} alt="" />
+        </div>
+        <div class="home-arrow">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text">Scroll down</span>
+        </div>
+      </div>
+      <div className="carousel">
+        <div id='triangle2'/>
+      <div className= "wordCarousel">
+          <span className="carousel-title">
+            <h1>Osteofit is: </h1>
+          </span>
         <div> 
             <ul class="flip4"> 
                 <li>Accurate</li>
@@ -40,46 +58,33 @@ rootElement.scrollTo({
             </ul>
         </div>  
       </div>
-      
-      <div class="slideshow-container">
-        <div class="slideshow-inner">
-          <div class="mySlides fade img1">
-            <img src={model1} alt="tree" />
-          </div>
-          <div class="mySlides fade img2">
-            <img src={model2} alt="autumn" />
-          </div>
-          <div class="mySlides fade img3">
-            <img src={model3} alt="path" />
-          </div>
-          <div class="mySlides fade img3">
-            <img src={model4} alt="path" />
-          </div>
-        </div>
-      </div>
-      <br />
-          <div className="allDots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-
-          </div>
-      </div>
-      <div class="home-arrow">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <span class="text">Scroll down</span>
-      </div>
-    <ScrollAnimation animateIn="fadeIn">
+    </div>
         <div className = "HomePara">
+          <div className = "home-inner-container"/>
           <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
              that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
-        </div>
-    </ScrollAnimation>
+      </div>
+      <div id="arrowAnim">
+  <div class="arrowSliding">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay1">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay2">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay3">
+    <div class="arrow-side"></div>
+  </div>
+  <div id='rectangle1'/>
+
+</div>
+
+
       <div className="item-3d">
         <span class="ground"/>
+        <div id = "triangle"/>
         <figure class="item-content group">
           <div class="item-img">
               <img src={Product} alt="" />
@@ -89,7 +94,7 @@ rootElement.scrollTo({
               <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
-              <p style={{color:"white"}}>
+              <p>
               Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
               Click here to learn more! 
               </p>
@@ -100,8 +105,12 @@ rootElement.scrollTo({
               </Router>
             </button>
           </figcaption>    
+
         </figure>
+
+        <hr id="side-slanted-line"/>
       </div>
+
       <ScrollAnimation animateIn="fadeIn">
       <div className = "stats">
         <div className = "stats-container">
@@ -120,7 +129,7 @@ rootElement.scrollTo({
           <div className="stat">
             <div className="stat-value">11</div>
             <hr />
-            <div className="meta">Colors Offerred</div>
+            <div className="meta">Colors Offered</div>
           </div>
           <div className="stat">
             <div className="stat-value">100%</div>

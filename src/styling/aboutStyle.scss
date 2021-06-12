@@ -1,3 +1,14 @@
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
+
+$blue1: #46779c;
+$blue2: #255680;
 $darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
@@ -5,6 +16,7 @@ $yellow: rgb(255, 204, 0);
 .About {
   width: 100%;
   height: 100%;
+  margin-top: 10%;
   min-height: 1000px;
   min-width: 1000px;
 }
@@ -361,7 +373,7 @@ $hoverBgColor2: #0f4264;
   flex-wrap: wrap;
   height: 50vh;
   .box {
-    @include createBox(350px, 350px, 10px, white, 20px);
+    @include createBox(350px, 350px, 10px, $lightgray1, 20px);
     position: relative;
     box-shadow: 0px 0px 15px #1a658f;
     .boxContent {
@@ -418,7 +430,7 @@ $hoverBgColor2: #0f4264;
       .desc,
       .title-about,
       h3 {
-        color: white;
+        color: $lightgray1;
         transition: 0.8s all ease-in-out;
       }
     }

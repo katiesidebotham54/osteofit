@@ -1,4 +1,12 @@
-$darkblue: #1a658f;
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
+
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
@@ -42,7 +50,7 @@ $separator-space-top: 18px;
   font-weight: 400;
   padding-bottom: 1%;
   margin-left: 9.5%;
-  color: white;
+  color: $lightgray1;
   letter-spacing: 0.8px;
 }
 .icon2 {
@@ -305,7 +313,7 @@ blockquote.speech {
 
   .badge {
     opacity: 0.8;
-    background: white;
+    background: $lightgray1;
     padding: 1.5px 10px;
     border-radius: 3px;
     margin-right: 60%;
@@ -342,7 +350,7 @@ blockquote.speech {
   }
 
   .badge {
-    background: white;
+    background: $lightgray1;
     color: $darkgray;
     opacity: 0.8;
     padding: 1.5px 10px;
@@ -381,7 +389,7 @@ blockquote.speech {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: $lightgray1;
   #step1 {
     font-size: 12px;
   }
@@ -393,7 +401,7 @@ blockquote.speech {
   top: 34%;
   left: 44%;
   position: absolute;
-  background-color: none;
+  background-color: $lightgray1;
 }
 
 .horz-line4 {
@@ -525,7 +533,7 @@ blockquote.speech {
   color: #1a658f;
   font-size: 45px;
   font-weight: 500;
-  background: white;
+  background: $lightgray1;
 
   span {
     background-image: linear-gradient(
@@ -567,7 +575,7 @@ blockquote.speech {
   font-size: 20px;
 }
 .verticalLine {
-  border-left: 6px solid white;
+  border-left: 6px solid $lightgray1;
   height: 430px;
   position: absolute;
   top: 10%;
@@ -681,7 +689,7 @@ ol.gradient-list {
   font-weight: 400;
   padding-bottom: 2%;
   margin-left: 5%;
-  color: white;
+  color: $lightgray1;
   letter-spacing: 0.8px;
 }
 
@@ -701,7 +709,7 @@ ol.gradient-list {
   font-family: "Open Sans", sans-serif;
   margin-left: 22%;
   font-size: 40px;
-  color: white;
+  color: $lightgray1;
   letter-spacing: 1px;
 }
 
