@@ -19,6 +19,12 @@ const SingleUse = () => {
 }
   return (
     <div className="SingleUse">
+<div class="single-use-title-wrapper">
+    <div class="single-use-typing-demo">
+    Why Single Use?
+    </div>
+</div>       
+
       <div className="comparison">
         <div className = "background-container">
         <ScrollAnimation animateIn="fadeIn">

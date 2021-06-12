@@ -1,45 +1,14 @@
-        <div className= "MissionText wordCarousel">
-          <span className="mission-title-text">
-        <h1>Osteofit is: </h1>
-        </span>
-        <div> 
-            <ul class="flip4"> 
-                <li>Accurate</li>
-                <li>Sterile</li>
-                <li>Effective</li> 
-                <li>Sustainable</li>  
-            </ul>
-        </div>  
-      </div>
-      
-      <div class="slideshow-container">
-        <div class="slideshow-inner">
-          <div class="mySlides fade img1">
-            <img src={model1} alt="tree" />
-          </div>
-          <div class="mySlides fade img2">
-            <img src={model2} alt="autumn" />
-          </div>
-          <div class="mySlides fade img3">
-            <img src={model3} alt="path" />
-          </div>
-          <div class="mySlides fade img3">
-            <img src={model4} alt="path" />
-          </div>
-        </div>
-      </div>
-      <br />
-          <div className="allDots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-
-          </div>
-      </div>
-      <div class="home-arrow">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <span class="text">Scroll down</span>
-      </div>
+          <div id="arrowAnim">
+  <div class="arrowSliding">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay1">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay2">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay3">
+    <div class="arrow-side"></div>
+  </div>
+</div>

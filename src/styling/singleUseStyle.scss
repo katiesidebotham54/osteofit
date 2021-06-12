@@ -12,7 +12,6 @@ $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 $separator-size: 8px;
 $separator-border-style: solid;
-$separator-border-color: rgb(255, 204, 0);
 $separator-space-top: 18px;
 .SingleUse {
   width: 100%;
@@ -406,7 +405,7 @@ blockquote.speech {
 
 .horz-line4 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-top: 1.5%;
   margin-left: 5%;
   margin-bottom: 2.2%;
@@ -488,7 +487,7 @@ blockquote.speech {
 
 .horz-line2 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-bottom: 3%;
 
   width: 0;
@@ -505,7 +504,7 @@ blockquote.speech {
 
 .horz-line1 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-bottom: 1.5%;
 
   width: 0;

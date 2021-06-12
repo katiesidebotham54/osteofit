@@ -6,12 +6,10 @@ $lightgrayblue3: #758ca5;
 $lightgrayblue4: #5c84a3;
 $lightgrayblue5: #4a6888;
 $darkblue: #052032;
+$lightblue: #297caf;
 
 $blue1: #46779c;
-$blue2: #255680;
-$darkblue: #1a658f;
 $lightblue: #297caf;
-$yellow: rgb(255, 204, 0);
 
 .About {
   width: 100%;
@@ -21,131 +19,76 @@ $yellow: rgb(255, 204, 0);
   min-width: 1000px;
 }
 
+.about-title-wrapper {
+  height: 29vh;
+  display: flex;
+  margin-left: 19%;
+  align-items: center;
+  .typing-demo {
+    width: 8ch;
+    animation: typing 2s steps(8), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: $darkblue;
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
 .outer-container-about {
   width: 100%;
   height: 500px;
   overflow: auto;
 }
 
-.title span {
-  overflow: hidden;
-  display: block;
-  position: absolute;
-  font-size: 2em;
-  padding-left: 66%;
-  top: 8%;
-}
-
-.title-bio {
-  color: #1a658f;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 15px;
-  text-transform: capitalize;
-}
-
-.title-bio::after {
-  content: "";
-  display: block;
-  height: 3.5px;
-  width: 13px;
-  background-color: #fff;
-  border-radius: 15px;
-  margin: 5px auto 0 auto;
-}
-
-.container_text {
-  position: absolute;
-  font-family: "Raleway", sans-serif;
-  top: 60%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  color: black;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 20s ease;
-}
-
-.active .container_text {
-  top: 60%;
-}
-
-.container_text span {
-  display: block;
-}
-
-.container_text1 {
-  font-size: 1.3rem;
-}
-
-.container_text2 {
-  font-size: 2.5rem;
-}
-
 .item-img-about {
   position: relative;
   float: right;
   padding-left: 15%;
-  padding-top: 5%;
   width: 30%;
-
-  img {
-    bottom: 3;
-  }
-}
-
-.item-content-about {
-  position: relative;
-  width: 70%;
-
-  h2 {
-    color: #1a658f;
-    font-size: 35px;
-  }
-
-  .about-logo {
-    width: 25%;
-  }
 }
 
 .about-container {
   width: 90%;
-  padding-left: 20%;
-  padding-top: 3%;
+  padding-left: 19%;
   padding-bottom: 8%;
   transform-origin: 50% 100%;
-}
+  .item-content-about {
+    position: relative;
+    width: 70%;
 
-.about-text {
-  font-family: "Open Sans", sans-serif;
-  color: black;
-  font-size: 22px;
-  line-height: 1.6;
-  padding-bottom: 5%;
+    .about-logo {
+      width: 25%;
+    }
+  }
+  .about-text {
+    font-family: "Open Sans", sans-serif;
+    color: $darkblue;
+    font-size: 22px;
+    line-height: 1.6;
+    padding-bottom: 5%;
 
-  b {
-    color: #297caf;
+    b {
+      color: $lightblue;
+    }
   }
 }
-
-.aboutPara img {
-  float: right;
-  position: relative;
-  top: 12%;
-  right: 7%;
-}
-
 .team-title {
   h1 {
-    color: #1a658f;
+    color: $lightgrayblue5;
     font-family: "Raleway" sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -156,90 +99,83 @@ $yellow: rgb(255, 204, 0);
   }
 }
 
-.checkbox h1 {
-  background: transparent;
-  margin-right: 200px;
-}
-
 .checkbox {
   display: flex;
   justify-content: space-around;
-  background: #297caf;
-}
-
-.checkbox1 {
-  height: 150px;
-  margin-top: 90px;
-}
-
-.checkbox2 {
-  height: 150px;
-}
-
-.checkmark__circle {
-  stroke-dasharray: 166;
-  stroke-dashoffset: 166;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-  stroke: rgb(255, 204, 0);
-  fill: none;
-  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-}
-
-.checkmark1 {
-  margin-left: 120.1%;
-  margin-top: -50px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: block;
-  stroke-width: 2;
-  stroke: #0f4264;
-  stroke-miterlimit: 10;
-  box-shadow: inset 0px 0px 0px $yellow;
-  animation: fill 0.4s ease-in-out 0.4s forwards,
-    scale 0.3s ease-in-out 0.9s both;
-}
-
-.checkmark2 {
-  margin-left: 114%;
-  margin-top: -50px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  display: block;
-  stroke-width: 2;
-  stroke: #0f4264;
-  stroke-miterlimit: 10;
-  box-shadow: inset 0px 0px 0px $yellow;
-  animation: fill 0.4s ease-in-out 0.4s forwards,
-    scale 0.3s ease-in-out 0.9s both;
-}
-
-.checkmark__check {
-  transform-origin: 50% 50%;
-  stroke-dasharray: 48;
-  stroke-dashoffset: 48;
-  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-}
-
-@keyframes stroke {
-  100% {
-    stroke-dashoffset: 0;
+  background: $darkblue;
+  h1 {
+    background: transparent;
+    margin-right: 200px;
   }
-}
-@keyframes scale {
-  0%,
-  100% {
-    transform: none;
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: $lightgrayblue4;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
   }
-  50% {
-    transform: scale3d(1.1, 1.1, 1);
+
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
   }
-}
-@keyframes fill {
-  100% {
-    box-shadow: inset 0px 0px 0px 30px rgb(255, 204, 0);
+
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes scale {
+    0%,
+    100% {
+      transform: none;
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+  @keyframes fill {
+    100% {
+      box-shadow: inset 0px 0px 0px 30px $lightgrayblue1;
+    }
+  }
+  .checkbox1 {
+    height: 150px;
+    margin-top: 90px;
+    .checkmark1 {
+      margin-left: 120.1%;
+      margin-top: -50px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 2;
+      stroke: $darkblue;
+      stroke-miterlimit: 10;
+      animation: fill 0.4s ease-in-out 0.4s forwards,
+        scale 0.3s ease-in-out 0.9s both;
+    }
+  }
+
+  .checkbox2 {
+    height: 150px;
+    .checkmark2 {
+      margin-left: 114%;
+      margin-top: -50px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 2;
+      stroke: $darkblue;
+      stroke-miterlimit: 10;
+      animation: fill 0.4s ease-in-out 0.4s forwards,
+        scale 0.3s ease-in-out 0.9s both;
+    }
   }
 }
 
@@ -247,78 +183,81 @@ $yellow: rgb(255, 204, 0);
   width: 100%;
   overflow: auto;
   height: 550px;
-}
-
-.paper1 .MuiButton-contained {
-  background-color: rgb(255, 204, 0);
-  :hover {
-    background-color: rgb(249, 226, 133);
+  h2 {
+    color: $darkblue;
+    text-transform: uppercase;
+    font-size: 30px;
   }
-}
+  p {
+    color: $lightgrayblue5;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .paper1 {
+    position: absolute;
+    left: 20%;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    .MuiButton-contained {
+      background-color: $lightgrayblue1;
+      :hover {
+        background-color: $lightgrayblue1;
+      }
+    }
+    .MuiPaper-root {
+      top: 20%;
+      position: absolute;
+      width: 68%;
+      height: 58%;
+      text-align: center;
+      padding: 35px;
+      padding-top: 70px;
 
-.paper2 .MuiButton-contained {
-  background-color: rgb(255, 204, 0);
+      font-family: "Open Sans", sans-serif;
+      h2 {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+  .paper2 {
+    height: 20%;
+    position: absolute;
+    right: 10%;
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+    .MuiButton-contained {
+      background-color: $lightgray1;
+    }
+    .MuiPaper-root {
+      top: 20%;
+      position: absolute;
+      width: 68%;
+      height: 58%;
+      text-align: center;
+      padding: 35px;
+      padding-top: 70px;
+      font-family: "Open Sans", sans-serif;
+      h2 {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+  .bckgrnd-img {
+    img {
+      width: 400px;
+      position: absolute;
+      transform: rotate(90deg);
+      height: 200px;
+    }
+  }
 }
 
 .MuiButton-label a {
   font-size: 16px;
   text-decoration: none;
-  color: #000000;
-}
-
-.paper1 .MuiPaper-root {
-  top: 20%;
-  position: absolute;
-  width: 60%;
-  height: 50%;
-  text-align: center;
-  padding: 35px;
-  font-family: "Open Sans", sans-serif;
-  h2 {
-    font-family: "Raleway", sans-serif;
-  }
-}
-
-.paper2 .MuiPaper-root {
-  top: 20%;
-  position: absolute;
-  width: 60%;
-  height: 50%;
-  text-align: center;
-  padding: 35px;
-  font-family: "Open Sans", sans-serif;
-  h2 {
-    font-family: "Raleway", sans-serif;
-  }
-}
-
-.bottompapers h2 {
   color: $darkblue;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.bottompapers p {
-  color: #555555;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.paper1 {
-  position: absolute;
-  left: 22%;
-  width: 35%;
-  height: 20%;
-  text-align: center;
-}
-
-.paper2 {
-  height: 20%;
-  position: absolute;
-  right: 10%;
-  width: 35%;
-  text-align: center;
-  padding: 20px;
 }
 
 .team-wrapper {
@@ -332,9 +271,9 @@ $yellow: rgb(255, 204, 0);
     font-weight: 600;
     background: linear-gradient(
       to right,
-      #0f4264 10%,
-      #1a658f 50%,
-      #3c94cf 60%
+      $darkblue 10%,
+      $lightblue 50%,
+      $lightgrayblue4 60%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -353,9 +292,8 @@ $yellow: rgb(255, 204, 0);
     background-position: 200% center;
   }
 }
-$hoverBgColor: #1a658f;
-$hoverBgColor2: #0f4264;
-
+$hoverBgColor: $lightgrayblue5;
+$hoverBgColor2: $lightblue;
 /* Mixins */
 @mixin createBox($width, $height, $bRadius, $bgColor, $margin) {
   width: $width;
@@ -384,26 +322,26 @@ $hoverBgColor2: #0f4264;
       text-align: center;
       padding: 17px;
       .icon {
-        color: #1a658f;
+        color: $darkblue;
         font-size: 50px;
         padding: 15px;
       }
       .title-about {
         font-size: 24px;
-        color: #1a658f;
+        color: $lightgrayblue5;
         font-weight: bold;
         padding: 10px;
         background: none;
       }
       .desc {
-        color: #1a658f;
+        color: $lightgrayblue5;
         font-size: 20px;
         width: 90%;
         height: 20%;
       }
       h3 {
         font-size: 50px;
-        color: #1a658f;
+        color: $darkblue;
         font-family: "Open Sans", sans-serif;
       }
     }
@@ -423,7 +361,7 @@ $hoverBgColor2: #0f4264;
       );
       box-shadow: none;
       .icon {
-        color: rgb(255, 204, 0);
+        color: $darkblue;
         transition: 0.8s all ease-in-out;
       }
 
