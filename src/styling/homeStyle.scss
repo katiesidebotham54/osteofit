@@ -7,19 +7,6 @@ $lightgrayblue4: #5c84a3;
 $lightgrayblue5: #4a6888;
 $darkblue: #052032;
 $lightblue: #297caf;
-$yellow: rgb(255, 204, 0);
-
-#triangle2 {
-  width: 0;
-  height: 0;
-  z-index: 0;
-  top: 20%;
-  right: 0%;
-  position: absolute;
-  bottom: 0;
-  border-top: 416px solid $lightgray1;
-  border-left: 351px solid transparent;
-}
 
 .intro {
   display: grid;
@@ -112,35 +99,21 @@ $yellow: rgb(255, 204, 0);
 }
 
 .HomePara {
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  margin: auto;
-  font-size: 30px;
+  height: 222px;
   font-family: "Open Sans", sans-serif;
-  .home-inner-container {
-    display: inline-block;
-    transform: skewX(40deg);
-    height: 100%;
-    max-height: 400px;
-    width: 40%;
-    left: -98px;
+  .main-para-home {
+    bottom: 42%;
+    font-weight: 600;
+    left: -18%;
+    font-size: 27px;
     position: absolute;
-    background: $lightgrayblue4;
+    color: $darkblue;
+    text-align: center;
+    width: 900px;
   }
-}
-
-.main-para-home {
-  bottom: 59%;
-  left: 41%;
-  position: absolute;
-  color: $darkblue;
-  text-align: center;
-  width: 900px;
-}
-
-.HomePara b {
-  color: #297caf;
+  b {
+    color: $lightgrayblue1;
+  }
 }
 
 .slideshow {
@@ -291,24 +264,26 @@ strong {
   perspective: 150rem;
   perspective-origin: 50% 110%;
 }
-
+.item-intro {
+  transform-style: preserve-3d;
+  background-color: $lightgray1;
+  height: 105px;
+  border-left: 158px solid $lightgray1;
+}
 .item-3d {
-  width: 100%;
-  padding-bottom: 5%;
+  width: 97%;
   transform-origin: 50% 100%;
   transform-style: preserve-3d;
   background-color: $lightgrayblue4;
   margin-left: 70px;
-  border-top: 109px solid transparent;
-  border-left: 92px solid $lightgray1;
+  border-left: 158px solid $lightgray1;
   #triangle {
-    width: 0;
-    height: 0;
     z-index: 0;
     position: absolute;
     bottom: 0;
-    border-bottom: 451px solid $lightgray1;
-    border-right: 365px solid transparent;
+    right: 81.9%;
+    border-bottom: 713px solid $lightgray1;
+    border-right: 620px solid transparent;
   }
 }
 
@@ -385,8 +360,8 @@ strong {
 .item-content {
   position: relative;
   width: 100%;
-  max-width: $mx-width;
-  margin: 0 auto;
+  max-width: 49rem;
+  margin: -18px 31%;
   display: flex;
   align-items: center;
   transform: translateZ(0);
@@ -394,16 +369,17 @@ strong {
 
 .item-img {
   position: relative;
-  float: left;
   display: block;
-  width: 40%;
+  width: 45%;
+  left: 27%;
+  order: 1;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
   animation: floating 5s -1s infinite;
 
   img {
     display: block;
-    width: 100%;
+    width: 96%;
     height: auto;
     transform-origin: 50% 100%;
     transform: translateZ(-5rem);
@@ -430,13 +406,9 @@ strong {
   text-align: center;
   position: relative;
   float: right;
-  left: 15%;
+  left: 23%;
   width: 80%;
   //box-shadow: inset 0 0 0 1px red;
-}
-
-.item-3d:nth-child(odd) .item-caption {
-  padding-left: 10%;
 }
 
 .item-3d:nth-child(even) .item-caption {
@@ -492,34 +464,54 @@ strong {
 
 .item-caption {
   p {
-    font-size: 20px;
+    font-size: 19px;
     color: $darkblue;
     font-weight: 400;
     b {
-      color: white;
+      color: $lightgrayblue3;
     }
   }
   h2 {
-    font-size: 40px;
+    font-size: 39px;
     margin-top: 9px;
+    color: $darkblue;
   }
 }
-#side-slanted-line {
+#side-slanted-line1 {
   height: 13px;
   background-color: #09466f;
-  transform: rotate(51deg);
-  width: 49%;
+  transform: rotate(49deg);
+  width: 67%;
   z-index: 10;
   position: absolute;
   border-width: 0px;
   border-color: #09466f;
-  left: -20%;
-  top: 34%;
+  left: -23.7%;
+  top: -29%;
 }
-#rectangle1 {
-  height: 20px;
-  width: 40px;
+#side-slanted-line2 {
+  height: 13px;
+  background-color: #09466f;
+  transform: rotate(134deg);
+  width: 57%;
+  z-index: 10;
+  position: absolute;
+  border-width: 0px;
+  border-color: #09466f;
+  left: -31.6%;
+  top: 212%;
 }
+
+#rectangle {
+  height: 75px;
+  width: 50px;
+  top: 272.8%;
+  position: absolute;
+  left: 29%;
+  background-color: $lightgray1;
+  z-index: 99;
+}
+
 .carousel {
   height: 250px;
   background: $lightgrayblue4;
@@ -533,7 +525,7 @@ strong {
     margin-top: -5.5%;
     height: 90px;
     text-transform: capitalize;
-    left: 47.5%;
+    left: 54.5%;
 
     li {
       font-family: "Raleway", sans-serif;
@@ -647,10 +639,10 @@ strong {
   background: none;
   font-family: "Open Sans", sans-serif;
   font-size: 65px;
-  margin-top: 4%;
+  margin-top: 5%;
   letter-spacing: 6px;
   display: inline-block;
-  margin-left: 25%;
+  margin-left: 32%;
 }
 
 .btn-1 {
@@ -663,6 +655,7 @@ strong {
   font-size: 1em;
   padding: 1rem;
   border: 0;
+  margin-bottom: 31px;
   transition: all 0.5s;
   border-radius: 12px;
   width: auto;
@@ -698,7 +691,7 @@ strong {
   height: 650px;
   .info-title {
     h1 {
-      color: #1a658f;
+      color: $lightgrayblue5;
       font-family: "Raleway" sans-serif;
       font-weight: 500;
       font-size: 50px;
@@ -709,68 +702,62 @@ strong {
   }
   .paper1-home {
     position: absolute;
-    left: 22%;
-    width: 35%;
-    height: 20%;
+    left: 18%;
+    width: 47%;
+    height: 18%;
     text-align: center;
     top: 73%;
   }
   .paper2-home {
-    height: 20%;
+    height: 18%;
     position: absolute;
-    right: 10%;
-    width: 35%;
+    width: 47%;
     top: 73%;
+    right: -2%;
     text-align: center;
     padding: 20px;
-  }
-  .paper1-home .MuiButton-contained {
-    background-color: rgb(255, 204, 0);
-    :hover {
-      background-color: rgb(249, 226, 133);
-    }
-  }
-
-  .paper2-home .MuiButton-contained {
-    background-color: rgb(255, 204, 0);
   }
   .paper1-home .MuiPaper-root {
     top: 20%;
     position: absolute;
-    width: 60%;
-    height: 65%;
+    width: 53%;
+    height: 60%;
     text-align: center;
+    background-color: $lightgrayblue3;
     padding: 25px;
     font-family: "Open Sans", sans-serif;
     h2 {
       font-family: "Raleway", sans-serif;
       font-size: 20px;
+      color: $darkblue;
     }
     p {
-      margin-top: 5%;
-      color: #555555;
+      color: $lightgray1;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 17px;
     }
   }
 
   .paper2-home .MuiPaper-root {
     top: 20%;
     position: absolute;
-    width: 60%;
-    height: 65%;
+    width: 53%;
+    height: 60%;
+    background-color: $lightgrayblue4;
+
     text-align: center;
     padding: 25px;
     font-family: "Open Sans", sans-serif;
     h2 {
       font-family: "Raleway", sans-serif;
       font-size: 20px;
+      color: $darkblue;
     }
     p {
       margin-top: 5%;
-      color: #555555;
+      color: $lightgray1;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 17px;
     }
   }
   div.info-arrow {
@@ -779,7 +766,7 @@ strong {
     box-sizing: border-box;
     position: absolute;
     left: 45%;
-    top: 80%;
+    top: 84%;
     transform: rotate(45deg);
 
     &::before {
@@ -810,11 +797,11 @@ strong {
 
     &:hover::after {
       transform: rotate(45deg);
-      border-color: $yellow;
+      border-color: $lightgray1;
       height: 110%;
     }
     &:hover::before {
-      border-color: $yellow;
+      border-color: $lightgray1;
       transform: scale(0.8);
     }
   }
@@ -826,7 +813,7 @@ strong {
     line-height: 80px;
     vertical-align: middle;
     font-size: 45px;
-    color: green;
+    color: $lightgray1;
   }
   .award-icon {
     width: 80px;
@@ -836,10 +823,10 @@ strong {
     line-height: 80px;
     vertical-align: middle;
     font-size: 45px;
-    color: $yellow;
+    color: $lightgray1;
   }
   #scrollToTopBtn {
-    background-color: $yellow;
+    background-color: $lightgrayblue2;
     border: 0;
     font-size: 1em;
     padding: 1rem;
@@ -850,8 +837,8 @@ strong {
     cursor: pointer;
     width: auto;
     position: relative;
-    left: 85%;
-    top: 72%;
+    left: 90%;
+    top: 79%;
   }
 }
 .intro-title {
@@ -960,21 +947,21 @@ strong {
   }
 }
 #arrowAnim {
-  width: 100vw;
+  width: 70vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(233deg);
+  transform: rotate(180deg);
   position: absolute;
-  right: 35%;
-  top: 25%;
+  right: 16%;
+  top: 67%;
 }
 
 .arrow-side {
-  width: 5vw;
-  height: 5vw;
-  border: 1.5vw solid;
+  width: 3vw;
+  height: 3vw;
+  border: 0.8vw solid;
   border-color: $darkblue transparent transparent $darkblue;
   transform: rotate(-45deg);
 }

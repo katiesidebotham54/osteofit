@@ -3,6 +3,7 @@ import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
+import BackgroundImg from '../images/techbackground.png'
 import aboutUs from '../images/aboutUs.png'
 import '../styling/aboutStyle.scss'
 
@@ -10,22 +11,17 @@ import '../styling/aboutStyle.scss'
 const About = () => {
       return (
       <div className="About">
-        <div>
-        </div>
+        <div class="about-title-wrapper">
+          <div class="typing-demo">
+              About Us
+          </div>
+        </div>       
         <div className="about-container">
           <figure class="item-content-about">
             <div class="item-img-about">
               <img src={aboutUs} alt="" />
             </div>
-
-            <ScrollAnimation animateIn="fadeIn">
-
-              <h2>About Us</h2>
-              <br/>
-              <br/>
-              </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn">
-
               <p className="about-text">
               OsteoFit is a newly formed company specializing in <b>single-use 
               sterile medical reamers</b>. Our company's management has over <b>100
@@ -34,7 +30,7 @@ const About = () => {
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>
-        </figure>
+          </figure>
         </div>
         <ScrollAnimation animateIn="fadeIn">
           <div className = "team-title">
@@ -43,46 +39,36 @@ const About = () => {
           </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
-          <ScrollAnimation animateIn="fadeIn">
-            <div className = "outer-container-about">
-          <div class="container-about">
-  <div class="box">
-    <div class="boxContent">
-      <i class="fas fa-head-side-mask icon"></i>
-
-      <h1 class="title-about">Orthopedic Surgeon</h1>
-      <p class="desc">
-      <h3>50+</h3> 
-years of experience specializing in hip and knee replacement.</p>
-      
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxContent">
-    <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Designer</h1>
-      <h3>40+</h3>
-      <p class="desc"> 
-      years of experience in design and development of orthopedic implants working with major OEMs.</p>
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxContent">
-<i class="fas fa-tools icon"></i>
-
-          <h1 class="title-about">Manufactuer</h1>
-      <h3>40+
-        </h3> 
-      <p class="desc"> 
-      years in the development and manufacturing of orthopedic implants and instruments</p>
-    </div>
-  </div>
-</div>
-</div>
-        </ScrollAnimation>
+          <div className = "outer-container-about">
+            <div class="container-about">
+              <div class="box">
+                <div class="boxContent">
+                  <i class="fas fa-head-side-mask icon"></i>
+                  <h1 class="title-about">Orthopedic Surgeon</h1>
+                  <p class="desc">
+                  <h3>50+</h3> years of experience specializing in hip and knee replacement.</p>
+                </div>
+              </div>
+              <div class="box">
+                 <div class="boxContent">
+                    <i class="fas fa-pen-nib icon"></i>
+                    <h1 class="title-about">Designer</h1>
+                    <h3>40+</h3>
+                    <p class="desc"> years of experience in design and development of orthopedic implants working with major OEMs.</p>             
+                  </div>
+              </div>
+              <div class="box">
+                <div class="boxContent">
+                  <i class="fas fa-tools icon"></i>
+                  <h1 class="title-about">Manufactuer</h1>
+                  <h3>40+</h3> 
+                  <p class="desc"> years in the development and manufacturing of orthopedic implants and instruments</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-
         <div class="checkbox">
           <div class="checkbox1">
             <h1>
@@ -135,12 +121,16 @@ years of experience specializing in hip and knee replacement.</p>
         </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-
+          <div className = "bckgrnd-img">
+            <img src={BackgroundImg} alt=""/>
+          </div>
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
               <h2>Osteofit's Reamer</h2>
               <br />
+              <br />
+
               <p>Click below to view our product!</p>
               <br />
                 <button class = 'btn-1'>

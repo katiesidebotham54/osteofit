@@ -12,7 +12,6 @@ $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 $separator-size: 8px;
 $separator-border-style: solid;
-$separator-border-color: rgb(255, 204, 0);
 $separator-space-top: 18px;
 
 .SingleUse {
@@ -405,7 +404,7 @@ blockquote.speech {
 
 .horz-line4 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-top: 1.5%;
   margin-left: 5%;
   margin-bottom: 2.2%;
@@ -487,7 +486,7 @@ blockquote.speech {
 
 .horz-line2 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-bottom: 3%;
 
   width: 0;
@@ -504,7 +503,7 @@ blockquote.speech {
 
 .horz-line1 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
+  border-bottom: $separator-size $separator-border-style $darkblue;
   margin-bottom: 1.5%;
 
   width: 0;
@@ -952,4 +951,34 @@ ol.gradient-list {
   width: auto;
   position: relative;
   left: 85%;
+}
+
+.single-use-title-wrapper {
+  margin-top: 10%;
+  height: 29vh;
+  display: flex;
+  margin-left: 19%;
+  align-items: center;
+  .single-use-typing-demo {
+    width: 14ch;
+    animation: typing 2s steps(14), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: $darkblue;
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 }

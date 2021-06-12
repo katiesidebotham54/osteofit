@@ -45,7 +45,6 @@ rootElement.scrollTo({
         </div>
       </div>
       <div className="carousel">
-        <div id='triangle2'/>
       <div className= "wordCarousel">
           <span className="carousel-title">
             <h1>Osteofit is: </h1>
@@ -60,39 +59,31 @@ rootElement.scrollTo({
         </div>  
       </div>
     </div>
+
+      <div className="item-3d">
+        <div id = "triangle"/>
+        <figure class="item-content group">
         <div className = "HomePara">
-          <div className = "home-inner-container"/>
           <p className = "main-para-home">OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
              that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</p>
       </div>
-      <div id="arrowAnim">
-  <div class="arrowSliding">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay1">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay2">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay3">
-    <div class="arrow-side"></div>
-  </div>
-  <div id='rectangle1'/>
 
-</div>
+        </figure>
+              </div>
+      <div>
+      <div className="item-intro">
+      <div id="rectangle"/>
+        <hr id="side-slanted-line1"/>
+        <hr id="side-slanted-line2"/>
 
-
-      <div className="item-3d">
-        <span class="ground"/>
-        <div id = "triangle"/>
-        <figure class="item-content group">
+      </div>
+      <figure class="item-content group">
           <div class="item-img">
               <img src={Product} alt="" />
           </div>
           <figcaption class="item-caption">
           <ScrollAnimation animateIn="fadeIn">
-              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
+              <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
               <p>
@@ -108,10 +99,7 @@ rootElement.scrollTo({
           </figcaption>    
 
         </figure>
-
-        <hr id="side-slanted-line"/>
       </div>
-
       <ScrollAnimation animateIn="fadeIn">
       <div className = "stats">
         <div className = "stats-container">
@@ -143,8 +131,23 @@ rootElement.scrollTo({
         <ScrollAnimation animateIn="fadeIn">
 
       <div className = "more-info">
+      <div id="arrowAnim">
+  <div class="arrowSliding">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay1">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay2">
+    <div class="arrow-side"></div>
+  </div>
+  <div class="arrowSliding delay3">
+    <div class="arrow-side"></div>
+  </div>
+</div>
+
       <div className = "info-title">
-          <h1>Learn More About...</h1>
+          <h1>Learn More About</h1>
           <hr className = "horz-line4" />
           </div>
       <div className="bottompapers">
@@ -164,6 +167,7 @@ rootElement.scrollTo({
                 </a>           
             </Paper>
           </div>
+
           <div class="paper2-home">
             <Paper elevation={13}>
             <i class="fab fa-envira envira-icon"></i>

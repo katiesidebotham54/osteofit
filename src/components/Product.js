@@ -131,11 +131,14 @@ const Product = () => {
     }
     return (
       <div className="Product">
+        <div class="product-title-wrapper">
+          <div class="product-typing-demo">
+            Our Product
+          </div>
+        </div>       
 
         <div className = "color-block-blue"/>
-
         <div class="productContainer">
-          
         <div class="productCard">
         <div class="info">
                 <div class="reamerName">
@@ -158,7 +161,6 @@ const Product = () => {
                     </div>
                 </div>
             </div>
-
             <div class="productBackground">
                 <div class="gradients">
                     <div class="gradient" color="gray1"/>
@@ -275,7 +277,6 @@ const Product = () => {
     </div>
     
   </div>
-
 </ScrollAnimation>
     </div>
     );
