@@ -40,7 +40,10 @@ const About = () => {
               OsteoFit is a newly formed company specializing in <b>single-use 
               sterile medical reamers</b>. Our company's management has over <b>100
               years</b> of experience in human medical orthopedic design and
-              manufacturing of implants and instruments.
+              manufacturing of implants and instruments. Our mission is to combine  
+              <b> experience</b> from <b>orthopedic</b> surgery, <b>engineering</b> and <b>manufacturing </b>
+              technology to provide cost-effective surgical tools with improved effectiveness, 
+              safety and environmentally-friendly design.
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>
@@ -62,15 +65,15 @@ const About = () => {
 
       <h1 class="title-about">Orthopedic Surgeon</h1>
       <p class="desc">
-      <h3>50+</h3> 
-years of experience specializing in hip and knee replacement.</p>
+      <h3>40+</h3> 
+years of experience specializing in hip and knee replacement and 15 years FDA consultant/panel member.</p>
       
     </div>
   </div>
   <div class="box">
     <div class="boxContent">
     <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Designer</h1>
+          <h1 class="title-about">Engineer</h1>
       <h3>40+</h3>
       <p class="desc"> 
       years of experience in design and development of orthopedic implants working with major OEMs.</p>
@@ -121,7 +124,7 @@ years of experience specializing in hip and knee replacement.</p>
         <div className="checkbox">
           <div class="checkbox2">
             <h1>
-              Technology Covered By 14 Patents
+              Technology Covered By 5 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"

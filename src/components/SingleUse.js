@@ -1,8 +1,10 @@
 import React from "react";
 import { Paper } from "@material-ui/core";
-import mold from '../images/steel-mold.png';
+import mold from '../images/Osteofitmodelpart3.PNG';
+import mold2 from '../images/Osteofitmodelpart4.PNG';
 import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
+import patrick from '../images/patrickStar.jpg';
 
 const SingleUse = () => {
   document.getElementById("scrollToTopBtn")
@@ -293,11 +295,12 @@ const SingleUse = () => {
           </div>
           <div className = "recycle-desc">
           <h3>
-            Osteofit takes pride in creating products that are <h2>
+            Osteofit takes pride in creating products that are <h2 className = "firstH2">
               sustainable and
               environmentally conscious
             </h2>
             </h3>
+            <h4 id = "bigGreenAndSymbol">&</h4>
             <p>
              Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
              processes, feel free to reference the resources below.
@@ -305,11 +308,16 @@ const SingleUse = () => {
             <hr className = "horz-line5" />
             <div className = "square"/>
           <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
-          <span>
-            <img src = {mold} alt="" />
-            </span>
-
+          <div class = "moldimages">
+            <img class = "mold1pic" src = {mold} alt="" />
+            <img class = "mold2pic" src = {mold2} alt="" />
+            </div>
           </div>
+      </div>
+
+      <div className = "pictureAndDesc">
+        <p>test</p>
+        <img src = {patrick}></img>
       </div>
 
       <div className="bottompapers2">

@@ -2,6 +2,10 @@ $darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 
+.homeWholePage {
+  min-width: 2000px;
+}
+
 .home-arrow {
   display: flex;
   justify-content: center;

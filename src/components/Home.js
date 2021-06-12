@@ -25,7 +25,7 @@ rootElement.scrollTo({
 
 }
     return (
-      <div>
+      <div class = "homeWholePage">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
         <div className="Mission ">
         <div className= "MissionText wordCarousel">
@@ -37,7 +37,6 @@ rootElement.scrollTo({
                 <li>Accurate</li>
                 <li>Sterile</li>
                 <li>Effective</li> 
-                <li>Sustainable</li>  
             </ul>
         </div>  
       </div>
@@ -107,7 +106,7 @@ rootElement.scrollTo({
       <div className = "stats">
         <div className = "stats-container">
           <div className="stat">
-            <div className="stat-value">14</div>
+            <div className="stat-value">5</div>
             <hr />
 
             <div className="meta">Patents in Place</div>
