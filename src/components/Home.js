@@ -4,9 +4,6 @@ import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import model1 from '../images/model1.png'
-import model2 from '../images/model2.png'
-import model3 from '../images/model3.png'
-import model4 from '../images/model4.png'
 import '../styling/homeStyle.scss'
 
 
