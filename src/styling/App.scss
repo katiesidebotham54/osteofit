@@ -1,19 +1,10 @@
-$lightgray1: #dae1e7;
-$lightgray2: #9ca4ac;
-$lightgrayblue1: #94acc1;
-$lightgrayblue2: #8ea3bc;
-$lightgrayblue3: #758ca5;
-$lightgrayblue4: #5c84a3;
-$lightgrayblue5: #4a6888;
-$darkblue: #052032;
-
 .App {
   text-align: center;
 }
 
 body {
   overflow-x: hidden;
-  background-color: $lightgray1;
+  background-color: white;
 }
 
 .fade-in-text {
@@ -83,7 +74,7 @@ body {
 }
 
 h1 {
-  color: $lightgray1;
+  color: #ffffff;
   text-align: center;
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   font-weight: bold;
@@ -97,7 +88,6 @@ svg {
 
 nav {
   display: flex;
-  min-width: 2000px;
 }
 
 nav ul {
@@ -151,14 +141,14 @@ header {
   align-items: center;
   padding: 15px;
   position: fixed;
-  background: $lightgray1;
-  z-index: 99;
+  background: white;
+  z-index: 2;
   top: 0;
 }
 
 button {
   padding: 12px 20px;
-  background-color: $lightgray1;
+  background-color: rgba(255, 204, 0, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -176,7 +166,7 @@ button {
   overflow: hidden;
   width: 100%;
   bottom: 0;
-  background-color: $lightgrayblue5;
+  background-color: #555555;
   height: 100%;
   left: 0;
 }
@@ -199,7 +189,7 @@ button {
 }
 
 .bottom-footer span {
-  color: $lightgray1;
+  color: white;
   margin-left: 54%;
   font-size: 17px;
 }
@@ -210,14 +200,14 @@ button {
   margin-right: 0.5%;
 }
 .footer li a {
-  color: $lightgray1;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
 .footer .footer-email {
-  color: $lightgray1;
+  color: white;
   margin-left: 80%;
 }
 
@@ -245,7 +235,7 @@ button {
   margin-top: 1.4%;
   margin-left: 40px;
   font-size: 12px;
-  color: $lightgray1;
+  color: white;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -264,17 +254,16 @@ form {
 
 .btn-2 {
   a {
-    color: $lightgray1;
+    color: #0f4264;
   }
   text {
-    color: $lightgray1;
+    color: #0f4264;
   }
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   cursor: pointer;
   font-size: 1em;
   padding: 1rem;
-  background-color: $lightgrayblue5;
   border: 0;
   transition: all 0.5s;
   border-radius: 55px;
@@ -297,9 +286,9 @@ form {
     border-radius: 50px;
     box-shadow: 0px 6px 10px rgb(145, 145, 157);
     padding: 1rem 3rem 1rem 1rem;
-    background-color: $lightgrayblue5;
+    background-color: rgba(255, 204, 0, 0.9);
     a {
-      color: $darkblue;
+      color: #052032;
     }
 
     &::after {

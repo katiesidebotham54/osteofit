@@ -3,7 +3,6 @@ import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
-import BackgroundImg from '../images/techbackground.png'
 import aboutUs from '../images/aboutUs.png'
 import '../styling/aboutStyle.scss'
 
@@ -11,29 +10,41 @@ import '../styling/aboutStyle.scss'
 const About = () => {
       return (
       <div className="About">
-        <div class="about-title-wrapper">
-          <div class="typing-demo">
-              About Us
-          </div>
-        </div>       
+        <div>
+          <h1 className="title">
+            <span className="fade-in-text">Who is Osteofit?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
+              <path
+                fill="#FFFFFF"
+                fill-opacity="1"
+                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
+          </h1>
+        </div>
         <div className="about-container">
           <figure class="item-content-about">
             <div class="item-img-about">
               <img src={aboutUs} alt="" />
             </div>
+
+            <ScrollAnimation animateIn="fadeIn">
+
+              <h2>About Us</h2>
+              <br/>
+              <br/>
+              </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn">
+
               <p className="about-text">
               OsteoFit is a newly formed company specializing in <b>single-use 
               sterile medical reamers</b>. Our company's management has over <b>100
               years</b> of experience in human medical orthopedic design and
-              manufacturing of implants and instruments. Our mission is to combine  
-              <b> experience</b> from <b>orthopedic</b> surgery, <b>engineering</b> and <b>manufacturing </b>
-              technology to provide cost-effective surgical tools with improved effectiveness, 
-              safety and environmentally-friendly design.
+              manufacturing of implants and instruments.
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>
-          </figure>
+        </figure>
         </div>
         <ScrollAnimation animateIn="fadeIn">
           <div className = "team-title">
@@ -51,15 +62,15 @@ const About = () => {
 
       <h1 class="title-about">Orthopedic Surgeon</h1>
       <p class="desc">
-      <h3>40+</h3> 
-years of experience specializing in hip and knee replacement and 15 years FDA consultant/panel member.</p>
+      <h3>50+</h3> 
+years of experience specializing in hip and knee replacement.</p>
       
     </div>
   </div>
   <div class="box">
     <div class="boxContent">
     <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Engineer</h1>
+          <h1 class="title-about">Designer</h1>
       <h3>40+</h3>
       <p class="desc"> 
       years of experience in design and development of orthopedic implants working with major OEMs.</p>
@@ -81,6 +92,7 @@ years of experience specializing in hip and knee replacement and 15 years FDA co
         </ScrollAnimation>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
+
         <div class="checkbox">
           <div class="checkbox1">
             <h1>
@@ -109,7 +121,7 @@ years of experience specializing in hip and knee replacement and 15 years FDA co
         <div className="checkbox">
           <div class="checkbox2">
             <h1>
-              Technology Covered By 5 Patents
+              Technology Covered By 14 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,16 +145,12 @@ years of experience specializing in hip and knee replacement and 15 years FDA co
         </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-          <div className = "bckgrnd-img">
-            <img src={BackgroundImg} alt=""/>
-          </div>
+
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
               <h2>Osteofit's Reamer</h2>
               <br />
-              <br />
-
               <p>Click below to view our product!</p>
               <br />
                 <button class = 'btn-1'>

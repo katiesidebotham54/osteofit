@@ -1,27 +1,17 @@
-$lightgray1: #dae1e7;
-$lightgray2: #9ca4ac;
-$lightgrayblue1: #94acc1;
-$lightgrayblue2: #8ea3bc;
-$lightgrayblue3: #758ca5;
-$lightgrayblue4: #5c84a3;
-$lightgrayblue5: #4a6888;
-$darkblue: #052032;
-
-$blue1: #46779c;
-$blue2: #255680;
-
 $darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 
 $mx-width: 50rem;
-.Product {
-  width: 100%;
+
+.product {
   height: 100%;
+  width: 100%;
   min-height: 1000px;
-  min-width: 2000px;
+  min-width: 1000px;
 }
+
 .color-block-blue {
   position: absolute;
   height: 700px;
@@ -33,7 +23,7 @@ $mx-width: 50rem;
 .product-pen {
   color: #1a658f;
   position: absolute;
-  top: 17%;
+  top: 19%;
   text-align: center;
   left: 62%;
   font-size: 35px;
@@ -57,7 +47,7 @@ $mx-width: 50rem;
 }
 
 .product-paper p {
-  color: $lightgray1;
+  color: white;
   padding: 10px;
   font-size: 20px;
 }
@@ -203,6 +193,9 @@ $mx-width: 50rem;
 .productCard {
   justify-content: right;
   width: 1160px;
+  position: absolute;
+  top: 12%;
+  z-index: 1;
 }
 
 .productBackground {
@@ -365,7 +358,7 @@ $mx-width: 50rem;
   height: 40px;
   margin-left: 6px;
   text-align: center;
-  color: $lightgray1;
+  color: white;
   line-height: 31px;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -504,7 +497,7 @@ $hoverBgColor2: #0f4264;
   flex-wrap: wrap;
   height: 80vh;
   .box {
-    @include createBox(350px, 400px, 10px, $lightgray1, 20px);
+    @include createBox(350px, 400px, 10px, white, 20px);
     position: relative;
     box-shadow: 0px 0px 15px #1a658f;
     margin-top: 18%;
@@ -583,7 +576,7 @@ $hoverBgColor2: #0f4264;
       .desc,
       .title-about,
       h3 {
-        color: $lightgray1;
+        color: white;
         transition: 0.8s all ease-in-out;
       }
     }
@@ -636,19 +629,21 @@ $hoverBgColor2: #0f4264;
 
 .problem-desc {
   font-family: "Open Sans", sans-serif;
-  color: $lightgray1;
+  color: white;
   font-size: 22px;
   margin-top: 3%;
   line-height: 1.6;
   padding-bottom: 2%;
-
+  position: absolute;
+  top: 43%;
+  width: 50%;
   b {
     color: $yellow;
   }
 }
 .problem-text {
-  color: $lightgray1;
-  top: 45.5%;
+  color: white;
+  top: 41.5%;
   position: absolute;
   font-size: 35px;
   margin-left: 15%;
@@ -664,12 +659,11 @@ $hoverBgColor2: #0f4264;
     position: absolute;
     left: 66%;
     width: 24%;
-    top: 45%;
+    top: 41%;
   }
 }
 
 .item-content-product {
-  position: relative;
   width: 60%;
 
   h1 {
@@ -688,7 +682,7 @@ $hoverBgColor2: #0f4264;
 }
 
 .product-breakdown {
-  height: 1423px;
+  height: 950px;
   h1 {
     color: #1a658f;
     font-family: "Raleway" sans-serif;
@@ -700,7 +694,7 @@ $hoverBgColor2: #0f4264;
     left: 8%;
     letter-spacing: 3px;
     background: none;
-    padding-top: 87px;
+    padding-top: 50px;
     max-width: 34%;
   }
 }
@@ -711,7 +705,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 47%;
   bottom: 33%;
-  background: $lightgray1;
+  background: white;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -727,7 +721,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 40%;
   bottom: 22%;
-  background: $lightgray1;
+  background: white;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -743,7 +737,7 @@ $hoverBgColor2: #0f4264;
   position: absolute;
   left: 48%;
   bottom: 12%;
-  background: $lightgray1;
+  background: white;
   border-radius: 10%;
   border: 3px solid $darkgray;
   img {
@@ -758,21 +752,18 @@ $hoverBgColor2: #0f4264;
   margin-left: 53%;
   height: 230px;
   margin-top: 150px;
-  box-shadow: 5px 10px #004065;
 }
 .part-container-two {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: -4%;
   height: 230px;
-  box-shadow: 5px 10px #004065;
 }
 .part-container-three {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: 52%;
   height: 230px;
-  box-shadow: 5px 10px #004065;
 }
 
 .part-desc-1 {
@@ -780,16 +771,15 @@ $hoverBgColor2: #0f4264;
   margin-left: 121px;
   width: 594px;
   text-align: center;
-
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -801,13 +791,13 @@ $hoverBgColor2: #0f4264;
   margin-top: 6%;
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 38px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -820,13 +810,13 @@ $hoverBgColor2: #0f4264;
 
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
 
     font-family: "Open Sans", sans-serif;
   }
@@ -854,43 +844,8 @@ $hoverBgColor2: #0f4264;
 .horz-line7 {
   border: 0;
   border-bottom: 8px solid #ffcc00;
-  margin-top: 7%;
+  margin-top: 5%;
   opacity: 0.8;
   margin-left: 2%;
   max-width: 95%;
-}
-
-.join-us-container {
-  width: 100%;
-  overflow: auto;
-}
-
-.product-title-wrapper {
-  margin-top: 10%;
-  height: 29vh;
-  display: flex;
-  margin-left: 19%;
-  align-items: center;
-  .product-typing-demo {
-    width: 11ch;
-    animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    color: $darkblue;
-    font-family: "Raleway", sans-serif;
-    font-size: 4em;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
 }

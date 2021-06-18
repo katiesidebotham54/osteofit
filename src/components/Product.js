@@ -1,6 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
@@ -14,8 +12,6 @@ import brown from '../images/brown.png'
 import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
-import mainProduct from "../images/product.png"
-
 
 
 
@@ -131,14 +127,23 @@ const Product = () => {
     }
     return (
       <div className="Product">
-        <div class="product-title-wrapper">
-          <div class="product-typing-demo">
-            Our Product
-          </div>
-        </div>       
+                <div>
+          <h1 className="title">
+            <span className="fade-in-text">Our Product</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
+              <path
+                fill="#FFFFFF"
+                fill-opacity="1"
+                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+              ></path>
+            </svg>
+          </h1>
+        </div>
 
         <div className = "color-block-blue"/>
+
         <div class="productContainer">
+          
         <div class="productCard">
         <div class="info">
                 <div class="reamerName">
@@ -161,6 +166,7 @@ const Product = () => {
                     </div>
                 </div>
             </div>
+
             <div class="productBackground">
                 <div class="gradients">
                     <div class="gradient" color="gray1"/>
@@ -249,34 +255,11 @@ const Product = () => {
         <hr class = "part-desc-2-line"></hr>
         </div>
       </div>
-      <div className="item-3d">
-        <span class="ground"/>
-        <figure class="item-content group">
-          <div class="item-img">
-              <img src={mainProduct} alt="" />
-          </div>
-          <figcaption class="item-caption">
-          <ScrollAnimation animateIn="fadeIn">
-              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-              <p style={{color:"white"}}>
-              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
-              Click here to learn more! 
-              </p>
-          </ScrollAnimation>
-            <button class = 'btn-1'>
-              <Router forceRefresh>
-                <Link exact to="/product">Our Product </Link>
-              </Router>
-            </button>
-          </figcaption>    
-        </figure>
-      </div>
 
     </div>
     
   </div>
+
 </ScrollAnimation>
     </div>
     );

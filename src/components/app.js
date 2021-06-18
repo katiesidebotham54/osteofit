@@ -1,3 +1,4 @@
+  
 const sizes = document.querySelectorAll('.size');
 const colors = document.querySelectorAll('.color');
 const reamers = document.querySelectorAll('.reamer');

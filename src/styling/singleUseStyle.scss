@@ -1,23 +1,17 @@
-$lightgray1: #dae1e7;
-$lightgray2: #9ca4ac;
-$lightgrayblue1: #94acc1;
-$lightgrayblue2: #8ea3bc;
-$lightgrayblue3: #758ca5;
-$lightgrayblue4: #5c84a3;
-$lightgrayblue5: #4a6888;
-$darkblue: #052032;
-
+$darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 $separator-size: 8px;
 $separator-border-style: solid;
+$separator-border-color: rgb(255, 204, 0);
 $separator-space-top: 18px;
+
 .SingleUse {
   width: 100%;
   height: 100%;
   min-height: 1000px;
-  min-width: 2000px;
+  min-width: 1000px;
 }
 
 .recycle-para .MuiPaper-root {
@@ -49,18 +43,18 @@ $separator-space-top: 18px;
   font-weight: 400;
   padding-bottom: 1%;
   margin-left: 9.5%;
-  color: $lightgray1;
+  color: white;
   letter-spacing: 0.8px;
 }
 .icon2 {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 .icon1 {
-  padding-top: 9%;
+  padding-top: 10%;
 }
 
 .icon2 {
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .circle-icon-reusable {
@@ -74,8 +68,7 @@ $separator-space-top: 18px;
   font-size: 40px;
   margin-left: 22.5%;
   position: absolute;
-  right: 21.5%;
-  top: 23%;
+  right: 23%;
 }
 
 .circle-icon-reusable2 {
@@ -89,8 +82,7 @@ $separator-space-top: 18px;
   font-size: 40px;
   margin-left: 22.5%;
   position: absolute;
-  right: 21.5%;
-  top: 48%;
+  right: 23%;
 }
 
 .circle-icon-reusable3 {
@@ -104,8 +96,7 @@ $separator-space-top: 18px;
   vertical-align: middle;
   margin-left: 23%;
   position: absolute;
-  right: 21.5%;
-  top: 73%;
+  right: 23%;
 }
 
 .circle-icon-osteofit {
@@ -120,7 +111,6 @@ $separator-space-top: 18px;
   margin-left: 15%;
   position: absolute;
   left: 34%;
-  top: 23%;
 }
 
 .circle-icon-osteofit2 {
@@ -135,7 +125,6 @@ $separator-space-top: 18px;
   margin-left: 28.5%;
   position: absolute;
   left: 20.5%;
-  top: 48%;
 }
 
 .circle-icon-osteofit3 {
@@ -150,7 +139,6 @@ $separator-space-top: 18px;
   margin-left: 18.5%;
   position: absolute;
   left: 30.5%;
-  top: 73%;
 }
 
 section {
@@ -194,15 +182,18 @@ blockquote.speech {
   .iconify {
     font-size: 100px;
     color: #57d75b;
-    top: 38%;
+    top: 32.5%;
     left: 46.6%;
     position: absolute;
-    padding: 0%;
   }
   span {
     position: absolute;
     left: 35%;
     top: 67%;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -312,7 +303,7 @@ blockquote.speech {
 
   .badge {
     opacity: 0.8;
-    background: $lightgray1;
+    background: white;
     padding: 1.5px 10px;
     border-radius: 3px;
     margin-right: 60%;
@@ -349,7 +340,7 @@ blockquote.speech {
   }
 
   .badge {
-    background: $lightgray1;
+    background: white;
     color: $darkgray;
     opacity: 0.8;
     padding: 1.5px 10px;
@@ -388,7 +379,7 @@ blockquote.speech {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: $lightgray1;
+  color: white;
   #step1 {
     font-size: 12px;
   }
@@ -400,12 +391,12 @@ blockquote.speech {
   top: 34%;
   left: 44%;
   position: absolute;
-  background-color: $lightgray1;
+  background-color: white;
 }
 
 .horz-line4 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $darkblue;
+  border-bottom: $separator-size $separator-border-style $separator-border-color;
   margin-top: 1.5%;
   margin-left: 5%;
   margin-bottom: 2.2%;
@@ -441,10 +432,10 @@ blockquote.speech {
   border: 0;
   border-bottom: $separator-size $separator-border-style #297caf;
   opacity: 0.8;
-  left: 3%;
+  left: 4%;
   top: 25%;
   position: absolute;
-  max-width: 12%;
+  max-width: 13%;
   animation: separator-width 1s ease-out forwards;
 }
 @keyframes separator-width {
@@ -460,9 +451,9 @@ blockquote.speech {
   border-bottom: $separator-size $separator-border-style #297caf;
   opacity: 0.8;
   position: absolute;
-  left: 3%;
+  left: 4%;
   top: 65%;
-  max-width: 11%;
+  max-width: 12%;
   animation: separator-width 1s ease-out forwards;
 }
 .horz-line3 {
@@ -487,7 +478,7 @@ blockquote.speech {
 
 .horz-line2 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $darkblue;
+  border-bottom: $separator-size $separator-border-style $separator-border-color;
   margin-bottom: 3%;
 
   width: 0;
@@ -504,7 +495,7 @@ blockquote.speech {
 
 .horz-line1 {
   border: 0;
-  border-bottom: $separator-size $separator-border-style $darkblue;
+  border-bottom: $separator-size $separator-border-style $separator-border-color;
   margin-bottom: 1.5%;
 
   width: 0;
@@ -532,7 +523,7 @@ blockquote.speech {
   color: #1a658f;
   font-size: 45px;
   font-weight: 500;
-  background: $lightgray1;
+  background: white;
 
   span {
     background-image: linear-gradient(
@@ -574,7 +565,7 @@ blockquote.speech {
   font-size: 20px;
 }
 .verticalLine {
-  border-left: 6px solid $lightgray1;
+  border-left: 6px solid white;
   height: 430px;
   position: absolute;
   top: 10%;
@@ -646,7 +637,7 @@ ol.gradient-list {
   height: 925px;
   h2 {
     position: absolute;
-    left: 4%;
+    left: 5%;
     top: 20%;
     font-size: 40px;
     color: $darkblue;
@@ -667,7 +658,7 @@ ol.gradient-list {
   vertical-align: middle;
   font-size: 40px;
   margin-left: 15%;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .circle-icon-benefits2 {
@@ -680,7 +671,7 @@ ol.gradient-list {
   vertical-align: middle;
   font-size: 40px;
   margin-left: 15%;
-  margin-right: 2%;
+  margin-right: 2.5%;
 }
 
 .benefits h2 {
@@ -688,7 +679,7 @@ ol.gradient-list {
   font-weight: 400;
   padding-bottom: 2%;
   margin-left: 5%;
-  color: $lightgray1;
+  color: white;
   letter-spacing: 0.8px;
 }
 
@@ -698,7 +689,6 @@ ol.gradient-list {
   letter-spacing: 0.6px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  margin-right: 5%;
 }
 
 .benefits-single-use h3 {
@@ -709,7 +699,7 @@ ol.gradient-list {
   font-family: "Open Sans", sans-serif;
   margin-left: 22%;
   font-size: 40px;
-  color: $lightgray1;
+  color: white;
   letter-spacing: 1px;
 }
 
@@ -734,7 +724,7 @@ ol.gradient-list {
 }
 
 .benefits h2 span .revenue-icon {
-  margin-left: 12.2%;
+  margin-left: 11.9%;
 }
 
 .benefits h2 span .accuracy-icon {
@@ -777,12 +767,10 @@ ol.gradient-list {
   width: 70%;
   margin-left: 18%;
   font-family: "Open Sans", sans-serif;
-  h4 {
-    color: $darkgray;
-    font-size: 148px;
-    position: absolute;
-    left: 46.6%;
-    top: 32%;
+  h2 {
+    color: #57d75b;
+    text-align: center;
+    padding-top: 0%;
   }
   h3 {
     width: 90%;
@@ -801,7 +789,6 @@ ol.gradient-list {
     font-size: 20px;
     left: 23%;
     top: 46%;
-    padding-top: 2%;
   }
 }
 
@@ -853,9 +840,9 @@ ol.gradient-list {
 .osteofit-timeline-quote {
   position: absolute;
   color: #555555;
-  top: 69%;
+  top: 69.5%;
   width: 80%;
-  left: 44%;
+  left: 38%;
   letter-spacing: 1px;
   line-height: 2;
   font-family: "Open Sans", sans-serif;
@@ -956,80 +943,4 @@ ol.gradient-list {
   width: auto;
   position: relative;
   left: 85%;
-}
-
-.mold1pic {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  bottom: 8%;
-  right: 28.5%;
-  background: none;
-}
-
-.mold2pic {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 26.5%;
-  bottom: 10%;
-}
-
-.bigGreenAndSymbol {
-  position: absolute !important;
-  z-index: 3 !important;
-  font-size: 1000px !important;
-  color: #57d75b !important;
-}
-
-.firstH2 {
-  color: #57d75b;
-  text-align: center;
-  padding-top: 0%;
-}
-.pictureAndDesc {
-  padding-top: 3%;
-  padding-bottom: 5%;
-  height: 600px;
-  background: linear-gradient(to right, $lightgrayblue5, $lightgrayblue1);
-  p {
-    font-size: 30px;
-    width: 30%;
-    left: 55%;
-    position: absolute;
-    bottom: 9%;
-    color: white;
-    padding: 9px;
-  }
-  img {
-    position: absolute;
-    left: 10%;
-    width: 30%;
-    height: 10%;
-    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
-  }
-  h1 {
-    background: none;
-    color: white;
-    position: absolute;
-    left: 67.5%;
-    bottom: 17%;
-  }
-}
-.single-use-title-wrapper {
-  height: 29vh;
-  display: flex;
-  margin-left: 19%;
-  align-items: center;
-  margin-top: 9%;
-  .single-use-typing-demo {
-    width: 14ch;
-    animation: typing 2s steps(14), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    color: $darkblue;
-    font-family: "Raleway", sans-serif;
-    font-size: 4em;
-  }
 }
