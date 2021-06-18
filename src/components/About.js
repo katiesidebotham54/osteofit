@@ -11,11 +11,32 @@ import '../styling/aboutStyle.scss'
 const About = () => {
       return (
       <div className="About">
-        <div class="about-title-wrapper">
+      <section class="slice py-8 bg-dark">
+      <div class="about-title-wrapper">
           <div class="typing-demo">
               About Us
           </div>
         </div>       
+
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h1 class="text-white mb-4">
+                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                    </h1>
+                    <p class="lead text-white">
+                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-container-about shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
+    </section>
         <div className="about-container">
           <figure class="item-content-about">
             <div class="item-img-about">
@@ -133,9 +154,8 @@ years of experience specializing in hip and knee replacement and 15 years FDA co
         </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-          <div className = "bckgrnd-img">
-            <img src={BackgroundImg} alt=""/>
-          </div>
+        <div class="item-img-bottom">
+            </div>
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>

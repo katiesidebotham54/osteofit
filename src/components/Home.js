@@ -1,13 +1,8 @@
-import React, {useEffect, useState, useRef} from "react";
+import React from "react";
 import Product from "../images/product.png"
 import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
-import model1 from '../images/model1.png'
-import model2 from '../images/model2.png'
-import model3 from '../images/model3.png'
-import model4 from '../images/model4.png'
-import '../styling/homeStyle.scss'
 
 
 
@@ -130,26 +125,12 @@ rootElement.scrollTo({
         <ScrollAnimation animateIn="fadeIn">
 
       <div className = "more-info">
-      <div id="arrowAnim">
-  <div class="arrowSliding">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay1">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay2">
-    <div class="arrow-side"></div>
-  </div>
-  <div class="arrowSliding delay3">
-    <div class="arrow-side"></div>
-  </div>
-</div>
-
       <div className = "info-title">
           <h1>Learn More About</h1>
           <hr className = "horz-line4" />
           </div>
       <div className="bottompapers">
+        
           <div class="paper1-home">
             <Paper elevation={13}>
             <i class="fas fa-award award-icon"></i>  

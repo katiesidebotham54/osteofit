@@ -96,7 +96,7 @@ const SingleUse = () => {
 
         <div>
         <ScrollAnimation animateIn="fadeIn">
-        <section class="timeline">
+        <section id = "section" class="timeline">
           <h2>Reusable</h2>
           <hr className = "horz-line6a" />
             <ol>
@@ -175,7 +175,7 @@ const SingleUse = () => {
         <div>
         <ScrollAnimation animateIn="fadeIn">
         <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
-        <section class="timeline">
+        <section id = "section" class="timeline">
       
 
             <ol>

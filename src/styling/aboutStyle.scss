@@ -8,9 +8,6 @@ $lightgrayblue5: #4a6888;
 $darkblue: #052032;
 $lightblue: #297caf;
 
-$blue1: #46779c;
-$lightblue: #297caf;
-
 .About {
   width: 100%;
   height: 100%;
@@ -18,11 +15,88 @@ $lightblue: #297caf;
   min-height: 1000px;
   min-width: 1000px;
 }
+.shape-container-about {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $darkblue;
+  fill: $lightgray1;
+  z-index: 2;
+  transform: translateZ(0);
+  overflow: hidden;
+  .shape-container-about svg {
+    display: block;
+    fill: $lightgray1;
+    pointer-events: none;
+    vertical-align: baseline;
+  }
+}
+.col-lg-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.text-white {
+  color: $lightgray1 !important;
+  background: none;
+  text-align: left;
+}
+.row-grid + .row-grid {
+  margin-top: 3rem;
+}
+
+.row-grid > [class*="col-"] + [class*="col-"] {
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .row.row-grid > [class*="col-lg-"] + [class*="col-lg-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .row.row-grid > [class*="col-md-"] + [class*="col-md-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .row.row-grid > [class*="col-sm-"] + [class*="col-sm-"] {
+    margin-top: 0;
+  }
+}
+
+.container {
+  min-width: 992px !important;
+}
+.py-8 {
+  padding-top: 7.5rem !important;
+  padding-bottom: 7.5rem !important;
+}
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.slice {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
 .about-title-wrapper {
   height: 29vh;
   display: flex;
-  margin-left: 19%;
+  margin-left: 18%;
   align-items: center;
   .typing-demo {
     width: 8ch;
@@ -30,7 +104,7 @@ $lightblue: #297caf;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    color: $darkblue;
+    color: $lightgray1;
     font-family: "Raleway", sans-serif;
     font-size: 4em;
   }
@@ -57,18 +131,29 @@ $lightblue: #297caf;
 .item-img-about {
   position: relative;
   float: right;
-  padding-left: 15%;
+  padding-left: 8%;
   width: 30%;
+}
+.item-img-bottom {
+  position: relative;
+  padding-left: 37%;
+  img {
+    transform: rotate(90deg);
+    max-height: 612px;
+    width: 23%;
+    position: absolute;
+  }
 }
 
 .about-container {
   width: 90%;
+  padding-top: 6%;
   padding-left: 19%;
   padding-bottom: 8%;
   transform-origin: 50% 100%;
   .item-content-about {
     position: relative;
-    width: 70%;
+    width: 90%;
 
     .about-logo {
       width: 25%;
@@ -79,7 +164,7 @@ $lightblue: #297caf;
     color: $darkblue;
     font-size: 22px;
     line-height: 1.6;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 
     b {
       color: $lightblue;
@@ -209,7 +294,7 @@ $lightblue: #297caf;
       top: 20%;
       position: absolute;
       width: 68%;
-      height: 58%;
+      height: 49%;
       text-align: center;
       padding: 35px;
       padding-top: 70px;
@@ -234,7 +319,7 @@ $lightblue: #297caf;
       top: 20%;
       position: absolute;
       width: 68%;
-      height: 58%;
+      height: 49%;
       text-align: center;
       padding: 35px;
       padding-top: 70px;
@@ -244,13 +329,11 @@ $lightblue: #297caf;
       }
     }
   }
-  .bckgrnd-img {
-    img {
-      width: 400px;
-      position: absolute;
-      transform: rotate(90deg);
-      height: 200px;
-    }
+  img #background-img {
+    width: 70%;
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
   }
 }
 
