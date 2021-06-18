@@ -308,12 +308,6 @@ const SingleUse = () => {
             </div>
           </div>
       </div>
-
-      <div className = "pictureAndDesc">
-        <p>test</p>
-        <img src = {patrick}></img>
-      </div>
-
       <div className="bottompapers2">
           <div class="paper3">
             <span>
@@ -342,6 +336,14 @@ const SingleUse = () => {
 
       </div>  
       </ScrollAnimation>
+      <div className = "pictureAndDesc">
+        <h1>Title</h1>
+        <p>test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
+        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
+        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
+        </p>
+        <img src = {patrick}></img>
+      </div>
       <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
 
     </div>
