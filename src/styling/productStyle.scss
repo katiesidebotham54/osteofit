@@ -25,10 +25,10 @@ $mx-width: 50rem;
   position: absolute;
   top: 19%;
   text-align: center;
-  left: 62%;
+  left: 52%;
   font-size: 35px;
   font-weight: 500;
-  max-width: 30%;
+  max-width: 40%;
 }
 
 .product-pen span {
@@ -752,18 +752,24 @@ $hoverBgColor2: #0f4264;
   margin-left: 53%;
   height: 230px;
   margin-top: 150px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 .part-container-two {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: -4%;
   height: 230px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 .part-container-three {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: 52%;
   height: 230px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .part-desc-1 {
@@ -844,7 +850,7 @@ $hoverBgColor2: #0f4264;
 .horz-line7 {
   border: 0;
   border-bottom: 8px solid #ffcc00;
-  margin-top: 5%;
+  margin-top: 6.5%;
   opacity: 0.8;
   margin-left: 2%;
   max-width: 95%;

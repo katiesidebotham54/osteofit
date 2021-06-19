@@ -1,9 +1,9 @@
 import React from "react";
-import Product from "../images/product.png"
+import Product from "../images/blackReamer.png"
 import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
-import model1 from '../images/model1.png'
+import model1 from '../images/greenthing.png'
 import '../styling/homeStyle.scss'
 
 

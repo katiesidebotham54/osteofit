@@ -188,15 +188,13 @@ const Product = () => {
                 <img src={black} alt="" class="reamer show" color="black2"/>
             </div>
         </div>
-    </div>
+    </div>        <ScrollAnimation animateIn="fadeIn">
+
         <div className="problem-container">
         <h2 className = "problem-text">The Problem</h2>
 
         <img src={problem} alt="" />
-
           <figure class="item-content-product">
-        <ScrollAnimation animateIn="fadeIn">
-
         <p className="problem-desc">
         The current procedure for reamers allows surgeons to use a singular 
         reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
@@ -206,9 +204,11 @@ const Product = () => {
         most effective and clean product for surgery.
 
         </p>
-        </ScrollAnimation>
         </figure>
+
         </div>
+        </ScrollAnimation>
+
       <img src={productPenImage} alt="" id="product-pen-image"/>
         <h2 className = "product-pen">
           Our Hollow Spherical Reamer is

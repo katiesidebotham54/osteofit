@@ -40,7 +40,10 @@ const About = () => {
               OsteoFit is a newly formed company specializing in <b>single-use 
               sterile medical reamers</b>. Our company's management has over <b>100
               years</b> of experience in human medical orthopedic design and
-              manufacturing of implants and instruments.
+              manufacturing of implants and instruments. Our mission is to combine  
+              <b> experience</b> from <b>orthopedic</b> surgery, <b>engineering</b> and <b>manufacturing </b>
+              technology to provide cost-effective surgical tools with improved effectiveness, 
+              safety and environmentally-friendly design
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>

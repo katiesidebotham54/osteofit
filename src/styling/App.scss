@@ -192,12 +192,18 @@ button {
   color: white;
   margin-left: 54%;
   font-size: 17px;
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
 }
 
 .bottom-footer .MuiSvgIcon-root {
   margin-top: 1.9%;
   font-size: 30px;
   margin-right: 0.5%;
+  position: absolute;
+  right: 105%;
+  bottom: -22%;
 }
 .footer li a {
   color: rgb(255, 255, 255);
