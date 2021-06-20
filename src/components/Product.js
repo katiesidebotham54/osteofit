@@ -7,7 +7,7 @@ import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
 import blue from '../images/blue.png'
-import productPenImage from '../images/product-pen-image.png';
+import productPenImage from '../images/boneWReamer.png';
 import brown from '../images/brown.png'
 import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
