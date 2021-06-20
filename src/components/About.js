@@ -157,8 +157,6 @@ years of experience specializing in hip and knee replacement.</p>
               <p>Click below to view our product!</p>
               <br />
               <br />
-              <br />
-
                 <button class = 'btn-1'>
                   <Router forceRefresh>
                     <Link exact to="/product">Our Product</Link>
