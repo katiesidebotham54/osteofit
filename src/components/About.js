@@ -3,9 +3,9 @@ import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
-import BackgroundImg from '../images/techbackground.png'
 import aboutUs from '../images/aboutUs.png'
 import '../styling/aboutStyle.scss'
+import '../styling/mainStyle.scss'
 
 
 const About = () => {
@@ -56,6 +56,62 @@ const About = () => {
               </ScrollAnimation>
           </figure>
         </div>
+        <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h2 class=" mt-4">Our Team</h2>
+                    <div class="mt-2">
+                        <p class="lead lh-180">With over 100 years total of experience, we are dedicated to making successful products!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-pen-nib icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Engineer</h5>
+                            <h3>40+</h3>
+
+                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-head-side-mask icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
+                            <h3>40+</h3>
+
+                       <p class="text-muted mb-0">years of experience specializing in hip and knee replacement and 15 years FDA consultant/panel member.
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-tools icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Manufacturer</h5>
+                            <h3>40+</h3>
+                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <ScrollAnimation animateIn="fadeIn">
           <div className = "team-title">
           <h1>Our Team</h1>
@@ -77,15 +133,19 @@ years of experience specializing in hip and knee replacement and 15 years FDA co
       
     </div>
   </div>
-  <div class="box">
-    <div class="boxContent">
-    <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Engineer</h1>
-      <h3>40+</h3>
-      <p class="desc"> 
-      years of experience in design and development of orthopedic implants working with major OEMs.</p>
-    </div>
-  </div>
+  <div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+              <div class="card-body pb-5">
+                  <i class="fas fa-pen-nib icon"></i>
+                      <h1 class="title-about">Engineer</h1>
+                      <h3>40+</h3>
+                      <p class="desc"> 
+                      years of experience in design and development of orthopedic implants working with major OEMs.</p>
+                </div>
+              </div>
+          </div>
+      </div>
   <div class="box">
     <div class="boxContent">
 <i class="fas fa-tools icon"></i>

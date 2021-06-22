@@ -10,16 +10,18 @@ $darkblue: #052032;
 $blue1: #46779c;
 $blue2: #255680;
 
-$darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 
 $mx-width: 50rem;
 .Product {
-  min-height: 100%;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  min-width: 2000px;
 }
+
 .color-block-blue {
   position: absolute;
   height: 700px;
@@ -200,14 +202,14 @@ $mx-width: 50rem;
 
 .productCard {
   justify-content: right;
-  width: 1160px;
+  margin-top: 20px;
 }
 
 .productBackground {
   position: relative;
-  margin-left: 21.5%;
-  width: 55%;
-  height: 390px;
+  margin-left: 12%;
+  width: 40%;
+  height: 360px;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
@@ -286,8 +288,8 @@ $mx-width: 50rem;
 .osteofit {
   position: absolute;
   top: 85px;
-  left: 8px;
-  font-size: 8rem;
+  left: 22px;
+  font-size: 7rem;
   text-transform: uppercase;
   line-height: 0.9;
   color: #fff;
@@ -311,46 +313,28 @@ $mx-width: 50rem;
 }
 
 .info {
-  width: 60%;
-  margin-left: 19%;
+  width: 44%;
+  margin-left: 10%;
   background-color: #fff;
   z-index: 1;
-  padding: 75px 40px;
+  padding: 15px;
   box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .reamerName {
   padding: 0 0 10px 0;
-}
-
-.reamerName div {
-  display: flex;
-  align-items: center;
-}
-
-.reamerName div .big {
-  margin-right: 10px;
-  font-size: 2rem;
-  color: #333;
-  line-height: 1;
-  background: none;
-}
-
-.reamerName div .new {
-  background-color: var(--primary);
-  text-transform: uppercase;
-  color: #fff;
-  padding: 3px 10px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.reamerName .small {
-  font-weight: 500;
-  color: #444;
-  margin-top: 3px;
-  text-transform: capitalize;
+  div {
+    display: flex;
+    align-items: center;
+    .big {
+      margin-right: 10px;
+      font-size: 1.5rem;
+      color: #333;
+      line-height: 1;
+      background: none;
+    }
+  }
 }
 
 .reamerName,
@@ -359,14 +343,14 @@ $mx-width: 50rem;
   border-bottom: 1px solid #dadada;
 }
 .size {
-  width: 40px;
-  height: 40px;
-  margin-left: 6px;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
   text-align: center;
   color: $lightgray1;
-  line-height: 31px;
+  line-height: 24px;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
@@ -388,7 +372,7 @@ $mx-width: 50rem;
 }
 
 .color-container {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .colors {
@@ -440,10 +424,10 @@ $mx-width: 50rem;
 
 .color {
   margin: 0 6px;
-  width: 40px;
-  margin-right: 20px;
-  margin-left: 20px;
-  height: 40px;
+  width: 35px;
+  margin-right: 11px;
+  margin-left: 16px;
+  height: 35px;
   border-radius: 50%;
   border: 5px solid;
   cursor: pointer;
@@ -454,10 +438,6 @@ $mx-width: 50rem;
   width: 60px;
   top: 10px;
   left: 10px;
-}
-
-.info {
-  padding: 20px;
 }
 
 @media (max-width: 400px) {
@@ -639,25 +619,9 @@ $hoverBgColor2: #0f4264;
   margin-top: 3%;
   line-height: 1.6;
   padding-bottom: 2%;
-
-  b {
-    color: $yellow;
-  }
 }
-.problem-text {
-  color: $lightgray1;
-  top: 45.5%;
-  position: absolute;
-  font-size: 35px;
-  margin-left: 15%;
-}
-.problem-container {
-  width: 90%;
-  padding-left: 15%;
-  padding-top: 6%;
-  padding-bottom: 1%;
-  transform-origin: 50% 100%;
 
+.problem-img {
   img {
     position: absolute;
     left: 66%;
@@ -704,14 +668,10 @@ $hoverBgColor2: #0f4264;
 }
 
 .model-part-1 {
-  height: 150px;
-  width: 171px;
-  position: absolute;
-  left: 47%;
-  bottom: 33%;
-  background: $lightgray1;
+  width: 160px;
+  left: 48%;
+  bottom: 12%;
   border-radius: 10%;
-  border: 3px solid $darkgray;
   img {
     left: 20%;
     height: 80%;
@@ -720,14 +680,10 @@ $hoverBgColor2: #0f4264;
 }
 
 .model-part-2 {
-  height: 163px;
   width: 160px;
-  position: absolute;
-  left: 40%;
-  bottom: 22%;
-  background: $lightgray1;
+  left: 48%;
+  bottom: 12%;
   border-radius: 10%;
-  border: 3px solid $darkgray;
   img {
     left: 20%;
     height: 80%;
@@ -736,14 +692,10 @@ $hoverBgColor2: #0f4264;
 }
 
 .model-part-3 {
-  height: 158px;
   width: 160px;
-  position: absolute;
   left: 48%;
   bottom: 12%;
-  background: $lightgray1;
   border-radius: 10%;
-  border: 3px solid $darkgray;
   img {
     left: 20%;
     height: 80%;
@@ -809,6 +761,21 @@ $hoverBgColor2: #0f4264;
     font-family: "Open Sans", sans-serif;
   }
 }
+.slice-product {
+  position: relative;
+
+  padding-bottom: 4rem;
+}
+
+.bg-primary {
+  background-color: $darkblue;
+}
+
+.shape-orientation-inverse-product {
+  transform: rotate(180deg);
+  background: $lightgray1;
+  fill: $darkblue;
+}
 
 .part-desc-3 {
   margin-top: 4%;
@@ -864,10 +831,10 @@ $hoverBgColor2: #0f4264;
 }
 
 .product-title-wrapper {
-  margin-top: 10%;
-  height: 29vh;
+  margin-top: 12%;
+  height: 12vh;
   display: flex;
-  margin-left: 19%;
+  margin-left: 15%;
   align-items: center;
   .product-typing-demo {
     width: 11ch;
@@ -875,9 +842,28 @@ $hoverBgColor2: #0f4264;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    color: $darkblue;
+    color: $lightgray1;
     font-family: "Raleway", sans-serif;
-    font-size: 4em;
+    font-size: 2em;
+  }
+
+  .shape-container-product {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: $lightgray1;
+    fill: $lightgrayblue5;
+    z-index: 2;
+    transform: translateZ(0);
+    overflow: hidden;
+    .shape-container-product svg {
+      display: block;
+      fill: $lightgrayblue5;
+      pointer-events: none;
+      vertical-align: baseline;
+    }
   }
 
   @keyframes typing {
@@ -891,4 +877,158 @@ $hoverBgColor2: #0f4264;
       border-color: transparent;
     }
   }
+}
+
+.col-sm-4 {
+  max-width: 33.33333%;
+
+  flex: 0 0 33.33333%;
+}
+.card-body {
+  min-height: 1px;
+  padding: 1.75rem;
+
+  color: #718096;
+
+  flex: 1 1 auto;
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-height: 347px;
+  max-width: 272px;
+  min-width: 0;
+
+  word-wrap: break-word;
+
+  border: 1px solid #eaecf3;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+
+.hover-shadow-lg:hover {
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.img-center {
+  display: block;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+.lh-130 {
+  line-height: 1.3 !important;
+}
+.col-md-4 {
+  max-width: 33.33333%;
+  margin-left: 6%;
+  flex: 0 0 33.33333%;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.text-muted {
+  color: #718096 !important;
+}
+.order-lg-2 {
+  order: 2;
+}
+
+.col-lg-5 {
+  max-width: 41.66667%;
+
+  flex: 0 0 41.66667%;
+}
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.solution-text {
+  position: absolute;
+  max-width: 32%;
+  left: 46%;
+  text-align: right;
+  color: $darkblue;
+  h5 {
+    font-size: 2.75rem;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+  }
+}
+.dialog-1 {
+  height: 13%;
+  width: 9%;
+  background-color: $lightgrayblue5;
+  position: absolute;
+  top: 11%;
+  left: 43%;
+  border-radius: 10%;
+}
+
+.left-point {
+  width: 0;
+  height: 0;
+  border-left: 2vh solid transparent;
+  border-right: 2vh solid transparent;
+  border-top: 10vh solid $lightgrayblue5;
+  position: absolute;
+  top: 45%;
+  left: -10%;
+  transform: rotate(60deg);
+}
+
+.dialog-text {
+  position: absolute;
+  left: 44%;
+  top: 13%;
+  font-size: 15px;
+  color: white;
+  width: 120px;
+  font-family: "Raleway", sans-serif;
+}
+.text-center {
+  text-align: center !important;
 }

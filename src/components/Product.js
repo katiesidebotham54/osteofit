@@ -15,6 +15,7 @@ import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
 import mainProduct from "../images/product.png"
+import '../styling/mainStyle.scss'
 
 
 
@@ -131,15 +132,55 @@ const Product = () => {
     }
     return (
       <div className="Product">
+         <section class="slice slice-sm pt-10 bg-primary">
         <div class="product-title-wrapper">
           <div class="product-typing-demo">
-            Our Product
+           <b> The Problem.</b>
           </div>
         </div>       
+        <div class="container">
+            <div class="row row-grid">
+                <div class="col-lg-8">
+                    <p class="lead problem-desc lh-190 bg-primary">
+                    The current procedure for reamers allows surgeons to use a singular 
+                    reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
+                    and requires more axial force by the surgeon. This leads to a <b>higher 
+                    chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
+                    (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
+                    most effective and clean product for surgery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="slice-product slice-lg pt-10">
 
-        <div className = "color-block-blue"/>
-        <div class="productContainer">
-        <div class="productCard">
+        <div class="shape-container-product shape-line shape-position-top shape-orientation-inverse-product">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <ScrollAnimation animateIn="fadeIn">
+
+        <div class="container">
+            <div class="row row-grid justify-content-between align-items-center">
+            <div class="dialog-1">
+				<div class="left-point"></div>
+		      	</div>
+<p class="dialog-text">Click on each color to view the model!</p>
+                    <div class="solution-text order-lg-2">
+                        <h5 class="h3">The Solution</h5>
+                          <p class="lead my-4">
+                          The current procedure for reamers allows surgeons to use a singular 
+                    reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
+                    and requires more axial force by the surgeon. This leads to a <b>higher 
+                    chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
+                    (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
+                    most effective and clean product for surgery.
+                          </p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="productCard">
         <div class="info">
                 <div class="reamerName">
                     <div>
@@ -181,103 +222,61 @@ const Product = () => {
                 <img src={gray} alt="" class="reamer" color="gray2"/>
                 <img src={black} alt="" class="reamer show" color="black2"/>
             </div>
-        </div>
-    </div>
-        <div className="problem-container">
-        <h2 className = "problem-text">The Problem</h2>
+                </div>
+            </div>
 
-        <img src={problem} alt="" />
-
-          <figure class="item-content-product">
-        <ScrollAnimation animateIn="fadeIn">
-
-        <p className="problem-desc">
-        The current procedure for reamers allows surgeons to use a singular 
-        reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
-        and requires more axial force by the surgeon. This leads to a <b>higher 
-        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
-        (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
-        most effective and clean product for surgery.
-
-        </p>
+                        </div>
+                </div>
         </ScrollAnimation>
-        </figure>
+    </section>
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h2 class="text-center mt-4">Collab Learning: Empowering Peer Learning</h2>
+                    <div class="mt-2">
+                        <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img class="model-part-1 img-fluid img-center" src={modelPart1} alt="" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
+                            <p class="text-muted mb-0">This is the first part of the reamer. The panels are made from <b>ASTM A276 420 Stainless Steel</b>, and has stamped side and dome cutting panels. Additionally, the Panel-Frame Subassembly includes 4 side panels and 1 dome panel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id = "card">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img class="model-part-2 img-fluid img-center" src={modelPart2} alt="" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
+                            <p class="text-muted mb-0">Receive notifications when people in your class are studying so you can study together online in real time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img class="model-part-3 img-fluid img-center" src={modelPart3} alt="" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Molded Core</h5>
+                            <p class="text-muted mb-0">Manage and schedule when to study for quizzes and exams in real time in order to increase test scores
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      <img src={productPenImage} alt="" id="product-pen-image"/>
-        <h2 className = "product-pen">
-          Our Hollow Spherical Reamer is
-          <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[" accurate.", " sterile.", " cost-effective."]'
-          ></span>
-        </h2>
-  <ScrollAnimation animateIn="fadeIn">
-  <div className = "product-breakdown">
-    <h1 class = "product-breakdown-h1">
-      What Goes Into Our Product?
-    </h1>
-    <hr className = "horz-line7"/>
-    <div class = "product-breakdown-container">
-      <div className = "part-container-one">
-        <img class = "model-part-1" src={modelPart1} alt=""/>
-        <div className = "part-desc-1">
-          <h2>Cutting Panels</h2>
-        <p>This is the first part of the reamer. The panels are made from <b>ASTM A276 420 Stainless Steel</b>, and has stamped side and dome cutting panels. Additionally, the Panel-Frame Subassembly includes 4 side panels and 1 dome panel.</p>
-        <hr class = "part-desc-1-line"></hr>
-        </div>
-      </div>
-
-      <div  className = "part-container-two">
-        <div className = "image-part">
-        <img class = "model-part-2"src={modelPart2} alt=""/>
-        </div>
-        <div className = "part-desc-2">
-          <h2>Molded Back Plate</h2>
-        <p>This is the second part of the reamer made of polycarbonate 2061-15, and features tabs for ultrasonic welding.</p>
-        <hr class = "part-desc-2-line"></hr>
-        </div>
-      </div>
-
-      <div  className = "part-container-three">
-        <div className = "image-part">
-        <img class = "model-part-3"src={modelPart3} alt=""/>
-        </div>
-        <div className = "part-desc-3">
-          <h2>Molded Core</h2>
-        <p>This is the third part of the reamer, and like the second part, this part is also made up of polycarbonate 2061-15. This part helps with the structural integrity, with multiple options for quick-connect coupling to Reamer Shaft. This is color coded by size, and is space calculated for reamed volume of bone.</p>
-        <hr class = "part-desc-2-line"></hr>
-        </div>
-      </div>
-      <div className="item-3d">
-        <span class="ground"/>
-        <figure class="item-content group">
-          <div class="item-img">
-              <img src={mainProduct} alt="" />
-          </div>
-          <figcaption class="item-caption">
-          <ScrollAnimation animateIn="fadeIn">
-              <h2 style={{color:"white"}}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-              <p style={{color:"white"}}>
-              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
-              Click here to learn more! 
-              </p>
-          </ScrollAnimation>
-            <button class = 'btn-1'>
-              <Router forceRefresh>
-                <Link exact to="/product">Our Product </Link>
-              </Router>
-            </button>
-          </figcaption>    
-        </figure>
-      </div>
-
-    </div>
-    
-  </div>
-</ScrollAnimation>
+    </section>
     </div>
     );
   }

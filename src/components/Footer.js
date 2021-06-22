@@ -6,7 +6,7 @@ import {
   import '../styling/Footer.scss';
   import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
   import EmailIcon from '@material-ui/icons/Email';
-
+import '../styling/mainStyle.scss'
 
 class Footer extends Component {
     render(){
@@ -43,21 +43,27 @@ class Footer extends Component {
                     </div>
                     <div class="col-md-6">
                         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Terms
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Cookies
-                                </a>
-                            </li>
+                        <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/">
+                            Terms
+                        </Link>
+                    </li>
+                    </Router>
+                            <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/">
+                            Privacy
+                        </Link>
+                    </li>
+                    </Router>
+                            <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/">
+                            Cookies
+                        </Link>
+                    </li>
+                    </Router>
                         </ul>
                     </div>
                 </div>

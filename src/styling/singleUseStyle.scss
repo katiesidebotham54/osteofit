@@ -698,6 +698,7 @@ ol.gradient-list {
   letter-spacing: 0.6px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  margin-right: 5%;
 }
 
 .benefits-single-use h3 {
@@ -963,6 +964,7 @@ ol.gradient-list {
   position: absolute;
   bottom: 8%;
   right: 28.5%;
+  background: none;
 }
 
 .mold2pic {
@@ -985,10 +987,33 @@ ol.gradient-list {
   text-align: center;
   padding-top: 0%;
 }
-
 .pictureAndDesc {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  height: 600px;
+  background: linear-gradient(to right, $lightgrayblue5, $lightgrayblue1);
   p {
-    font-size: 100px;
+    font-size: 30px;
+    width: 30%;
+    left: 55%;
+    position: absolute;
+    bottom: 9%;
+    color: white;
+    padding: 9px;
+  }
+  img {
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    height: 10%;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    background: none;
+    color: white;
+    position: absolute;
+    left: 67.5%;
+    bottom: 17%;
   }
 }
 .single-use-title-wrapper {

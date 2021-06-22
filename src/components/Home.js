@@ -3,6 +3,7 @@ import Product from "../images/product.png"
 import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
+import '../styling/mainStyle.scss'
 
 
 
@@ -67,8 +68,6 @@ rootElement.scrollTo({
       <div>
       <div className="item-intro">
       <div id="rectangle"/>
-        <hr id="side-slanted-line1"/>
-        <hr id="side-slanted-line2"/>
 
       </div>
       <figure class="item-content group">
