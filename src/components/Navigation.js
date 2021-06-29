@@ -22,11 +22,11 @@ class Navigation extends Component{
         <div class="container">
              <Router forceRefresh>
                 <Link exact to ="/">
-                    <img src={logo} alt="" className = "nav-logo"/>
+                    <img id="nav-bar-logo" src={logo} alt=""/>
                 </Link>
             </Router>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <ul class="navbar-nav mt-4 mt-lg-0">
                 <Router forceRefresh>
                     <li class="nav-item ">
                         <Link class="nav-link" exact to ="/about">
@@ -50,7 +50,7 @@ class Navigation extends Component{
                     </Router>
                 </ul>
                 <Router forceRefresh>
-                <Link lass="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" exact to="/contact">Contact Us</Link>
+                <Link class="navbar-btn btn btn-sm btn-primary d-lg-inline-block " exact to="/contact">Contact Us</Link>
                 </Router>
             </div>
         </div>

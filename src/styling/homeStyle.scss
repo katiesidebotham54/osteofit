@@ -11,73 +11,70 @@ $lightblue: #297caf;
 .intro {
   display: grid;
   position: relative;
-  height: 620px;
   background: $lightgray1;
-  margin-top: 200px;
-  .home-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    margin-top: 3%;
-    margin-left: 75%;
+}
+.home-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: $lightgray1;
+}
+.chevron {
+  margin-top: -160px;
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: $lightgrayblue5;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
   }
-  .chevron {
-    margin-top: -20px;
-    position: absolute;
-    width: 28px;
-    height: 8px;
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
     opacity: 0;
-    transform: scale3d(0.5, 0.5, 0.5);
-    animation: move 3s ease-out infinite;
-  }
-  .chevron:first-child {
-    animation: move 3s ease-out 1s infinite;
-  }
-
-  .chevron:nth-child(2) {
-    animation: move 3s ease-out 2s infinite;
-  }
-
-  .chevron:before,
-  .chevron:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 51%;
-    background: $lightgrayblue5;
-  }
-
-  .chevron:before {
-    left: 0;
-    transform: skew(0deg, 30deg);
-  }
-
-  .chevron:after {
-    right: 0;
-    width: 50%;
-    transform: skew(0deg, -30deg);
-  }
-
-  @keyframes move {
-    25% {
-      opacity: 1;
-    }
-    33% {
-      opacity: 1;
-      transform: translateY(30px);
-    }
-    67% {
-      opacity: 1;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-    }
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 
   .home-arrow .text {
@@ -226,14 +223,6 @@ $wide-m: 600px;
 }
 
 $mx-width: 50rem;
-
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .group:after {
   content: "";
@@ -502,16 +491,6 @@ strong {
   top: 212%;
 }
 
-#rectangle {
-  height: 75px;
-  width: 50px;
-  top: 277.8%;
-  position: absolute;
-  left: 29%;
-  background-color: $lightgray1;
-  z-index: 99;
-}
-
 .carousel {
   height: 250px;
   background: $lightgrayblue4;
@@ -634,7 +613,7 @@ strong {
   }
 }
 
-.carousel-title h1 {
+.carousel-title {
   font-weight: 700;
   background: none;
   font-family: "Open Sans", sans-serif;
@@ -687,163 +666,91 @@ strong {
   }
 }
 
-.more-info {
-  height: 650px;
-  .info-title {
-    h1 {
-      color: $lightgrayblue5;
-      font-family: "Raleway" sans-serif;
-      font-weight: 500;
-      font-size: 50px;
-      background: none;
-      width: 100%;
-      padding-right: 62%;
-    }
-  }
-  .paper1-home {
-    position: absolute;
-    left: 18%;
-    width: 47%;
-    height: 18%;
-    text-align: center;
-    top: 70%;
-  }
-  .paper2-home {
-    height: 18%;
-    position: absolute;
-    width: 47%;
-    top: 70%;
-    right: -2%;
-    text-align: center;
-    padding: 20px;
-  }
-  .paper1-home .MuiPaper-root {
-    top: 20%;
-    position: absolute;
-    width: 53%;
-    height: 60%;
-    text-align: center;
-    background-color: $lightgrayblue3;
-    padding: 25px;
-    font-family: "Open Sans", sans-serif;
-    h2 {
-      font-family: "Raleway", sans-serif;
-      font-size: 20px;
-      color: $darkblue;
-    }
-    p {
-      color: $lightgray1;
-      font-weight: 400;
-      font-size: 17px;
-    }
+.info-arrow {
+  width: 3vmin;
+  height: 3vmin;
+  box-sizing: border-box;
+  position: absolute;
+  left: 45%;
+  top: 84%;
+  transform: rotate(45deg);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 0.8vmin 0.8vmin 0 0;
+    border-style: solid;
+    border-color: $darkblue;
+    transition: 0.2s ease;
+    display: block;
+    transform-origin: 100% 0;
   }
 
-  .paper2-home .MuiPaper-root {
-    top: 20%;
-    position: absolute;
-    width: 53%;
-    height: 60%;
-    background-color: $lightgrayblue4;
-
-    text-align: center;
-    padding: 25px;
-    font-family: "Open Sans", sans-serif;
-    h2 {
-      font-family: "Raleway", sans-serif;
-      font-size: 20px;
-      color: $darkblue;
-    }
-    p {
-      margin-top: 5%;
-      color: $lightgray1;
-      font-weight: 400;
-      font-size: 17px;
-    }
-  }
-  div.info-arrow {
-    width: 3vmin;
-    height: 3vmin;
-    box-sizing: border-box;
-    position: absolute;
-    left: 45%;
-    top: 84%;
-    transform: rotate(45deg);
-
-    &::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      border-width: 0.8vmin 0.8vmin 0 0;
-      border-style: solid;
-      border-color: $darkblue;
-      transition: 0.2s ease;
-      display: block;
-      transform-origin: 100% 0;
-    }
-
-    &:after {
-      content: "";
-      float: left;
-      position: relative;
-      bottom: 85%;
-      width: 100%;
-      height: 90%;
-      border-width: 0 0.8vmin 0 0;
-      border-style: solid;
-      border-color: $darkblue;
-      transform-origin: 100% 0;
-      transition: 0.2s ease;
-    }
-
-    &:hover::after {
-      transform: rotate(45deg);
-      border-color: $lightgray1;
-      height: 110%;
-    }
-    &:hover::before {
-      border-color: $lightgray1;
-      transform: scale(0.8);
-    }
-  }
-  .envira-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 80px;
-    vertical-align: middle;
-    font-size: 45px;
-    color: $lightgray1;
-  }
-  .award-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 80px;
-    vertical-align: middle;
-    font-size: 45px;
-    color: $lightgray1;
-  }
-  #scrollToTopBtn {
-    background-color: $lightgrayblue2;
-    border: 0;
-    font-size: 1em;
-    padding: 1rem;
-    font-weight: 600;
-    border-radius: 55px;
-    font-family: "Open Sans", sans-serif;
-    color: #0f4264;
-    cursor: pointer;
-    width: auto;
+  &:after {
+    content: "";
+    float: left;
     position: relative;
-    left: 90%;
-    top: 79%;
+    bottom: 85%;
+    width: 100%;
+    height: 90%;
+    border-width: 0 0.8vmin 0 0;
+    border-style: solid;
+    border-color: $darkblue;
+    transform-origin: 100% 0;
+    transition: 0.2s ease;
+  }
+
+  &:hover::after {
+    transform: rotate(45deg);
+    border-color: $lightgray1;
+    height: 110%;
+  }
+  &:hover::before {
+    border-color: $lightgray1;
+    transform: scale(0.8);
   }
 }
+.envira-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 45px;
+  color: $lightgray1;
+}
+.award-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 45px;
+  color: $lightgray1;
+}
+#scrollToTopBtn {
+  background-color: $lightgrayblue2;
+  border: 0;
+  font-size: 1em;
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 55px;
+  font-family: "Open Sans", sans-serif;
+  color: #0f4264;
+  cursor: pointer;
+  width: auto;
+  position: relative;
+  left: 90%;
+  top: 79%;
+}
+
 .intro-title {
   padding-left: 3em;
   padding-top: 1.7em;
+  padding-bottom: 1.5em;
   grid-column: 1 / -1;
   grid-row: 1;
 
@@ -888,7 +795,15 @@ strong {
   }
 }
 
-.intro-osteofit {
+.intro-text {
+  // start
+  > .intro-text-inner {
+    display: inline-block;
+  }
+}
+
+.intro-osteofit,
+.intro-text {
   animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
   // outline: 1px solid red;
 }
@@ -926,7 +841,7 @@ strong {
 .intro-image {
   grid-row: 1;
   grid-column: 2;
-  margin-top: 12%;
+  margin-top: 20%;
   margin-left: 15rem;
 
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
@@ -943,7 +858,7 @@ strong {
   img {
     display: block;
     height: auto;
-    width: 30%;
+    width: 50%;
   }
 }
 .homeWholePage {
@@ -951,4 +866,9 @@ strong {
   height: 100%;
   min-width: 1000px;
   min-height: 1000px;
+}
+.intro-text-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }

@@ -2,7 +2,6 @@ import React from "react";
 import { Paper } from "@material-ui/core";
 import mold from '../images/Osteofitmodelpart3.PNG';
 import mold2 from '../images/Osteofitmodelpart4.PNG';
-import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
 import patrick from '../images/patrickStar.jpg';
 import '../styling/mainStyle.scss'

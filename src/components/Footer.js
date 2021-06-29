@@ -3,9 +3,7 @@ import {
     BrowserRouter as Router,
     Link,
   } from 'react-router-dom'
-  import '../styling/Footer.scss';
   import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
-  import EmailIcon from '@material-ui/icons/Email';
 import '../styling/mainStyle.scss'
 
 class Footer extends Component {
@@ -13,7 +11,7 @@ class Footer extends Component {
         
     return(
         <footer class="position-relative" id="footer-main">
-        <div class="footer pt-lg-7 footer-dark bg-dark">
+        <div class="footer footer-dark bg-dark">
             <div class="shape-container-footer shape-line shape-position-top shape-orientation-inverse">
                 <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" className=" fill-section-secondary">
                     <polygon points="2560 0 2560 100 0 100"></polygon>

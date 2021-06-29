@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
-import '../src/styling/App.scss';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import '../src/styling/singleUseStyle.scss';
-import '../src/styling/aboutStyle.scss';
-import '../src/styling/homeStyle.scss';
-import '../src/styling/productStyle.scss';
+import '../src/styling/mainStyle.scss';
 
 
 
