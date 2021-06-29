@@ -5,62 +5,56 @@ import {
     Link,
     Switch
   } from 'react-router-dom'
-  import '../styling/App.scss';
   import logo from '../images/osteofitLogo.png'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
 import Product from './Product'
 import SingleUse from './SingleUse'
+import '../styling/mainStyle.scss'
 
 
 class Navigation extends Component{
     render(){
         return(
             <div>
-                <header>
-                    <nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+             <Router forceRefresh>
+                <Link exact to ="/">
+                    <img src={logo} alt="" className = "nav-logo"/>
+                </Link>
+            </Router>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/about">
+                            About Us
+                        </Link>
+                    </li>
+                    </Router>
                     <Router forceRefresh>
-                                <Link exact to ="/">
-                                    <img src={logo} alt="" className = "nav-logo"/>
-                                </Link>
-                         </Router>
-
-                        <ul>
-                         <Router forceRefresh>
-                            <li>
-                                <Link exact to="/about">
-                                About Us
-                                </Link>
-                            </li>
-                        </Router>
-                            <Router forceRefresh>
-                            <li>
-                                <Link exact to="/product">
-                                Our Product
-                                </Link>
-                            </li>
-                            </Router>
-                            <Router forceRefresh>
-                            <li>
-                                <Link exact to="/single-use">
-                                Why Single-Use?
-                                </Link>
-                            </li>
-                            </Router>
-                            <Router forceRefresh>
-                            <li className = "contact-button">
-                            <button class = 'btn-2'>
-              <Router forceRefresh>
-                <Link exact to="/contact">Contact Us</Link>
-              </Router>
-            </button>
-                            </li>
-                            </Router>
-                            
-                        </ul>
-                    </nav>
-                    </header>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/product">
+                            Our Product
+                        </Link>
+                    </li>
+                    </Router>
+                    <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/single-use">
+                            Why Single-Use?
+                        </Link>
+                    </li>
+                    </Router>
+                </ul>
+                <Router forceRefresh>
+                <Link lass="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" exact to="/contact">Contact Us</Link>
+                </Router>
+            </div>
+        </div>
+    </nav>
                     <Router forceRefresh>
                         <Switch>
                             <Route exact path="/">

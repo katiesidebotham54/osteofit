@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import '../styling/contactStyle.scss'
+import '../styling/mainStyle.scss'
 
 const Contact = () => {
   const [status, setStatus] = useState({

@@ -1,12 +1,125 @@
-$darkblue: #1a658f;
 $lightblue: #297caf;
 $yellow: rgb(255, 204, 0);
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
 
 .About {
   width: 100%;
   height: 100%;
   min-height: 1000px;
   min-width: 1000px;
+}
+.shape-container-about {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $darkblue;
+  fill: $lightgray1;
+  z-index: 2;
+  transform: translateZ(0);
+  overflow: hidden;
+  .shape-container-about svg {
+    display: block;
+    fill: $lightgray1;
+    pointer-events: none;
+    vertical-align: baseline;
+  }
+}
+.col-lg-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.text-white {
+  color: $lightgray1 !important;
+  background: none;
+  text-align: left;
+}
+.row-grid + .row-grid {
+  margin-top: 3rem;
+}
+
+.row-grid > [class*="col-"] + [class*="col-"] {
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .row.row-grid > [class*="col-lg-"] + [class*="col-lg-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .row.row-grid > [class*="col-md-"] + [class*="col-md-"] {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .row.row-grid > [class*="col-sm-"] + [class*="col-sm-"] {
+    margin-top: 0;
+  }
+}
+
+.container {
+  min-width: 992px !important;
+}
+.py-8 {
+  padding-top: 7.5rem !important;
+  padding-bottom: 7.5rem !important;
+}
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.slice {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-title-wrapper {
+  height: 25vh;
+  display: flex;
+  margin-left: 21%;
+  align-items: center;
+  .typing-demo {
+    width: 8ch;
+    animation: typing 2s steps(8), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: $lightgray1;
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 }
 
 .outer-container-about {
@@ -81,8 +194,7 @@ $yellow: rgb(255, 204, 0);
 .item-img-about {
   position: relative;
   float: right;
-  padding-left: 15%;
-  padding-top: 5%;
+  padding-left: 8%;
   width: 30%;
 
   img {
@@ -103,24 +215,41 @@ $yellow: rgb(255, 204, 0);
     width: 25%;
   }
 }
+.item-img-bottom {
+  position: relative;
+  padding-left: 37%;
+  img {
+    transform: rotate(90deg);
+    max-height: 612px;
+    width: 23%;
+    position: absolute;
+  }
+}
 
 .about-container {
   width: 90%;
-  padding-left: 20%;
-  padding-top: 3%;
+  padding-top: 6%;
+  padding-left: 19%;
   padding-bottom: 8%;
   transform-origin: 50% 100%;
-}
+  .item-content-about {
+    position: relative;
+    width: 90%;
 
-.about-text {
-  font-family: "Open Sans", sans-serif;
-  color: black;
-  font-size: 22px;
-  line-height: 1.6;
-  padding-bottom: 5%;
+    .about-logo {
+      width: 25%;
+    }
+  }
+  .about-text {
+    font-family: "Open Sans", sans-serif;
+    color: $darkblue;
+    font-size: 22px;
+    line-height: 1.6;
+    padding-bottom: 3%;
 
-  b {
-    color: #297caf;
+    b {
+      color: $lightblue;
+    }
   }
 }
 
@@ -235,12 +364,72 @@ $yellow: rgb(255, 204, 0);
   width: 100%;
   overflow: auto;
   height: 550px;
-}
+  h2 {
+    color: $darkblue;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  p {
+    color: $lightgrayblue5;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .paper1 {
+    position: absolute;
+    left: 20%;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    .MuiButton-contained {
+      background-color: $lightgrayblue1;
+      :hover {
+        background-color: $lightgrayblue1;
+      }
+    }
+    .MuiPaper-root {
+      top: 20%;
+      position: absolute;
+      width: 68%;
+      height: 49%;
+      text-align: center;
+      padding: 35px;
+      padding-top: 70px;
 
-.paper1 .MuiButton-contained {
-  background-color: rgb(255, 204, 0);
-  :hover {
-    background-color: rgb(249, 226, 133);
+      font-family: "Open Sans", sans-serif;
+      h2 {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+  .paper2 {
+    height: 20%;
+    position: absolute;
+    right: 10%;
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+    .MuiButton-contained {
+      background-color: $lightgray1;
+    }
+    .MuiPaper-root {
+      top: 20%;
+      position: absolute;
+      width: 68%;
+      height: 49%;
+      text-align: center;
+      padding: 35px;
+      padding-top: 70px;
+      font-family: "Open Sans", sans-serif;
+      h2 {
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+  img #background-img {
+    width: 70%;
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
   }
 }
 
@@ -423,6 +612,25 @@ $hoverBgColor2: #0f4264;
         color: white;
         transition: 0.8s all ease-in-out;
       }
+    }
+  }
+}
+.card-hover {
+  &:hover {
+    background: linear-gradient(130deg, $hoverBgColor 0%, $hoverBgColor2 100%);
+    box-shadow: none;
+    border-radius: 4%;
+    .icon {
+      color: $darkblue;
+      transition: 0.8s all ease-in-out;
+    }
+
+    .desc,
+    .title-about,
+    h3,
+    h5 {
+      color: $lightgray1;
+      transition: 0.8s all ease-in-out;
     }
   }
 }

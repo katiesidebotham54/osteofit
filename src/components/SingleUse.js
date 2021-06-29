@@ -3,6 +3,8 @@ import { Paper } from "@material-ui/core";
 import mold from '../images/steel-mold.png';
 import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
+import patrick from '../images/patrickStar.jpg';
+import '../styling/mainStyle.scss'
 
 const SingleUse = () => {
   document.getElementById("scrollToTopBtn")
@@ -30,18 +32,107 @@ const SingleUse = () => {
         </h1>
       </div>
       <div className="comparison">
-        <div className = "background-container">
-        <ScrollAnimation animateIn="fadeIn">
+        <div className="row mx-lg-n4">
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  </div>
+                </div>
+              </div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+            </div>
+          </div>
+        </div>
+        {/*<div className = "background-container">
         <div className="comparison-title-reusable">
-          <Paper elevation={3}>
             <h2>Osteofit</h2>
-          </Paper>
         </div>
         <div className="verticalLine"></div>
         <div className="comparison-title-osteofit">
-          <Paper elevation={3}>
             <h2>Reusable </h2>
-          </Paper>
           <div className="icon1">
             <h2>
               Simple and Efficient 
@@ -77,8 +168,7 @@ const SingleUse = () => {
             </h2>
           </div>
         </div>
-        </ScrollAnimation>
-        </div>
+  </div>*/}
       </div>
       
       <div className="cycles">
@@ -100,7 +190,7 @@ const SingleUse = () => {
 
         <div>
         <ScrollAnimation animateIn="fadeIn">
-        <section class="timeline">
+        <section id = "section" class="timeline">
           <h2>Reusable</h2>
           <hr className = "horz-line6a" />
             <ol>
@@ -179,7 +269,7 @@ const SingleUse = () => {
         <div>
         <ScrollAnimation animateIn="fadeIn">
         <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
-        <section class="timeline">
+        <section id = "section" class="timeline">
       
 
             <ol>

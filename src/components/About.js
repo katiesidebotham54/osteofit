@@ -5,23 +5,38 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
 import aboutUs from '../images/aboutUs.png'
 import '../styling/aboutStyle.scss'
+import '../styling/mainStyle.scss'
 
 
 const About = () => {
       return (
       <div className="About">
-        <div>
-          <h1 className="title">
-            <span className="fade-in-text">Who is Osteofit?</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 900 320">
-              <path
-                fill="#FFFFFF"
-                fill-opacity="1"
-                d="M0,32L120,74.7C240,117,480,203,720,229.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-              ></path>
-            </svg>
-          </h1>
+      <section class="slice py-8 bg-dark">
+      <div class="about-title-wrapper">
+          <div class="typing-demo">
+              About Us
+          </div>
+        </div>       
+
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h1 class="text-white mb-4">
+                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                    </h1>
+                    <p class="lead text-white">
+                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
+                    </p>
+                </div>
+            </div>
         </div>
+        <div class="shape-container-about shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
+    </section>
         <div className="about-container">
           <figure class="item-content-about">
             <div class="item-img-about">
@@ -49,6 +64,62 @@ const About = () => {
               </ScrollAnimation>
         </figure>
         </div>
+        <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h2 class=" mt-4">Our Team</h2>
+                    <div class="mt-2">
+                        <p class="lead lh-180">With over 100 years total of experience, we are dedicated to making successful products!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-pen-nib icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Engineer</h5>
+                            <h3>40+</h3>
+
+                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-head-side-mask icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
+                            <h3>40+</h3>
+
+                       <p class="text-muted mb-0">years of experience specializing in hip and knee replacement and 15 years FDA consultant/panel member.
+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body card-hover pb-5">
+                            <div class="pt-4 pb-5">
+                            <i class="fas fa-tools icon"></i>
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Manufacturer</h5>
+                            <h3>40+</h3>
+                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <ScrollAnimation animateIn="fadeIn">
           <div className = "team-title">
           <h1>Our Team</h1>
@@ -70,15 +141,19 @@ years of experience specializing in hip and knee replacement.</p>
       
     </div>
   </div>
-  <div class="box">
-    <div class="boxContent">
-    <i class="fas fa-pen-nib icon"></i>
-          <h1 class="title-about">Designer</h1>
-      <h3>40+</h3>
-      <p class="desc"> 
-      years of experience in design and development of orthopedic implants working with major OEMs.</p>
-    </div>
-  </div>
+  <div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+              <div class="card-body pb-5">
+                  <i class="fas fa-pen-nib icon"></i>
+                      <h1 class="title-about">Engineer</h1>
+                      <h3>40+</h3>
+                      <p class="desc"> 
+                      years of experience in design and development of orthopedic implants working with major OEMs.</p>
+                </div>
+              </div>
+          </div>
+      </div>
   <div class="box">
     <div class="boxContent">
 <i class="fas fa-tools icon"></i>
@@ -148,7 +223,8 @@ years of experience specializing in hip and knee replacement.</p>
         </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-
+        <div class="item-img-bottom">
+            </div>
         <div className="bottompapers">
           <div class="paper1">
             <Paper elevation={13}>
