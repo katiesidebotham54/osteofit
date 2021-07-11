@@ -160,8 +160,9 @@ textarea:hover {
   padding-top: 7%;
   width: 100%;
   height: 100%;
-  min-height: 1000px;
-  min-width: 2000px;
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-check-box {

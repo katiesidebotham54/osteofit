@@ -39,9 +39,8 @@ $lightblue: #297caf;
 }
 
 .about-title-wrapper {
-  height: 25vh;
   display: flex;
-  margin-left: 23%;
+  margin-left: 17%;
   align-items: center;
   .typing-demo {
     width: 8ch;
@@ -76,7 +75,7 @@ $lightblue: #297caf;
 .item-img-about {
   position: relative;
   float: right;
-  padding-left: 8%;
+  padding-left: 3%;
   width: 30%;
 }
 .item-img-bottom {
@@ -108,7 +107,7 @@ $lightblue: #297caf;
     font-family: "Open Sans", sans-serif;
     color: $darkblue;
     max-width: 65%;
-    font-size: 29px;
+    font-size: 20px;
     padding-bottom: 1%;
 
     b {
@@ -315,8 +314,7 @@ $lightblue: #297caf;
 
 .icon {
   color: $darkblue;
-  font-size: 80px;
-  padding: 15px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
 }
@@ -352,7 +350,7 @@ $hoverBgColor2: $lightblue;
     .title-about,
     h3,
     h5,
-    p {
+    .text-muted {
       color: $lightgray1;
       transition: 0.8s all ease-in-out;
     }

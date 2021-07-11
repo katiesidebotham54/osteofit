@@ -19,7 +19,6 @@ $mx-width: 50rem;
   width: 100%;
   height: 100%;
   min-height: 1000px;
-  min-width: 2000px;
 }
 
 .color-block-blue {
@@ -206,9 +205,9 @@ $mx-width: 50rem;
 
 .productBackground {
   position: relative;
-  margin-left: 30%;
-  width: 54%;
-  height: 410px;
+  margin-left: 23%;
+  width: 66%;
+  height: 372px;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 15px 35px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
@@ -286,25 +285,24 @@ $mx-width: 50rem;
 
 .osteofit {
   position: absolute;
-  top: 85px;
-  left: 22px;
+  top: 89px;
   font-size: 7rem;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   line-height: 0.9;
   color: #fff;
+  transform: rotate(-20deg);
   opacity: 0.1;
 }
 
 .reamer {
   position: absolute;
-  width: 125%;
+  width: 110%;
   opacity: 0;
-  bottom: -20px;
-  right: 37px;
+  bottom: 4px;
+  right: -23px;
   transform: rotate(-20deg);
   transition: 0.5s;
-  padding-left: 220px;
-  margin-top: 75px;
 }
 
 .reamer.show {
@@ -312,8 +310,8 @@ $mx-width: 50rem;
 }
 
 .info {
-  width: 58%;
-  margin-left: 28%;
+  width: 64%;
+  margin-left: 24%;
   background-color: #fff;
   z-index: 1;
   padding: 15px;
@@ -322,7 +320,6 @@ $mx-width: 50rem;
 }
 
 .reamerName {
-  padding: 0 0 10px 0;
   div {
     display: flex;
     align-items: center;
@@ -344,7 +341,7 @@ $mx-width: 50rem;
 .size {
   width: 35px;
   height: 35px;
-  margin-left: 5px;
+  margin-left: 6px;
   text-align: center;
   color: $lightgray1;
   line-height: 31px;
@@ -422,11 +419,9 @@ $mx-width: 50rem;
 }
 
 .color {
-  margin: 0 6px;
-  width: 35px;
-  margin-right: 11px;
-  margin-left: 16px;
-  height: 35px;
+  width: 40px;
+  margin-left: 25px;
+  height: 40px;
   border-radius: 50%;
   border: 5px solid;
   cursor: pointer;
@@ -614,10 +609,7 @@ $hoverBgColor2: #0f4264;
 .problem-desc {
   font-family: "Open Sans", sans-serif;
   color: $lightgray1;
-  font-size: 22px;
-  margin-top: 3%;
-  line-height: 1.6;
-  padding-bottom: 2%;
+  font-size: 20px;
 }
 
 .problem-img {
@@ -824,10 +816,8 @@ $hoverBgColor2: #0f4264;
 }
 
 .product-title-wrapper {
-  margin-top: 8%;
   height: 12vh;
   display: flex;
-  margin-left: 20.5%;
   align-items: center;
   .product-typing-demo {
     width: 11ch;
@@ -862,17 +852,19 @@ $hoverBgColor2: #0f4264;
 
 .solution-text {
   position: absolute;
-  max-width: 32%;
+  max-width: 44%;
   top: 42%;
   left: 46%;
-  text-align: right;
   color: $darkblue;
+
   h5 {
     font-size: 2.75rem;
+    text-align: right;
   }
   p {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
+    text-align: right;
   }
 }
 .dialog-1 {
@@ -903,4 +895,17 @@ $hoverBgColor2: #0f4264;
   top: 45%;
   left: -10%;
   transform: rotate(60deg);
+}
+#color-text {
+  padding: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: $darkblue;
+}
+
+#problem-pic {
+  width: 60%;
+}
+#problem-slice {
+  padding: 0;
 }

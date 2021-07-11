@@ -20,17 +20,40 @@ class Footer extends Component {
             <div class="footer-container pt-4">
                 <div class="row">
                     <div class="col-lg-4 mb-5 mb-lg-0">
+                    <Router forceRefresh>
+                        <Link exact to ="/">
                             <img alt="Image placeholder" src={osteofitWhiteLogo} id="footer-logo"/>
+                            </Link>
+                        </Router>
+
                     </div>
                     <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                    <Router forceRefresh>
+                        <Link exact to ="/about">
                         <h6 class="heading mb-3">About Us</h6>
+                        </Link>
+                        </Router>
+
                     </div>
+
+                    <Router forceRefresh>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                    <Link exact to ="/product">
                         <h6 class="heading mb-3">Our Product</h6>
+                        </Link>
+
                     </div>
+                    </Router>
+
+                    <Router forceRefresh>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                    <Link exact to ="/single-use">
                         <h6 class="heading mb-3">Why Single Use?</h6>
+                        </Link>
+
                     </div>
+                    </Router>
+
                 </div>
                 <hr class="divider divider-fade divider-dark my-4"/>
                 <div class="row align-items-center justify-content-md-between pb-4">
@@ -40,30 +63,31 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                        <ul id="bottom-footer" class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
                         <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/">
+                        <Link id="footer-item" class="nav-link" exact to ="/">
                             Terms
                         </Link>
                     </li>
                     </Router>
                             <Router forceRefresh>
-                    <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/">
+                    <li class="nav-item">
+                        <Link id="footer-item" class="nav-link" exact to ="/">
                             Privacy
                         </Link>
                     </li>
                     </Router>
                             <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/">
+                        <Link id="footer-item" class="nav-link" exact to ="/">
                             Cookies
                         </Link>
                     </li>
                     </Router>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>

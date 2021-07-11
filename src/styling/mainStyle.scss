@@ -108,7 +108,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 24px;
+  font-size: 17px;
 }
 
 abbr[title],
@@ -233,7 +233,7 @@ img {
   border-style: none;
 }
 #nav-bar-logo {
-  max-width: 50%;
+  max-width: 55%;
 }
 svg {
   overflow: hidden;
@@ -436,7 +436,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: $darkblue;
 }
 @media (max-width: 1200px) {
@@ -448,7 +448,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: "Raleway", sans-serif;
 }
 @media (max-width: 1200px) {
@@ -492,7 +492,8 @@ h6,
 }
 
 .lead {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
+  text-align: center;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
 }
@@ -711,7 +712,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1285px;
+    max-width: 1140px;
   }
 }
 
@@ -757,10 +758,9 @@ pre code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1405px;
+    max-width: 1140px;
   }
 }
-
 .row {
   display: flex;
 
@@ -3453,7 +3453,7 @@ fieldset:disabled a.btn {
 
 .btn-sm,
 .btn-group-sm > .btn {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 
   padding: 0.5rem 1.25rem;
@@ -4684,7 +4684,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
-  flex-basis: 113%;
+  flex-basis: 183%;
   flex-grow: 1;
   align-items: center;
 }
@@ -5056,15 +5056,10 @@ input[type="button"].btn-block {
 .card-body {
   min-height: 1px;
   padding: 1.75rem;
+
   color: $darkblue;
-  flex: 1 1 auto;
   text-align: center;
-  p {
-    color: $darkblue;
-  }
-  .right-para {
-    color: white;
-  }
+  flex: 1 1 auto;
 }
 
 .card-title {
@@ -12350,7 +12345,7 @@ a.text-white:focus {
 }
 
 .text-muted {
-  color: #718096 !important;
+  color: #718096;
 }
 
 .text-black-50 {
@@ -17967,7 +17962,9 @@ svg {
 .footer-dark .copyright a:hover {
   color: white;
 }
-
+.copyright {
+  margin-left: 4%;
+}
 .footer-dark {
   color: #a0aec0;
   background-color: #273444;
@@ -17975,16 +17972,27 @@ svg {
 .footer-dark .heading {
   color: #eaecf3;
 }
+
+.footer-dark .heading:hover {
+  color: $lightgrayblue3;
+}
 .footer-dark .nav .nav-item .nav-link,
 .footer-dark .list-unstyled li a,
-.footer-dark .footer-link {
+.footer-dark {
   color: $darkblue;
+}
+.footer-link {
+  color: $lightgray1;
 }
 .footer-dark .nav .nav-item .nav-link:hover,
 .footer-dark .list-unstyled li a:hover,
-.footer-dark .footer-link:hover {
+.footer-dark {
   color: $lightgray1;
 }
+.footer-link:hover {
+  color: $lightgrayblue3;
+}
+
 .footer-dark hr {
   border-color: rgba(216, 203, 187, 0.1);
 }
@@ -20892,7 +20900,7 @@ article p {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
 
   transition: all 0.15s linear;
@@ -23223,4 +23231,14 @@ section {
   background-color: #600;
 }
 
-/*# sourceMappingURL=quick-website.css.map */
+#bottom-footer {
+  margin-right: 10%;
+}
+
+#footer-item {
+  color: $lightgray1;
+}
+#footer-item:hover {
+  color: $lightgrayblue3;
+  cursor: pointer;
+}

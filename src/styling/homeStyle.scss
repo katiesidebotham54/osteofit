@@ -158,7 +158,6 @@ $lightblue: #297caf;
     width: 94%;
     height: 275px;
     margin-left: 3%;
-    margin-top: 3%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -350,7 +349,7 @@ strong {
   position: relative;
   width: 100%;
   max-width: 49rem;
-  margin: -18px 31%;
+  margin: -18px 18%;
   display: flex;
   align-items: center;
   transform: translateZ(0);
@@ -360,7 +359,7 @@ strong {
   position: relative;
   display: block;
   width: 45%;
-  left: 27%;
+  left: 35%;
   order: 1;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
@@ -491,139 +490,6 @@ strong {
   top: 212%;
 }
 
-.carousel {
-  height: 250px;
-  background: $lightgrayblue4;
-}
-.wordCarousel {
-  font-size: 80px;
-  color: $lightgray1;
-  div {
-    overflow: hidden;
-    position: relative;
-    margin-top: -5.5%;
-    height: 90px;
-    text-transform: capitalize;
-    left: 54.5%;
-
-    li {
-      font-family: "Raleway", sans-serif;
-      text-transform: capitalize;
-
-      color: $darkblue;
-      font-weight: 600;
-      letter-spacing: 6px;
-      padding: 0 70px;
-      height: 45px;
-      margin-bottom: 45px;
-      display: block;
-      z-index: 99;
-    }
-  }
-}
-
-.flip2 {
-  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-.flip3 {
-  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-.flip4 {
-  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
-@keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@keyframes flip3 {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@keyframes flip4 {
-  0% {
-    margin-top: -360px;
-  }
-  5% {
-    margin-top: -270px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  30% {
-    margin-top: -180px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  55% {
-    margin-top: -90px;
-  }
-  75% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-.carousel-title {
-  font-weight: 700;
-  background: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 65px;
-  margin-top: 5%;
-  letter-spacing: 6px;
-  display: inline-block;
-  margin-left: 32%;
-}
-
 .btn-1 {
   a {
     color: #0f4264;
@@ -666,13 +532,50 @@ strong {
   }
 }
 
+#white-arrow {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 0.8vmin 0.8vmin 0 0;
+    border-style: solid;
+    border-color: $lightgray1;
+    transition: 0.2s ease;
+    display: block;
+    transform-origin: 100% 0;
+  }
+
+  &:after {
+    content: "";
+    float: left;
+    position: relative;
+    bottom: 85%;
+    width: 100%;
+    height: 90%;
+    border-width: 0 0.8vmin 0 0;
+    border-style: solid;
+    border-color: $lightgray1;
+    transform-origin: 100% 0;
+    transition: 0.2s ease;
+  }
+
+  &:hover::after {
+    transform: rotate(45deg);
+    border-color: $lightgray2;
+    cursor: pointer;
+  }
+  &:hover::before {
+    border-color: $lightgray2;
+    transform: scale(0.8);
+    cursor: pointer;
+  }
+}
+
 .info-arrow {
   width: 3vmin;
   height: 3vmin;
+  margin-left: 42%;
   box-sizing: border-box;
-  position: absolute;
-  left: 45%;
-  top: 84%;
   transform: rotate(45deg);
 
   &::before {
@@ -703,12 +606,13 @@ strong {
 
   &:hover::after {
     transform: rotate(45deg);
-    border-color: $lightgray1;
-    height: 110%;
+    border-color: $lightgrayblue3;
+    cursor: pointer;
   }
   &:hover::before {
-    border-color: $lightgray1;
+    border-color: $lightgrayblue3;
     transform: scale(0.8);
+    cursor: pointer;
   }
 }
 .envira-icon {
@@ -718,7 +622,7 @@ strong {
   text-align: center;
   line-height: 80px;
   vertical-align: middle;
-  font-size: 45px;
+  font-size: 50px;
   color: $lightgray1;
 }
 .award-icon {
@@ -728,8 +632,8 @@ strong {
   text-align: center;
   line-height: 80px;
   vertical-align: middle;
-  font-size: 45px;
-  color: $lightgray1;
+  font-size: 50px;
+  color: $darkblue;
 }
 #scrollToTopBtn {
   background-color: $lightgrayblue2;
@@ -750,13 +654,13 @@ strong {
 .intro-title {
   padding-left: 3em;
   padding-top: 1.7em;
-  padding-bottom: 1.5em;
+  padding-bottom: 2.3em;
   grid-column: 1 / -1;
   grid-row: 1;
 
   font-family: "Raleway", serif;
   color: $lightgrayblue5;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 600;
   width: 100%;
   z-index: 2;
@@ -841,7 +745,7 @@ strong {
 .intro-image {
   grid-row: 1;
   grid-column: 2;
-  margin-top: 20%;
+  margin-top: 17%;
   margin-left: 15rem;
 
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
@@ -871,4 +775,86 @@ strong {
   display: inline-block;
   animation: inner-left 1s 1s ease both,
     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+#home-img {
+  width: 70%;
+}
+#word-carousel {
+  background-color: $darkblue;
+}
+.ms-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  width: 100vw;
+  height: 100vh;
+
+  &__title {
+    flex: 1 1 100%;
+    width: 100%;
+    padding-top: 35px;
+
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: $lightgray1;
+    text-shadow: 0px 0px 2px rgba(black, 0.4);
+  }
+}
+
+.ms-slider {
+  display: inline-block;
+
+  height: 1.5em;
+  overflow: hidden;
+
+  vertical-align: middle;
+
+  mask-type: luminance;
+  mask-mode: alpha;
+
+  &__words {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 18px;
+
+    list-style: none;
+
+    animation-name: wordSlider;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+  }
+
+  &__word {
+    display: block;
+    line-height: 1.3em;
+    text-align: left;
+  }
+}
+
+@keyframes wordSlider {
+  $steps: -0%, -25%, -50%, -75%;
+
+  @for $index from 0 to length($steps)-1 {
+    $next: $index + 1;
+    $step: floor(100/ (length($steps)-1));
+    $animation_step: floor($step * 0.2);
+
+    #{$step*$index}%,
+    #{($step*$next) - $animation_step}% {
+      transform: translateY(nth($steps, $index + 1));
+    }
+  }
+  100% {
+    transform: translateY(nth($steps, length($steps)));
+  }
+}
+.right-para {
+  color: white;
+}
+b {
+  color: $lightblue;
 }

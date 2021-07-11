@@ -5,6 +5,7 @@ import mold2 from '../images/Osteofitmodelpart4.PNG';
 import ScrollAnimation from 'react-animate-on-scroll';
 import patrick from '../images/patrickStar.jpg';
 import '../styling/mainStyle.scss'
+import '../styling/singleUseStyle.scss'
 
 const SingleUse = () => {
   document.getElementById("scrollToTopBtn")
@@ -214,7 +215,7 @@ const SingleUse = () => {
 
         </div>
       </div>
-      <div className="benefits-single-use fade">
+      <div className="benefits-single-use">
       <ScrollAnimation animateIn="fadeIn">
 
         <h1>With Osteofit's single-use features, you'll see a : </h1>
