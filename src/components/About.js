@@ -1,5 +1,4 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
@@ -81,10 +80,10 @@ const About = () => {
                             <div class="pt-4 pb-5">
                             <i class="fas fa-pen-nib icon"></i>
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Engineer</h5>
+                            <h5 class="h4 lh-130 mb-3">Designer</h5>
                             <h3>40+</h3>
 
-                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+                            <p class="mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
 
                         </div>
                     </div>
@@ -98,8 +97,7 @@ const About = () => {
                             <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
                             <h3>40+</h3>
 
-                       <p class="text-muted mb-0">years of experience specializing in hip and knee replacement and 15 years FDA consultant/panel member.
-</p>
+                       <p class="mb-0">years of experience specializing in hip and knee replacement.text text text text texttext text text text texttext text text text text</p>
                         </div>
                     </div>
                 </div>
@@ -111,7 +109,7 @@ const About = () => {
                             </div>
                             <h5 class="h4 lh-130 mb-3">Manufacturer</h5>
                             <h3>40+</h3>
-                            <p class="text-muted mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
+                            <p class="mb-0"> years in the development and manufacturing of orthopedic implants and instruments.  text texttext text text</p>
 
                         </div>
                     </div>
@@ -119,57 +117,8 @@ const About = () => {
             </div>
         </div>
     </section>
-
         <ScrollAnimation animateIn="fadeIn">
-          <div className = "team-title">
-          <h1>Our Team</h1>
-          <hr className = "horz-line4" />
-          </div>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-          <ScrollAnimation animateIn="fadeIn">
-            <div className = "outer-container-about">
-          <div class="container-about">
-  <div class="box">
-    <div class="boxContent">
-      <i class="fas fa-head-side-mask icon"></i>
-
-      <h1 class="title-about">Orthopedic Surgeon</h1>
-      <p class="desc">
-      <h3>50+</h3> 
-years of experience specializing in hip and knee replacement.</p>
-      
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-md-4">
-        <div class="card">
-              <div class="card-body pb-5">
-                  <i class="fas fa-pen-nib icon"></i>
-                      <h1 class="title-about">Engineer</h1>
-                      <h3>40+</h3>
-                      <p class="desc"> 
-                      years of experience in design and development of orthopedic implants working with major OEMs.</p>
-                </div>
-              </div>
-          </div>
-      </div>
-  <div class="box">
-    <div class="boxContent">
-<i class="fas fa-tools icon"></i>
-
-          <h1 class="title-about">Manufactuer</h1>
-      <h3>40+
-        </h3> 
-      <p class="desc"> 
-      years in the development and manufacturing of orthopedic implants and instruments</p>
-    </div>
-  </div>
-</div>
-</div>
-        </ScrollAnimation>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+        <section>
 
         <div class="checkbox">
           <div class="checkbox1">
@@ -221,42 +170,51 @@ years of experience specializing in hip and knee replacement.</p>
             </h1>
           </div>
         </div>
+        </section>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
-        <div class="item-img-bottom">
-            </div>
-        <div className="bottompapers">
-          <div class="paper1">
-            <Paper elevation={13}>
-              <h2>Osteofit's Reamer</h2>
-              <br />
-              <p>Click below to view our product!</p>
-              <br />
-              <br />
-                <button class = 'btn-1'>
-                  <Router forceRefresh>
-                    <Link exact to="/product">Our Product</Link>
-                  </Router>
-                </button>
-            </Paper>
-          </div>
-          <div class="paper2">
-            <Paper elevation={13}>
-              <h2>Have a Question?</h2>
-              <br />
-              <p>Click below for questions, comments, or inquieries!</p>
-              <br />              
-              <br />
 
-              <button class = 'btn-1'>
-              <Router forceRefresh>
-                <Link exact to="/contact">Contact Us</Link>
-              </Router>
-            </button>
-            </Paper>
-          </div>
+        <section class="slice slice-bottompapers bg-section-secondary">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md">
+                    <div class="card card-pricing text-center px-3 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <span class="h1 text-center mb-0">Osteofit's Reamer</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Click below to view our product and our recycling process!</p>
+                            <br />
+                            <Router forceRefresh>
+                          <Link class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3" exact to="/product">
+                              Our Product
+                          </Link>
+                        </Router>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <div class="card card-pricing bg-dark text-center px-3 border-0 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <span class="h1 text-white text-center mb-0">Have a question?</span>
+                        </div>
+                        <div class="card-body">
+                        <p class = "right-para">Click below for questions, comments, or inquieries!</p>
+                        <br />
+                        <Router forceRefresh>
+                          <Link class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" exact to="/contact">
+                         Contact Us
+                          </Link>
+                        </Router>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </ScrollAnimation>
+    </section>
+    </ScrollAnimation>
+
       </div>
     );
   }

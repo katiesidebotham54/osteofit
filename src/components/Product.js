@@ -130,7 +130,7 @@ const Product = () => {
     }
     return (
       <div className="Product">
-         <section class="slice slice-sm pt-10 bg-primary">
+         <section class="slice bg-primary">
         <div class="product-title-wrapper">
           <div class="product-typing-demo">
            <b> The Problem.</b>
@@ -151,7 +151,7 @@ const Product = () => {
             </div>
         </div>
     </section>
-        <section class="slice-product slice-lg pt-10">
+        <section class="slice-product">
 
         <div class="shape-container-product shape-line shape-position-top shape-orientation-inverse-product">
             <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
@@ -159,9 +159,7 @@ const Product = () => {
             </svg>
         </div>
         <ScrollAnimation animateIn="fadeIn">
-
-        <div class="container">
-            <div class="row row-grid justify-content-between align-items-center">
+            <div class="row row-grid">
             <div class="dialog-1">
 				<div class="left-point"></div>
 		      	</div>
@@ -223,19 +221,14 @@ const Product = () => {
             </div>
                 </div>
             </div>
-
                         </div>
-                </div>
         </ScrollAnimation>
     </section>
     <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
-                <div class="col-lg-6">
-                    <h2 class="text-center mt-4">Collab Learning: Empowering Peer Learning</h2>
-                    <div class="mt-2">
-                        <p class="lead lh-180">Use Atomic Design to build components, sections and, then, pages.</p>
-                    </div>
+                <div class="col-lg-8">
+                    <h2 class="text-center mt-4">A Breakdown of Osteofit's Reamer</h2>
                 </div>
             </div>
             <div class="row mt-5">
@@ -243,10 +236,13 @@ const Product = () => {
                     <div class="card">
                         <div class="card-body pb-5">
                             <div class="pt-4 pb-5">
-                                <img class="model-part-1 img-fluid img-center" src={modelPart1} alt="" />
+                            <img class="model-part-2 img-fluid img-center" src={modelPart2} alt="" />
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
-                            <p class="text-muted mb-0">This is the first part of the reamer. The panels are made from <b>ASTM A276 420 Stainless Steel</b>, and has stamped side and dome cutting panels. Additionally, the Panel-Frame Subassembly includes 4 side panels and 1 dome panel.</p>
+                            <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                              <li class="py-2">Made of <b>polycarbonate 2061-15</b></li>
+                              <li class="py-2">Features tabs for ultrasonic welding</li>
+                            </ul>                       
                         </div>
                     </div>
                 </div>
@@ -254,10 +250,14 @@ const Product = () => {
                     <div class="card">
                         <div class="card-body pb-5">
                             <div class="pt-4 pb-5">
-                                <img class="model-part-2 img-fluid img-center" src={modelPart2} alt="" />
+                            <img class="model-part-1 img-fluid img-center" src={modelPart1} alt="" />
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
-                            <p class="text-muted mb-0">Receive notifications when people in your class are studying so you can study together online in real time</p>
+                            <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                              <li class="py-2">Made from <b>ASTM A276 420 Stainless Steel</b></li>
+                              <li class="py-2">Dome cutting panels</li>
+                              <li class="py-2">Include stamped side</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -268,8 +268,14 @@ const Product = () => {
                                 <img class="model-part-3 img-fluid img-center" src={modelPart3} alt="" />
                             </div>
                             <h5 class="h4 lh-130 mb-3">Molded Core</h5>
-                            <p class="text-muted mb-0">Manage and schedule when to study for quizzes and exams in real time in order to increase test scores
-                            </p>
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                              <li class="py-2">Made of <b>polycarbonate 2061-15</b></li>
+                              <li class="py-2">Helps with the structural integrity</li>
+                              <li class="py-2">Multiple options for quick-connect coupling to Reamer Shaft</li>
+                              <li class="py-2">Color coded by size</li>
+                              <li class="py-2">Space calculated for reamed volume of bone</li>
+
+                            </ul>
                         </div>
                     </div>
                 </div>

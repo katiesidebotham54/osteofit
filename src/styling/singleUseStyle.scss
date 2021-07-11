@@ -1,5 +1,12 @@
-$darkblue: #1a658f;
-$lightblue: #297caf;
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
+$darkgray: #555555;
 $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 $separator-size: 8px;
@@ -12,6 +19,36 @@ $separator-space-top: 18px;
   height: 100%;
   min-height: 1000px;
   min-width: 1000px;
+  background-color: #dae1e7;
+}
+
+.single-use-title-wrapper {
+  height: 25vh;
+  display: flex;
+  margin-left: 23%;
+  align-items: center;
+  .typing-demo {
+    width: 15ch;
+    animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: $lightgray1;
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 }
 
 .recycle-para .MuiPaper-root {
@@ -165,14 +202,17 @@ blockquote.speech {
 
 .benefits-single-use {
   position: relative;
-  height: 620px;
-  background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  height: 50%;
+  //background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
+  background: #052032;
+  padding-bottom: 3%;
 }
 
 .recycle {
   position: relative;
   height: 780px;
   text-align: center;
+  background-color: #dae1e7;
 
   h2 {
     padding-top: 3%;
@@ -197,7 +237,7 @@ blockquote.speech {
     }
   }
 }
-
+/*
 .timeline {
   white-space: nowrap;
   overflow-x: hidden;
@@ -385,7 +425,7 @@ blockquote.speech {
     font-size: 12px;
   }
 }
-
+*/
 .square {
   height: 80px;
   width: 180px;
@@ -417,9 +457,10 @@ blockquote.speech {
 .horz-line5 {
   border: 0;
   border-bottom: $separator-size $separator-border-style #555555;
-  margin-top: 3%;
+  margin-top: 0%;
   opacity: 0.8;
   max-width: 90%;
+  margin-left: 0%;
 }
 @keyframes separator-width {
   0% {
@@ -544,7 +585,7 @@ blockquote.speech {
 
 .comparison {
   position: relative;
-  height: 600px;
+  height: 400px;
   .background-container {
     width: 90%;
     height: 550px;
@@ -690,6 +731,7 @@ ol.gradient-list {
   letter-spacing: 0.6px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  background: #052032;
 }
 
 .benefits-single-use h3 {
@@ -821,6 +863,7 @@ ol.gradient-list {
   height: 200px;
   overflow: hidden;
   margin: 0;
+  background-color: #dae1e7;
 }
 
 .bottompapers2 p {
@@ -944,4 +987,134 @@ ol.gradient-list {
   width: auto;
   position: relative;
   left: 85%;
+}
+
+.row {
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.p-3 {
+  background: #052032;
+  border-radius: 15px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.h6 {
+  color: white;
+}
+
+.feather {
+  color: white;
+}
+
+.slice-chart {
+  padding-top: 6px;
+  padding-bottom: none;
+}
+
+.card {
+  border: none;
+}
+
+.mold1 {
+  width: 90%;
+  margin-left: -64%;
+  margin-top: -4%;
+}
+
+.mold2 {
+  width: 16%;
+  margin-right: -40%;
+  margin-top: -54%;
+}
+
+body {
+  background-color: black;
+}
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding: 5%;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f45b69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
 }

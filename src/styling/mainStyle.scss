@@ -8,6 +8,7 @@ $lightgrayblue3: #758ca5;
 $lightgrayblue4: #5c84a3;
 $lightgrayblue5: #4a6888;
 $darkblue: #052032;
+$darkgray: #555555;
 
 
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,800&display=swap);
@@ -74,13 +75,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
-
   margin: 0;
-
   text-align: left;
-
-  color: #718096;
-  background-color: $lightgray1;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -92,6 +88,14 @@ hr {
 
   box-sizing: content-box;
   height: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -107,6 +111,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 24px;
 }
 
 abbr[title],
@@ -230,7 +235,9 @@ img {
 
   border-style: none;
 }
-
+#nav-bar-logo {
+  max-width: 50%;
+}
 svg {
   overflow: hidden;
 
@@ -428,13 +435,12 @@ h6,
   line-height: 1.5;
 
   margin-bottom: 0.66667rem;
-
-  color: #152c5b;
 }
 
 h1,
 .h1 {
   font-size: 2.5rem;
+  color: $darkblue;
 }
 @media (max-width: 1200px) {
   h1,
@@ -445,7 +451,8 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 5rem;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 1200px) {
   h2,
@@ -456,7 +463,8 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.75rem;
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
 }
 @media (max-width: 1200px) {
   h3,
@@ -467,7 +475,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 1200px) {
   h4,
@@ -487,8 +495,9 @@ h6,
 }
 
 .lead {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 300;
+  font-family: "Open Sans", sans-serif;
 }
 
 .display-1 {
@@ -705,7 +714,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1285px;
   }
 }
 
@@ -751,7 +760,7 @@ pre code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1140px;
+    max-width: 1405px;
   }
 }
 
@@ -2897,7 +2906,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning {
-  color: $lightgray1;
+  color: $darkblue;
   border-color: #ffbe3d;
   background-color: #ffbe3d;
   box-shadow: none;
@@ -3420,7 +3429,7 @@ fieldset:disabled a.btn {
 .btn-link:hover {
   text-decoration: none;
 
-  color: #0061b3;
+  color: $lightgrayblue3;
 }
 .btn-link:focus,
 .btn-link.focus {
@@ -3447,7 +3456,7 @@ fieldset:disabled a.btn {
 
 .btn-sm,
 .btn-group-sm > .btn {
-  font-size: 0.875rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 
   padding: 0.5rem 1.25rem;
@@ -3702,10 +3711,6 @@ input[type="button"].btn-block {
 .dropleft .dropdown-toggle::after {
   display: none;
 }
-
-
-
-
 
 .btn-group,
 .btn-group-vertical {
@@ -4621,15 +4626,9 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
-
   display: flex;
-
-  padding: 0.75rem 1rem;
-
-  flex-wrap: wrap;
+  padding: 3rem 1rem;
   align-items: center;
-  justify-content: space-between;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -4688,7 +4687,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
-  flex-basis: 100%;
+  flex-basis: 113%;
   flex-grow: 1;
   align-items: center;
 }
@@ -4758,8 +4757,6 @@ input[type="button"].btn-block {
   }
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
-
-    flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
     display: none;
@@ -4835,7 +4832,7 @@ input[type="button"].btn-block {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
+    padding-right: 2rem;
     padding-left: 1rem;
   }
   .navbar-expand-lg > .container,
@@ -4848,8 +4845,6 @@ input[type="button"].btn-block {
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-
-    flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -4950,7 +4945,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $lightgray2;
+  color: $lightgrayblue5;
 }
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
@@ -5064,10 +5059,15 @@ input[type="button"].btn-block {
 .card-body {
   min-height: 1px;
   padding: 1.75rem;
-
-  color: #718096;
-
+  color: $darkblue;
   flex: 1 1 auto;
+  text-align: center;
+  p {
+    color: $darkblue;
+  }
+  .right-para {
+    color: white;
+  }
 }
 
 .card-title {
@@ -7187,14 +7187,14 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #008aff !important;
+  background-color: $darkblue !important;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #006ecc !important;
+  background-color: $lightgrayblue5 !important;
 }
 
 .bg-secondary {
@@ -7264,7 +7264,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #171347 !important;
+  background-color: $darkblue !important;
 }
 
 a.bg-dark:hover,
@@ -8873,6 +8873,9 @@ button.bg-white:focus {
 .pb-2,
 .py-2 {
   padding-bottom: 0.5rem !important;
+  color: $darkgray;
+  text-align: center;
+  font-size: 18px;
 }
 
 .pl-2,
@@ -13082,7 +13085,7 @@ button.bg-gray-dark:focus {
 }
 
 .bg-section-secondary {
-  background-color: #fafbfe !important;
+  background-color: white !important;
 }
 
 .bg-section-light {
@@ -13674,11 +13677,11 @@ button.bg-black:focus {
 }
 
 .fill-section-secondary {
-  fill: #fafbfe !important;
+  fill: white !important;
 }
 
 .stroke-section-secondary {
-  stroke: #fafbfe !important;
+  stroke: $lightgray1 !important;
 }
 
 .fill-section-light {
@@ -17905,8 +17908,6 @@ svg {
 }
 
 .footer {
-  padding-top: 3rem;
-
   background-color: $lightgray1;
 }
 .footer .nav-link {
@@ -17922,6 +17923,10 @@ svg {
 
 .footer-light p {
   color: #718096;
+}
+
+#footer-logo {
+  width: 30%;
 }
 
 .footer-light .heading {
@@ -17949,7 +17954,7 @@ svg {
 }
 
 .footer-dark .heading {
-  color: white;
+  color: $lightgray1;
 }
 
 .footer-dark .list-unstyled li a {
@@ -20890,7 +20895,7 @@ article p {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 600;
 
   transition: all 0.15s linear;
@@ -23012,6 +23017,10 @@ section {
 .slice-lg {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+.slice-bottompapers {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
 }
 
 .slice-sm {

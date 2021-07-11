@@ -125,7 +125,7 @@ const Contact = () => {
         />
         </div>
         <br/>
-        <button className = "btn-2" type="submit" disabled={status.submitting}>
+        <button id = "contact-button" className = "btn btn-sm btn-primary" type="submit" disabled={status.submitting}>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
