@@ -1,9 +1,8 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
-import mold from '../images/Osteofitmodelpart3.PNG';
+import mold1 from '../images/Osteofitmodelpart3.PNG';
 import mold2 from '../images/Osteofitmodelpart4.PNG';
+import "../styling/App.scss"
 import ScrollAnimation from 'react-animate-on-scroll';
-import patrick from '../images/patrickStar.jpg';
 import '../styling/mainStyle.scss'
 import '../styling/singleUseStyle.scss'
 
@@ -20,25 +19,147 @@ const SingleUse = () => {
 }
   return (
     <div className="SingleUse">
-<div class="single-use-title-wrapper">
-    <div class="single-use-typing-demo">
-    Why Single Use?
-    </div>
-</div>       
+       <section class="slice bg-dark">
+      <div class="single-use-title-wrapper">
+          <div class="typing-demo">
+              Why Single Use?
+          </div>
+        </div>       
 
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h1 class="text-white mb-4">
+                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                    </h1>
+                    <p class="lead text-white">
+                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-container-about shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
+    </section>
+    <section class="slice slice-lg" className="slice-chart">
       <div className="comparison">
-        <div className = "background-container">
-        <ScrollAnimation animateIn="fadeIn">
+        <div className="row mx-lg-n4">
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>
+        {/*<div className = "background-container">
         <div className="comparison-title-reusable">
-          <Paper elevation={3}>
             <h2>Osteofit</h2>
-          </Paper>
         </div>
         <div className="verticalLine"></div>
         <div className="comparison-title-osteofit">
-          <Paper elevation={3}>
             <h2>Reusable </h2>
-          </Paper>
           <div className="icon1">
             <h2>
               Simple and Efficient 
@@ -74,11 +195,10 @@ const SingleUse = () => {
             </h2>
           </div>
         </div>
-        </ScrollAnimation>
-        </div>
-      </div>
+  </div>
+      </div>*/}
       
-      <div className="cycles">
+      {/*<div className="cycles">
       <ScrollAnimation animateIn="fadeIn">
 
         <h1>
@@ -165,7 +285,7 @@ const SingleUse = () => {
               <div>
               <h4 class="timeline-title"><span class="badge">9</span></h4>
 
-                  <time>Inspected</time> 
+                  <time>Repackaged</time> 
                 </div>
               </li>
               <li></li>
@@ -214,7 +334,7 @@ const SingleUse = () => {
           </ScrollAnimation>
 
         </div>
-      </div>
+</div>*/}
       <div className="benefits-single-use">
       <ScrollAnimation animateIn="fadeIn">
 
@@ -282,6 +402,56 @@ const SingleUse = () => {
         </div>
       </div>
       <ScrollAnimation animateIn="fadeIn">
+      <section class="timeline">
+  <ol>
+    <li>
+      <div>
+        <time>Step 1</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 2</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 3</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 4</time>
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 5</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 6</time>
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 7</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+    </li>
+  </ol>
+</section>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
 
       <div className="recycle">
 
@@ -290,25 +460,25 @@ const SingleUse = () => {
           </div>
           <div className = "recycle-desc">
           <h3>
-            Osteofit takes pride in creating products that are <h2 className = "firstH2">
+            Osteofit takes pride in creating products that are <h2>
               sustainable and
               environmentally conscious
             </h2>
             </h3>
-            <h4 id = "bigGreenAndSymbol">&</h4>
             <p>
              Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
              processes, feel free to reference the resources below.
             </p>
             <hr className = "horz-line5" />
-            <div className = "square"/>
-          <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
-          <div class = "moldimages">
-            <img class = "mold1pic" src = {mold} alt="" />
-            <img class = "mold2pic" src = {mold2} alt="" />
+            <div>
+              <img className="mold1" src = {mold1} alt="" />
+            </div>
+            <div>
+              <img className="mold2" src = {mold2} alt="" />
             </div>
           </div>
       </div>
+
       <div className="bottompapers2">
           <div class="paper3">
             <span>
@@ -337,14 +507,6 @@ const SingleUse = () => {
 
       </div>  
       </ScrollAnimation>
-      <div className = "pictureAndDesc">
-        <h1>Title</h1>
-        <p>test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        </p>
-        <img src = {patrick}></img>
-      </div>
       <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
 
     </div>

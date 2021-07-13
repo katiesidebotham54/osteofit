@@ -24,12 +24,12 @@ rootElement.scrollTo({
       <div class = "homeWholePage">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
       <div className="intro" id ="intro">
- <div class="intro-title">
-    <div class="title-inner">
-      <div class="intro-text">
-        <div class="intro-text-inner">Introducing:</div>
-      </div>
-      <div class="intro-osteofit">
+        <div class="intro-title">
+          <div class="title-inner">
+            <div class="intro-text">
+              <div class="intro-text-inner">Introducing:</div>
+            </div>
+          <div class="intro-osteofit">
         <div class="intro-osteofit-inner">Osteofit</div>
       </div>
     </div>
@@ -90,25 +90,24 @@ rootElement.scrollTo({
       <section class="slice slice-lg">
       <figure class="item-content group">
           <div class="item-img">
-              <img src={Product} alt="" />
+            <img src={Product} alt="" />
           </div>
           <figcaption class="item-caption">
-          <ScrollAnimation animateIn="fadeIn">
-              <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
-              <p>
-              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
-              Click here to learn more! 
+            <ScrollAnimation animateIn="fadeIn">
+              <h2 style={{ color: "white" }}>Introducing Osteofit's Hollow Spherical Reamer: </h2>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+              <p style={{ color: "white" }}>
+                Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability.
+                Click here to learn more!
               </p>
-          </ScrollAnimation>
-            <button class = 'btn-1'>
+            </ScrollAnimation>
+            <button class='btn-1'>
               <Router forceRefresh>
                 <Link exact to="/product">Our Product</Link>
               </Router>
             </button>
-          </figcaption>    
-
+          </figcaption>
         </figure>
         </section>
       <section class="slice slice-lg">
@@ -128,20 +127,26 @@ rootElement.scrollTo({
             <div className="meta">Total Years of Experience</div>
       </div>
 
-          <div className="stat">
-            <div className="stat-value">11</div>
-            <hr />
-            <div className="meta">Colors Offered</div>
-          </div>
-          <div className="stat">
-            <div className="stat-value">100%</div>
-            <hr />
-            <div className="meta">Recyclable</div>
-          </div>
-          </div>
-        </div>
-        </ScrollAnimation>
+              <div className="meta">Patents in Place</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">100+</div>
+              <hr />
+              <div className="meta">Total Years of Experience</div>
+            </div>
 
+            <div className="stat">
+              <div className="stat-value">11</div>
+              <hr />
+              <div className="meta">Colors Offered</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">100%</div>
+              <hr />
+              <div className="meta">Recyclable</div>
+            </div>
+          </div>
+        </ScrollAnimation>
         </section>
         <section class="slice bg-section-secondary">
         <div class="container text-center">
@@ -197,4 +202,4 @@ rootElement.scrollTo({
     );
 }
 
-export default Home;
+export default Home

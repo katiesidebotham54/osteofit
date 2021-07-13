@@ -15,9 +15,10 @@ $yellow: rgb(255, 204, 0);
 $darkgray: #555555;
 
 $mx-width: 50rem;
-.Product {
-  width: 100%;
+
+.product {
   height: 100%;
+  width: 100%;
   min-height: 1000px;
 }
 
@@ -32,12 +33,12 @@ $mx-width: 50rem;
 .product-pen {
   color: #1a658f;
   position: absolute;
-  top: 17%;
+  top: 19%;
   text-align: center;
-  left: 62%;
+  left: 52%;
   font-size: 35px;
   font-weight: 500;
-  max-width: 30%;
+  max-width: 45%;
 }
 
 .product-pen span {
@@ -45,10 +46,10 @@ $mx-width: 50rem;
 }
 
 #product-pen-image {
-  width: 19%;
+  width: 55%;
   position: absolute;
-  top: 22%;
-  left: 69%;
+  top: 18%;
+  left: 40%;
 }
 
 .product-paper {
@@ -56,7 +57,7 @@ $mx-width: 50rem;
 }
 
 .product-paper p {
-  color: $lightgray1;
+  color: white;
   padding: 10px;
   font-size: 20px;
 }
@@ -476,7 +477,7 @@ $hoverBgColor2: #0f4264;
   flex-wrap: wrap;
   height: 80vh;
   .box {
-    @include createBox(350px, 400px, 10px, $lightgray1, 20px);
+    @include createBox(350px, 400px, 10px, white, 20px);
     position: relative;
     box-shadow: 0px 0px 15px #1a658f;
     margin-top: 18%;
@@ -555,7 +556,7 @@ $hoverBgColor2: #0f4264;
       .desc,
       .title-about,
       h3 {
-        color: $lightgray1;
+        color: white;
         transition: 0.8s all ease-in-out;
       }
     }
@@ -617,12 +618,11 @@ $hoverBgColor2: #0f4264;
     position: absolute;
     left: 66%;
     width: 24%;
-    top: 45%;
+    top: 39%;
   }
 }
 
 .item-content-product {
-  position: relative;
   width: 60%;
 
   h1 {
@@ -641,10 +641,10 @@ $hoverBgColor2: #0f4264;
 }
 
 .product-breakdown {
-  height: 1423px;
+  height: 950px;
   h1 {
     color: #1a658f;
-    font-family: "Raleway" sans-serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 40px;
@@ -653,7 +653,7 @@ $hoverBgColor2: #0f4264;
     left: 8%;
     letter-spacing: 3px;
     background: none;
-    padding-top: 87px;
+    padding-top: 102px;
     max-width: 34%;
   }
 }
@@ -693,21 +693,24 @@ $hoverBgColor2: #0f4264;
   margin-left: 53%;
   height: 230px;
   margin-top: 150px;
-  box-shadow: 5px 10px #004065;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 .part-container-two {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: -4%;
   height: 230px;
-  box-shadow: 5px 10px #004065;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 .part-container-three {
   background: linear-gradient(90deg, #1a658f 0%, #297caf 40%, #3c94cf 100%);
   width: 49%;
   margin-left: 52%;
   height: 230px;
-  box-shadow: 5px 10px #004065;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .part-desc-1 {
@@ -715,16 +718,15 @@ $hoverBgColor2: #0f4264;
   margin-left: 121px;
   width: 594px;
   text-align: center;
-
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -736,13 +738,13 @@ $hoverBgColor2: #0f4264;
   margin-top: 6%;
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 38px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
     font-family: "Open Sans", sans-serif;
   }
 }
@@ -770,13 +772,13 @@ $hoverBgColor2: #0f4264;
 
   h2 {
     background: none;
-    color: $lightgray1;
+    color: $yellow;
     padding-top: 30px;
     padding-bottom: 28px;
     font-family: "Raleway", sans-serif;
   }
   p {
-    color: $lightgray1;
+    color: white;
 
     font-family: "Open Sans", sans-serif;
   }
@@ -804,7 +806,6 @@ $hoverBgColor2: #0f4264;
 .horz-line7 {
   border: 0;
   border-bottom: 8px solid #ffcc00;
-  margin-top: 7%;
   opacity: 0.8;
   margin-left: 2%;
   max-width: 95%;

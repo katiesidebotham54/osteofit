@@ -41,7 +41,15 @@ const About = () => {
             <div class="item-img-about">
               <img src={aboutUs} alt="" />
             </div>
+
+            <ScrollAnimation animateIn="fadeIn">
+
+              <h2>About Us</h2>
+              <br/>
+              <br/>
+              </ScrollAnimation>
               <ScrollAnimation animateIn="fadeIn">
+
               <p className="about-text">
               OsteoFit is a newly formed company specializing in <b>single-use 
               sterile medical reamers</b>. Our company's management has over <b>100
@@ -49,11 +57,11 @@ const About = () => {
               manufacturing of implants and instruments. Our mission is to combine  
               <b> experience</b> from <b>orthopedic</b> surgery, <b>engineering</b> and <b>manufacturing </b>
               technology to provide cost-effective surgical tools with improved effectiveness, 
-              safety and environmentally-friendly design.
+              safety and environmentally-friendly design
               </p>
               <img className = "about-logo" src={osteofitlogo} alt=""/>
               </ScrollAnimation>
-          </figure>
+        </figure>
         </div>
         <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
         <div class="container">
@@ -140,7 +148,7 @@ const About = () => {
         <div className="checkbox">
           <div class="checkbox2">
             <h1>
-              Technology Covered By 5 Patents
+              Technology Covered By 14 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"

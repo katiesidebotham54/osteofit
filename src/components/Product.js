@@ -1,6 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
 import modelPart3 from "../images/Osteofitmodelpart4.PNG"
@@ -208,6 +206,7 @@ const Product = () => {
                     </div>
                 </div>
             </div>
+
             <div class="productBackground">
                 <div class="gradients">
                     <div class="gradient" color="gray1"/>
