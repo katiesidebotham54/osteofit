@@ -1,13 +1,11 @@
 import React from "react";
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
-import problem from "../images/problem.jpg"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
 import modelPart3 from "../images/Osteofitmodelpart4.PNG"
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
 import gray from '../images/lightgray.png'
 import black from '../images/black.png'
 import blue from '../images/blue.png'
-import productPenImage from '../images/boneWReamer.png';
 import brown from '../images/brown.png'
 import green from '../images/green.png'
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -130,28 +128,38 @@ const Product = () => {
     }
     return (
       <div className="Product">
-         <section class="slice bg-primary">
-        <div class="product-title-wrapper">
-          <div class="product-typing-demo">
-           <b> The Problem.</b>
-          </div>
-        </div>       
-        <div class="container">
-            <div class="row row-grid">
-                <div class="col-lg-8">
-                    <p class="lead problem-desc lh-190 bg-primary">
-                    The current procedure for reamers allows surgeons to use a singular 
-                    reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
-                    and requires more axial force by the surgeon. This leads to a <b>higher 
-                    chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
-                    (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
-                    most effective and clean product for surgery.
-                    </p>
-                </div>
-            </div>
+         <section id="problem-slice" class="slice bg-primary">
+          <div class="container py-1">
+            <div class="py-6">
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                    <div class="product-title-wrapper">
+                      <div class="product-typing-demo">
+                        The Problem.
+                      </div>
+                    </div>       
+                        <p class="problem-desc text-white my-4">
+                        The current procedure for reamers allows surgeons to use a singular 
+                        reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
+                        and requires more axial force by the surgeon. This leads to a <b>higher 
+                        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
+                        (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
+                        most effective and clean product for surgery.
+                        </p>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mb-0 ml-lg-5">
+                            <div class="p-2">
+                            <img id="problem-pic" alt="Image placeholder" src={mainProduct}/>
+                            </div>
+                        </div>
+                    </div>
+
+                  </div>
         </div>
+      </div>
     </section>
-        <section class="slice-product">
+    <section class="slice-product">
 
         <div class="shape-container-product shape-line shape-position-top shape-orientation-inverse-product">
             <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
@@ -184,7 +192,7 @@ const Product = () => {
                     </div>
                 </div>
                 <div class="color-container">
-                    <h3 class="title">Colors Offerred</h3>
+                    <h3 id= "color-text">Colors Offerred</h3>
                     <div class="colors">
                       <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
                       <span id="black1" onClick={(e) => handleOnClick("black1",e)} class="color" primary="#444" color="black1"> <span class="size">48</span> </span>

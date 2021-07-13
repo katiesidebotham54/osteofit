@@ -10,7 +10,7 @@ import '../styling/mainStyle.scss'
 const About = () => {
       return (
       <div className="About">
-      <section class="slice py-8 bg-dark">
+      <section class="slice bg-dark">
       <div class="about-title-wrapper">
           <div class="typing-demo">
               About Us
@@ -19,7 +19,7 @@ const About = () => {
 
         <div class="container py-5">
             <div class="row row-grid align-items-center">
-                <div class="col-lg-8 text-center text-lg-left">
+                <div class="col-lg-6 text-center text-lg-left">
                     <h1 class="text-white mb-4">
                         We manufacture cost-effective reamers for medical facilities &amp; surgeons.
                     </h1>
@@ -83,8 +83,7 @@ const About = () => {
                             <h5 class="h4 lh-130 mb-3">Designer</h5>
                             <h3>40+</h3>
 
-                            <p class="mb-0"> years of experience in design and development of orthopedic implants working with major OEMs.</p>
-
+                            <p class="text-muted mb-0">years of experience in design and development of orthopedic implants working with major OEMs.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +96,7 @@ const About = () => {
                             <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
                             <h3>40+</h3>
 
-                       <p class="mb-0">years of experience specializing in hip and knee replacement.text text text text texttext text text text texttext text text text text</p>
+                            <p class="text-muted mb-0">years of experience specializing in hip and knee replacement.</p>
                         </div>
                     </div>
                 </div>
@@ -109,11 +108,12 @@ const About = () => {
                             </div>
                             <h5 class="h4 lh-130 mb-3">Manufacturer</h5>
                             <h3>40+</h3>
-                            <p class="mb-0"> years in the development and manufacturing of orthopedic implants and instruments.  text texttext text text</p>
 
+                            <p class="text-muted mb-0">years in the development and manufacturing of orthopedic implants and instruments.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
