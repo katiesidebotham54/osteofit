@@ -1,77 +1,46 @@
-<nav>
-                    <Router forceRefresh>
-                                <Link exact to ="/">
-                                    <img src={logo} alt="" className = "nav-logo"/>
-                                </Link>
-                         </Router>
-
-                        <ul>
-                         <Router forceRefresh>
-                            <li>
-                                <Link exact to="/about">
-                                About Us
-                                </Link>
-                            </li>
-                        </Router>
-                            <Router forceRefresh>
-                            <li>
-                                <Link exact to="/product">
-                                Our Product
-                                </Link>
-                            </li>
-                            </Router>
-                            <Router forceRefresh>
-                            <li>
-                                <Link exact to="/single-use">
-                                Why Single-Use?
-                                </Link>
-                            </li>
-                            </Router>
-                            <Router forceRefresh>
-                            <li className = "contact-button">
-                            <button class = 'btn-2'>
-              <Router forceRefresh>
-                <Link exact to="/contact">Contact Us</Link>
-              </Router>
-            </button>
-                            </li>
-                            </Router>
-                            
-                        </ul>
-                    </nav>
-                    </header>
-                    <Router forceRefresh>
-                        <Switch>
-                            <Route exact path="/">
-                                <Home />
-                            </Route>
-                        </Switch>
-                    </Router>
-                    <Router forceRefresh>
-                        <Switch>
-                            <Route exact path="/about">
-                                <About />
-                            </Route>
-                        </Switch>
-                    </Router>
-                    <Router forceRefresh>
-                        <Switch>
-                            <Route exact path="/product">
-                                <Product />
-                            </Route>
-                        </Switch>
-                    </Router>
-                    <Router forceRefresh>
-                        <Switch>
-                            <Route exact path="/single-use">
-                                <SingleUse />
-                            </Route>
-                        </Switch>
-                    </Router>
-                    <Router forceRefresh>
-                        <Switch>
-                            <Route exact path="/contact">
-                                <Contact />
-                            </Route>
-                        </Switch>
-                    </Router>
+  <ol>
+    <li>
+      <div>
+        <time>Step 1</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 2</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 3</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 4</time>
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 5</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 6</time>
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Step 7</time> 
+OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments that maintain accuracy, function and sterility in a routine and sustainable process for hospitals
+      </div>
+    </li>
+    <li>
+    </li>
+  </ol>

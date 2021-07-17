@@ -1,13 +1,71 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
-import mold from '../images/Osteofitmodelpart3.PNG';
+import mold1 from '../images/Osteofitmodelpart3.PNG';
 import mold2 from '../images/Osteofitmodelpart4.PNG';
 import ScrollAnimation from 'react-animate-on-scroll';
-import patrick from '../images/patrickStar.jpg';
-import '../styling/mainStyle.scss'
-import '../styling/singleUseStyle.scss'
+import '../styling/mainStyle.scss';
+import '../styling/singleUseStyle.scss';
+import '../styling/timelines.scss';
+import {Line} from 'react-chartjs-2';
+import Chart from 'chart.js/auto';
+
 
 const SingleUse = () => {
+  const data = {
+    data: {
+      labels: ["1", "2", "3", "4", "5"],
+      datasets: [{
+        labels: "Percent efficiency",
+        backgroundColor: "rgba(255,0, 255, 0.75)",
+        data: [4,5,1,10, 32, 2,12]
+      },
+      {
+        label: "Types",
+        backgroundColor: "rgba(0,255,0,0.75)",
+        data: [14,15,21,0,32,2,12]
+      ]
+    }
+  }
+  var Chart = require('chart.js');
+  var barChart = document.getElementById("barChart");
+
+  
+  var dataFirst = {
+      label: "Car A - Speed (mph)",
+      data: [0, 59, 75, 20, 20, 55, 40],
+      lineTension: 0,
+      fill: false,
+      borderColor: 'red'
+    };
+  
+  var dataSecond = {
+      label: "Car B - Speed (mph)",
+      data: [20, 15, 60, 60, 65, 30, 70],
+      lineTension: 0,
+      fill: false,
+    borderColor: 'blue'
+    };
+  
+  var barData = {
+    labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+    datasets: [dataFirst, dataSecond]
+  };
+  
+  var chartOptions = {
+    legend: {
+      display: true,
+      position: 'top',
+      labels: {
+        boxWidth: 80,
+        fontColor: 'black'
+      }
+    }
+  };
+  
+  var lineChart = new Chart(barChart, {
+    type: 'line',
+    data: barData,
+    options: chartOptions
+  });  
   document.getElementById("scrollToTopBtn")
   var rootElement = document.documentElement
   
@@ -19,206 +77,147 @@ const SingleUse = () => {
   })
 }
   return (
+    
     <div className="SingleUse">
-<div class="single-use-title-wrapper">
-    <div class="single-use-typing-demo">
-    Why Single Use?
-    </div>
-</div>       
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+       <section class="slice bg-dark">
+      <div class="single-use-title-wrapper">
+          <div class="typing-demo">
+              Why Single Use?
+          </div>
+        </div>       
 
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h1 class="text-white mb-4">
+                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                    </h1>
+                    <p class="lead text-white">
+                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="shape-container-about shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" xmlSpace="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+
+    </section>
+    <section class="slice slice-lg" className="slice-chart">
       <div className="comparison">
-        <div className = "background-container">
-        <ScrollAnimation animateIn="fadeIn">
-        <div className="comparison-title-reusable">
-          <Paper elevation={3}>
-            <h2>Osteofit</h2>
-          </Paper>
-        </div>
-        <div className="verticalLine"></div>
-        <div className="comparison-title-osteofit">
-          <Paper elevation={3}>
-            <h2>Reusable </h2>
-          </Paper>
-          <div className="icon1">
-            <h2>
-              Simple and Efficient 
-              Cycle
-              <span>
-              <i class="fas fa-check circle-icon-osteofit"></i>
-              <i class="fas fa-times circle-icon-reusable"></i>
-
-              </span>
-            </h2>
-          </div>
-
-          <div className="icon2">
-
-            <h2>
-              Cost Effective
-              <span>
-              <i class="fas fa-check circle-icon-osteofit2"></i>
-              <i class="fas fa-times circle-icon-reusable2"></i>
-              </span>
-            </h2>
-
-          </div>
-          <div className="icon3">
-
-            <h2>
-              100% Sterile Each
-              Time
-              <span>
-              <i class="fas fa-check circle-icon-osteofit3"></i>
-              <i class="fas fa-times circle-icon-reusable3"></i>
-              </span>
-            </h2>
-          </div>
-        </div>
-        </ScrollAnimation>
-        </div>
-      </div>
-      
-      <div className="cycles">
-      <ScrollAnimation animateIn="fadeIn">
-
-        <h1>
-          A process that takes
-          <span>
-            {" "}
-            <b>less time </b>
-          </span>
-          and is
-          <span>
-            <b> more effective. </b>
-          </span>
-        </h1>
-        </ScrollAnimation>
-        <hr className = "horz-line3" />
-
-        <div>
-        <ScrollAnimation animateIn="fadeIn">
-        <section id = "section" class="timeline">
-          <h2>Reusable</h2>
-          <hr className = "horz-line6a" />
-            <ol>
-              <li>
-              <i id="timeline-icons" class="fas fa-truck"></i>
-                <div >
-                <h4 class="timeline-title"><span class="badge">1</span></h4>
-                  <time>Receive Reamer</time> 
-                </div>
-              </li>
-              <li>
-              <i  id="timeline-icons" class="fas fa-soap"></i>
-
+        <div className="row mx-lg-n4">
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
                 <div>
-                  <time>Cleaned</time> 
-                  <h4 class="timeline-title"><span class="badge">2</span></h4>
-
-                </div>
-              </li>
-              <li>
-              <i  id="timeline-icons" class="fas fa-sort"></i>
-                <div>
-                <h4 class="timeline-title"><span class="badge">3</span></h4>
-
-                  <time>Sorted</time>
-                </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-pump-medical"></i>               
-               <div>
-                  <time>Sterilized</time> 
-                  <h4 class="timeline-title"><span class="badge">4</span></h4>
-                </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-box-open"></i>        
-                      <div>
-                      <h4 class="timeline-title"><span class="badge">5</span></h4>
-                  <time>Stored</time> 
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                   </div>
-              </li>
-              <li>              
-              <i id="timeline-icons" class="fas fa-procedures"></i>
-                <div>
-                  <time>Used in OR</time> 
-                  <h4 class="timeline-title"><span class="badge">6</span></h4>
                 </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-faucet"></i>            
-                  <div>
-                  <h4 class="timeline-title"><span class="badge">7</span></h4>
-                  <time>Rinsed</time> 
-                </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-pump-soap"></i>                
               <div>
-                  <time>Scrubbed</time>
-                  <h4 class="timeline-title"><span class="badge">8</span></h4> 
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
                 </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-eye"></i>          
               <div>
-              <h4 class="timeline-title"><span class="badge">9</span></h4>
-
-                  <time>Inspected</time> 
-                </div>
-              </li>
-              <li></li>
-            </ol>
-          </section>
-          </ScrollAnimation>
-        </div>
-        <div>
-        <ScrollAnimation animateIn="fadeIn">
-        <h3 className="osteofit-timeline-quote"> Osteofit's procedure takes only<br/> <b> ONE THIRD </b> of the steps required for reusable reamers!</h3>
-        <section id = "section" class="timeline">
-      
-
-            <ol>
-            <h2 className="timeline-title-osteofit">Osteofit</h2>
-            <hr className = "horz-line6b" />
-
-              <li>
-              <i id="timeline-icons" class="fas fa-truck"></i>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
                 <div>
-                <h4 class="timeline-title" id = "osteofit-step1" ><span class="badge">1</span></h4>
-                  <time id = "step1">Receive Reamer</time> 
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
                 </div>
-              </li>
-              <li>
-              <i id="timeline-icons" class="fas fa-procedures"></i>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
                 <div>
-
-                  <time>Used in OR</time> 
-                  <h4 class="timeline-title"><span class="badge">2</span></h4>
-
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
                 </div>
-              </li>
-              <li>
-              <i  id="timeline-icons" class="fas fa-recycle"></i>                <div>
-              <h4 class="timeline-title"><span class="badge">3</span></h4>
-
-                  <time>Recycled</time> 
-
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
                 </div>
-              </li>
-              <hr id = "osteofit-li" />
-            
-            </ol>
-          </section>
-          </ScrollAnimation>
-
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              <div>
+                <span class="h6">100% Responsive</span>
+                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="benefits-single-use">
+        </div>
+        </section>
+      <div class="benefits-single-use">
       <ScrollAnimation animateIn="fadeIn">
 
-        <h1>With Osteofit's single-use features, you'll see a : </h1>
+        <h1 class ="mb-4 text-white">With Osteofit's single-use features, you'll see a : </h1>
         <hr className = "horz-line4" />
         </ScrollAnimation>
 
@@ -282,70 +281,129 @@ const SingleUse = () => {
         </div>
       </div>
       <ScrollAnimation animateIn="fadeIn">
-
-      <div className="recycle">
-
-          <div className = "wrapper">
-          <h2>Osteofit is Green!</h2>
+      <section class="timeline">
+       <h1>Reusable Reamers</h1>
+      <div class="flex-parent">
+        <div class="input-flex-container">
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 1</span>
+            <span class="label">Receive Reamer</span>
           </div>
-          <div className = "recycle-desc">
-          <h3>
-            Osteofit takes pride in creating products that are <h2 className = "firstH2">
-              sustainable and
-              environmentally conscious
-            </h2>
-            </h3>
-            <h4 id = "bigGreenAndSymbol">&</h4>
-            <p>
-             Our reamers are made from <b>stainless steel</b> and <b>poly carbonate</b> -- both materials that are <b>100% recyclable</b>! To learn more about these 
-             processes, feel free to reference the resources below.
-            </p>
-            <hr className = "horz-line5" />
-            <div className = "square"/>
-          <span class="iconify" data-icon="ion-earth" data-inline="false"></span>
-          <div class = "moldimages">
-            <img class = "mold1pic" src = {mold} alt="" />
-            <img class = "mold2pic" src = {mold2} alt="" />
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 2</span>
+            <span class="label">Cleaned</span>
+          </div>
+          <input type="radio" name="timeline-dot" checked/>
+          <div class="dot-info">
+            <span class="step">Step 3</span>
+            <span class="label">Sorted</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 4</span>
+            <span class="label">Sterilized</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 5</span>
+            <span class="label">Stored</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 6</span>
+            <span class="label">Used in OR</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 7</span>
+            <span class="label">Rinsed</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 8</span>
+            <span class="label">Scrubbed</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info">
+            <span class="step">Step 9</span>
+            <span class="label">Repackaged</span>
+          </div>
+        </div>
+      </div>
+      <h1>Osteofit's Reamers</h1>
+      <div class="flex-parent">
+        <div class="input-flex-container osteofit-timeline" >
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info osteofit-dot">
+            <span class="step">Step 1</span>
+            <span class="label">Receive Reamer</span>
+          </div>
+          <input type="radio" name="timeline-dot"/>
+          <div class="dot-info osteofit-dot">
+            <span class="step">Step 2</span>
+            <span class="label">Used in OR</span>
+          </div>
+          <input type="radio" name="timeline-dot" checked/>
+          <div class="dot-info osteofit-dot" >
+            <span class="step">Step 3</span>
+            <span class="label">Recycled</span>
+          </div>
+        </div>
+      </div>
+</section>
+</ScrollAnimation>
+<section class="slice slice-lg" className="graphSection">
+        <div class="container">
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">What are the benefits of single use?</h5>
+                        <hr className = "horz-line5" />
+                        <p class="lead my-4">
+                            With Quick you get components and examples, including tons of variables that will help you customize this theme with ease.
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                          </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0" className="graphSectionh6">Perfect for modern startups</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                          </svg>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="h6 mb-0" className="graphSectionh6">Ready to be customized</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                      <div class="row">
+                          <canvas width="600" height= "400" id="barChart"></canvas>
+                    </div>                
+                  </div>
             </div>
-          </div>
-      </div>
-      <div className="bottompapers2">
-          <div class="paper3">
-            <span>
-              <h2>Recycling Stainless Steel</h2>
-              <br />
-              <p>Click below to learn more about this process!</p>
-              <br />
-              <br />
-              <button href= "http://polycarbonaterecycling.com/polycarbonate-recycling.html" class = 'contact-btn-1'>
-                   Learn More
-              </button>
-              </span>
-          </div>
-      <div class="paper4">
-        <span>
-            <h2>Recycling Polycarbonate </h2>
-              <br />     
-              <p>Click below to learn more about this process!</p>
-              <br />
-              <br />
-              <button href="http://www.metalrecyclersusa.com/stainless-steel-recycling.html#:~:text=Once%20the%20stainless%20steel%20has,is%20separated%20from%20other%20material." class = 'contact-btn-2'>
-              Learn More
-              </button>   
-              </span>           
-          </div>
+        </div>
 
-      </div>  
-      </ScrollAnimation>
-      <div className = "pictureAndDesc">
-        <h1>Title</h1>
-        <p>test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text test this is filler text 
-        </p>
-        <img src = {patrick}></img>
-      </div>
-      <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
+</section>
+
 
     </div>
   );
