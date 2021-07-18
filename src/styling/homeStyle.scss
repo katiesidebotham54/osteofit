@@ -7,6 +7,8 @@ $lightgrayblue4: #5c84a3;
 $lightgrayblue5: #4a6888;
 $darkblue: #052032;
 $lightblue: #297caf;
+$darkgray: #555555;
+$yellow: rgb(255, 204, 0);
 
 .intro {
   display: grid;
@@ -358,7 +360,7 @@ strong {
 .item-img {
   position: relative;
   display: block;
-  width: 45%;
+  width: 39%;
   left: 35%;
   order: 1;
   transform-origin: 50% 50%;

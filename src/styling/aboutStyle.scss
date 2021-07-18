@@ -7,6 +7,8 @@ $lightgrayblue4: #5c84a3;
 $lightgrayblue5: #4a6888;
 $darkblue: #052032;
 $lightblue: #297caf;
+$darkgray: #555555;
+$yellow: rgb(255, 204, 0);
 
 .About {
   width: 100%;
@@ -142,7 +144,7 @@ $lightblue: #297caf;
     stroke-dashoffset: 166;
     stroke-width: 2;
     stroke-miterlimit: 10;
-    stroke: $lightgrayblue4;
+    stroke: $yellow;
     fill: none;
     animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
   }
@@ -170,7 +172,7 @@ $lightblue: #297caf;
   }
   @keyframes fill {
     100% {
-      box-shadow: inset 0px 0px 0px 30px $lightgrayblue1;
+      box-shadow: inset 0px 0px 0px 30px $yellow;
     }
   }
   .checkbox1 {

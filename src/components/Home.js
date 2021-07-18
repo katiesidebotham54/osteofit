@@ -88,20 +88,19 @@ rootElement.scrollTo({
       </div>
 
       <section class="slice slice-lg">
+      <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
       <figure class="item-content group">
+
           <div class="item-img">
               <img src={Product} alt="" />
           </div>
           <figcaption class="item-caption">
-          <ScrollAnimation animateIn="fadeIn">
-              <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
+              <h2>Introducing Osteofit's Hollow Spherical Reamer for Acetabular Preparation: </h2>
               <p>
-              Made from stainless steel and molded polycarbonate, our single-use reamer provides <b>effective</b> and <b>accurate</b> usability. 
+              Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
               Click here to learn more! 
               </p>
-          </ScrollAnimation>
             <button class = 'btn-1'>
               <Router forceRefresh>
                 <Link exact to="/product">Our Product</Link>
@@ -110,14 +109,14 @@ rootElement.scrollTo({
           </figcaption>    
 
         </figure>
+        </div>
+        </div>
         </section>
       <section class="slice slice-lg">
-      <ScrollAnimation animateIn="fadeIn">
-
       <div className = "stats">
         <div className = "stats-container">
           <div className="stat">
-            <div className="stat-value">5</div>
+            <div className="stat-value">4</div>
             <hr />
 
             <div className="meta">Patents in Place</div>
@@ -127,12 +126,6 @@ rootElement.scrollTo({
             <hr />
             <div className="meta">Total Years of Experience</div>
       </div>
-
-          <div className="stat">
-            <div className="stat-value">11</div>
-            <hr />
-            <div className="meta">Colors Offered</div>
-          </div>
           <div className="stat">
             <div className="stat-value">100%</div>
             <hr />
@@ -145,7 +138,6 @@ rootElement.scrollTo({
                 <polygon points="2560 0 2560 100 0 100"></polygon>
             </svg>
         </div>
-        </ScrollAnimation>
         <section class="slice slice-lg">
 
         </section>
@@ -162,7 +154,7 @@ rootElement.scrollTo({
                 <div class="col-md">
 
                     <div class="card card-pricing text-center px-3 hover-scale-110">
-                        <div class="py-5 border-0 delimiter-bottom">
+                        <div class="border-0 delimiter-bottom">
                         <i class="fas fa-award award-icon"></i>  
                         <br/>
 
@@ -179,7 +171,7 @@ rootElement.scrollTo({
                 </div>
                 <div class="col-md">
                     <div class="card card-pricing bg-dark text-center px-3 border-0 hover-scale-110">
-                        <div class="py-5 border-0 delimiter-bottom">
+                        <div class="border-0 delimiter-bottom">
                         <i class="fab fa-envira envira-icon"></i>
                         <br/>
                             <span class="h1 text-white text-center mb-0">The Sustainability of Osteofit</span>

@@ -19,9 +19,9 @@ const About = () => {
 
         <div class="container py-5">
             <div class="row row-grid align-items-center">
-                <div class="col-lg-6 text-center text-lg-left">
+                <div class="col-lg-8 text-center text-lg-left">
                     <h1 class="text-white mb-4">
-                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                        Osteofit is an orthopaedic company specializing in single-use, sterile medical reamers
                     </h1>
                     <p class="lead text-white">
                         We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
@@ -86,7 +86,7 @@ const About = () => {
                             <i class="fas fa-head-side-mask icon"></i>
                             </div>
                             <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
-                            <h3>40+</h3>
+                            <h3>50+</h3>
 
                             <p class="text-muted mb-0">years of experience specializing in hip and knee replacement.</p>
                         </div>
@@ -140,7 +140,7 @@ const About = () => {
         <div className="checkbox">
           <div class="checkbox2">
             <h1>
-              Technology Covered By 5 Patents
+              Technology Covered By 4 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"

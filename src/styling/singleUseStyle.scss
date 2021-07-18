@@ -8,7 +8,6 @@ $lightgrayblue5: #4a6888;
 $darkblue: #052032;
 $darkgray: #555555;
 $yellow: rgb(255, 204, 0);
-$darkgray: #555555;
 $separator-size: 8px;
 $separator-border-style: solid;
 $separator-border-color: rgb(255, 204, 0);
@@ -870,4 +869,16 @@ ol.gradient-list {
   border-radius: 0.75rem;
   background-color: #dae1e7;
   background-clip: border-box;
+}
+
+.fas {
+  color: $darkblue;
+}
+
+#fire-icon {
+  color: rgb(215, 129, 23);
+}
+
+#recycle-icon {
+  color: rgb(20, 89, 20);
 }

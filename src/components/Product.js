@@ -175,12 +175,7 @@ const Product = () => {
                     <div class="solution-text order-lg-2">
                         <h5 class="h3">The Solution</h5>
                           <p class="lead my-4">
-                          The current procedure for reamers allows surgeons to use a singular 
-                    reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
-                    and requires more axial force by the surgeon. This leads to a <b>higher 
-                    chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
-                    (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
-                    most effective and clean product for surgery.
+                          The single-use acetabular reamers address the surgeon's needs of always having an accurate, sharp cutting tool for the acetabulum preparation. The surgeon uses a brand-new product each time, creating a simple procedural cycle.
                           </p>
                     </div>
                     <div class="col-lg-6 order-lg-1">
@@ -247,7 +242,7 @@ const Product = () => {
                             </div>
                             <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                              <li class="py-2">Made of <b>polycarbonate 2061-15</b></li>
+                              <li class="py-2">Made of <b>Polycarbonate</b></li>
                               <li class="py-2">Features tabs for ultrasonic welding</li>
                             </ul>                       
                         </div>
@@ -261,7 +256,7 @@ const Product = () => {
                             </div>
                             <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                              <li class="py-2">Made from <b>ASTM A276 420 Stainless Steel</b></li>
+                              <li class="py-2">Made from <b>Stainless Steel</b></li>
                               <li class="py-2">Dome cutting panels</li>
                               <li class="py-2">Include stamped side</li>
                             </ul>
@@ -276,7 +271,7 @@ const Product = () => {
                             </div>
                             <h5 class="h4 lh-130 mb-3">Molded Core</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                              <li class="py-2">Made of <b>polycarbonate 2061-15</b></li>
+                              <li class="py-2">Made of <b>Polycarbonate</b></li>
                               <li class="py-2">Helps with the structural integrity</li>
                               <li class="py-2">Multiple options for quick-connect coupling to Reamer Shaft</li>
                               <li class="py-2">Color coded by size</li>

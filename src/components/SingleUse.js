@@ -26,7 +26,7 @@ const SingleUse = () => {
     <div className="SingleUse">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
        <section class="slice bg-dark">
-      <div class="single-use-title-wrapper">
+      <div class="single-use-title-wrapper col-lg-8 text-center text-lg-left">
           <div class="typing-demo">
               Why Single Use?
           </div>
@@ -36,11 +36,8 @@ const SingleUse = () => {
             <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
                     <h1 class="text-white mb-4">
-                        We manufacture cost-effective reamers for medical facilities &amp; surgeons.
+                        We manufacture single-use, cost-effective reamers for total hip replacement surgeons.
                     </h1>
-                    <p class="lead text-white">
-                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
-                    </p>
                 </div>
             </div>
         </div>
@@ -59,14 +56,43 @@ const SingleUse = () => {
               <div className="p-3 d-flex">
                 <div>
                   <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <i class="fas fa-bullseye"></i>      
+                  </div>
+                </div>
+              <div>
+                <span class="h6">Always Accurate</span>
+                <p class="text-sm text-muted mb-0">Precise Manufacturing Process</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-icicles"></i>    
+                  </div>
+                </div>
+              <div>
+                <span class="h6">Always Sharp</span>
+                <p class="text-sm text-muted mb-0">Cutting Teeth Are Always New</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 px-lg-4">
+            <div className="card shadow-none">
+              <div className="p-3 d-flex">
+                <div>
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-dollar-sign"></i>   
+
                   </div>
                 </div>
               <div>
                 <span class="h6">Cost Effective</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+                <p class="text-sm text-muted mb-0">Patented Tech Allows for Efficiency</p>
               </div>
               </div>
             </div>
@@ -76,14 +102,13 @@ const SingleUse = () => {
               <div className="p-3 d-flex">
                 <div>
                   <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                  <i id = "fire-icon" class="fas fa-fire"></i>  
+
                   </div>
                 </div>
               <div>
-                <span class="h6">Simple & Efficient Cycle</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+                <span class="h6">Redueced OR Time</span>
+                <p class="text-sm text-muted mb-0">The OR Cycle is open, use, discard</p>
               </div>
               </div>
             </div>
@@ -93,14 +118,11 @@ const SingleUse = () => {
               <div className="p-3 d-flex">
                 <div>
                   <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
+                  <i class="fas fa-hourglass-half"></i>                  </div>
                 </div>
               <div>
-                <span class="h6">100% Sterile Each Time</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+                <span class="h6">Reduced Heat</span>
+                <p class="text-sm text-muted mb-0">Cutting Teeth are Never Dull</p>
               </div>
               </div>
             </div>
@@ -110,48 +132,12 @@ const SingleUse = () => {
               <div className="p-3 d-flex">
                 <div>
                   <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
+                  <i id = "recycle-icon" class="fas fa-recycle"></i>
                 </div>
-              <div>
-                <span class="h6">Allows time for more cases</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 px-lg-4">
-            <div className="card shadow-none">
-              <div className="p-3 d-flex">
-                <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
                 </div>
               <div>
                 <span class="h6">100% Recyclable</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 px-lg-4">
-            <div className="card shadow-none">
-              <div className="p-3 d-flex">
-                <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                </div>
-              <div>
-                <span class="h6">Reduce chance of infection</span>
-                <p class="text-sm text-muted mb-0">Build to be customized.</p>
+                <p class="text-sm text-muted mb-0">Used, Reprocessed, and Remanufactured</p>
               </div>
               </div>
             </div>
@@ -360,16 +346,19 @@ const SingleUse = () => {
                     </div>
                 </div>
             </div>
-
-              <div class="row mt-5">
                     <div class="part-card">
                         <div class="card-body card-hover pb-5">
-                            <div>
-                            </div>
                             <img id="recycle-pics" src={mold1} alt=""/>
-                            <h5 class="h4 lh-130 mb-3">Recycling our Stainless Steel Plates</h5>
                         </div>
                     </div>
+                    <div class="part-card">
+                        <div class="card-body card-hover pb-5">
+                            <img id="recycle-pics" src={mold1} alt=""/>
+                        </div>
+                    </div>
+
+              <div class="row mt-5">
+                    
                 <div class="col-xl-2 col-sm-6 mt-n7">
                     <div class="card-step-1">
                         <div class="d-flex p-5">
@@ -417,15 +406,6 @@ const SingleUse = () => {
                 </div>
               </div>  
               <div class="row mt-5">
-
-                    <div class="part-card">
-                        <div class="card-body card-hover pb-5">
-                            <div>
-                            </div>
-                            <img id="recycle-pics" src={mold2} alt=""/>
-                            <h5 class="h4 lh-130 mb-3">Recycling our Poly Carbonate Molds</h5>
-                         </div>
-                    </div>
                     <div class="col-xl-2 col-sm-6">
                     <div class="card-step-2">
                         <div class="d-flex p-5">

@@ -84,22 +84,8 @@ class Footer extends Component {
                         <ul id="bottom-footer" class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
                         <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link id="footer-item" class="nav-link" exact to ="/">
-                            Terms
-                        </Link>
-                    </li>
-                    </Router>
-                            <Router forceRefresh>
-                    <li class="nav-item">
-                        <Link id="footer-item" class="nav-link" exact to ="/">
-                            Privacy
-                        </Link>
-                    </li>
-                    </Router>
-                            <Router forceRefresh>
-                    <li class="nav-item ">
-                        <Link id="footer-item" class="nav-link" exact to ="/">
-                            Cookies
+                        <Link id="footer-item" class="nav-link" exact to ="/contact">
+                            Contact Us
                         </Link>
                     </li>
                     </Router>
