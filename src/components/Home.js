@@ -37,7 +37,7 @@ rootElement.scrollTo({
     </div>
   </div>        
   <div class="intro-image">
-          <img src={blueReamer} alt="" />
+          <img src={blueReamer} alt=""/>
   </div>
 </div>
 <div class="home-arrow">

@@ -369,7 +369,7 @@ strong {
 
   img {
     display: block;
-    width: 96%;
+    width: 196%;
     height: auto;
     transform-origin: 50% 100%;
     transform: translateZ(-5rem);
@@ -747,8 +747,8 @@ strong {
 .intro-image {
   grid-row: 1;
   grid-column: 2;
-  margin-top: 17%;
-  margin-left: 15rem;
+  padding-top: 2%;
+  margin-left: 5rem;
 
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
 
@@ -764,7 +764,7 @@ strong {
   img {
     display: block;
     height: auto;
-    width: 50%;
+    width: 75%;
   }
 }
 .homeWholePage {
