@@ -145,68 +145,93 @@ const SingleUse = () => {
         </div>
         </div>
         </section>
+        <section>
       <div class="benefits-single-use">
+
         <h1 class ="mb-4 text-white">With Osteofit's single-use features, you'll see a : </h1>
         <hr className = "horz-line4" /> 
-        <div>
-        <ScrollAnimation animateIn="fadeIn">
- 
-          <h3>
-            <span className = "increase-title">
-            Decrease in:
-            </span>
-            <span className = "decrease-title">Increase in:
-            </span>
-          </h3>
-          </ScrollAnimation>
- 
+        <div className="row mx-lg-n4">
+          <div className="col-lg-4 col-md-6 px-lg-4">
+        <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-disease"></i>
+                  </div>
+              <div>
+                <span class="h6">Risk of Infection</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fab fa-hotjar"></i>
+                  </div>
+              <div>
+                <span class="h6">Heat Generation</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-dollar-sign"></i>
+                  </div>
+              <div>
+                <span class="h6">Cleaning Expenses</span>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          
         </div>
         <div>
-        <div className="benefits">
-        <ScrollAnimation animateIn="fadeIn">
- 
-            <h2>
-              <span>
-              <i class="fas fa-disease circle-icon-benefits1"></i>
-              Risk of Infection
-              <i class="fas fa-angle-double-up circle-icon-benefits2"></i>
- 
-              Productivity
-              </span>
-            </h2>
-            </ScrollAnimation>
- 
+        <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-angle-double-up"></i>
+                  </div>
+              <div>
+                <span class="h6">Productivity</span>
+              </div>
+              </div>
+            </div>
           </div>
-          <div className="benefits">
-          <ScrollAnimation animateIn="fadeIn">
- 
-            <h2>
-              <span>
-              <i class="fab fa-hotjar circle-icon-benefits1"></i>
-              Heat Generation
-              <i class="fas fa-bullseye circle-icon-benefits2 accuracy-icon"></i>
-              Accuracy
-              </span>
-            </h2>
-            </ScrollAnimation>
- 
+          <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-dollar-sign revenue-icon"></i>
+                  </div>
+              <div>
+                <span class="h6">Revenue</span>
+              </div>
+              </div>
+            </div>
           </div>
-          <div className="benefits">
-          <ScrollAnimation animateIn="fadeIn">
- 
-            <h2>
-              <span>
-              <i class="fas fa-dollar-sign circle-icon-benefits1"></i>
-              Cleaning Expenses
-              <i class="fas fa-dollar-sign circle-icon-benefits2 revenue-icon"></i>
-              Revenue
-              </span>
-            </h2>
-            </ScrollAnimation>
- 
-          </div>
-        </div>
+          <div className="col-lg-7 col-md-6 px-lg-4">
+            <div className="shadow-none">
+              <div className="p-3 d-flex">
+                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <i class="fas fa-bullseye accuracy-icon"></i>
+                  </div>
+              <div>
+                <span class="h6">Accuracy</span>
+              </div>
+              </div>
+            </div>
+          </div> 
       </div>
+      </div>
+      </div>
+      </section>
       <section class="timeline">
       <h1 class ="mb-4 timeline-title">A Process That Takes Less Time And Is More Effective! </h1>
         <hr className = "horz-line4" />
