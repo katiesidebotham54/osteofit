@@ -1,8 +1,6 @@
 import React from "react";
 import mold1 from '../images/Osteofitmodelpart3.PNG';
-import mold2 from '../images/Osteofitmodelpart4.PNG';
 import graph from '../images/OsteofitGraph.png'
-import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/mainStyle.scss';
 import '../styling/singleUseStyle.scss';
 import '../styling/timelines.scss';

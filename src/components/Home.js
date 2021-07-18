@@ -1,5 +1,4 @@
 import React from "react";
-import Product from "../images/product.png"
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/mainStyle.scss'
