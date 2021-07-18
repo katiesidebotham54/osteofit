@@ -858,3 +858,22 @@ strong {
 b {
   color: $lightblue;
 }
+
+.shape-container-home {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: $lightgray1;
+  fill: white;
+  z-index: 2;
+  transform: translateZ(0);
+  overflow: hidden;
+  .shape-container-home svg {
+    display: block;
+    fill: white;
+    pointer-events: none;
+    vertical-align: baseline;
+  }
+}

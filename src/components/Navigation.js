@@ -11,6 +11,12 @@ import Contact from './Contact'
 import About from './About'
 import Product from './Product'
 import SingleUse from './SingleUse'
+import Patents from "./Patents"
+import IFU from "./IFU"
+import Patent9101 from '../documents/Patent9101'
+import Patent8518 from '../documents/Patent8518'
+import Patent8556 from '../documents/Patent8556'
+import Patent9463 from '../documents/Patent9463'
 import '../styling/mainStyle.scss'
 
 
@@ -48,6 +54,22 @@ class Navigation extends Component{
                         </Link>
                     </li>
                     </Router>
+                    <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/ifu">
+                            IFU
+                        </Link>
+                    </li>
+                    </Router>
+
+                    <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link" exact to ="/patents">
+                            Patents
+                        </Link>
+                    </li>
+                    </Router>
+
                 </ul>
                 <Router forceRefresh>
                 <Link class="navbar-btn btn btn-sm btn-primary d-lg-inline-block " exact to="/contact">Contact Us</Link>
@@ -90,6 +112,52 @@ class Navigation extends Component{
                             </Route>
                         </Switch>
                     </Router>
+
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/ifu">
+                                <IFU />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/patents">
+                                <Patents />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/patent9101368">
+                                <Patent9101 />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/patent8518043">
+                                <Patent8518 />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/patent8556897">
+                                <Patent8556 />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/patent9463028">
+                                <Patent9463 />
+                            </Route>
+                        </Switch>
+                    </Router>
+
+
+
             </div>
         )
     }

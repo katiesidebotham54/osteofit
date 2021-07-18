@@ -233,7 +233,7 @@ img {
   border-style: none;
 }
 #nav-bar-logo {
-  max-width: 55%;
+  max-width: 81%;
 }
 svg {
   overflow: hidden;
@@ -4561,9 +4561,6 @@ input[type="button"].btn-block {
 .nav-tabs {
   border-bottom: 1px solid #e2e8f0;
 }
-.nav-tabs .nav-item {
-  margin-bottom: -1px;
-}
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0;
@@ -4603,15 +4600,13 @@ input[type="button"].btn-block {
 
 .nav-fill .nav-item {
   text-align: center;
-
   flex: 1 1 auto;
 }
 
 .nav-justified .nav-item {
   text-align: center;
-
   flex-basis: 0;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .tab-content > .tab-pane {
@@ -4624,7 +4619,8 @@ input[type="button"].btn-block {
 
 .navbar {
   display: flex;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
+  flex-direction: column;
   align-items: center;
 }
 .navbar .container,
@@ -4634,10 +4630,7 @@ input[type="button"].btn-block {
 .navbar .container-lg,
 .navbar .container-xl {
   display: flex;
-
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -4684,9 +4677,9 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
-  flex-basis: 183%;
-  flex-grow: 1;
+  flex-grow: 3;
   align-items: center;
+  min-width: 75%;
 }
 
 .navbar-toggler {
@@ -4732,7 +4725,6 @@ input[type="button"].btn-block {
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-flow: row nowrap;
-    justify-content: flex-start;
   }
   .navbar-expand-sm .navbar-nav {
     flex-direction: row;
@@ -4775,7 +4767,6 @@ input[type="button"].btn-block {
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-flow: row nowrap;
-    justify-content: flex-start;
   }
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
@@ -4818,10 +4809,6 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-  }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
@@ -4863,7 +4850,6 @@ input[type="button"].btn-block {
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
-    justify-content: flex-start;
   }
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
@@ -18991,10 +18977,6 @@ textarea[resize="horizontal"] {
 }
 .navbar .container {
   position: relative;
-
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .navbar-nav .nav-link {
@@ -20893,10 +20875,6 @@ article p {
 }
 .navbar .container {
   position: relative;
-
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .navbar-nav .nav-link {
@@ -23241,4 +23219,19 @@ section {
 #footer-item:hover {
   color: $lightgrayblue3;
   cursor: pointer;
+}
+
+.ifu-section {
+  background: white !important;
+  min-height: 600px;
+  h5 {
+    margin-left: 166px;
+    text-align: center;
+  }
+  .card {
+    max-width: 550px;
+  }
+  .card-body {
+    min-height: 333px;
+  }
 }

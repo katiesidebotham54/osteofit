@@ -22,7 +22,7 @@ class Footer extends Component {
                     <div class="col-lg-4 mb-5 mb-lg-0">
                     <Router forceRefresh>
                         <Link exact to ="/">
-                            <img alt="Image placeholder" src={osteofitWhiteLogo} id="footer-logo"/>
+                            <img alt="" src={osteofitWhiteLogo} id="footer-logo"/>
                             </Link>
                         </Router>
 
@@ -53,13 +53,22 @@ class Footer extends Component {
 
                     </div>
                     </Router>
+                    <Router forceRefresh>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                    <Link exact to ="/patents">
+                        <h6 class="heading mb-3">Patents</h6>
+                        </Link>
+
+                    </div>
+                    </Router>
+
 
                 </div>
                 <hr class="divider divider-fade divider-dark my-4"/>
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2021 Osteofit LLC. All rights reserved
+                            &copy; 2021 Osteofit LLC. Website by K&B Design
                         </div>
                     </div>
                     <div class="col-md-6">
