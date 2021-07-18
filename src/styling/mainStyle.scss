@@ -5456,7 +5456,7 @@ a.badge-secondary.focus {
 
 .badge-success {
   color: $lightgray1;
-  background-color: #5cc9a7;
+  background-color: $lightgrayblue3;
 }
 a.badge-success:hover,
 a.badge-success:focus {
@@ -5501,7 +5501,7 @@ a.badge-warning.focus {
 
 .badge-danger {
   color: $lightgray1;
-  background-color: #f25767;
+  background-color: $darkblue;
 }
 a.badge-danger:hover,
 a.badge-danger:focus {
@@ -17904,7 +17904,9 @@ svg {
 }
 
 #footer-logo {
-  width: 30%;
+  width: 57%;
+  margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 .footer-light .heading {

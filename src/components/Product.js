@@ -1,6 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-
 import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
 import modelPart3 from "../images/Osteofitmodelpart4.PNG"
@@ -152,7 +150,7 @@ const Product = () => {
                       <div class="col-lg-6">
                         <div class="mb-0 ml-lg-5">
                             <div class="p-2">
-                            <img id="problem-pic" alt="Image placeholder" src={mainProduct}/>
+                            <img id="problem-pic" alt="" src={mainProduct}/>
                             </div>
                         </div>
                     </div>

@@ -470,10 +470,11 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
+                    <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>  
+
                 </div>
-          
-                    
         </div>
+
 </section>
  
 

@@ -19,7 +19,7 @@ class Footer extends Component {
             </div>
             <div class="footer-container pt-4">
                 <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-2 mb-5 mb-lg-0">
                     <Router forceRefresh>
                         <Link exact to ="/">
                             <img alt="" src={osteofitWhiteLogo} id="footer-logo"/>
@@ -53,6 +53,15 @@ class Footer extends Component {
 
                     </div>
                     </Router>
+                    <Router forceRefresh>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                    <Link exact to ="/ifu">
+                        <h6 class="heading mb-3">IFU</h6>
+                        </Link>
+
+                    </div>
+                    </Router>
+
                     <Router forceRefresh>
                     <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
                     <Link exact to ="/patents">

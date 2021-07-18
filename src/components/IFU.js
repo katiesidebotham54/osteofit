@@ -12,7 +12,7 @@ const IFU = () => {
                     <div class="col-lg-6">
                         <div class="card mb-0 ml-lg-5">
                             <div class="card-body p-2">
-                                <img alt="Image placeholder" class="img-fluid shadow rounded"/>
+                                <img alt="" class="img-fluid shadow rounded"/>
                             </div>
                         </div>
                     </div>
