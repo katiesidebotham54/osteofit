@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import osteofitlogo from '../images/osteofitLogo.png'
-import aboutUs from '../images/aboutUs.png'
 import '../styling/aboutStyle.scss'
 import '../styling/mainStyle.scss'
+import brownReamer from '../images/osteofitModelBrown1.png';
 
 
 const About = () => {
@@ -39,7 +39,7 @@ const About = () => {
         <div className="about-container">
           <figure class="item-content-about">
             <div class="item-img-about">
-              <img src={aboutUs} alt="" />
+              <img src={brownReamer} alt="" />
             </div>
               <ScrollAnimation animateIn="fadeIn">
               <p className="about-text">

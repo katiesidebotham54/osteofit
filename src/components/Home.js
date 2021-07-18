@@ -5,6 +5,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/mainStyle.scss'
 import '../styling/homeStyle.scss'
 import reamerCase from '../images/reamerCase.png'
+import blueReamer from '../images/osteofitModelBlue2.png';
+import greenReamer from '../images/osteofitModelGreen1.png';
 
 
 
@@ -35,7 +37,7 @@ rootElement.scrollTo({
     </div>
   </div>        
   <div class="intro-image">
-          <img src={Product} alt="" />
+          <img src={blueReamer} alt="" />
   </div>
 </div>
 <div class="home-arrow">
@@ -93,7 +95,7 @@ rootElement.scrollTo({
       <figure class="item-content group">
 
           <div class="item-img">
-              <img src={Product} alt="" />
+              <img src={greenReamer} alt="" />
           </div>
           <figcaption class="item-caption">
               <h2>Introducing Osteofit's Hollow Spherical Reamer for Acetabular Preparation: </h2>
