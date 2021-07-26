@@ -13,6 +13,7 @@ import Product from './Product'
 import SingleUse from './SingleUse'
 import Patents from "./Patents"
 import IFU from "./IFU"
+import Login from './Auth'
 import Patent9101 from '../documents/Patent9101'
 import Patent8518 from '../documents/Patent8518'
 import Patent8556 from '../documents/Patent8556'
@@ -27,7 +28,7 @@ class Navigation extends Component{
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
              <Router forceRefresh>
-                <Link exact to ="/">
+                <Link exact to ="/home">
                     <img id="nav-bar-logo" src={logo} alt=""/>
                 </Link>
             </Router>
@@ -79,7 +80,7 @@ class Navigation extends Component{
     </nav>
                     <Router forceRefresh>
                         <Switch>
-                            <Route exact path="/">
+                            <Route exact path="/home">
                                 <Home />
                             </Route>
                         </Switch>
@@ -155,6 +156,22 @@ class Navigation extends Component{
                             </Route>
                         </Switch>
                     </Router>
+                    
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/login">
+                                <Login />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
+                            <Route exact path="/">
+                                <Login />
+                            </Route>
+                        </Switch>
+                    </Router>
+
 
 
 

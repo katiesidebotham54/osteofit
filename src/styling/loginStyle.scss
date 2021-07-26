@@ -1,0 +1,37 @@
+$lightgray1: #dae1e7;
+$lightgray2: #9ca4ac;
+$lightgrayblue1: #94acc1;
+$lightgrayblue2: #8ea3bc;
+$lightgrayblue3: #758ca5;
+$lightgrayblue4: #5c84a3;
+$lightgrayblue5: #4a6888;
+$darkblue: #052032;
+$darkgray: #555555;
+
+.login-container {
+  background: white;
+  min-height: 400px;
+  margin-top: 9%;
+}
+
+.username input {
+  border: $darkblue;
+}
+
+.shape-container-login {
+  position: absolute;
+  top: 0%;
+  max-height: 256px;
+  width: 100%;
+  background: $darkblue;
+  fill: white;
+  z-index: 999;
+  transform: translateZ(0);
+  overflow: hidden;
+}
+.shape-container-login svg {
+  display: block;
+  height: 256px;
+  fill: white;
+  pointer-events: none;
+}
