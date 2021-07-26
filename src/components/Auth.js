@@ -18,7 +18,7 @@ const Auth = () => {
       const handleOnSubmit = (e) => {
         e.preventDefault()
         if(user=== admin ) {
-            history.push("/");
+            history.push("/home");
         } else alert("This site is under construction. Please return at a later date!");
         
       }
