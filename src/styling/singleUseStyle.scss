@@ -315,7 +315,6 @@ blockquote.speech {
 
 .comparison {
   position: relative;
-  height: 400px;
   .background-container {
     width: 90%;
     height: 550px;
@@ -422,28 +421,22 @@ ol.gradient-list {
 
 .circle-icon-benefits1 {
   background: rgb(255, 204, 0);
-  width: 70px;
-  height: 70px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   text-align: center;
-  line-height: 65px;
+  line-height: 58px;
   vertical-align: middle;
-  font-size: 40px;
-  margin-left: 15%;
-  margin-right: 4%;
 }
 
 .circle-icon-benefits2 {
   background: rgb(255, 204, 0);
-  width: 70px;
-  height: 70px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   text-align: center;
-  line-height: 70px;
+  line-height: 58px;
   vertical-align: middle;
-  font-size: 40px;
-  margin-left: 15%;
-  margin-right: 2.5%;
 }
 
 .benefits h2 {
@@ -564,52 +557,6 @@ ol.gradient-list {
   }
 }
 
-.paper4 {
-  span {
-    position: absolute;
-    text-align: center;
-  }
-  margin-left: 55%;
-}
-
-.paper3 {
-  span {
-    position: absolute;
-    text-align: center;
-  }
-  margin-left: 21%;
-  bottom: 0%;
-}
-
-.bottompapers2 h2 {
-  color: #555555;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.bottompapers2 {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  margin: 0;
-  background-color: #dae1e7;
-}
-
-.bottompapers2 p {
-  color: #555555;
-  font-weight: 400;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.paper3 .MuiButton-contained {
-  background-color: #57d75b;
-}
-
-.paper4 .MuiButton-contained {
-  background-color: #57d75b;
-}
-
 .osteofit-timeline-quote {
   position: absolute;
   color: #555555;
@@ -718,13 +665,6 @@ ol.gradient-list {
   left: 85%;
 }
 
-.p-3 {
-  background: #052032;
-  border-radius: 15px;
-  width: 70%;
-  margin-left: 15%;
-}
-
 .h6 {
   color: white;
 }
@@ -828,8 +768,30 @@ ol.gradient-list {
   }
 }
 
-#recycle-pics {
-  width: 40%;
+#osteofitModel1 {
+  max-width: 100%;
+  margin-top: 153%;
+}
+
+.top-row {
+  margin-left: 5%;
+}
+
+#osteofitModel2 {
+  max-width: 126%;
+  margin-top: -111%;
+}
+
+.bottom-row {
+  margin-left: 20%;
+}
+
+.bottom-column {
+  max-width: 23.6667%;
+}
+
+.top-column {
+  max-width: 23.6667%;
 }
 
 .part-card {
@@ -881,4 +843,44 @@ ol.gradient-list {
 
 #recycle-icon {
   color: rgb(20, 89, 20);
+}
+
+.icon-shape-su i {
+  font-size: 2rem;
+}
+
+.px-lg-4-su {
+  padding-left: 12.5rem;
+}
+.single-use-title {
+  padding-left: 57px;
+}
+
+.recycle-img-1 {
+  min-width: 100%;
+}
+
+.recycle-img-2 {
+  min-width: 130%;
+}
+.recycle-img-3 {
+  min-width: 100%;
+}
+.recycle-img-4 {
+  max-width: 80%;
+}
+.recycle-img-5 {
+  max-width: 130%;
+}
+.recycle-img-6 {
+  max-width: 120%;
+}
+
+.benefits-boxes {
+  padding-left: 10%;
+  max-width: 90%;
+  h6,
+  p {
+    color: $darkblue;
+  }
 }

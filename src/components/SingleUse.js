@@ -1,24 +1,21 @@
 import React from "react";
-import mold1 from '../images/Osteofitmodelpart3.PNG';
 import graph from '../images/OsteofitGraph.png'
 import '../styling/mainStyle.scss';
 import '../styling/singleUseStyle.scss';
 import '../styling/timelines.scss';
+import osteofitSteel from '../images/Osteofitmodelpart1.PNG';
+import osteofitCore from '../images/Osteofitmodelpart4.PNG';
+import coreRecycle2 from '../images/coreRecycle2.png';
+import coreRecycle3 from '../images/coreRecycle3.png';
+import steelRecycle2 from '../images/steelRecycle2.png';
+import steelRecycle3 from '../images/steelRecycle3.png';
+import osteofitGrey from "../images/osteofitModelGrey1.png"
+
 
 
 const SingleUse = () => {
   
   
-  document.getElementById("scrollToTopBtn")
-  var rootElement = document.documentElement
-  
-  function handleBackToTopBtn(e) {
-  e.preventDefault()
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-}
   return (
     
     <div className="SingleUse">
@@ -48,17 +45,17 @@ const SingleUse = () => {
     </section>
     <section class="slice slice-lg" className="slice-chart">
       <div className="comparison">
-        <div className="row mx-lg-n4">
+        <div className="row mx-lg-n4 benefits-boxes">
           <div className="col-lg-4 col-md-6 px-lg-4">
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i class="fas fa-bullseye"></i>      
                   </div>
                 </div>
               <div>
-                <span class="h6">Always Accurate</span>
+                <span>Always Accurate</span>
                 <p class="text-sm text-muted mb-0">Precise Manufacturing Process</p>
               </div>
               </div>
@@ -68,12 +65,12 @@ const SingleUse = () => {
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i class="fas fa-icicles"></i>    
                   </div>
                 </div>
               <div>
-                <span class="h6">Always Sharp</span>
+                <span >Always Sharp</span>
                 <p class="text-sm text-muted mb-0">Cutting Teeth Are Always New</p>
               </div>
               </div>
@@ -83,13 +80,13 @@ const SingleUse = () => {
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i class="fas fa-dollar-sign"></i>   
 
                   </div>
                 </div>
               <div>
-                <span class="h6">Cost Effective</span>
+                <span >Cost Effective</span>
                 <p class="text-sm text-muted mb-0">Patented Tech Allows for Efficiency</p>
               </div>
               </div>
@@ -99,13 +96,13 @@ const SingleUse = () => {
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i id = "fire-icon" class="fas fa-fire"></i>  
 
                   </div>
                 </div>
               <div>
-                <span class="h6">Redueced OR Time</span>
+                <span >Redueced OR Time</span>
                 <p class="text-sm text-muted mb-0">The OR Cycle is open, use, discard</p>
               </div>
               </div>
@@ -115,11 +112,11 @@ const SingleUse = () => {
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i class="fas fa-hourglass-half"></i>                  </div>
                 </div>
               <div>
-                <span class="h6">Reduced Heat</span>
+                <span>Reduced Heat</span>
                 <p class="text-sm text-muted mb-0">Cutting Teeth are Never Dull</p>
               </div>
               </div>
@@ -129,12 +126,12 @@ const SingleUse = () => {
             <div className="card shadow-none">
               <div className="p-3 d-flex">
                 <div>
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                  <div className="icon icon-shape rounded-circle bg-warning mr-4">
                   <i id = "recycle-icon" class="fas fa-recycle"></i>
                 </div>
                 </div>
               <div>
-                <span class="h6">100% Recyclable</span>
+                <span>100% Recyclable</span>
                 <p class="text-sm text-muted mb-0">Used, Reprocessed, and Remanufactured</p>
               </div>
               </div>
@@ -142,31 +139,44 @@ const SingleUse = () => {
           </div>
         </div>
         </div>
-        </section>
-        <section>
-      <div class="benefits-single-use">
+      </section>
+      <section class="slice slice-lg">
 
+      <div class="benefits-single-use">
         <h1 class ="mb-4 text-white">With Osteofit's single-use features, you'll see a : </h1>
         <hr className = "horz-line4" /> 
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-6 pr-lg-5 single-use-title">
+                    <h5 class="h5 lh-180 mb-3 text-white">
+                    Decrease in:                    
+                    </h5>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="h5 lh-180 text-white">
+                    Increase in:                    
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div className = "container">
         <div className="row mx-lg-n4">
           <div className="col-lg-4 col-md-6 px-lg-4">
         <div className="col-lg-7 col-md-6 px-lg-4">
-            <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fas fa-disease"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fas fa-disease circle-icon-benefits1"></i>
                   </div>
               <div>
                 <span class="h6">Risk of Infection</span>
-              </div>
               </div>
             </div>
           </div>
           <div className="col-lg-7 col-md-6 px-lg-4">
             <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fab fa-hotjar"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fab fa-hotjar circle-icon-benefits1"></i>
                   </div>
               <div>
                 <span class="h6">Heat Generation</span>
@@ -177,8 +187,8 @@ const SingleUse = () => {
           <div className="col-lg-7 col-md-6 px-lg-4">
             <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fas fa-dollar-sign"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fas fa-dollar-sign circle-icon-benefits1"></i>
                   </div>
               <div>
                 <span class="h6">Cleaning Expenses</span>
@@ -190,11 +200,11 @@ const SingleUse = () => {
           
         </div>
         <div>
-        <div className="col-lg-7 col-md-6 px-lg-4">
+        <div className="col-lg-7 col-md-6 px-lg-4-su">
             <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fas fa-angle-double-up"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fas fa-angle-double-up circle-icon-benefits2"></i>
                   </div>
               <div>
                 <span class="h6">Productivity</span>
@@ -202,11 +212,11 @@ const SingleUse = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4">
+          <div className="col-lg-7 col-md-6 px-lg-4-su">
             <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fas fa-dollar-sign revenue-icon"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fas fa-dollar-sign revenue-icon circle-icon-benefits2"></i>
                   </div>
               <div>
                 <span class="h6">Revenue</span>
@@ -214,11 +224,11 @@ const SingleUse = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4">
+          <div className="col-lg-7 col-md-6 px-lg-4-su">
             <div className="shadow-none">
               <div className="p-3 d-flex">
-                  <div className="icon icon-shape rounded-circle bg-warning text-white mr-4">
-                  <i class="fas fa-bullseye accuracy-icon"></i>
+                  <div className="icon icon-shape-su rounded-circle text-white mr-4">
+                  <i class="fas fa-bullseye accuracy-icon circle-icon-benefits2"></i>
                   </div>
               <div>
                 <span class="h6">Accuracy</span>
@@ -229,7 +239,8 @@ const SingleUse = () => {
       </div>
       </div>
       </div>
-      </section>
+      </div>
+    </section>
       <section class="timeline">
       <h1 class ="mb-4 timeline-title">A Process That Takes Less Time And Is More Effective! </h1>
         <hr className = "horz-line4" />
@@ -240,12 +251,12 @@ const SingleUse = () => {
         <div class="input-flex-container">
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info">
-            <span class="step">Step 1</span>
+            <span class="step">Separated</span>
             <span class="label">Receive Reamer</span>
           </div>
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info">
-            <span class="step">Step 2</span>
+            <span class="step">Crushed</span>
             <span class="label">Cleaned</span>
           </div>
           <input type="radio" name="timeline-dot" checked/>
@@ -290,12 +301,12 @@ const SingleUse = () => {
         <div class="input-flex-container osteofit-timeline" >
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info osteofit-dot">
-            <span class="step">Step 1</span>
+            <span class="step">Separated</span>
             <span class="label">Receive Reamer</span>
           </div>
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info osteofit-dot">
-            <span class="step">Step 2</span>
+            <span class="step">Crushed</span>
             <span class="label">Used in OR</span>
           </div>
           <input type="radio" name="timeline-dot" checked/>
@@ -369,114 +380,95 @@ const SingleUse = () => {
                     </div>
                 </div>
             </div>
-                    <div class="part-card">
-                        <div class="card-body card-hover pb-5">
-                            <img id="recycle-pics" src={mold1} alt=""/>
+            <div class="row mt-5 top-row">
+                    <div class="col-xl-2 col-sm-6 mt-n7 top-column">
+                    <img id="osteofitModel1" src={osteofitGrey} alt=""/>
+                      </div>
+                      <div class="col-xl-2 col-sm-6 mt-n7 top-column">
+                        <div class="card-step-1">
+                            <div class="d-flex p-5">
+                                <div>
+                                    <span class="badge badge-warning badge-pill">1</span>
+                                </div>
+                                <div class="pl-4">
+                                    <h5 class="lh-130">Separated</h5>
+                                  <img src={osteofitSteel} alt="" class="recycle-img-1 rounded-lg img-fluid"/>           
+                                  </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="part-card">
-                        <div class="card-body card-hover pb-5">
-                            <img id="recycle-pics" src={mold1} alt=""/>
+                    <div class="col-xl-2 col-sm-6 mt-sm-n7 top-column">
+                        <div class="card-step-1">
+                            <div class="d-flex p-5">
+                                <div>
+                                    <span class="badge badge-success badge-pill">2</span>
+                                </div>
+                                <div class="pl-4">
+                                    <h5 class="lh-130">Crushed</h5>
+                                    <img src={steelRecycle2} alt="" class="recycle-img-2 rounded-lg img-fluid"/>           
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-              <div class="row mt-5">
-                    
-                <div class="col-xl-2 col-sm-6 mt-n7">
-                    <div class="card-step-1">
+                    <div class="col-xl-2 col-md-12 col-sm-6 mt-xl-n7 top-column">
+                        <div class="card-step-1">
+                            <div class="d-flex p-5">
+                                <div>
+                                    <span class="badge badge-danger badge-pill">3</span>
+                                </div>
+                                <div class="pl-3">
+                                    <h5 class="lh-130">Compacted</h5>
+                                    <img src={steelRecycle3} alt="" class="recycle-img-3 rounded-lg img-fluid"/>           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>                
+                  <div class="row bottom-row">
+                    <div class="col-xl-2 col-sm-6 bottom-column">
+                    <div class="card-step-2">
                         <div class="d-flex p-5">
                             <div>
                                 <span class="badge badge-warning badge-pill">1</span>
                             </div>
                             <div class="pl-4">
-                                <h5 class="lh-130">Step 1</h5>
-                                <p class="text-muted mb-0">
-                                    Material are finely grounded & shredded
-                                </p>
+                                <h5 class="lh-130">Separated</h5>
+                                <img src={osteofitCore} alt="" class="recycle-img-4 rounded-lg img-fluid"/>           
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-sm-6 mt-sm-n7">
-                    <div class="card-step-1">
+                <div class="col-xl-2 col-sm-6 bottom-column">
+                    <div class="card-step-2">
                         <div class="d-flex p-5">
                             <div>
                                 <span class="badge badge-success badge-pill">2</span>
                             </div>
                             <div class="pl-4">
-                                <h5 class="lh-130">Step 2</h5>
-                                <p class="text-muted mb-0">
-                                    Magnets used to sepearate material
-                                </p>
+                                <h5 class="lh-130">Crushed</h5>
+                                <img  src={coreRecycle2} alt="" class="recycle-img-5 rounded-lg img-fluid"/>           
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-12 col-sm-6 mt-xl-n7">
-                    <div class="card-step-1">
+                <div class="col-xl-2 col-md-12 col-sm-6 bottom-column">
+                    <div class="card-step-2">
                         <div class="d-flex p-5">
                             <div>
                                 <span class="badge badge-danger badge-pill">3</span>
                             </div>
                             <div class="pl-3">
-                                <h5 class="lh-130">Step 3</h5>
-                                <p class="text-muted mb-0">
-                                    Sent to recycling company for processing
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>  
-              <div class="row mt-5">
-                    <div class="col-xl-2 col-sm-6">
-                    <div class="card-step-2">
-                        <div class="d-flex p-5">
-                            <div>
-                                <span class="badge badge-warning badge-pill">1</span>
-                            </div>
-                            <div class="pl-4">
-                                <h5 class="lh-130">Step 1</h5>
-                                <p class="text-muted mb-0">
-                                Material are finely grounded & shredded
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-sm-6">
-                    <div class="card-step-2">
-                        <div class="d-flex p-5">
-                            <div>
-                                <span class="badge badge-success badge-pill">2</span>
-                            </div>
-                            <div class="pl-4">
-                                <h5 class="lh-130">Step 2</h5>
-                                <p class="text-muted mb-0">
-                                Magnets used to sepearate material
-                                </p>
+                                <h5 class="lh-130">Shredded</h5>
+                                <img src={coreRecycle3} alt="" class="recycle-img-6 rounded-lg img-fluid"/>           
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-12 col-sm-6">
-                    <div class="card-step-2">
-                        <div class="d-flex p-5">
-                            <div>
-                                <span class="badge badge-danger badge-pill">3</span>
-                            </div>
-                            <div class="pl-3">
-                                <h5 class="lh-130">Step 3</h5>
-                                <p class="text-muted mb-0">
-                                Sent to recycling company for processing
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>  
+                <img id="osteofitModel2" src={osteofitGrey} alt=""/>
+              </div>
+               </div>
 
-                </div>
-        </div>
 
 </section>
  

@@ -350,8 +350,6 @@ strong {
 .item-content {
   position: relative;
   width: 100%;
-  max-width: 49rem;
-  margin: -18px 18%;
   display: flex;
   align-items: center;
   transform: translateZ(0);
@@ -360,8 +358,8 @@ strong {
 .item-img {
   position: relative;
   display: block;
-  width: 39%;
-  left: 35%;
+  width: 26%;
+  left: 10%;
   order: 1;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
