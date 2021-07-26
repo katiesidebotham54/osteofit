@@ -102,7 +102,7 @@ const SingleUse = () => {
                   </div>
                 </div>
               <div>
-                <span >Redueced OR Time</span>
+                <span >Reduced OR Time</span>
                 <p class="text-sm text-muted mb-0">The OR Cycle is open, use, discard</p>
               </div>
               </div>
