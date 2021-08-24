@@ -251,12 +251,12 @@ const SingleUse = () => {
         <div class="input-flex-container">
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info">
-            <span class="step">Separated</span>
+            <span class="step">Step 1</span>
             <span class="label">Receive Reamer</span>
           </div>
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info">
-            <span class="step">Crushed</span>
+            <span class="step">Step 2</span>
             <span class="label">Cleaned</span>
           </div>
           <input type="radio" name="timeline-dot" checked/>
@@ -301,12 +301,12 @@ const SingleUse = () => {
         <div class="input-flex-container osteofit-timeline" >
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info osteofit-dot">
-            <span class="step">Separated</span>
+            <span class="step">Step 1</span>
             <span class="label">Receive Reamer</span>
           </div>
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info osteofit-dot">
-            <span class="step">Crushed</span>
+            <span class="step">Step 2</span>
             <span class="label">Used in OR</span>
           </div>
           <input type="radio" name="timeline-dot" checked/>
