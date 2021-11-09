@@ -769,29 +769,18 @@ ol.gradient-list {
 }
 
 #osteofitModel1 {
-  max-width: 100%;
-  margin-top: 153%;
-}
-
-.top-row {
-  margin-left: 5%;
+  max-width: 126%;
+  margin-top: 219%;
 }
 
 #osteofitModel2 {
   max-width: 126%;
   margin-top: -111%;
+  margin-left: -45%;
 }
 
-.bottom-row {
-  margin-left: 20%;
-}
-
-.bottom-column {
-  max-width: 23.6667%;
-}
-
-.top-column {
-  max-width: 23.6667%;
+.chart-column {
+  max-width: 20%;
 }
 
 .part-card {
@@ -883,4 +872,9 @@ ol.gradient-list {
   p {
     color: $darkblue;
   }
+}
+
+.card-padding {
+  padding: 3rem;
+  padding-left: 1rem;
 }

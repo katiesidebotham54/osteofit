@@ -381,13 +381,13 @@ const SingleUse = () => {
                 </div>
             </div>
           <div class="container">
-            <div class="row mt-5 top-row">
-                    <div class="col-xl-2 col-sm-6 mt-n7 top-column">
+            <div class="row mt-5 ml-5">
+                    <div class="col-xl-2 col-sm-6 mt-n7 chart-column">
                     <img id="osteofitModel1" src={osteofitGrey} alt=""/>
                       </div>
-                      <div class="col-xl-2 col-sm-6 mt-n7 top-column">
+                      <div class="col-xl-2 col-sm-6 mt-n7 chart-column">
                         <div class="card-step-1">
-                            <div class="d-flex p-5">
+                            <div class="d-flex card-padding">
                                 <div>
                                     <span class="badge badge-warning badge-pill">1</span>
                                 </div>
@@ -398,9 +398,9 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-6 mt-sm-n7 top-column">
+                    <div class="col-xl-2 col-sm-6 mt-sm-n7 chart-column">
                         <div class="card-step-1">
-                            <div class="d-flex p-5">
+                            <div class="d-flex card-padding">
                                 <div>
                                     <span class="badge badge-success badge-pill">2</span>
                                 </div>
@@ -411,9 +411,9 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-12 col-sm-6 mt-xl-n7 top-column">
+                    <div class="col-xl-2 col-md-12 col-sm-6 mt-xl-n7 chart-column">
                         <div class="card-step-1">
-                            <div class="d-flex p-5">
+                            <div class="d-flex card-padding">
                                 <div>
                                     <span class="badge badge-danger badge-pill">3</span>
                                 </div>
@@ -424,11 +424,13 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-2 col-sm-6 chart-column"/>
                   </div>                
-                  <div class="row bottom-row">
-                    <div class="col-xl-2 col-sm-6 bottom-column">
+                  <div class="row ml-5">
+                  <div class="col-xl-2 col-sm-6 chart-column"/>
+                    <div class="col-xl-2 col-sm-6 chart-column">
                     <div class="card-step-2">
-                        <div class="d-flex p-5">
+                        <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-warning badge-pill">1</span>
                             </div>
@@ -439,9 +441,9 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-sm-6 bottom-column">
+                <div class="col-xl-2 col-sm-6 chart-column">
                     <div class="card-step-2">
-                        <div class="d-flex p-5">
+                        <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-success badge-pill">2</span>
                             </div>
@@ -452,9 +454,9 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-12 col-sm-6 bottom-column">
+                <div class="col-xl-2 col-md-12 col-sm-6 chart-column">
                     <div class="card-step-2">
-                        <div class="d-flex p-5">
+                        <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-danger badge-pill">3</span>
                             </div>
@@ -465,7 +467,7 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-12 col-sm-6">
+                <div class="col-xl-2 col-md-12 col-sm-6 chart-column align-items-center">
                 <img id="osteofitModel2" src={osteofitGrey} alt=""/>
               </div>
                </div>
