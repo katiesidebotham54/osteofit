@@ -14,7 +14,7 @@ import SingleUse from './SingleUse'
 import Patents from "./Patents"
 import IFU from "./IFU"
 import SellSheet from './SellSheet'
-//import Login from './Auth'
+import Login from './Auth'
 import Patent9101 from '../documents/Patent9101'
 import Patent8518 from '../documents/Patent8518'
 import Patent8556 from '../documents/Patent8556'
@@ -88,7 +88,7 @@ class Navigation extends Component{
     </nav>
                     <Router forceRefresh>
                         <Switch>
-                            <Route exact path="/">
+                            <Route exact path="/home">
                                 <Home />
                             </Route>
                         </Switch>
@@ -172,7 +172,7 @@ class Navigation extends Component{
                         </Switch>
                     </Router>
                     
-                    {/* <Router forceRefresh>
+                    <Router forceRefresh>
                         <Switch>
                             <Route exact path="/login">
                                 <Login />
@@ -186,7 +186,7 @@ class Navigation extends Component{
                             </Route>
                         </Switch>
                     </Router>
- */}
+
 
 
 
