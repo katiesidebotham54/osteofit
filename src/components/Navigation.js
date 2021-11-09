@@ -13,7 +13,8 @@ import Product from './Product'
 import SingleUse from './SingleUse'
 import Patents from "./Patents"
 import IFU from "./IFU"
-import Login from './Auth'
+import SellSheet from './SellSheet'
+//import Login from './Auth'
 import Patent9101 from '../documents/Patent9101'
 import Patent8518 from '../documents/Patent8518'
 import Patent8556 from '../documents/Patent8556'
@@ -26,9 +27,9 @@ class Navigation extends Component{
         return(
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
+        <div class="container container-nav">
              <Router forceRefresh>
-                <Link exact to ="/home">
+                <Link exact to ="/">
                     <img id="nav-bar-logo" src={logo} alt=""/>
                 </Link>
             </Router>
@@ -36,36 +37,43 @@ class Navigation extends Component{
                 <ul class="navbar-nav mt-4 mt-lg-0">
                 <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/about">
+                        <Link class="nav-link nav-font" exact to ="/about">
                             About Us
                         </Link>
                     </li>
                     </Router>
                     <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/product">
+                        <Link class="nav-link nav-font" exact to ="/product">
                             Our Product
                         </Link>
                     </li>
                     </Router>
                     <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/single-use">
+                        <Link class="nav-link nav-font" exact to ="/single-use">
                             Why Single-Use?
                         </Link>
                     </li>
                     </Router>
                     <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/ifu">
+                        <Link class="nav-link nav-font" exact to ="/ifu">
                             IFU
+                        </Link>
+                    </li>
+                    </Router>
+                    <Router forceRefresh>
+                    <li class="nav-item ">
+                        <Link class="nav-link nav-font" exact to ="/sell-sheet">
+                            Sell Sheet
                         </Link>
                     </li>
                     </Router>
 
                     <Router forceRefresh>
                     <li class="nav-item ">
-                        <Link class="nav-link" exact to ="/patents">
+                        <Link class="nav-link nav-font" exact to ="/patents">
                             Patents
                         </Link>
                     </li>
@@ -80,7 +88,7 @@ class Navigation extends Component{
     </nav>
                     <Router forceRefresh>
                         <Switch>
-                            <Route exact path="/home">
+                            <Route exact path="/">
                                 <Home />
                             </Route>
                         </Switch>
@@ -123,6 +131,13 @@ class Navigation extends Component{
                     </Router>
                     <Router forceRefresh>
                         <Switch>
+                            <Route exact path="/sell-sheet">
+                                <SellSheet />
+                            </Route>
+                        </Switch>
+                    </Router>
+                    <Router forceRefresh>
+                        <Switch>
                             <Route exact path="/patents">
                                 <Patents />
                             </Route>
@@ -157,7 +172,7 @@ class Navigation extends Component{
                         </Switch>
                     </Router>
                     
-                    <Router forceRefresh>
+                    {/* <Router forceRefresh>
                         <Switch>
                             <Route exact path="/login">
                                 <Login />
@@ -171,7 +186,7 @@ class Navigation extends Component{
                             </Route>
                         </Switch>
                     </Router>
-
+ */}
 
 
 

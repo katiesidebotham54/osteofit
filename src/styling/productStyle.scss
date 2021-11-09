@@ -200,7 +200,7 @@ $mx-width: 50rem;
 }
 
 .productCard {
-  margin-top: 125px;
+  margin-top: 65px;
 }
 
 .productBackground {
@@ -820,8 +820,8 @@ $hoverBgColor2: #0f4264;
   display: flex;
   align-items: center;
   .product-typing-demo {
-    width: 11ch;
-    animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+    width: 10ch;
+    animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -852,9 +852,9 @@ $hoverBgColor2: #0f4264;
 
 .solution-text {
   position: absolute;
-  max-width: 44%;
-  top: 42%;
-  left: 46%;
+  max-width: 42%;
+  top: 38%;
+  left: 50%;
   color: $darkblue;
 
   h5 {

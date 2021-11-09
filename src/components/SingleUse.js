@@ -55,8 +55,8 @@ const SingleUse = () => {
                   </div>
                 </div>
               <div>
-                <span>Always Accurate</span>
-                <p class="text-sm text-muted mb-0">Precise Manufacturing Process</p>
+                <span class="h5">Always Accurate</span>
+                <p class="text-sm text-muted mb-0 font-italic">Precise Manufacturing Process</p>
               </div>
               </div>
             </div>
@@ -70,8 +70,8 @@ const SingleUse = () => {
                   </div>
                 </div>
               <div>
-                <span >Always Sharp</span>
-                <p class="text-sm text-muted mb-0">Cutting Teeth Are Always New</p>
+                <span class="h5">Always Sharp</span>
+                <p class="text-sm text-muted mb-0 font-italic">Cutting Teeth Are Always New</p>
               </div>
               </div>
             </div>
@@ -86,8 +86,8 @@ const SingleUse = () => {
                   </div>
                 </div>
               <div>
-                <span >Cost Effective</span>
-                <p class="text-sm text-muted mb-0">Patented Tech Allows for Efficiency</p>
+                <span class="h5">Cost Effective</span>
+                <p class="text-sm text-muted mb-0 font-italic">Patented Tech Allows for Efficiency</p>
               </div>
               </div>
             </div>
@@ -102,8 +102,8 @@ const SingleUse = () => {
                   </div>
                 </div>
               <div>
-                <span >Reduced OR Time</span>
-                <p class="text-sm text-muted mb-0">The OR Cycle is open, use, discard</p>
+                <span class="h5">Reduced OR Time</span>
+                <p class="text-sm text-muted mb-0 font-italic">The OR Cycle is open, use, discard</p>
               </div>
               </div>
             </div>
@@ -116,8 +116,8 @@ const SingleUse = () => {
                   <i class="fas fa-hourglass-half"></i>                  </div>
                 </div>
               <div>
-                <span>Reduced Heat</span>
-                <p class="text-sm text-muted mb-0">Cutting Teeth are Never Dull</p>
+                <span class="h5">Reduced Heat</span>
+                <p class="text-sm text-muted mb-0 font-italic">Cutting Teeth are Never Dull</p>
               </div>
               </div>
             </div>
@@ -131,8 +131,8 @@ const SingleUse = () => {
                 </div>
                 </div>
               <div>
-                <span>100% Recyclable</span>
-                <p class="text-sm text-muted mb-0">Used, Reprocessed, and Remanufactured</p>
+                <span class="h5">100% Recyclable</span>
+                <p class="text-sm text-muted mb-0 font-italic">Used, Reprocessed, and Remanufactured</p>
               </div>
               </div>
             </div>
@@ -146,52 +146,52 @@ const SingleUse = () => {
         <h1 class ="mb-4 text-white">With Osteofit's single-use features, you'll see a : </h1>
         <hr className = "horz-line4" /> 
         <div class="container">
-            <div class="row mt-4">
+            <div class="row mt-4 text-center">
                 <div class="col-lg-6 pr-lg-5 single-use-title">
-                    <h5 class="h5 lh-180 mb-3 text-white">
+                    <h4 class="h4 lh-180 mb-3 ml-7 text-white">
                     Decrease in:                    
-                    </h5>
+                    </h4>
                 </div>
                 <div class="col-lg-6">
-                    <h5 class="h5 lh-180 text-white">
+                    <h4 class="h4 lh-180 ml-8 text-white">
                     Increase in:                    
-                    </h5>
+                    </h4>
                 </div>
             </div>
         </div>
-        <div className = "container">
+        <div className = "ml-17 container">
         <div className="row mx-lg-n4">
-          <div className="col-lg-4 col-md-6 px-lg-4">
-        <div className="col-lg-7 col-md-6 px-lg-4">
+          <div className="col-lg-6">
+        <div className="col-lg-6">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fas fa-disease circle-icon-benefits1"></i>
                   </div>
               <div>
-                <span class="h6">Risk of Infection</span>
+                <span class="h5 text-white">Risk of Infection</span>
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4">
+          <div className="col-lg-6">
             <div className="shadow-none">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fab fa-hotjar circle-icon-benefits1"></i>
                   </div>
               <div>
-                <span class="h6">Heat Generation</span>
+                <span class="h5 text-white">Heat Generation</span>
               </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4">
+          <div className="col-lg-6">
             <div className="shadow-none">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fas fa-dollar-sign circle-icon-benefits1"></i>
                   </div>
               <div>
-                <span class="h6">Cleaning Expenses</span>
+                <span class="h5 text-white">Cleaning Expenses</span>
               </div>
               </div>
             </div>
@@ -200,38 +200,38 @@ const SingleUse = () => {
           
         </div>
         <div>
-        <div className="col-lg-7 col-md-6 px-lg-4-su">
+        <div className="col-lg-6">
             <div className="shadow-none">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fas fa-angle-double-up circle-icon-benefits2"></i>
                   </div>
               <div>
-                <span class="h6">Productivity</span>
+                <span class="h5 text-white">Productivity</span>
               </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4-su">
+          <div className="col-lg-6">
             <div className="shadow-none">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fas fa-dollar-sign revenue-icon circle-icon-benefits2"></i>
                   </div>
               <div>
-                <span class="h6">Revenue</span>
+                <span class="h5 text-white">Revenue</span>
               </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 px-lg-4-su">
+          <div className="col-lg-6">
             <div className="shadow-none">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
                   <i class="fas fa-bullseye accuracy-icon circle-icon-benefits2"></i>
                   </div>
               <div>
-                <span class="h6">Accuracy</span>
+                <span class="h5 text-white">Accuracy</span>
               </div>
               </div>
             </div>
@@ -380,6 +380,7 @@ const SingleUse = () => {
                     </div>
                 </div>
             </div>
+          <div class="container">
             <div class="row mt-5 top-row">
                     <div class="col-xl-2 col-sm-6 mt-n7 top-column">
                     <img id="osteofitModel1" src={osteofitGrey} alt=""/>
@@ -468,6 +469,7 @@ const SingleUse = () => {
                 <img id="osteofitModel2" src={osteofitGrey} alt=""/>
               </div>
                </div>
+              </div>
 
 
 </section>

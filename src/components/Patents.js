@@ -17,7 +17,7 @@ const Patents = () => {
                         <h2 class="lead lh-180">Click the Patent No. for a link to the patent PDF!</h2>
                     </div>
                 </div>
-            </div>
+    </div>
   <ul class="responsive-table">
     <li class="table-header">
       <div class="col col-1">No.</div>

@@ -17,61 +17,86 @@ class Footer extends Component {
                     <polygon points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
-            <div class="footer-container pt-4">
-                <div class="row">
-                    <div class="col-lg-2 mb-5 mb-lg-0">
-                    <Router forceRefresh>
+            <div class="footer-container">
+            
+         <div class="row">
+         <div class="col-sm">   
+                <Router forceRefresh>
                         <Link exact to ="/">
                             <img alt="" src={osteofitWhiteLogo} id="footer-logo"/>
                             </Link>
-                        </Router>
+                </Router> 
+                 </div>
+        <div class="col-sm"/>
+        <div class="col-sm"/>
 
-                    </div>
-                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                    <Router forceRefresh>
+        </div>
+
+            <div class="row">
+            <div class="col-sm ml-5">
+                <h6>Address: 24 Sherwood Lane <br/>
+                Fairfield, New Jersey 07004</h6> 
+               
+             </div>
+
+                <div class="col-sm">
+                <Router forceRefresh>
                         <Link exact to ="/about">
                         <h6 class="heading mb-3">About Us</h6>
                         </Link>
-                        </Router>
-
-                    </div>
-
-                    <Router forceRefresh>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                </Router>
+                </div>
+                <div class="col-sm">
+                <Router forceRefresh>
                     <Link exact to ="/product">
                         <h6 class="heading mb-3">Our Product</h6>
                         </Link>
-
-                    </div>
                     </Router>
+                </div>
+            </div>            
+             <div class="row">
+             <div class="col-sm ml-5">
+                <h6>Phone: 872-210-8435</h6> 
+             </div>
 
-                    <Router forceRefresh>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                    <Link exact to ="/single-use">
-                        <h6 class="heading mb-3">Why Single Use?</h6>
-                        </Link>
-
-                    </div>
-                    </Router>
-                    <Router forceRefresh>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                    <Link exact to ="/ifu">
-                        <h6 class="heading mb-3">IFU</h6>
-                        </Link>
-
-                    </div>
-                    </Router>
-
-                    <Router forceRefresh>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+             <div class="col-sm">
+             <Router forceRefresh>
                     <Link exact to ="/patents">
                         <h6 class="heading mb-3">Patents</h6>
                         </Link>
+            </Router>
+            </div>
+            <div class="col-sm">
 
-                    </div>
+                <Router forceRefresh>
+                <Link exact to ="/sell-sheet">
+                    <h6 class="heading mb-3">Sell Sheet</h6>
+                    </Link>
+                </Router>
+            </div>
+            </div>
+
+
+
+             <div class="row">
+             <div class="col-sm ml-5"/>
+
+                <div class="col-sm mt-3">
+
+                    <Router forceRefresh>
+                    <Link exact to ="/single-use">
+                        <h6 class="heading mb-3">Why Single Use?</h6>
+                    </Link>
                     </Router>
+                </div>
+                <div class="col-sm mt-3">
 
-
+                    <Router forceRefresh>
+                    <Link exact to ="/ifu">
+                        <h6 class="heading mb-3">IFU</h6>
+                        </Link>
+                    </Router>
+                </div>
                 </div>
                 <hr class="divider divider-fade divider-dark my-4"/>
                 <div class="row align-items-center justify-content-md-between pb-4">
@@ -88,6 +113,8 @@ class Footer extends Component {
                             Contact Us
                         </Link>
                     </li>
+
+
                     </Router>
                         </ul>
                     </div>

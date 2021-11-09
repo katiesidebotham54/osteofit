@@ -4679,7 +4679,7 @@ input[type="button"].btn-block {
 .navbar-collapse {
   flex-grow: 3;
   align-items: center;
-  min-width: 75%;
+  min-width: 81%;
 }
 
 .navbar-toggler {
@@ -8760,6 +8760,11 @@ button.bg-white:focus {
 .ml-10,
 .mx-10 {
   margin-left: 10.5rem !important;
+}
+
+.ml-12,
+.mx-12 {
+  margin-left: 12rem !important;
 }
 
 .m-17 {
@@ -17904,9 +17909,9 @@ svg {
 }
 
 #footer-logo {
-  width: 57%;
+  width: 25%;
   margin-bottom: 10px;
-  margin-left: 40px;
+  margin-left: 28px;
 }
 
 .footer-light .heading {
@@ -20880,7 +20885,6 @@ article p {
 }
 
 .navbar-nav .nav-link {
-  font-size: 1.2rem;
   font-weight: 600;
 
   transition: all 0.15s linear;
@@ -23223,17 +23227,11 @@ section {
   cursor: pointer;
 }
 
-.ifu-section {
-  background: white !important;
-  min-height: 600px;
-  h5 {
-    margin-left: 166px;
-    text-align: center;
-  }
-  .card {
-    max-width: 550px;
-  }
-  .card-body {
-    min-height: 333px;
-  }
+.container-nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-font {
+  font-size: 20px;
 }

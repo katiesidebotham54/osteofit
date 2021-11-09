@@ -139,11 +139,11 @@ const Product = () => {
                       </div>
                     </div>       
                         <p class="problem-desc text-white my-4">
-                        The current procedure for reamers allows surgeons to use a singular 
-                        reamer for several surgeries. However, with each use, the reamer <b>dulls </b> 
+                        The current procedure for reamers involves a surgeon using a singular 
+                        reamer for multiple surgeries. However, with each use, the reamer dulls 
                         and requires more axial force by the surgeon. This leads to a <b>higher 
                         chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
-                        (which can kill the bone). It is evident that a reusable reamer is <b>NOT </b>the 
+                        Evidently, a reusable reamer is <b>NOT </b>the 
                         most effective and clean product for surgery.
                         </p>
                       </div>
@@ -173,9 +173,9 @@ const Product = () => {
 		      	</div>
 <p class="dialog-text">Click on each color to view the model!</p>
                     <div class="solution-text order-lg-2">
-                        <h5 class="h3">The Solution</h5>
+                        <h5 class="h3">The Solution: Osteofit!</h5>
                           <p class="lead my-4">
-                          The single-use acetabular reamers address the surgeon's needs of always having an accurate, sharp cutting tool for the acetabulum preparation. The surgeon uses a brand-new product each time, creating a simple procedural cycle.
+                          Osteofit's single-use acetabular reamers is an accurate, sharp cutting tool for the acetabulum preparation that will consistently address all of the surgeon's needs. The surgeon will use a brand-new product each time, creating a simple procedural cycle.
                           </p>
                     </div>
                     <div class="col-lg-6 order-lg-1">

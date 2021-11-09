@@ -85,7 +85,7 @@ const About = () => {
                             <div class="pt-4 pb-5">
                             <i class="fas fa-head-side-mask icon"></i>
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Orthopedic Surgeon</h5>
+                            <h5 class="h4 lh-130 mb-0">Orthopedic Surgeon</h5>
                             <h3>50+</h3>
 
                             <p class="text-muted mb-0">years of experience specializing in hip and knee replacement.</p>
@@ -175,7 +175,7 @@ const About = () => {
                             <span class="h1 text-center mb-0">Osteofit's Reamer</span>
                         </div>
                         <div class="card-body">
-                            <p>Click below to view our product and our recycling process!</p>
+                            <p>Click below to view our product and recycling process!</p>
                             <br />
                             <Router forceRefresh>
                           <Link class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3" exact to="/product">
