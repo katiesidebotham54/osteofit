@@ -27,9 +27,9 @@ const Home = () => {
       <div className="intro gradient-bckgrd" id ="intro">
    <div class="intro-title">
         <div>Introducing:<br/> OsteoFit</div>
-        <p class="lead text-white">
-                        We pride ourselves on our commitment to excellence and customer service.
-          </p>
+        <h4 class="text-white mt-5">
+             The Future of Single-Use Technology
+          </h4>
 
   </div>        
   <div class="intro-image">
