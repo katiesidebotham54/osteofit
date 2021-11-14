@@ -10,6 +10,10 @@ $lightblue: #297caf;
 $darkgray: #555555;
 $yellow: rgb(255, 204, 0);
 
+.text-black {
+  color: black;
+}
+
 .intro {
   display: grid;
   position: relative;
@@ -363,7 +367,7 @@ strong {
   order: 1;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
-  animation: floating 5s -1s infinite;
+  // animation: floating 5s -1s infinite;
 
   img {
     display: block;
@@ -394,7 +398,7 @@ strong {
   text-align: center;
   position: relative;
   float: right;
-  left: 23%;
+  left: 20%;
   width: 80%;
   //box-shadow: inset 0 0 0 1px red;
 }
@@ -407,23 +411,23 @@ strong {
   }
 }
 
-.item-caption p {
-  font-size: 87.5%;
-  line-height: 1.333;
-  padding: 30px;
-  letter-spacing: 1px;
+// .item-caption p {
+//   font-size: 87.5%;
+//   line-height: 1.333;
+//   padding: 30px;
+//   letter-spacing: 1px;
 
-  @include wide-m {
-    margin-bottom: 0.5rem;
-  }
-}
+//   @include wide-m {
+//     margin-bottom: 0.5rem;
+//   }
+// }
 
 .item-caption p a {
   position: relative;
   display: inline-block;
   margin-bottom: 0.3rem;
   margin-right: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   &:before {
     content: "";
@@ -658,10 +662,10 @@ strong {
   grid-column: 1 / -1;
   grid-row: 1;
 
-  font-family: "Raleway", serif;
-  color: $lightgrayblue5;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 400;
   font-size: 5vw;
-  font-weight: 600;
   width: 100%;
   z-index: 2;
 
@@ -699,48 +703,48 @@ strong {
   }
 }
 
-.intro-text {
-  // start
-  > .intro-text-inner {
-    display: inline-block;
-  }
-}
-
-.intro-osteofit,
-.intro-text {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-  // outline: 1px solid red;
-}
-
-// [class*='inner'] {
-//   outline: 1px solid blue;
+// .intro-text {
+//   // start
+//   > .intro-text-inner {
+//     display: inline-block;
+//   }
 // }
 
-.intro-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both;
-}
+// .intro-osteofit,
+// .intro-text {
+//   animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+//   // outline: 1px solid red;
+// }
 
-.intro-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both,
-    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
+// // [class*='inner'] {
+// //   outline: 1px solid blue;
+// // }
 
-.title {
-  animation: outer-left 1s 1s ease both;
-}
+// .intro-inner {
+//   display: inline-block;
+//   animation: inner-left 1s 1s ease both;
+// }
 
-.cafe {
-  // start
-  > .cafe-inner {
-    display: inline-block;
-  }
-}
+// .intro-inner {
+//   display: inline-block;
+//   animation: inner-left 1s 1s ease both,
+//     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+// }
 
-.mozart {
-  display: inline-block;
-}
+// .title {
+//   animation: outer-left 1s 1s ease both;
+// }
+
+// .cafe {
+//   // start
+//   > .cafe-inner {
+//     display: inline-block;
+//   }
+// }
+
+// .mozart {
+//   display: inline-block;
+// }
 
 .intro-image {
   grid-row: 1;
@@ -748,16 +752,16 @@ strong {
   padding-top: 2%;
   margin-left: 5rem;
 
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+  // animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
 
-  @keyframes image-in {
-    from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
+  // @keyframes image-in {
+  //   from {
+  //     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  //   }
+  //   to {
+  //     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  //   }
+  // }
 
   img {
     display: block;
@@ -770,6 +774,23 @@ strong {
   height: 100%;
   min-width: 1000px;
   min-height: 1000px;
+}
+.gradient-bckgrd {
+  background-image: linear-gradient(
+    180deg,
+    $lightgrayblue5,
+    $lightgrayblue3,
+    $lightgray1
+  );
+}
+
+.backwards-gradient {
+  background-image: linear-gradient(
+    180deg,
+    gray,
+    $lightgrayblue3,
+    $lightgrayblue5
+  );
 }
 .intro-text-inner {
   display: inline-block;

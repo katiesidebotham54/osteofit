@@ -34,7 +34,7 @@ class Footer extends Component {
 
             <div class="row">
             <div class="col-sm ml-5">
-                <h6>Address: 24 Sherwood Lane <br/>
+                <h6>24 Sherwood Lane <br/>
                 Fairfield, New Jersey 07004</h6> 
                
              </div>
@@ -79,7 +79,11 @@ class Footer extends Component {
 
 
              <div class="row">
-             <div class="col-sm ml-5"/>
+
+            <div class="col-sm ml-5">
+                <h6>osteofitllc.com</h6> 
+             </div>
+
 
                 <div class="col-sm mt-3">
 
@@ -102,7 +106,7 @@ class Footer extends Component {
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2021 Osteofit LLC. Website by K&B Design
+                            &copy; 2021 OsteoFit LLC. Website by K&B Design
                         </div>
                     </div>
                     <div class="col-md-6">

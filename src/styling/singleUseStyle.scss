@@ -33,7 +33,7 @@ $separator-space-top: 18px;
     overflow: hidden;
     border-right: 3px solid;
     color: $lightgray1;
-    font-family: "Raleway", sans-serif;
+    font-family: "Monserrat", sans-serif;
     font-size: 4em;
   }
 
@@ -382,7 +382,7 @@ ol.gradient-list {
       align-items: flex-end;
       content: counter(gradient-counter);
       display: flex;
-      font: 800 1.5em/1 "Raleway";
+      font: 800 1.5em/1 "Montserrat";
       justify-content: flex-end;
       padding: 0.125em 0.25em;
       z-index: 1;
@@ -412,7 +412,7 @@ ol.gradient-list {
     top: 20%;
     font-size: 40px;
     color: $darkblue;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   .timeline-title-osteofit {
     top: 60%;
@@ -461,7 +461,7 @@ ol.gradient-list {
 }
 
 .benefits-single-use h3 span {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-left: 22%;
   font-size: 40px;
   color: white;
@@ -501,7 +501,7 @@ ol.gradient-list {
   h2 {
     color: #fff;
     font-size: 70px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     background: linear-gradient(
       to right,
@@ -531,7 +531,7 @@ ol.gradient-list {
   height: 100px;
   width: 70%;
   margin-left: 18%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   h2 {
     color: #57d75b;
     text-align: center;
@@ -565,18 +565,18 @@ ol.gradient-list {
   left: 45%;
   letter-spacing: 1px;
   line-height: 2;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   b {
     margin-left: 12%;
     color: rgb(255, 204, 0);
     font-size: 33px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
 .contact-btn-2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   background: $yellow;
   color: $darkblue;
   cursor: pointer;
@@ -612,8 +612,8 @@ ol.gradient-list {
   }
 }
 .contact-btn-1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   background: $yellow;
   color: $darkblue;
   cursor: pointer;
@@ -657,7 +657,7 @@ ol.gradient-list {
   font-weight: 600;
   border-radius: 55px;
   margin-bottom: 50px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #0f4264;
   cursor: pointer;
   width: auto;
@@ -723,7 +723,7 @@ ol.gradient-list {
 }
 
 .singleUseRecycle {
-  height: 1000px;
+  height: 910px;
   background: white;
 }
 .singleUseStepsPart {
@@ -807,7 +807,6 @@ ol.gradient-list {
   border-radius: 0.75rem;
   background-color: #dae1e7;
   background-clip: border-box;
-  margin-top: 95px;
 }
 
 .card-step-2 {
@@ -846,14 +845,14 @@ ol.gradient-list {
 }
 
 .recycle-img-1 {
-  min-width: 100%;
+  min-width: 101%;
 }
 
 .recycle-img-2 {
-  min-width: 130%;
+  min-width: 118%;
 }
 .recycle-img-3 {
-  min-width: 100%;
+  max-width: 80%;
 }
 .recycle-img-4 {
   max-width: 80%;

@@ -69,8 +69,7 @@ const Contact = () => {
   return (
     <div className = 'Contact'>
     <div className="contact-container">
-      <h1 className = "form-title">Get in Touch!</h1>
-      <p className = "contact-para">For all questions and inquiries, please use the form below.</p>
+      <h1 className = "form-title">Get in Touch</h1>
       <form id="form" onSubmit={handleOnSubmit}>
       <div className = "f_name">
         <input

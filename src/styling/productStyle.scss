@@ -820,13 +820,10 @@ $hoverBgColor2: #0f4264;
   display: flex;
   align-items: center;
   .product-typing-demo {
-    width: 10ch;
-    animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
     color: $lightgray1;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2em;
   }
 

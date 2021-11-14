@@ -21,10 +21,10 @@ const About = () => {
             <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
                     <h1 class="text-white mb-4">
-                        Osteofit is an orthopaedic company specializing in single-use, sterile medical reamers
+                        OsteoFit is an orthopedic company specializing in single-use sterile medical reamers
                     </h1>
                     <p class="lead text-white">
-                        We pride ourselves on our commitment to excellence, as well as our ability to deliver for our customers.
+                        ...commitment to excellence and customer service.
                     </p>
                 </div>
             </div>
@@ -43,11 +43,11 @@ const About = () => {
             </div>
               <ScrollAnimation animateIn="fadeIn">
               <p className="about-text">
-              OsteoFit is a newly formed company specializing in <b>single-use 
-              sterile medical reamers</b>. Our company's management has over <b>100
-              years</b> of experience in human medical orthopedic design and
+              OsteoFit is a newly formed company specializing in single-use 
+              sterile medical reamers. Our company's management has over 100
+              years of experience in human medical orthopedic design and
               manufacturing of implants and instruments. Our mission is to combine  
-              <b> experience</b> from <b>orthopedic</b> surgery, <b>engineering</b> and <b>manufacturing </b>
+               experience from orthopedic surgery, engineering and manufacturing
               technology to provide cost-effective surgical tools with improved effectiveness, 
               safety and environmentally-friendly design.
               </p>
@@ -55,13 +55,13 @@ const About = () => {
               </ScrollAnimation>
           </figure>
         </div>
-        <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary gradient-bckgrd">
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-6">
                     <h2 class=" mt-4">Our Team</h2>
                     <div class="mt-2">
-                        <p class="lead lh-180">With over 100 years total of experience, we are dedicated to making successful products!</p>
+                        <p class="lead lh-180">With over 100 years of experience, we are dedicated to making successful products!</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const About = () => {
                             <h5 class="h4 lh-130 mb-3">Designer</h5>
                             <h3>40+</h3>
 
-                            <p class="text-muted mb-0">years of experience in design and development of orthopedic implants working with major OEMs.</p>
+                            <p class="text-muted mb-0">years of experience in the development of orthopedic implants working with OEMs.</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const About = () => {
         </div>
     </section>
         <ScrollAnimation animateIn="fadeIn">
-        <section>
+        <section class="gradient-bckgrd" >
 
         <div class="checkbox">
           <div class="checkbox1">
@@ -140,7 +140,7 @@ const About = () => {
         <div className="checkbox">
           <div class="checkbox2">
             <h1>
-              Technology Covered By 4 Patents
+              Technology Covered by 4 Patents
               <svg
                 class="checkmark2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,10 +172,10 @@ const About = () => {
                 <div class="col-lg-4 col-md">
                     <div class="card card-pricing text-center px-3 hover-scale-110">
                         <div class="card-header py-5 border-0 delimiter-bottom">
-                            <span class="h1 text-center mb-0">Osteofit's Reamer</span>
+                            <span class="h1 text-center mb-0">OsteoFit Reamer</span>
                         </div>
                         <div class="card-body">
-                            <p>Click below to view our product and recycling process!</p>
+                            <p>Click below to view our product and recycling process</p>
                             <br />
                             <Router forceRefresh>
                           <Link class="btn btn-sm btn-warning hover-translate-y-n3 hover-shadow-lg mb-3" exact to="/product">
@@ -191,7 +191,7 @@ const About = () => {
                             <span class="h1 text-white text-center mb-0">Have a question?</span>
                         </div>
                         <div class="card-body">
-                        <p class = "right-para">Click below for questions, comments, or inquieries!</p>
+                        <p class = "right-para">Click below for questions, comments, or inquiries</p>
                         <br />
                         <Router forceRefresh>
                           <Link class="btn btn-sm btn-white hover-translate-y-n3 hover-shadow-lg mb-3" exact to="/contact">

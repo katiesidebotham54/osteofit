@@ -24,16 +24,9 @@ rootElement.scrollTo({
     return (
       <div class = "homeWholePage">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-      <div className="intro" id ="intro">
- <div class="intro-title">
-    <div class="title-inner">
-      <div class="intro-text">
-        <div class="intro-text-inner">Introducing:</div>
-      </div>
-      <div class="intro-osteofit">
-        <div class="intro-osteofit-inner">Osteofit</div>
-      </div>
-    </div>
+      <div className="intro gradient-bckgrd" id ="intro">
+   <div class="intro-title">
+        <div>Introducing:<br/> OsteoFit</div>
   </div>        
   <div class="intro-image">
           <img src={blueReamer} alt=""/>
@@ -46,7 +39,7 @@ rootElement.scrollTo({
           <span class="text">Scroll down</span>
         </div>
 
-      <section class="slice slice-lg">
+      <section class="slice slice-lg gradient-bckgrd">
         <div class="container">
           <div class = "py-6">
           <ScrollAnimation animateIn="fadeIn">
@@ -54,8 +47,8 @@ rootElement.scrollTo({
             <div class="row row-grid justify-content-between align-items-center">
                 <div class="col-lg-6 order-lg-2">
                 <h5 class="lh-180">
-                    OsteoFit is a medical device company focused on the development of <b>cost-effective</b> orthopedic instruments
-                    that maintain <b>accuracy</b>, <b>function</b> and <b>sterility</b> in a routine and <b>sustainable</b> process for hospitals.</h5>
+                    OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments
+                    that maintain accuracy, function and sterility in a sustainable process.</h5>
                 </div>
               <div class="col-lg-6">
                 <div class="order-lg-1">
@@ -88,7 +81,7 @@ rootElement.scrollTo({
       <div>
       </div>
 
-      <section class="slice slice-lg">
+      <section class="slice slice-lg gradient-bckgrd">
       <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
       <figure class="item-content group">
@@ -97,35 +90,32 @@ rootElement.scrollTo({
               <img src={greenReamer} alt="" />
           </div>
           <figcaption class="item-caption">
-              <h2>Introducing Osteofit's Hollow Spherical Reamer for Acetabular Preparation: </h2>
-              <p>
+              <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
               Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
-              Click here to learn more! 
-              </p>
-            <button class = 'btn-1'>
+              Click <a class = "text-black">
               <Router forceRefresh>
-                <Link exact to="/product">Our Product</Link>
+                <Link exact to="/product"><b>here</b> </Link>
               </Router>
-            </button>
+              </a> to learn more.
           </figcaption>    
 
         </figure>
         </div>
         </div>
         </section>
-      <section class="slice slice-lg">
+      <section class="slice">
       <div className = "stats">
         <div className = "stats-container">
           <div className="stat">
             <div className="stat-value">4</div>
             <hr />
 
-            <div className="meta">Patents in Place</div>
+            <div className="meta">Patents</div>
           </div>
           <div className="stat">
             <div className="stat-value">100+</div>
             <hr />
-            <div className="meta">Total Years of Experience</div>
+            <div className="meta">Years of Experience</div>
       </div>
           <div className="stat">
             <div className="stat-value">100%</div>
@@ -139,7 +129,7 @@ rootElement.scrollTo({
                 <polygon points="2560 0 2560 100 0 100"></polygon>
             </svg>
         </div>
-        <section class="slice slice-lg">
+        <section class="slice slice-lg ">
 
         </section>
         </section>
@@ -159,7 +149,7 @@ rootElement.scrollTo({
                         <i class="fas fa-award award-icon"></i>  
                         <br/>
 
-                            <span class="h1 text-center mb-0">The Origins of Osteofit</span>
+                            <span class="h1 text-center mb-0">The Origins of OsteoFit</span>
                         </div>
                         <div class="card-body">
                         <p>Founded on the premise of creating precise products for surgeons, Osteofit is challenging the status quo by developing reamers that are 100% new each time.</p>
@@ -175,10 +165,10 @@ rootElement.scrollTo({
                         <div class="border-0 delimiter-bottom">
                         <i class="fab fa-envira envira-icon"></i>
                         <br/>
-                            <span class="h1 text-white text-center mb-0">The Sustainability of Osteofit</span>
+                            <span class="h1 text-white text-center mb-0">The Sustainability of OsteoFit</span>
                         </div>
                         <div class="card-body">
-                        <p class = "right-para">We make our reamers with 100% recyclable stainless steel and polycarbonate, producing an efficient and environmentally-conscious process for hospitals!</p>
+                        <p class = "right-para">We make our reamers with 100% recyclable stainless steel and polycarbonate, producing an efficient and environmentally-conscious process for hospitals</p>
                         <br />
                         <Router forceRefresh>
                           <Link exact to="/single-use"> <div id="white-arrow" class="info-arrow"/></Link>
@@ -188,8 +178,7 @@ rootElement.scrollTo({
                     </div>
                 </div>
             </div>
-            <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button>
-
+            {/* <button id="scrollToTopBtn" onClick={handleBackToTopBtn}>Back to Top</button> */}
         </div>
     </section>
     </div>

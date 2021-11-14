@@ -12,10 +12,7 @@ const Patents = () => {
     <div class="container">
     <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-6">
-                    <h4 class=" mt-4">Osteofit, LLC. Patents Associated with Single-Use Acetabular Reamers</h4>
-                    <div class="mt-2">
-                        <h2 class="lead lh-180">Click the Patent No. for a link to the patent PDF!</h2>
-                    </div>
+                    <h4 class=" mt-4">OsteoFit Patents Associated with Single-Use Acetabular Reamers</h4>
                 </div>
     </div>
   <ul class="responsive-table">
@@ -26,7 +23,7 @@ const Patents = () => {
     </li>
     <li class="table-row">
       <div class="col col-1" data-label="No.">1</div>
-      <div class="col col-2-table" data-label="Title">Medical Reamers and Methods of Forming the Same</div>
+      <div class="col col-2-table" data-label="Title">Methods of Forming Medical Reamers</div>
       <div class="col col-4" data-label="patentNo.">
       <Link class="nav-link patent-link" exact to ="/patent9101368">
         9,101,368
@@ -53,7 +50,7 @@ const Patents = () => {
     </li>
     <li class="table-row">
       <div class="col col-1" data-label="No.">4</div>
-      <div class="col col-2-table" data-label="Title">Disposable Reamer Sahft for Modular Spherical or Tapered Hollow Reamer Assembly for Medical Applications</div>
+      <div class="col col-2-table" data-label="Title">Disposable Reamer Shaft for Modular Spherical or Tapered Hollow Reamer Assembly for Medical Applications</div>
       <div class="col col-4" data-label="patentNo.">
       <Link class="nav-link patent-link" exact to ="/patent9463028">
         9,463,028

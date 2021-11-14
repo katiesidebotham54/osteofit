@@ -135,16 +135,12 @@ const Product = () => {
                     <div class="col-lg-5 order-lg-2">
                     <div class="product-title-wrapper">
                       <div class="product-typing-demo">
-                        The Problem.
+                        <h5 class="h4">The Problem.</h5>
                       </div>
                     </div>       
                         <p class="problem-desc text-white my-4">
-                        The current procedure for reamers involves a surgeon using a singular 
-                        reamer for multiple surgeries. However, with each use, the reamer dulls 
-                        and requires more axial force by the surgeon. This leads to a <b>higher 
-                        chance</b> of <b>inaccurate reaming, medial perforation, and heat generation </b> 
-                        Evidently, a reusable reamer is <b>NOT </b>the 
-                        most effective and clean product for surgery.
+                        A single reamer is used for multiple surgeries and becomes increasingly dull. Greater axial force is required by the surgeon with each use leading to a higher chance of inaccurate
+                        reaming, medial perforation, and heat generation.
                         </p>
                       </div>
                       <div class="col-lg-6">
@@ -171,12 +167,11 @@ const Product = () => {
             <div class="dialog-1">
 				<div class="left-point"></div>
 		      	</div>
-<p class="dialog-text">Click on each color to view the model!</p>
+<p class="dialog-text">Click on each color to view the model</p>
                     <div class="solution-text order-lg-2">
-                        <h5 class="h3">The Solution: Osteofit!</h5>
+                        <h5 class="h3">The Solution: OsteoFit</h5>
                           <p class="lead my-4">
-                          Osteofit's single-use acetabular reamers is an accurate, sharp cutting tool for the acetabulum preparation that will consistently address all of the surgeon's needs. The surgeon will use a brand-new product each time, creating a simple procedural cycle.
-                          </p>
+                          Our single-use acetabular reamers are brand new every time providing the surgeon with a sharp and accurate tool for the acetabulum preparation every time.                          </p>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="productCard">
@@ -187,7 +182,7 @@ const Product = () => {
                     </div>
                 </div>
                 <div class="color-container">
-                    <h3 id= "color-text">Colors Offerred</h3>
+                    <h3 id= "color-text">Colors Offered</h3>
                     <div class="colors">
                       <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
                       <span id="black1" onClick={(e) => handleOnClick("black1",e)} class="color" primary="#444" color="black1"> <span class="size">48</span> </span>
@@ -228,10 +223,25 @@ const Product = () => {
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center mt-4">A Breakdown of Osteofit's Reamer</h2>
+                    <h2 class="text-center mt-4">A Breakdown of OsteoFit's Reamer</h2>
                 </div>
             </div>
             <div class="row mt-5">
+            <div class="col-md-4" id = "card">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                            <img class="model-part-1 img-fluid img-center" src={modelPart1} alt="" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                              <li class="py-2">Made from <b>Stainless Steel</b></li>
+                              <li class="py-2">Dome and sidecutting panels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body pb-5">
@@ -241,23 +251,10 @@ const Product = () => {
                             <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
                               <li class="py-2">Made of <b>Polycarbonate</b></li>
-                              <li class="py-2">Features tabs for ultrasonic welding</li>
+                              <li class="py-2">Ultrasonic welding assembly</li>
+                              <li class="py-2">Color coded by size</li>
+
                             </ul>                       
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" id = "card">
-                    <div class="card">
-                        <div class="card-body pb-5">
-                            <div class="pt-4 pb-5">
-                            <img class="model-part-1 img-fluid img-center" src={modelPart1} alt="" />
-                            </div>
-                            <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
-                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                              <li class="py-2">Made from <b>Stainless Steel</b></li>
-                              <li class="py-2">Dome cutting panels</li>
-                              <li class="py-2">Include stamped side</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -270,10 +267,10 @@ const Product = () => {
                             <h5 class="h4 lh-130 mb-3">Molded Core</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
                               <li class="py-2">Made of <b>Polycarbonate</b></li>
-                              <li class="py-2">Helps with the structural integrity</li>
+                              <li class="py-2">Helps with structural integrity</li>
                               <li class="py-2">Multiple options for quick-connect coupling to Reamer Shaft</li>
                               <li class="py-2">Color coded by size</li>
-                              <li class="py-2">Space calculated for reamed volume of bone</li>
+                              <li class="py-2">Space calculated to capture reamed bone</li>
 
                             </ul>
                         </div>

@@ -143,7 +143,7 @@ const SingleUse = () => {
       <section class="slice slice-lg">
 
       <div class="benefits-single-use">
-        <h1 class ="mb-4 text-white">With Osteofit's single-use features, you'll see a : </h1>
+        <h1 class ="mb-4 text-white">With OsteoFit's single-use features, you'll see a : </h1>
         <hr className = "horz-line4" /> 
         <div class="container">
             <div class="row mt-4 text-center">
@@ -242,11 +242,11 @@ const SingleUse = () => {
       </div>
     </section>
       <section class="timeline">
-      <h1 class ="mb-4 timeline-title">A Process That Takes Less Time And Is More Effective! </h1>
+      <h1 class ="mb-4 timeline-title">A Process That Takes Less Time And Is More Effective </h1>
         <hr className = "horz-line4" />
 
       <div class="flex-parent">
-      <h1 class ="timeline-title">Reusable Reamers</h1>
+      <h1 class ="timeline-title">Reusable Reamer</h1>
 
         <div class="input-flex-container">
           <input type="radio" name="timeline-dot"/>
@@ -297,7 +297,7 @@ const SingleUse = () => {
         </div>
       </div>
       <div class="flex-parent">
-      <h1 class ="timeline-title">Osteofit's Reamers</h1>
+      <h1 class ="timeline-title">OsteoFit Reamer</h1>
         <div class="input-flex-container osteofit-timeline" >
           <input type="radio" name="timeline-dot"/>
           <div class="dot-info osteofit-dot">
@@ -373,19 +373,16 @@ const SingleUse = () => {
 <section class="slice slice-lg" className="singleUseRecycle">
     <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-6">
-                    <h2 class=" mt-4">Osteofit is Green!</h2>
+                    <h2 class=" mt-4">OsteoFit is Green</h2>
                     <div class="mt-2">
                         <p class="lead lh-180">Osteofit takes pride in creating products that are
-  sustainable and environmentally conscious. Review our steps for recycling our materias, stainless steel and poly carbonate, the main components of our reamers!</p>
+  sustainable and environmentally conscious. Review our steps for recycling our materials.</p>
                     </div>
                 </div>
             </div>
           <div class="container">
-            <div class="row mt-5 ml-5">
-                    <div class="col-xl-2 col-sm-6 mt-n7 chart-column">
-                    <img id="osteofitModel1" src={osteofitGrey} alt=""/>
-                      </div>
-                      <div class="col-xl-2 col-sm-6 mt-n7 chart-column">
+            <div class="row mt-3 ml-12">
+                      <div class="col-xl-3">
                         <div class="card-step-1">
                             <div class="d-flex card-padding">
                                 <div>
@@ -398,7 +395,7 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-6 mt-sm-n7 chart-column">
+                    <div class="col-xl-3">       
                         <div class="card-step-1">
                             <div class="d-flex card-padding">
                                 <div>
@@ -411,8 +408,8 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-12 col-sm-6 mt-xl-n7 chart-column">
-                        <div class="card-step-1">
+                    <div class="col-xl-3">
+                      <div class="card-step-1">
                             <div class="d-flex card-padding">
                                 <div>
                                     <span class="badge badge-danger badge-pill">3</span>
@@ -424,12 +421,10 @@ const SingleUse = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-sm-6 chart-column"/>
                   </div>                
-                  <div class="row ml-5">
-                  <div class="col-xl-2 col-sm-6 chart-column"/>
-                    <div class="col-xl-2 col-sm-6 chart-column">
-                    <div class="card-step-2">
+                  <div class="row mt-5 ml-12">
+                  <div class="col-xl-3">                    
+                  <div class="card-step-2">
                         <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-warning badge-pill">1</span>
@@ -441,8 +436,8 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-sm-6 chart-column">
-                    <div class="card-step-2">
+                <div class="col-xl-3">                    
+                <div class="card-step-2">
                         <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-success badge-pill">2</span>
@@ -454,8 +449,8 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-12 col-sm-6 chart-column">
-                    <div class="card-step-2">
+                <div class="col-xl-3">                    
+                <div class="card-step-2">
                         <div class="d-flex card-padding">
                             <div>
                                 <span class="badge badge-danger badge-pill">3</span>
@@ -467,9 +462,6 @@ const SingleUse = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-md-12 col-sm-6 chart-column align-items-center">
-                <img id="osteofitModel2" src={osteofitGrey} alt=""/>
-              </div>
                </div>
               </div>
 
