@@ -11,16 +11,16 @@ import greenReamer from '../images/osteofitModelGreen1.png';
 
 
 const Home = () => {
-  document.getElementById("scrollToTopBtn")
-var rootElement = document.documentElement
+//   document.getElementById("scrollToTopBtn")
+// var rootElement = document.documentElement
 
-function handleBackToTopBtn(e) {
-e.preventDefault()
-rootElement.scrollTo({
-  top: 0,
-  behavior: "smooth"
-})
-}
+// function handleBackToTopBtn(e) {
+// e.preventDefault()
+// rootElement.scrollTo({
+//   top: 0,
+//   behavior: "smooth"
+// })
+// }
     return (
       <div class = "homeWholePage">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -92,7 +92,7 @@ rootElement.scrollTo({
           <figcaption class="item-caption">
               <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
               Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
-              Click <a class = "text-black">
+              Click <a class = "text-black" href="/#">
               <Router forceRefresh>
                 <Link exact to="/product"><b>here</b> </Link>
               </Router>

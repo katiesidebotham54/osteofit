@@ -9,7 +9,6 @@ import coreRecycle2 from '../images/coreRecycle2.png';
 import coreRecycle3 from '../images/coreRecycle3.png';
 import steelRecycle2 from '../images/steelRecycle2.png';
 import steelRecycle3 from '../images/steelRecycle3.png';
-import osteofitGrey from "../images/osteofitModelGrey1.png"
 
 
 
