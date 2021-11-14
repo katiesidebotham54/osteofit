@@ -385,7 +385,7 @@ const SingleUse = () => {
                         <div class="card-step-1">
                             <div class="d-flex card-padding">
                                 <div>
-                                    <span class="badge badge-warning badge-pill">1</span>
+                                    <span class="badge badge-success badge-pill">1</span>
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="lh-130">Separated</h5>
@@ -411,7 +411,7 @@ const SingleUse = () => {
                       <div class="card-step-1">
                             <div class="d-flex card-padding">
                                 <div>
-                                    <span class="badge badge-danger badge-pill">3</span>
+                                    <span class="badge badge-success badge-pill">3</span>
                                 </div>
                                 <div class="pl-3">
                                     <h5 class="lh-130">Compacted</h5>
@@ -426,7 +426,7 @@ const SingleUse = () => {
                   <div class="card-step-2">
                         <div class="d-flex card-padding">
                             <div>
-                                <span class="badge badge-warning badge-pill">1</span>
+                                <span class="badge badge-success badge-pill">1</span>
                             </div>
                             <div class="pl-4">
                                 <h5 class="lh-130">Separated</h5>
@@ -452,7 +452,7 @@ const SingleUse = () => {
                 <div class="card-step-2">
                         <div class="d-flex card-padding">
                             <div>
-                                <span class="badge badge-danger badge-pill">3</span>
+                                <span class="badge badge-success badge-pill">3</span>
                             </div>
                             <div class="pl-3">
                                 <h5 class="lh-130">Shredded</h5>
