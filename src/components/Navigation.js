@@ -66,7 +66,7 @@ class Navigation extends Component{
                     <Router forceRefresh>
                     <li class="nav-item ">
                         <Link class="nav-link nav-font" exact to ="/sell-sheet">
-                            Sell Sheet
+                            Info Sheet
                         </Link>
                     </li>
                     </Router>
@@ -88,7 +88,7 @@ class Navigation extends Component{
     </nav>
                     <Router forceRefresh>
                         <Switch>
-                            <Route exact path="/home">
+                            <Route exact path="/">
                                 <Home />
                             </Route>
                         </Switch>
@@ -172,20 +172,20 @@ class Navigation extends Component{
                         </Switch>
                     </Router>
                     
-                    <Router forceRefresh>
+                    {/* <Router forceRefresh>
                         <Switch>
                             <Route exact path="/login">
                                 <Login />
                             </Route>
                         </Switch>
-                    </Router>
-                    <Router forceRefresh>
+                    </Router> */}
+                    {/* <Router forceRefresh>
                         <Switch>
                             <Route exact path="/">
                                 <Login />
                             </Route>
                         </Switch>
-                    </Router>
+                    </Router> */}
 
 
 

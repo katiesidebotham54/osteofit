@@ -27,6 +27,10 @@ const Home = () => {
       <div className="intro gradient-bckgrd" id ="intro">
    <div class="intro-title">
         <div>Introducing:<br/> OsteoFit</div>
+        <p class="lead text-white">
+                        We pride ourselves on our commitment to excellence and customer service.
+          </p>
+
   </div>        
   <div class="intro-image">
           <img src={blueReamer} alt=""/>
@@ -72,7 +76,7 @@ const Home = () => {
       <ul class="ms-slider__words">
         <li class="ms-slider__word"> Accurate</li>
         <li class="ms-slider__word"> Sterile</li>
-        <li class="ms-slider__word"> Effective</li>
+        <li class="ms-slider__word"> Cost-Effective</li>
         <li class="ms-slider__word"> Accurate</li>
       </ul>
     </div>
@@ -90,7 +94,7 @@ const Home = () => {
               <img src={greenReamer} alt="" />
           </div>
           <figcaption class="item-caption">
-              <h2>Introducing Osteofit <br/> Hollow Spherical Reamer: </h2>
+              <h2>Introducing OsteoFit <br/> Hollow Spherical Reamer: </h2>
               Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
               Click <a class = "text-black" href="/#">
               <Router forceRefresh>

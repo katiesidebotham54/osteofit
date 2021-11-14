@@ -30,7 +30,7 @@ const SingleUse = () => {
             <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
                     <h5 class="text-white mb-6">
-                        We manufacture single-use cost-effective reamers for total hip replacement surgeons.
+                        We manufacture single-use cost-effective reamers for total hip replacement surgeries.
                     </h5>
                 </div>
             </div>

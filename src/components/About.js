@@ -24,7 +24,7 @@ const About = () => {
                         OsteoFit is an orthopedic company specializing in single-use sterile medical reamers
                     </h1>
                     <p class="lead text-white">
-                        ...commitment to excellence and customer service.
+                        We pride ourselves on our commitment to excellence and customer service.
                     </p>
                 </div>
             </div>
@@ -58,10 +58,10 @@ const About = () => {
         <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary gradient-bckgrd">
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-white text-center">
                     <h2 class=" mt-4">Our Team</h2>
                     <div class="mt-2">
-                        <p class="lead lh-180">With over 100 years of experience, we are dedicated to making successful products!</p>
+                        <p class="lead lh-180">With over 100 years of experience, we are dedicated to making successful products.</p>
                     </div>
                 </div>
             </div>

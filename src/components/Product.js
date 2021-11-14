@@ -163,22 +163,17 @@ const Product = () => {
             </svg>
         </div>
         <ScrollAnimation animateIn="fadeIn">
-            <div class="row row-grid">
-            <div class="dialog-1">
-				<div class="left-point"></div>
-		      	</div>
-<p class="dialog-text">Click on each color to view the model</p>
-                    <div class="solution-text order-lg-2">
-                        <h5 class="h3">The Solution: OsteoFit</h5>
-                          <p class="lead my-4">
-                          Our single-use acetabular reamers are brand new every time providing the surgeon with a sharp and accurate tool for the acetabulum preparation every time.                          </p>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="productCard">
-        <div class="info">
+      <div class="row row-grid">
+        <div class="dialog-1">
+				  <div class="left-point"></div>
+		    </div>
+        <p class="dialog-text">Click on each color to view the model</p>
+        <div class="col-lg-6 order-lg-1">
+          <div class="productCard">
+            <div class="info">
                 <div class="reamerName">
                     <div>
-                        <h1 class="big">The Osteofit Reamer</h1>
+                        <h1 class="big">The OsteoFit Reamer</h1>
                     </div>
                 </div>
                 <div class="color-container">
@@ -217,13 +212,19 @@ const Product = () => {
                 </div>
             </div>
                         </div>
+                        <div class="solution-text order-lg-2">
+                        <h5 class="h3">The Solution: OsteoFit</h5>
+                          <p class="lead my-4">
+                          Our single-use acetabular reamers are brand new every time providing the surgeon with a sharp and accurate tool for the acetabulum preparation every time.                          </p>
+                    </div>
+
         </ScrollAnimation>
     </section>
     <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center mt-4">A Breakdown of OsteoFit's Reamer</h2>
+                    <h2 class="text-center mt-4">A Breakdown of the OsteoFit Reamer</h2>
                 </div>
             </div>
             <div class="row mt-5">
