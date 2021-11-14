@@ -12,8 +12,8 @@ const About = () => {
       <div className="About">
       <section class="slice bg-dark">
       <div class="about-title-wrapper">
-          <div class="typing-demo">
-              About Us
+          <div>
+          <h2 class="text-white">Abous Us</h2>
           </div>
         </div>       
 

@@ -21,17 +21,17 @@ const SingleUse = () => {
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
        <section class="slice bg-dark">
       <div class="single-use-title-wrapper col-lg-8 text-center text-lg-left">
-          <div class="typing-demo">
-              Why Single Use?
+          <div>
+          <h2 class="text-white">Why Single-Use?</h2>
           </div>
         </div>       
  
-        <div class="container py-5">
+        <div class="container">
             <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
-                    <h1 class="text-white mb-4">
-                        We manufacture single-use, cost-effective reamers for total hip replacement surgeons.
-                    </h1>
+                    <h5 class="text-white mb-6">
+                        We manufacture single-use cost-effective reamers for total hip replacement surgeons.
+                    </h5>
                 </div>
             </div>
         </div>

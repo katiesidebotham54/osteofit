@@ -90,7 +90,7 @@ const Home = () => {
               <img src={greenReamer} alt="" />
           </div>
           <figcaption class="item-caption">
-              <h2>Introducing Osteofit's Hollow Spherical Reamer: </h2>
+              <h2>Introducing Osteofit <br/> Hollow Spherical Reamer: </h2>
               Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
               Click <a class = "text-black" href="/#">
               <Router forceRefresh>
@@ -152,7 +152,7 @@ const Home = () => {
                             <span class="h1 text-center mb-0">The Origins of OsteoFit</span>
                         </div>
                         <div class="card-body">
-                        <p>Founded on the premise of creating precise products for surgeons, Osteofit is challenging the status quo by developing reamers that are 100% new each time.</p>
+                        <p>Founded on the premise of creating precise products for surgeons, OsteoFit is challenging the status quo by developing reamers that are 100% new each time.</p>
                             <br />
                             <Router forceRefresh>
                               <Link exact to="/about"><div class="info-arrow"/></Link>
