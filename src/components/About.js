@@ -13,7 +13,7 @@ const About = () => {
       <section class="slice bg-dark">
       <div class="about-title-wrapper">
           <div>
-          <h2 class="text-white">Abous Us</h2>
+          <h2 class="text-white">About Us</h2>
           </div>
         </div>       
 

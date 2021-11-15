@@ -3,8 +3,10 @@ import modelPart1 from "../images/Osteofitmodelpart1.PNG"
 import modelPart2 from "../images/Osteofitmodelpart2.PNG"
 import modelPart3 from "../images/Osteofitmodelpart4.PNG"
 import osteofitWhiteLogo from "../images/osteofitWhiteLogo.png";
-import gray from '../images/lightgray.png'
-import black from '../images/black.png'
+import gray1 from '../images/lightgray.png'
+import gray2 from '../images/lightgray.png'
+import black1 from '../images/black.png'
+import black2 from '../images/black.png'
 import blue from '../images/blue.png'
 import brown from '../images/brown.png'
 import green from '../images/green.png'
@@ -201,13 +203,13 @@ const Product = () => {
                 </div>
                 <h1 class="osteofit">Osteofit</h1>
                 <img src={osteofitWhiteLogo} alt="" class="logo"/>
-                <img src={gray} alt="" class="reamer" color="gray1"/>
-                <img src={black} alt="" class="reamer" color="black1"/>
+                <img src={gray1} alt="" class="reamer" color="gray1"/>
+                <img src={black1} alt="" class="reamer" color="black1"/>
                 <img src={brown} alt="" class="reamer" color="brown"/>
                 <img src={blue} alt="" class="reamer" color="blue"/>
                 <img src={green} alt="" class="reamer" color="green"/>
-                <img src={gray} alt="" class="reamer" color="gray2"/>
-                <img src={black} alt="" class="reamer show" color="black2"/>
+                <img src={gray2} alt="" class="reamer" color="gray2"/>
+                <img src={black2} alt="" class="reamer show" color="black2"/>
             </div>
                 </div>
             </div>
