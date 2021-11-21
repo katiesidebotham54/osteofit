@@ -86,7 +86,7 @@ const SingleUse = () => {
                 </div>
               <div>
                 <span class="h5">Cost Effective</span>
-                <p class="text-sm text-muted mb-0 font-italic">Patented Tech Allows for Efficiency</p>
+                <p class="text-sm text-muted mb-0 font-italic">Patented Technology Allows for Manufacturing Efficiency</p>
               </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ const SingleUse = () => {
         </div>
         <div className = "ml-17 container">
         <div className="row mx-lg-n4">
-          <div className="col-lg-6">
+          <div className="col-lg-6" class="bullet-points-one">
         <div className="col-lg-6">
               <div className="p-3 d-flex">
                   <div className="icon icon-shape-su rounded-circle text-white mr-4">
@@ -311,7 +311,7 @@ const SingleUse = () => {
           <input type="radio" name="timeline-dot" checked/>
           <div class="dot-info osteofit-dot" >
             <span class="step">Step 3</span>
-            <span class="label">Recycled</span>
+            <span class="label">Recycle</span>
           </div>
         </div>
       </div>
@@ -374,12 +374,12 @@ const SingleUse = () => {
                 <div class="col-lg-6">
                     <h2 class=" mt-4">OsteoFit is Green</h2>
                     <div class="mt-2">
-                        <p class="lead lh-180">Osteofit takes pride in creating products that are
-  sustainable and environmentally conscious. Review our steps for recycling our materials.</p>
+                        <p class="lead lh-180" className="osteofit-green-text">Osteofit takes pride in creating products that are
+  sustainable and environmentally conscious.</p>
                     </div>
                 </div>
             </div>
-          <div class="container">
+         {/* <div class="container">
             <div class="row mt-3 ml-12">
                       <div class="col-xl-3">
                         <div class="card-step-1">
@@ -389,7 +389,7 @@ const SingleUse = () => {
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="lh-130">Separated</h5>
-                                  <img src={osteofitSteel} alt="" class="recycle-img-1 rounded-lg img-fluid"/>           
+                                  <img src={osteofitSteel} alt="" class="recycle-img-1 rounded-lg img-fluid"/>          
                                   </div>
                             </div>
                         </div>
@@ -462,7 +462,7 @@ const SingleUse = () => {
                     </div>
                 </div>
                </div>
-              </div>
+  </div>*/}
 
 
 </section>

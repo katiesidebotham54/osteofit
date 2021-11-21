@@ -11,7 +11,7 @@ const IFU = () => {
                 </div>
             </div>
     <div class= "mb-5">
-     <embed type = "application/pdf" width="100%" height="500px" src={IFUdoc}/>
+     <embed type = "application/pdf" width="100%" height="1200px" src={IFUdoc}/>
 </div>
 </section>
     )

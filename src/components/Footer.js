@@ -56,7 +56,7 @@ class Footer extends Component {
             </div>            
              <div class="row">
              <div class="col-sm ml-5">
-                <h6>Phone: 872-210-8435</h6> 
+                <h6>Phone: 862-210-8435</h6> 
              </div>
 
              <div class="col-sm">

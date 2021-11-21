@@ -14,6 +14,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import '../styling/productStyle.scss'
 import mainProduct from "../images/product.png"
 import '../styling/mainStyle.scss'
+import completeProduct from '../images/OsteofitCompleteModel.png'
 
 
 
@@ -248,23 +249,7 @@ const Product = () => {
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body pb-5">
-                            <div class="pt-4 pb-5">
-                            <img class="model-part-2 img-fluid img-center" src={modelPart2} alt="" />
-                            </div>
-                            <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
-                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
-                              <li class="py-2">Made of <b>Polycarbonate</b></li>
-                              <li class="py-2">Ultrasonic welding assembly</li>
-                              <li class="py-2">Color coded by size</li>
-
-                            </ul>                       
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body pb-5">
-                            <div class="pt-4 pb-5">
+                        <div class="pt-4 pb-5">
                                 <img class="model-part-3 img-fluid img-center" src={modelPart3} alt="" />
                             </div>
                             <h5 class="h4 lh-130 mb-3">Molded Core</h5>
@@ -275,11 +260,30 @@ const Product = () => {
                               <li class="py-2">Color coded by size</li>
                               <li class="py-2">Space calculated to capture reamed bone</li>
 
+
+                            </ul>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                            <img class="model-part-2 img-fluid img-center" src={modelPart2} alt="" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Molded Back Plate</h5>
+                            <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
+                              <li class="py-2">Made of <b>Polycarbonate</b></li>
+                              <li class="py-2">Ultrasonic welding assembly</li>
+                              <li class="py-2">Color coded by size</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+          <img src={completeProduct} alt="" className="complete-model"/>
         </div>
     </section>
     </div>

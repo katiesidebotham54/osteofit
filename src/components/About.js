@@ -61,7 +61,7 @@ const About = () => {
                 <div class="col-lg-6 text-white text-center">
                     <h2 class=" mt-4">Our Team</h2>
                     <div class="mt-2">
-                        <p class="lead lh-180">With over 100 years of experience, we are dedicated to making successful products.</p>
+                        <p class="lead lh-180" className="our-team-text">With over 100 years of experience, we are dedicated to making successful products.</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ const About = () => {
                             <div class="pt-4 pb-5">
                             <i class="fas fa-pen-nib icon"></i>
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Designer</h5>
+                            <h5 class="h4 lh-130 mb-3">Engineering</h5>
                             <h3>40+</h3>
 
                             <p class="text-muted mb-0">years of experience in the development of orthopedic implants working with OEMs.</p>
@@ -85,7 +85,7 @@ const About = () => {
                             <div class="pt-4 pb-5">
                             <i class="fas fa-head-side-mask icon"></i>
                             </div>
-                            <h5 class="h4 lh-130 mb-0">Orthopedic Surgeon</h5>
+                            <h5 class="h4 lh-130 mb-0">Orthopedic Surgery</h5>
                             <h3>50+</h3>
 
                             <p class="text-muted mb-0">years of experience specializing in hip and knee replacement.</p>
@@ -98,7 +98,7 @@ const About = () => {
                             <div class="pt-4 pb-5">
                             <i class="fas fa-tools icon"></i>
                             </div>
-                            <h5 class="h4 lh-130 mb-3">Manufacturer</h5>
+                            <h5 class="h4 lh-130 mb-3">Manufacturing</h5>
                             <h3>40+</h3>
 
                             <p class="text-muted mb-0">years in the development and manufacturing of orthopedic implants and instruments.</p>

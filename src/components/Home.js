@@ -50,7 +50,7 @@ const Home = () => {
 
             <div class="row row-grid justify-content-between align-items-center">
                 <div class="col-lg-6 order-lg-2">
-                <h5 class="lh-180">
+                <h5 class="lh-180" className="homePageTextImg">
                     OsteoFit is a medical device company focused on the development of cost-effective orthopedic instruments
                     that maintain accuracy, function and sterility in a sustainable process.</h5>
                 </div>
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
           <figcaption class="item-caption">
               <h2>Introducing OsteoFit <br/> Hollow Spherical Reamer: </h2>
-              Made from stainless steel and molded polycarbonate, our single-use reamer is always <b>sharp</b> and <b>accurate</b>.
+              Made from stainless steel and molded polycarbonate, our single-use reamer is always sharp and accurate.
               Click <a class = "text-black" href="/#">
               <Router forceRefresh>
                 <Link exact to="/product"><b>here</b> </Link>

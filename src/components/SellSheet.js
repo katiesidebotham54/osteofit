@@ -11,7 +11,7 @@ const SellSheet = () => {
                 </div>
     </div>
 <div class= "mb-5">
-     <embed type = "application/pdf" width="100%" height="500px" src={SellSheetPDF}/>
+     <embed type = "application/pdf" width="100%" height="1200px" src={SellSheetPDF}/>
 </div>
 
 </section>
