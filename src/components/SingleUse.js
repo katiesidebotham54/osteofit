@@ -3,12 +3,12 @@ import graph from '../images/OsteofitGraph.png'
 import '../styling/mainStyle.scss';
 import '../styling/singleUseStyle.scss';
 import '../styling/timelines.scss';
-import osteofitSteel from '../images/Osteofitmodelpart1.PNG';
-import osteofitCore from '../images/Osteofitmodelpart4.PNG';
-import coreRecycle2 from '../images/coreRecycle2.png';
-import coreRecycle3 from '../images/coreRecycle3.png';
-import steelRecycle2 from '../images/steelRecycle2.png';
-import steelRecycle3 from '../images/steelRecycle3.png';
+// import osteofitSteel from '../images/Osteofitmodelpart1.PNG';
+// import osteofitCore from '../images/Osteofitmodelpart4.PNG';
+// import coreRecycle2 from '../images/coreRecycle2.png';
+// import coreRecycle3 from '../images/coreRecycle3.png';
+// import steelRecycle2 from '../images/steelRecycle2.png';
+// import steelRecycle3 from '../images/steelRecycle3.png';
 
 
 
