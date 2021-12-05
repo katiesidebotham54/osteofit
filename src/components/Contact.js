@@ -116,7 +116,7 @@ const Contact = () => {
 
         <textarea
           id="message"
-          placeholder="I'm writing to..."
+          placeholder="Message"
           name="message"
           onChange={handleOnChange}
           required

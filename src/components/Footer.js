@@ -70,7 +70,7 @@ class Footer extends Component {
 
                 <Router forceRefresh>
                 <Link exact to ="/sell-sheet">
-                    <h6 class="heading mb-3">Sell Sheet</h6>
+                    <h6 class="heading mb-3">Info Sheet</h6>
                     </Link>
                 </Router>
             </div>
@@ -106,7 +106,7 @@ class Footer extends Component {
                 <div class="row align-items-center justify-content-md-between pb-4">
                     <div class="col-md-6">
                         <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2021 OsteoFit LLC. Website by K&B Design
+                            &copy; 2021 OsteoFit LLC <br></br> Website by K&B Design
                         </div>
                     </div>
                     <div class="col-md-6">

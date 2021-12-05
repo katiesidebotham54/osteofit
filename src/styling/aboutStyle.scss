@@ -38,6 +38,7 @@ $yellow: rgb(255, 204, 0);
   color: white !important;
   background: none;
   text-align: left;
+  width: 110%;
 }
 
 .about-title-wrapper {
@@ -363,4 +364,10 @@ $hoverBgColor2: $lightblue;
       transition: 0.8s all ease-in-out;
     }
   }
+}
+
+.aboutUsFrontText {
+  color: white;
+  font-size: 23px;
+  width: 120%;
 }

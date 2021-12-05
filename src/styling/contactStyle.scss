@@ -113,6 +113,7 @@ input {
   padding: 0px 15px 0px 15px;
   z-index: 99999;
   background: transparent;
+  background-color: white;
   outline: none;
   color: $darkgray;
 
@@ -139,6 +140,7 @@ textarea {
 
   background: transparent;
   outline: none;
+  background-color: white;
 
   color: $darkgray;
   font-family: "Open Sans", sans-serif;
@@ -164,6 +166,12 @@ textarea:hover {
   min-height: 800px;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+    360deg,
+    $lightgrayblue5,
+    $lightgrayblue3,
+    $lightgray1
+  );
 }
 
 .contact-check-box {

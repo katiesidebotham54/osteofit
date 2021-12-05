@@ -96,6 +96,7 @@ const Product = () => {
       colorList[i].className += " active";
       reamerList[i].className += " show";
       gradientList[i].className += " first";
+      console.log("works");
     } else if(backgroundColor === "gray2") {
       i = 5;
       colorList[i].className += " active";
@@ -138,7 +139,7 @@ const Product = () => {
                     <div class="col-lg-5 order-lg-2">
                     <div class="product-title-wrapper">
                       <div class="product-typing-demo">
-                        <h5 class="h4">The Problem.</h5>
+                        <h5 class="h3">The Problem</h5>
                       </div>
                     </div>       
                         <p class="problem-desc text-white my-4">
@@ -182,13 +183,13 @@ const Product = () => {
                 <div class="color-container">
                     <h3 id= "color-text">Colors Offered</h3>
                     <div class="colors">
-                      <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
+                      <span id="gray1" onClick={(e) => handleOnClick("gray1",e)} class="color active" primary="#d3d3d3" color="gray1"><span class="size">46</span> </span>
                       <span id="black1" onClick={(e) => handleOnClick("black1",e)} class="color" primary="#444" color="black1"> <span class="size">48</span> </span>
                       <span id="brown" onClick={(e) =>handleOnClick("brown",e)} class="color" primary="#964B00" color="brown"><span class="size">50</span></span>
                       <span id="blue" onClick={(e) =>handleOnClick("blue",e)} class ="color" primary="#2175f5" color="blue"><span class="size">52</span></span>
                       <span id="green" onClick={(e) => handleOnClick("green",e)} class="color" primary="#29b864" color="green"><span class="size">54</span></span>
                       <span id="gray2" onClick={(e) => handleOnClick("gray2",e)} class="color" primary="#d3d3d3" color="gray2"><span class="size">56</span> </span>
-                      <span id="black2" onClick={(e) => handleOnClick("black2",e)} class="color active" primary="#444" color="black2"><span class="size">58</span></span> 
+                      <span id="black2" onClick={(e) => handleOnClick("black2",e)} class="color" primary="#444" color="black2"><span class="size">58</span></span> 
                     </div>
                 </div>
             </div>
@@ -227,9 +228,12 @@ const Product = () => {
         <div class="container">
             <div class="row mb-5 justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center mt-4">A Breakdown of the OsteoFit Reamer</h2>
+                    <h2 class="text-center mt-4">The OsteoFit Reamer Components</h2>
                 </div>
             </div>
+            <div>
+          <img src={completeProduct} alt="" className="complete-model"/>
+        </div>
             <div class="row mt-5">
             <div class="col-md-4" id = "card">
                     <div class="card">
@@ -240,7 +244,7 @@ const Product = () => {
                             <h5 class="h4 lh-130 mb-3">Cutting Panels</h5>
                             <ul class="list-unstyled text-white text-sm opacity-8 mb-4">
                               <li class="py-2">Made from <b>Stainless Steel</b></li>
-                              <li class="py-2">Dome and sidecutting panels</li>
+                              <li class="py-2">Dome and side-cutting panels</li>
                             </ul>
                         </div>
                     </div>
@@ -282,9 +286,7 @@ const Product = () => {
                 </div>
             </div>
         </div>
-        <div>
-          <img src={completeProduct} alt="" className="complete-model"/>
-        </div>
+        
     </section>
     </div>
     );

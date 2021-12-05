@@ -427,6 +427,7 @@ $mx-width: 50rem;
   cursor: pointer;
   transition: 0.5s;
   border-width: 5px;
+  z-index: 2;
 }
 .logo {
   width: 60px;
@@ -609,7 +610,8 @@ $hoverBgColor2: #0f4264;
 .problem-desc {
   font-family: "Montserrat", sans-serif;
   color: $lightgray1;
-  font-size: 20px;
+  font-size: 22px;
+  width: 170%;
 }
 
 .problem-img {
@@ -825,6 +827,9 @@ $hoverBgColor2: #0f4264;
     color: $lightgray1;
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
+    h5 {
+      font-size: 2.75rem;
+    }
   }
 
   .shape-container-product {
@@ -911,5 +916,5 @@ $hoverBgColor2: #0f4264;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 43%;
 }

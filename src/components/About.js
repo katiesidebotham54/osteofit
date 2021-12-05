@@ -20,10 +20,10 @@ const About = () => {
         <div class="container py-5">
             <div class="row row-grid align-items-center">
                 <div class="col-lg-8 text-center text-lg-left">
-                    <h1 class="text-white mb-4">
+                    <h1 class="text-white mb-4" >
                         OsteoFit is an orthopedic company specializing in single-use sterile medical reamers
                     </h1>
-                    <p class="lead text-white">
+                    <p class="lead text-white" className="aboutUsFrontText">
                         We pride ourselves on our commitment to excellence and customer service.
                     </p>
                 </div>
